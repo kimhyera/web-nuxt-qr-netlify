@@ -1,0 +1,214 @@
+{
+  "resolvedId": "D:/localserver/web-nuxt-sdk/web-nuxt-qr-netlify/pages/pb/order/pay.vue",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "<script setup lang=\"ts\">\r\n\r\n</script>\r\n<template>\r\n\t<header class=\"header-common fixed\">\r\n\t\t<div class=\"header-row\"><button title=\"이전페이지로 이동\" class=\"btn-history-back\"></button>\r\n\t\t\t<h1 class=\"header-title\">결제하기</h1>\r\n\t\t\t<div class=\"right-utils\"><a href=\"/shop/mns/\" class=\"btn-home\" title=\"홈으로 이동\"></a></div>\r\n\t\t</div>\r\n\t</header>\r\n\t<main class=\"pay-page page-pt\">\r\n\r\n\t\t<div class=\"form-box form-line\">\r\n\t\t\t<h3 class=\"title\">주문 정보</h3>\r\n\t\t\t<div class=\"table-info\">\r\n\t\t\t\t<dl class=\"table-No\">\r\n\t\t\t\t\t<dt>테이블 번호</dt>\r\n\t\t\t\t\t<dd>2</dd>\r\n\t\t\t\t</dl>\r\n\t\t\t</div>\r\n\r\n\t\t</div>\r\n\r\n\t\t<section class=\"form-section\">\r\n\r\n\t\t\t<div class=\"form-box form-line\">\r\n\t\t\t\t<h3 class=\"title\"> 휴대폰번호</h3>\r\n\t\t\t\t<div>\r\n\r\n\t\t\t\t\t<input type=\"tel\" class=\"form-input-round\" placeholder=\"결제 영수증이 발송됩니다.\">\r\n\t\t\t\t</div>\r\n\t\t\t</div>\r\n\r\n\r\n\t\t</section>\r\n\t\t<section class=\"total-wrap form-line\">\r\n\t\t\t<div class=\"desc\">\r\n\t\t\t\t<p class=\"title\">최종 결제 정보</p>\r\n\t\t\t\t<dl>\r\n\t\t\t\t\t<dt>총 주문금액</dt>\r\n\t\t\t\t\t<dd>4,500원</dd>\r\n\t\t\t\t</dl>\r\n\r\n\t\t\t</div>\r\n\t\t\t<div class=\"total\">\r\n\t\t\t\t<dl>\r\n\t\t\t\t\t<dt>결제 금액</dt>\r\n\t\t\t\t\t<dd><em class=\"total-price\">4,500원</em></dd>\r\n\t\t\t\t</dl>\r\n\t\t\t</div>\r\n\t\t</section>\r\n\t\t<section class=\"pay-wrap form-box form-line\">\r\n\t\t\t<p class=\"title\">결제방법</p><button type=\"button\" class=\"btn-pay-type on\"><span class=\"name\">선결제</span><i\r\n\t\t\t\t\tclass=\"icon-down\"></i></button>\r\n\t\t\t<div class=\"contents-pay mb-md on\">\r\n\t\t\t\t<ul class=\"btn-group-pay\">\r\n\t\t\t\t\t<li><button type=\"button\" class=\"on btn-card\"> 신용카드</button></li>\r\n\t\t\t\t\t<li><button type=\"button\" class=\"btn-card\"><i class=\"icon-toss\"></i> 토스페이</button></li>\r\n\t\t\t\t\t<li><button class=\"btn-pay\"><i class=\"icon-naver\"></i> 네이버페이 </button></li>\r\n\t\t\t\t</ul>\r\n\r\n\t\t\t\t<div class=\"notice-pay\">\r\n\t\t\t\t\t[결제혜택]\r\n\t\t\t\t\t<br>\r\n\t\t\t\t\t<dl>\r\n\t\t\t\t\t\t<dt>신용카드</dt>\r\n\t\t\t\t\t\t<dt>신용카드 결제시 1프로 할인</dt>\r\n\t\t\t\t\t</dl>\r\n\t\t\t\t\t<dl>\r\n\t\t\t\t\t\t<dt>하나카드</dt>\r\n\t\t\t\t\t\t<dt>하나카드 결제시 11프로 할인</dt>\r\n\t\t\t\t\t</dl>\r\n\t\t\t\t\t<dl>\r\n\t\t\t\t\t\t<dt>토스페이</dt>\r\n\t\t\t\t\t\t<dt>토스페이 결제시 1%페이백</dt>\r\n\t\t\t\t\t</dl>\r\n\t\t\t\t</div>\r\n\t\t\t</div>\r\n\t\t</section>\r\n\t\t<section class=\"bottom-btn-default-section\">\r\n\t\t\t<div class=\"terms-agree-wrap\">\r\n\t\t\t\t<div class=\"agree-box\">\r\n\t\t\t\t\t<div class=\"form-check-wrap\"><input class=\"form-check\" id=\"ok\" type=\"checkbox\">\r\n\t\t\t\t\t\t<label\r\n\t\t\t\t\t\t\tclass=\"form-check-label\" for=\"ok\">개인정보 제 3자 제공 동의\r\n\t\t\t\t\t\t\t</label></div>\r\n\r\n\r\n\t\t\t\t\t<a href=\"/pb/terms/informationClause\" target=\"_blank\" class=\"btn-link\">><i></i></a>\r\n\t\t\t\t</div>\r\n\r\n\t\t\t\t<div class=\"agree-box\">\r\n\t\t\t\t\t<div class=\"form-check-wrap\"><input class=\"form-check\" id=\"phoneAllow\" type=\"checkbox\"><label\r\n\t\t\t\t\t\t\tclass=\"form-check-label\" for=\"phoneAllow\">휴대폰번호 수집/이용\r\n\t\t\t\t\t\t\t동의</label></div>\r\n\r\n\t\t\t\t\t\t\t\r\n\t\t\t\t</div>\r\n\t\t\t</div>\r\n\t\t\t<div class=\"btn-wrap\"><button type=\"button\" class=\"btn-primary-1 btn-block-lg\" disabled>결제하기\r\n\t\t\t\t</button></div>\r\n\t\t</section>\r\n\t</main>\r\n</template>\r\n<style lang=\"scss\" scoped>\r\n@import \"@/assets/default/scss/style\"; // 공통 \r\n@import \"@/assets/default/scss/components/header\";\r\n@import \"@/assets/default/scss/contents/order/order\";\r\n</style>",
+      "start": 1711507720043,
+      "end": 1711507720120,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1711507720120,
+      "end": 1711507720120,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1711507720120,
+      "end": 1711507720120,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1711507720120,
+      "end": 1711507720120,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1711507720120,
+      "end": 1711507720120,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1711507720120,
+      "end": 1711507720120,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1711507720120,
+      "end": 1711507720120,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1711507720120,
+      "end": 1711507720120,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": "const _sfc_main = {}\nimport { createElementVNode as _createElementVNode, createTextVNode as _createTextVNode, createStaticVNode as _createStaticVNode, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\"\n\nconst _withScopeId = n => (_pushScopeId(\"data-v-cebfe494\"),n=n(),_popScopeId(),n)\nconst _hoisted_1 = /*#__PURE__*/_createStaticVNode(\"<header class=\\\"header-common fixed\\\" data-v-cebfe494><div class=\\\"header-row\\\" data-v-cebfe494><button title=\\\"이전페이지로 이동\\\" class=\\\"btn-history-back\\\" data-v-cebfe494></button><h1 class=\\\"header-title\\\" data-v-cebfe494>결제하기</h1><div class=\\\"right-utils\\\" data-v-cebfe494><a href=\\\"/shop/mns/\\\" class=\\\"btn-home\\\" title=\\\"홈으로 이동\\\" data-v-cebfe494></a></div></div></header><main class=\\\"pay-page page-pt\\\" data-v-cebfe494><div class=\\\"form-box form-line\\\" data-v-cebfe494><h3 class=\\\"title\\\" data-v-cebfe494>주문 정보</h3><div class=\\\"table-info\\\" data-v-cebfe494><dl class=\\\"table-No\\\" data-v-cebfe494><dt data-v-cebfe494>테이블 번호</dt><dd data-v-cebfe494>2</dd></dl></div></div><section class=\\\"form-section\\\" data-v-cebfe494><div class=\\\"form-box form-line\\\" data-v-cebfe494><h3 class=\\\"title\\\" data-v-cebfe494> 휴대폰번호</h3><div data-v-cebfe494><input type=\\\"tel\\\" class=\\\"form-input-round\\\" placeholder=\\\"결제 영수증이 발송됩니다.\\\" data-v-cebfe494></div></div></section><section class=\\\"total-wrap form-line\\\" data-v-cebfe494><div class=\\\"desc\\\" data-v-cebfe494><p class=\\\"title\\\" data-v-cebfe494>최종 결제 정보</p><dl data-v-cebfe494><dt data-v-cebfe494>총 주문금액</dt><dd data-v-cebfe494>4,500원</dd></dl></div><div class=\\\"total\\\" data-v-cebfe494><dl data-v-cebfe494><dt data-v-cebfe494>결제 금액</dt><dd data-v-cebfe494><em class=\\\"total-price\\\" data-v-cebfe494>4,500원</em></dd></dl></div></section><section class=\\\"pay-wrap form-box form-line\\\" data-v-cebfe494><p class=\\\"title\\\" data-v-cebfe494>결제방법</p><button type=\\\"button\\\" class=\\\"btn-pay-type on\\\" data-v-cebfe494><span class=\\\"name\\\" data-v-cebfe494>선결제</span><i class=\\\"icon-down\\\" data-v-cebfe494></i></button><div class=\\\"contents-pay mb-md on\\\" data-v-cebfe494><ul class=\\\"btn-group-pay\\\" data-v-cebfe494><li data-v-cebfe494><button type=\\\"button\\\" class=\\\"on btn-card\\\" data-v-cebfe494> 신용카드</button></li><li data-v-cebfe494><button type=\\\"button\\\" class=\\\"btn-card\\\" data-v-cebfe494><i class=\\\"icon-toss\\\" data-v-cebfe494></i> 토스페이</button></li><li data-v-cebfe494><button class=\\\"btn-pay\\\" data-v-cebfe494><i class=\\\"icon-naver\\\" data-v-cebfe494></i> 네이버페이 </button></li></ul><div class=\\\"notice-pay\\\" data-v-cebfe494> [결제혜택] <br data-v-cebfe494><dl data-v-cebfe494><dt data-v-cebfe494>신용카드</dt><dt data-v-cebfe494>신용카드 결제시 1프로 할인</dt></dl><dl data-v-cebfe494><dt data-v-cebfe494>하나카드</dt><dt data-v-cebfe494>하나카드 결제시 11프로 할인</dt></dl><dl data-v-cebfe494><dt data-v-cebfe494>토스페이</dt><dt data-v-cebfe494>토스페이 결제시 1%페이백</dt></dl></div></div></section><section class=\\\"bottom-btn-default-section\\\" data-v-cebfe494><div class=\\\"terms-agree-wrap\\\" data-v-cebfe494><div class=\\\"agree-box\\\" data-v-cebfe494><div class=\\\"form-check-wrap\\\" data-v-cebfe494><input class=\\\"form-check\\\" id=\\\"ok\\\" type=\\\"checkbox\\\" data-v-cebfe494><label class=\\\"form-check-label\\\" for=\\\"ok\\\" data-v-cebfe494>개인정보 제 3자 제공 동의 </label></div><a href=\\\"/pb/terms/informationClause\\\" target=\\\"_blank\\\" class=\\\"btn-link\\\" data-v-cebfe494>&gt;<i data-v-cebfe494></i></a></div><div class=\\\"agree-box\\\" data-v-cebfe494><div class=\\\"form-check-wrap\\\" data-v-cebfe494><input class=\\\"form-check\\\" id=\\\"phoneAllow\\\" type=\\\"checkbox\\\" data-v-cebfe494><label class=\\\"form-check-label\\\" for=\\\"phoneAllow\\\" data-v-cebfe494>휴대폰번호 수집/이용 동의</label></div></div></div><div class=\\\"btn-wrap\\\" data-v-cebfe494><button type=\\\"button\\\" class=\\\"btn-primary-1 btn-block-lg\\\" disabled data-v-cebfe494>결제하기 </button></div></section></main>\", 2)\n\nfunction _sfc_render(_ctx, _cache) {\n  return _hoisted_1\n}\n\nimport \"D:/localserver/web-nuxt-sdk/web-nuxt-qr-netlify/pages/pb/order/pay.vue?vue&type=style&index=0&scoped=cebfe494&lang.scss\"\n\nimport _export_sfc from '\u0000plugin-vue:export-helper'\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['render',_sfc_render],['__scopeId',\"data-v-cebfe494\"]])",
+      "start": 1711507720120,
+      "end": 1711507720121,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1711507720121,
+      "end": 1711507720121,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1711507720121,
+      "end": 1711507720121,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1711507720121,
+      "end": 1711507720121,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:chunk-error",
+      "start": 1711507720121,
+      "end": 1711507720121,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1711507720121,
+      "end": 1711507720121,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1711507720121,
+      "end": 1711507720121,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1711507720121,
+      "end": 1711507720121,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1711507720121,
+      "end": 1711507720121,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1711507720122,
+      "end": 1711507720122,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1711507720122,
+      "end": 1711507720122,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1711507720122,
+      "end": 1711507720122,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1711507720122,
+      "end": 1711507720122,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1711507720122,
+      "end": 1711507720122,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1711507720122,
+      "end": 1711507720122,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1711507720122,
+      "end": 1711507720122,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1711507720122,
+      "end": 1711507720122,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1711507720122,
+      "end": 1711507720122,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1711507720122,
+      "end": 1711507720122,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1711507720122,
+      "end": 1711507720122,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:runtime-paths-dep",
+      "start": 1711507720122,
+      "end": 1711507720122,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:route-injection-plugin",
+      "start": 1711507720122,
+      "end": 1711507720122,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1711507720122,
+      "end": 1711507720122,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1711507720122,
+      "end": 1711507720122,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1711507720122,
+      "end": 1711507720123,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1711507720123,
+      "end": 1711507720123,
+      "order": "normal"
+    }
+  ]
+}

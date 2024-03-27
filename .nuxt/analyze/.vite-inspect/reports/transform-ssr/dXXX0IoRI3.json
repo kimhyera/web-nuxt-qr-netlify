@@ -1,0 +1,17 @@
+{
+  "resolvedId": "D:/localserver/web-nuxt-sdk/web-nuxt-qr-netlify/node_modules/nuxt/dist/app/types.js",
+  "transforms": [
+    {
+      "name": "__load__",
+      "result": "",
+      "start": 1711507750912,
+      "end": 1711507750912
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1711507750912,
+      "end": 1711507750912,
+      "order": "normal"
+    }
+  ]
+}
