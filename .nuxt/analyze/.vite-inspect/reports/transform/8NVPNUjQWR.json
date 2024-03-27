@@ -4,39 +4,39 @@
     {
       "name": "vite:load-fallback",
       "result": "import {defineStore} from \"pinia\";\r\nexport const commonStore = defineStore(\r\n    'common',\r\n    () => {\r\n        // useApi modules\r\n        const api = useApi()\r\n        const runtimeConfig = useRuntimeConfig();\r\n\r\n        const token = ref<any>(null);\r\n        const accessToken = ref<any>(null);\r\n        const info = ref<any>(null);\r\n        // const themeName = ref<any>(null)\r\n\r\n        const cookieToken = useCookie('token');\r\n        const cookieTheme = useCookie('theme');\r\n\r\n        const themes = [\r\n            {\r\n                code: \"1001\",\r\n                name: \"mannashop\",\r\n            },\r\n            {\r\n                code: \"1069\",\r\n                name: \"pickorder\",\r\n            },\r\n        ];\r\n        // todo: qr(신규생성), 픽오더, 프랜차이즈\r\n\r\n        function makeToken(str: string) {\r\n            str = str.replace(/\\s/g, '+');\r\n            if (encodeURIComponent(decodeURIComponent(str)) === str) {\r\n                str = decodeURIComponent(str);\r\n            }\r\n            return str;\r\n        }\r\n\r\n        function setToken(data: string) {\r\n            token.value = data\r\n            cookieToken.value = data\r\n        }\r\n\r\n        function saveThemeCode(data: any) {\r\n            // console.log('data = ', data);\r\n            // console.log('data.ordPathCd = ', data.ordPathCd);\r\n            // console.log('data = ', JSON.parse(JSON.stringify(data)));\r\n            console.log('themes = ', themes);\r\n\r\n            const ordPathCd = data.ordPathCd;\r\n            console.log('ordPathCd = //',  ordPathCd + '//');\r\n\r\n\r\n            const res = themes.find(row => row.code === ordPathCd.trim());\r\n            console.log('res = ', res);\r\n\r\n            cookieTheme.value = JSON.stringify(res);\r\n        }\r\n\r\n        function getToken() {\r\n            return cookieToken.value;\r\n        }\r\n\r\n        function getTheme() {\r\n            return cookieTheme.value || themes[0];\r\n        }\r\n\r\n        async function save(str) {\r\n            setToken(makeToken(str));\r\n            await fetchToken2Data();\r\n            // saveThemeCode();\r\n        }\r\n\r\n\r\n        async function fetchToken2Data() {\r\n\r\n            console.log(12, `${runtimeConfig.public.VITE_API_URL}/user/reqInfo`)\r\n\r\n            const {data, error} = await useAsyncData('reqInfo', () =>\r\n                $fetch(`${runtimeConfig.public.VITE_API_URL}/user/reqInfo`, {\r\n                    headers: {\r\n                        Authorization: runtimeConfig.public.VITE_AUTH_KEY,\r\n                    },\r\n                    method: 'post',\r\n                    body: {\r\n                        reqToken: cookieToken.value,\r\n                    },\r\n                })\r\n            );\r\n\r\n            const res: any = data.value;\r\n\r\n            if (data.value) {\r\n                console.log('data.value = ', data.value)\r\n                if (res.resCode == '0000' && res.data !== null) {\r\n                    info.value = res.data[0];\r\n                    console.log('res.data[0]=', res.data[0].ordPathCd);\r\n                    saveThemeCode(res.data[0]);\r\n                }\r\n            } else {\r\n                console.log('common 스토어 ', error);\r\n            }\r\n        }\r\n\r\n        function getInfoData() {\r\n            if (info.value === null) return\r\n\r\n            const infoData: any = {\r\n                appType: info.value.appType ?? '',\r\n                ordPathCd: info.value.ordPathCd ?? '',\r\n                stCode: info.value.stCode ?? '',\r\n                onlineShopType: info.value.onlineShopType ?? '',\r\n                cuNo: info.value.cuNo ?? '',\r\n                userId: info.value.userId ?? '',\r\n                cuTel: info.value.cuTel ?? '',\r\n                paramType: info.value.paramType ?? '',\r\n                paramValue: info.value.paramValue ?? '',\r\n                lastPwdModDate: info.value.lastPwdModDate ?? '',\r\n            }\r\n\r\n            return infoData\r\n        }\r\n\r\n        return {\r\n            token,\r\n            accessToken,\r\n            info,\r\n            getTheme,\r\n            makeToken,\r\n            setToken,\r\n            save,\r\n            getToken,\r\n            fetchToken2Data,\r\n            getInfoData,\r\n        }\r\n    },\r\n    {\r\n        persist: {\r\n            storage: persistedState.sessionStorage,\r\n        },\r\n    }\r\n)\r\n",
-      "start": 1711508330004,
-      "end": 1711508330164,
+      "start": 1711509448189,
+      "end": 1711509448365,
       "sourcemaps": null
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1711508330164,
-      "end": 1711508330164,
+      "start": 1711509448365,
+      "end": 1711509448365,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1711508330164,
-      "end": 1711508330164,
+      "start": 1711509448365,
+      "end": 1711509448365,
       "order": "pre"
     },
     {
       "name": "nuxt:client-fallback-auto-id",
-      "start": 1711508330164,
-      "end": 1711508330164,
+      "start": 1711509448365,
+      "end": 1711509448365,
       "order": "pre"
     },
     {
       "name": "vite:css",
-      "start": 1711508330164,
-      "end": 1711508330164,
+      "start": 1711509448365,
+      "end": 1711509448365,
       "order": "normal"
     },
     {
       "name": "vite:esbuild",
       "result": "import { defineStore } from \"pinia\";\nexport const commonStore = defineStore(\n  \"common\",\n  () => {\n    const api = useApi();\n    const runtimeConfig = useRuntimeConfig();\n    const token = ref(null);\n    const accessToken = ref(null);\n    const info = ref(null);\n    const cookieToken = useCookie(\"token\");\n    const cookieTheme = useCookie(\"theme\");\n    const themes = [\n      {\n        code: \"1001\",\n        name: \"mannashop\"\n      },\n      {\n        code: \"1069\",\n        name: \"pickorder\"\n      }\n    ];\n    function makeToken(str) {\n      str = str.replace(/\\s/g, \"+\");\n      if (encodeURIComponent(decodeURIComponent(str)) === str) {\n        str = decodeURIComponent(str);\n      }\n      return str;\n    }\n    function setToken(data) {\n      token.value = data;\n      cookieToken.value = data;\n    }\n    function saveThemeCode(data) {\n      console.log(\"themes = \", themes);\n      const ordPathCd = data.ordPathCd;\n      console.log(\"ordPathCd = //\", ordPathCd + \"//\");\n      const res = themes.find((row) => row.code === ordPathCd.trim());\n      console.log(\"res = \", res);\n      cookieTheme.value = JSON.stringify(res);\n    }\n    function getToken() {\n      return cookieToken.value;\n    }\n    function getTheme() {\n      return cookieTheme.value || themes[0];\n    }\n    async function save(str) {\n      setToken(makeToken(str));\n      await fetchToken2Data();\n    }\n    async function fetchToken2Data() {\n      console.log(12, `${runtimeConfig.public.VITE_API_URL}/user/reqInfo`);\n      const { data, error } = await useAsyncData(\n        \"reqInfo\",\n        () => $fetch(`${runtimeConfig.public.VITE_API_URL}/user/reqInfo`, {\n          headers: {\n            Authorization: runtimeConfig.public.VITE_AUTH_KEY\n          },\n          method: \"post\",\n          body: {\n            reqToken: cookieToken.value\n          }\n        })\n      );\n      const res = data.value;\n      if (data.value) {\n        console.log(\"data.value = \", data.value);\n        if (res.resCode == \"0000\" && res.data !== null) {\n          info.value = res.data[0];\n          console.log(\"res.data[0]=\", res.data[0].ordPathCd);\n          saveThemeCode(res.data[0]);\n        }\n      } else {\n        console.log(\"common 스토어 \", error);\n      }\n    }\n    function getInfoData() {\n      if (info.value === null)\n        return;\n      const infoData = {\n        appType: info.value.appType ?? \"\",\n        ordPathCd: info.value.ordPathCd ?? \"\",\n        stCode: info.value.stCode ?? \"\",\n        onlineShopType: info.value.onlineShopType ?? \"\",\n        cuNo: info.value.cuNo ?? \"\",\n        userId: info.value.userId ?? \"\",\n        cuTel: info.value.cuTel ?? \"\",\n        paramType: info.value.paramType ?? \"\",\n        paramValue: info.value.paramValue ?? \"\",\n        lastPwdModDate: info.value.lastPwdModDate ?? \"\"\n      };\n      return infoData;\n    }\n    return {\n      token,\n      accessToken,\n      info,\n      getTheme,\n      makeToken,\n      setToken,\n      save,\n      getToken,\n      fetchToken2Data,\n      getInfoData\n    };\n  },\n  {\n    persist: {\n      storage: persistedState.sessionStorage\n    }\n  }\n);\n",
-      "start": 1711508330164,
-      "end": 1711508341726,
+      "start": 1711509448365,
+      "end": 1711509460716,
       "order": "normal",
       "sourcemaps": {
         "version": 3,
@@ -52,123 +52,123 @@
     },
     {
       "name": "vite:json",
-      "start": 1711508341726,
-      "end": 1711508341726,
+      "start": 1711509460716,
+      "end": 1711509460716,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1711508341726,
-      "end": 1711508341726,
+      "start": 1711509460716,
+      "end": 1711509460716,
       "order": "normal"
     },
     {
       "name": "vite:vue",
-      "start": 1711508341726,
-      "end": 1711508341727,
+      "start": 1711509460716,
+      "end": 1711509460717,
       "order": "normal"
     },
     {
       "name": "vite:vue-jsx",
-      "start": 1711508341727,
-      "end": 1711508341727,
+      "start": 1711509460717,
+      "end": 1711509460717,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1711508341727,
-      "end": 1711508341748,
+      "start": 1711509460717,
+      "end": 1711509460737,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1711508341748,
-      "end": 1711508341748,
+      "start": 1711509460737,
+      "end": 1711509460737,
       "order": "normal"
     },
     {
       "name": "nuxt:chunk-error",
-      "start": 1711508341748,
-      "end": 1711508341748,
+      "start": 1711509460737,
+      "end": 1711509460737,
       "order": "normal"
     },
     {
       "name": "nuxt:components:imports",
-      "start": 1711508341748,
-      "end": 1711508341749,
+      "start": 1711509460737,
+      "end": 1711509460737,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1711508341749,
-      "end": 1711508341749,
+      "start": 1711509460737,
+      "end": 1711509460738,
       "order": "normal"
     },
     {
       "name": "ssr-styles",
-      "start": 1711508341749,
-      "end": 1711508341749,
+      "start": 1711509460738,
+      "end": 1711509460738,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1711508341749,
-      "end": 1711508341749,
+      "start": 1711509460738,
+      "end": 1711509460738,
       "order": "normal"
     },
     {
       "name": "vite:css-post",
-      "start": 1711508341749,
-      "end": 1711508341749,
+      "start": 1711509460738,
+      "end": 1711509460738,
       "order": "normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1711508341749,
-      "end": 1711508341749,
+      "start": 1711509460738,
+      "end": 1711509460738,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1711508341749,
-      "end": 1711508341749,
+      "start": 1711509460738,
+      "end": 1711509460738,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1711508341749,
-      "end": 1711508341750,
+      "start": 1711509460738,
+      "end": 1711509460739,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1711508341750,
-      "end": 1711508341750,
+      "start": 1711509460739,
+      "end": 1711509460739,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1711508341750,
-      "end": 1711508341751,
+      "start": 1711509460739,
+      "end": 1711509460739,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1711508341751,
-      "end": 1711508341751,
+      "start": 1711509460739,
+      "end": 1711509460739,
       "order": "normal"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1711508341751,
-      "end": 1711508341752,
+      "start": 1711509460739,
+      "end": 1711509460741,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
       "result": "import { useApi } from 'D:/localserver/web-nuxt-sdk/web-nuxt-qr-netlify/composables/useApi.ts';\nimport { useRuntimeConfig } from '#app/nuxt';\nimport { ref } from 'vue';\nimport { useCookie } from '#app/composables/cookie';\nimport { useAsyncData } from '#app/composables/asyncData';\nimport { persistedState } from 'D:/localserver/web-nuxt-sdk/web-nuxt-qr-netlify/node_modules/@pinia-plugin-persistedstate/nuxt/dist/runtime/storages';\nimport { defineStore } from \"pinia\";\nexport const commonStore = defineStore(\n  \"common\",\n  () => {\n    const api = useApi();\n    const runtimeConfig = useRuntimeConfig();\n    const token = ref(null);\n    const accessToken = ref(null);\n    const info = ref(null);\n    const cookieToken = useCookie(\"token\");\n    const cookieTheme = useCookie(\"theme\");\n    const themes = [\n      {\n        code: \"1001\",\n        name: \"mannashop\"\n      },\n      {\n        code: \"1069\",\n        name: \"pickorder\"\n      }\n    ];\n    function makeToken(str) {\n      str = str.replace(/\\s/g, \"+\");\n      if (encodeURIComponent(decodeURIComponent(str)) === str) {\n        str = decodeURIComponent(str);\n      }\n      return str;\n    }\n    function setToken(data) {\n      token.value = data;\n      cookieToken.value = data;\n    }\n    function saveThemeCode(data) {\n      console.log(\"themes = \", themes);\n      const ordPathCd = data.ordPathCd;\n      console.log(\"ordPathCd = //\", ordPathCd + \"//\");\n      const res = themes.find((row) => row.code === ordPathCd.trim());\n      console.log(\"res = \", res);\n      cookieTheme.value = JSON.stringify(res);\n    }\n    function getToken() {\n      return cookieToken.value;\n    }\n    function getTheme() {\n      return cookieTheme.value || themes[0];\n    }\n    async function save(str) {\n      setToken(makeToken(str));\n      await fetchToken2Data();\n    }\n    async function fetchToken2Data() {\n      console.log(12, `${runtimeConfig.public.VITE_API_URL}/user/reqInfo`);\n      const { data, error } = await useAsyncData(\n        \"reqInfo\",\n        () => $fetch(`${runtimeConfig.public.VITE_API_URL}/user/reqInfo`, {\n          headers: {\n            Authorization: runtimeConfig.public.VITE_AUTH_KEY\n          },\n          method: \"post\",\n          body: {\n            reqToken: cookieToken.value\n          }\n        })\n      );\n      const res = data.value;\n      if (data.value) {\n        console.log(\"data.value = \", data.value);\n        if (res.resCode == \"0000\" && res.data !== null) {\n          info.value = res.data[0];\n          console.log(\"res.data[0]=\", res.data[0].ordPathCd);\n          saveThemeCode(res.data[0]);\n        }\n      } else {\n        console.log(\"common 스토어 \", error);\n      }\n    }\n    function getInfoData() {\n      if (info.value === null)\n        return;\n      const infoData = {\n        appType: info.value.appType ?? \"\",\n        ordPathCd: info.value.ordPathCd ?? \"\",\n        stCode: info.value.stCode ?? \"\",\n        onlineShopType: info.value.onlineShopType ?? \"\",\n        cuNo: info.value.cuNo ?? \"\",\n        userId: info.value.userId ?? \"\",\n        cuTel: info.value.cuTel ?? \"\",\n        paramType: info.value.paramType ?? \"\",\n        paramValue: info.value.paramValue ?? \"\",\n        lastPwdModDate: info.value.lastPwdModDate ?? \"\"\n      };\n      return infoData;\n    }\n    return {\n      token,\n      accessToken,\n      info,\n      getTheme,\n      makeToken,\n      setToken,\n      save,\n      getToken,\n      fetchToken2Data,\n      getInfoData\n    };\n  },\n  {\n    persist: {\n      storage: persistedState.sessionStorage\n    }\n  }\n);\n",
-      "start": 1711508341752,
-      "end": 1711508341754,
+      "start": 1711509460741,
+      "end": 1711509460751,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -181,50 +181,50 @@
     },
     {
       "name": "unctx:transform",
-      "start": 1711508341754,
-      "end": 1711508341754,
+      "start": 1711509460751,
+      "end": 1711509460751,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1711508341754,
-      "end": 1711508341754,
+      "start": 1711509460751,
+      "end": 1711509460751,
       "order": "post"
     },
     {
       "name": "nuxt:runtime-paths-dep",
-      "start": 1711508341754,
-      "end": 1711508341754,
+      "start": 1711509460751,
+      "end": 1711509460751,
       "order": "post"
     },
     {
       "name": "nuxt:route-injection-plugin",
-      "start": 1711508341754,
-      "end": 1711508341754,
+      "start": 1711509460751,
+      "end": 1711509460751,
       "order": "post"
     },
     {
       "name": "nuxt:components-loader",
-      "start": 1711508341754,
-      "end": 1711508341754,
+      "start": 1711509460751,
+      "end": 1711509460751,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-composables:transform",
-      "start": 1711508341754,
-      "end": 1711508341754,
+      "start": 1711509460751,
+      "end": 1711509460751,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1711508341754,
-      "end": 1711508341754,
+      "start": 1711509460751,
+      "end": 1711509460751,
       "order": "normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1711508341754,
-      "end": 1711508341754,
+      "start": 1711509460751,
+      "end": 1711509460751,
       "order": "normal"
     }
   ]

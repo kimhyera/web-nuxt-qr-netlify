@@ -4,38 +4,38 @@
     {
       "name": "vite:vue",
       "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { createElementVNode as _createElementVNode, unref as _unref, createTextVNode as _createTextVNode, normalizeClass as _normalizeClass, openBlock as _openBlock, createElementBlock as _createElementBlock, createCommentVNode as _createCommentVNode, createStaticVNode as _createStaticVNode, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\"\nimport _imports_0 from '@/assets/common/images/default/img_smaple_03@2x.jpg'\n\n\nconst _withScopeId = n => (_pushScopeId(\"data-v-5a6dcd4f\"),n=n(),_popScopeId(),n)\nconst _hoisted_1 = { class: \"modal modal-memo\" }\nconst _hoisted_2 = { class: \"modal-dialog\" }\nconst _hoisted_3 = { class: \"modal-container\" }\nconst _hoisted_4 = { class: \"modal-header\" }\nconst _hoisted_5 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"h2\", { class: \"modal-title\" }, \"매장 알림\", -1))\nconst _hoisted_6 = { class: \"modal-body\" }\nconst _hoisted_7 = /*#__PURE__*/_createStaticVNode(\"<div class=\\\"memo-img\\\" data-v-5a6dcd4f><div class=\\\"img-wrap\\\" data-v-5a6dcd4f><img src=\\\"\" + _imports_0 + \"\\\" alt=\\\"\\\" data-v-5a6dcd4f></div></div><div class=\\\"memo-text\\\" data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f></div>\", 2)\nconst _hoisted_9 = [\n  _hoisted_7\n]\nconst _hoisted_10 = {\n  key: 0,\n  class: \"shadow-bottom\"\n}\nconst _hoisted_11 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"div\", { class: \"modal-backdrop\" }, null, -1))\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'modal-notice',\n  setup(__props) {\n\r\nconst isScrollBottom = ref(false);\r\nconst isShadow = ref(false);\r\nconst scrollTop = ref(0);\r\nconst scrollbarRef = ref<HTMLElement | null>(null);\r\nconst innerRef = ref<HTMLElement | null>(null);\r\n\r\n\r\nonMounted(() => {\r\n\tconst marginError = 10;\r\n\tif ((innerRef.value as HTMLElement).offsetHeight > (scrollbarRef.value as HTMLElement).offsetHeight) {\r\n\t\tisShadow.value = true;\r\n\t} else {\r\n\t\tisShadow.value = false;\r\n\t}\r\n\r\n\t(scrollbarRef.value as HTMLElement).addEventListener('scroll', () => {\r\n\t\tscrollTop.value = (scrollbarRef.value as HTMLElement).scrollTop;\r\n\r\n\t\tif (scrollTop.value + marginError > (innerRef.value as HTMLElement).offsetHeight - (scrollbarRef.value as HTMLElement).offsetHeight) {\r\n\t\t\tisScrollBottom.value = true;\r\n\t\t} else {\r\n\t\t\tisScrollBottom.value = false;\r\n\t\t}\r\n\t});\r\n});\r\n\nreturn (_ctx: any,_cache: any) => {\n  return (_openBlock(), _createElementBlock(\"div\", _hoisted_1, [\n    _createElementVNode(\"div\", _hoisted_2, [\n      _createElementVNode(\"div\", _hoisted_3, [\n        _createElementVNode(\"div\", _hoisted_4, [\n          _hoisted_5,\n          _createElementVNode(\"button\", {\n            class: \"btn-close\",\n            onClick: _cache[0] || (_cache[0] = ($event: any) => (_ctx.$emit('close')))\n          })\n        ]),\n        _createElementVNode(\"div\", _hoisted_6, [\n          _createElementVNode(\"div\", {\n            class: _normalizeClass([\"body-inner\", { on: _unref(isScrollBottom) === true }])\n          }, [\n            _createElementVNode(\"div\", {\n              class: \"scrollbar-y\",\n              ref_key: \"scrollbarRef\",\n              ref: scrollbarRef\n            }, [\n              _createElementVNode(\"div\", {\n                class: \"scroll-inner\",\n                ref_key: \"innerRef\",\n                ref: innerRef\n              }, _hoisted_9, 512)\n            ], 512)\n          ], 2),\n          (_unref(isShadow))\n            ? (_openBlock(), _createElementBlock(\"span\", _hoisted_10))\n            : _createCommentVNode(\"\", true)\n        ])\n      ])\n    ]),\n    _hoisted_11\n  ]))\n}\n}\n\n})",
-      "start": 1711508330074,
-      "end": 1711508330074
+      "start": 1711509448262,
+      "end": 1711509448262
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1711508330074,
-      "end": 1711508330074,
+      "start": 1711509448262,
+      "end": 1711509448262,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1711508330074,
-      "end": 1711508330074,
+      "start": 1711509448262,
+      "end": 1711509448262,
       "order": "pre"
     },
     {
       "name": "nuxt:client-fallback-auto-id",
-      "start": 1711508330074,
-      "end": 1711508330074,
+      "start": 1711509448262,
+      "end": 1711509448262,
       "order": "pre"
     },
     {
       "name": "vite:css",
-      "start": 1711508330074,
-      "end": 1711508330074,
+      "start": 1711509448262,
+      "end": 1711509448262,
       "order": "normal"
     },
     {
       "name": "vite:esbuild",
       "result": "import { defineComponent as _defineComponent } from \"vue\";\nimport { createElementVNode as _createElementVNode, unref as _unref, normalizeClass as _normalizeClass, openBlock as _openBlock, createElementBlock as _createElementBlock, createCommentVNode as _createCommentVNode, createStaticVNode as _createStaticVNode, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\";\nimport _imports_0 from \"@/assets/common/images/default/img_smaple_03@2x.jpg\";\nconst _withScopeId = (n) => (_pushScopeId(\"data-v-5a6dcd4f\"), n = n(), _popScopeId(), n);\nconst _hoisted_1 = { class: \"modal modal-memo\" };\nconst _hoisted_2 = { class: \"modal-dialog\" };\nconst _hoisted_3 = { class: \"modal-container\" };\nconst _hoisted_4 = { class: \"modal-header\" };\nconst _hoisted_5 = /* @__PURE__ */ _withScopeId(() => /* @__PURE__ */ _createElementVNode(\"h2\", { class: \"modal-title\" }, \"매장 알림\", -1));\nconst _hoisted_6 = { class: \"modal-body\" };\nconst _hoisted_7 = /* @__PURE__ */ _createStaticVNode('<div class=\"memo-img\" data-v-5a6dcd4f><div class=\"img-wrap\" data-v-5a6dcd4f><img src=\"' + _imports_0 + '\" alt=\"\" data-v-5a6dcd4f></div></div><div class=\"memo-text\" data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f></div>', 2);\nconst _hoisted_9 = [\n  _hoisted_7\n];\nconst _hoisted_10 = {\n  key: 0,\n  class: \"shadow-bottom\"\n};\nconst _hoisted_11 = /* @__PURE__ */ _withScopeId(() => /* @__PURE__ */ _createElementVNode(\"div\", { class: \"modal-backdrop\" }, null, -1));\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"modal-notice\",\n  setup(__props) {\n    const isScrollBottom = ref(false);\n    const isShadow = ref(false);\n    const scrollTop = ref(0);\n    const scrollbarRef = ref(null);\n    const innerRef = ref(null);\n    onMounted(() => {\n      const marginError = 10;\n      if (innerRef.value.offsetHeight > scrollbarRef.value.offsetHeight) {\n        isShadow.value = true;\n      } else {\n        isShadow.value = false;\n      }\n      scrollbarRef.value.addEventListener(\"scroll\", () => {\n        scrollTop.value = scrollbarRef.value.scrollTop;\n        if (scrollTop.value + marginError > innerRef.value.offsetHeight - scrollbarRef.value.offsetHeight) {\n          isScrollBottom.value = true;\n        } else {\n          isScrollBottom.value = false;\n        }\n      });\n    });\n    return (_ctx, _cache) => {\n      return _openBlock(), _createElementBlock(\"div\", _hoisted_1, [\n        _createElementVNode(\"div\", _hoisted_2, [\n          _createElementVNode(\"div\", _hoisted_3, [\n            _createElementVNode(\"div\", _hoisted_4, [\n              _hoisted_5,\n              _createElementVNode(\"button\", {\n                class: \"btn-close\",\n                onClick: _cache[0] || (_cache[0] = ($event) => _ctx.$emit(\"close\"))\n              })\n            ]),\n            _createElementVNode(\"div\", _hoisted_6, [\n              _createElementVNode(\"div\", {\n                class: _normalizeClass([\"body-inner\", { on: _unref(isScrollBottom) === true }])\n              }, [\n                _createElementVNode(\"div\", {\n                  class: \"scrollbar-y\",\n                  ref_key: \"scrollbarRef\",\n                  ref: scrollbarRef\n                }, [\n                  _createElementVNode(\"div\", {\n                    class: \"scroll-inner\",\n                    ref_key: \"innerRef\",\n                    ref: innerRef\n                  }, _hoisted_9, 512)\n                ], 512)\n              ], 2),\n              _unref(isShadow) ? (_openBlock(), _createElementBlock(\"span\", _hoisted_10)) : _createCommentVNode(\"\", true)\n            ])\n          ])\n        ]),\n        _hoisted_11\n      ]);\n    };\n  }\n});\n",
-      "start": 1711508330074,
-      "end": 1711508330218,
+      "start": 1711509448262,
+      "end": 1711509448370,
       "order": "normal",
       "sourcemaps": {
         "version": 3,
@@ -51,123 +51,123 @@
     },
     {
       "name": "vite:json",
-      "start": 1711508330218,
-      "end": 1711508330218,
+      "start": 1711509448370,
+      "end": 1711509448370,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1711508330218,
-      "end": 1711508330218,
+      "start": 1711509448370,
+      "end": 1711509448370,
       "order": "normal"
     },
     {
       "name": "vite:vue",
-      "start": 1711508330218,
-      "end": 1711508330218,
+      "start": 1711509448370,
+      "end": 1711509448370,
       "order": "normal"
     },
     {
       "name": "vite:vue-jsx",
-      "start": 1711508330218,
-      "end": 1711508330218,
+      "start": 1711509448370,
+      "end": 1711509448370,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1711508330218,
-      "end": 1711508330218,
+      "start": 1711509448370,
+      "end": 1711509448370,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1711508330218,
-      "end": 1711508330218,
+      "start": 1711509448370,
+      "end": 1711509448370,
       "order": "normal"
     },
     {
       "name": "nuxt:chunk-error",
-      "start": 1711508330218,
-      "end": 1711508330218,
+      "start": 1711509448371,
+      "end": 1711509448371,
       "order": "normal"
     },
     {
       "name": "nuxt:components:imports",
-      "start": 1711508330218,
-      "end": 1711508330218,
+      "start": 1711509448371,
+      "end": 1711509448371,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1711508330218,
-      "end": 1711508330218,
+      "start": 1711509448371,
+      "end": 1711509448371,
       "order": "normal"
     },
     {
       "name": "ssr-styles",
-      "start": 1711508330218,
-      "end": 1711508330218,
+      "start": 1711509448371,
+      "end": 1711509448371,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1711508330218,
-      "end": 1711508330218,
+      "start": 1711509448371,
+      "end": 1711509448371,
       "order": "normal"
     },
     {
       "name": "vite:css-post",
-      "start": 1711508330218,
-      "end": 1711508330218,
+      "start": 1711509448371,
+      "end": 1711509448371,
       "order": "normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1711508330218,
-      "end": 1711508330218,
+      "start": 1711509448371,
+      "end": 1711509448371,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1711508330218,
-      "end": 1711508330218,
+      "start": 1711509448371,
+      "end": 1711509448371,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1711508330218,
-      "end": 1711508330218,
+      "start": 1711509448371,
+      "end": 1711509448372,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1711508330218,
-      "end": 1711508330218,
+      "start": 1711509448372,
+      "end": 1711509448372,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1711508330218,
-      "end": 1711508330218,
+      "start": 1711509448372,
+      "end": 1711509448372,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1711508330219,
-      "end": 1711508330219,
+      "start": 1711509448372,
+      "end": 1711509448372,
       "order": "normal"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1711508330219,
-      "end": 1711508330219,
+      "start": 1711509448372,
+      "end": 1711509448372,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
       "result": "import { ref, onMounted } from 'vue';\nimport { defineComponent as _defineComponent } from \"vue\";\nimport { createElementVNode as _createElementVNode, unref as _unref, normalizeClass as _normalizeClass, openBlock as _openBlock, createElementBlock as _createElementBlock, createCommentVNode as _createCommentVNode, createStaticVNode as _createStaticVNode, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\";\nimport _imports_0 from \"@/assets/common/images/default/img_smaple_03@2x.jpg\";\nconst _withScopeId = (n) => (_pushScopeId(\"data-v-5a6dcd4f\"), n = n(), _popScopeId(), n);\nconst _hoisted_1 = { class: \"modal modal-memo\" };\nconst _hoisted_2 = { class: \"modal-dialog\" };\nconst _hoisted_3 = { class: \"modal-container\" };\nconst _hoisted_4 = { class: \"modal-header\" };\nconst _hoisted_5 = /* @__PURE__ */ _withScopeId(() => /* @__PURE__ */ _createElementVNode(\"h2\", { class: \"modal-title\" }, \"매장 알림\", -1));\nconst _hoisted_6 = { class: \"modal-body\" };\nconst _hoisted_7 = /* @__PURE__ */ _createStaticVNode('<div class=\"memo-img\" data-v-5a6dcd4f><div class=\"img-wrap\" data-v-5a6dcd4f><img src=\"' + _imports_0 + '\" alt=\"\" data-v-5a6dcd4f></div></div><div class=\"memo-text\" data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f></div>', 2);\nconst _hoisted_9 = [\n  _hoisted_7\n];\nconst _hoisted_10 = {\n  key: 0,\n  class: \"shadow-bottom\"\n};\nconst _hoisted_11 = /* @__PURE__ */ _withScopeId(() => /* @__PURE__ */ _createElementVNode(\"div\", { class: \"modal-backdrop\" }, null, -1));\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"modal-notice\",\n  setup(__props) {\n    const isScrollBottom = ref(false);\n    const isShadow = ref(false);\n    const scrollTop = ref(0);\n    const scrollbarRef = ref(null);\n    const innerRef = ref(null);\n    onMounted(() => {\n      const marginError = 10;\n      if (innerRef.value.offsetHeight > scrollbarRef.value.offsetHeight) {\n        isShadow.value = true;\n      } else {\n        isShadow.value = false;\n      }\n      scrollbarRef.value.addEventListener(\"scroll\", () => {\n        scrollTop.value = scrollbarRef.value.scrollTop;\n        if (scrollTop.value + marginError > innerRef.value.offsetHeight - scrollbarRef.value.offsetHeight) {\n          isScrollBottom.value = true;\n        } else {\n          isScrollBottom.value = false;\n        }\n      });\n    });\n    return (_ctx, _cache) => {\n      return _openBlock(), _createElementBlock(\"div\", _hoisted_1, [\n        _createElementVNode(\"div\", _hoisted_2, [\n          _createElementVNode(\"div\", _hoisted_3, [\n            _createElementVNode(\"div\", _hoisted_4, [\n              _hoisted_5,\n              _createElementVNode(\"button\", {\n                class: \"btn-close\",\n                onClick: _cache[0] || (_cache[0] = ($event) => _ctx.$emit(\"close\"))\n              })\n            ]),\n            _createElementVNode(\"div\", _hoisted_6, [\n              _createElementVNode(\"div\", {\n                class: _normalizeClass([\"body-inner\", { on: _unref(isScrollBottom) === true }])\n              }, [\n                _createElementVNode(\"div\", {\n                  class: \"scrollbar-y\",\n                  ref_key: \"scrollbarRef\",\n                  ref: scrollbarRef\n                }, [\n                  _createElementVNode(\"div\", {\n                    class: \"scroll-inner\",\n                    ref_key: \"innerRef\",\n                    ref: innerRef\n                  }, _hoisted_9, 512)\n                ], 512)\n              ], 2),\n              _unref(isShadow) ? (_openBlock(), _createElementBlock(\"span\", _hoisted_10)) : _createCommentVNode(\"\", true)\n            ])\n          ])\n        ]),\n        _hoisted_11\n      ]);\n    };\n  }\n});\n",
-      "start": 1711508330219,
-      "end": 1711508330228,
+      "start": 1711509448372,
+      "end": 1711509448390,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -180,15 +180,15 @@
     },
     {
       "name": "unctx:transform",
-      "start": 1711508330228,
-      "end": 1711508330228,
+      "start": 1711509448390,
+      "end": 1711509448390,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
       "result": "\nconst __nuxt_page_meta = null\nexport default __nuxt_page_meta\n",
-      "start": 1711508330229,
-      "end": 1711508330229,
+      "start": 1711509448394,
+      "end": 1711509448394,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -201,38 +201,38 @@
     },
     {
       "name": "nuxt:runtime-paths-dep",
-      "start": 1711508330230,
-      "end": 1711508330230,
+      "start": 1711509448395,
+      "end": 1711509448395,
       "order": "post"
     },
     {
       "name": "nuxt:route-injection-plugin",
-      "start": 1711508330230,
-      "end": 1711508330230,
+      "start": 1711509448395,
+      "end": 1711509448395,
       "order": "post"
     },
     {
       "name": "nuxt:components-loader",
-      "start": 1711508330230,
-      "end": 1711508330230,
+      "start": 1711509448395,
+      "end": 1711509448395,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-composables:transform",
-      "start": 1711508330230,
-      "end": 1711508330230,
+      "start": 1711509448395,
+      "end": 1711509448395,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1711508330231,
-      "end": 1711508330231,
+      "start": 1711509448395,
+      "end": 1711509448395,
       "order": "normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1711508330231,
-      "end": 1711508330231,
+      "start": 1711509448395,
+      "end": 1711509448395,
       "order": "normal"
     }
   ]

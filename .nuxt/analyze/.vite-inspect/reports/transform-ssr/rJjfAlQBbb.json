@@ -4,8 +4,8 @@
     {
       "name": "vite:vue",
       "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { unref as _unref, mergeProps as _mergeProps } from \"vue\"\nimport { ssrRenderAttr as _ssrRenderAttr, ssrRenderClass as _ssrRenderClass, ssrRenderAttrs as _ssrRenderAttrs } from \"vue/server-renderer\"\nimport _imports_0 from '@/assets/common/images/default/img_smaple_03@2x.jpg'\n\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'modal-notice',\n  __ssrInlineRender: true,\n  setup(__props) {\n\r\nconst isScrollBottom = ref(false);\r\nconst isShadow = ref(false);\r\nconst scrollTop = ref(0);\r\nconst scrollbarRef = ref<HTMLElement | null>(null);\r\nconst innerRef = ref<HTMLElement | null>(null);\r\n\r\n\r\nonMounted(() => {\r\n\tconst marginError = 10;\r\n\tif ((innerRef.value as HTMLElement).offsetHeight > (scrollbarRef.value as HTMLElement).offsetHeight) {\r\n\t\tisShadow.value = true;\r\n\t} else {\r\n\t\tisShadow.value = false;\r\n\t}\r\n\r\n\t(scrollbarRef.value as HTMLElement).addEventListener('scroll', () => {\r\n\t\tscrollTop.value = (scrollbarRef.value as HTMLElement).scrollTop;\r\n\r\n\t\tif (scrollTop.value + marginError > (innerRef.value as HTMLElement).offsetHeight - (scrollbarRef.value as HTMLElement).offsetHeight) {\r\n\t\t\tisScrollBottom.value = true;\r\n\t\t} else {\r\n\t\t\tisScrollBottom.value = false;\r\n\t\t}\r\n\t});\r\n});\r\n\nreturn (_ctx: any,_push: any,_parent: any,_attrs: any) => {\n  _push(`<div${\n    _ssrRenderAttrs(_mergeProps({ class: \"modal modal-memo\" }, _attrs))\n  } data-v-5a6dcd4f><div class=\"modal-dialog\" data-v-5a6dcd4f><div class=\"modal-container\" data-v-5a6dcd4f><div class=\"modal-header\" data-v-5a6dcd4f><h2 class=\"modal-title\" data-v-5a6dcd4f>매장 알림</h2><button class=\"btn-close\" data-v-5a6dcd4f></button></div><div class=\"modal-body\" data-v-5a6dcd4f><div class=\"${\n    _ssrRenderClass([{ on: _unref(isScrollBottom) === true }, \"body-inner\"])\n  }\" data-v-5a6dcd4f><div class=\"scrollbar-y\" data-v-5a6dcd4f><div class=\"scroll-inner\" data-v-5a6dcd4f><div class=\"memo-img\" data-v-5a6dcd4f><div class=\"img-wrap\" data-v-5a6dcd4f><img${\n    _ssrRenderAttr(\"src\", _imports_0)\n  } alt=\"\" data-v-5a6dcd4f></div></div><div class=\"memo-text\" data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f></div></div></div></div>`)\n  if (_unref(isShadow)) {\n    _push(`<span class=\"shadow-bottom\" data-v-5a6dcd4f></span>`)\n  } else {\n    _push(`<!---->`)\n  }\n  _push(`</div></div></div><div class=\"modal-backdrop\" data-v-5a6dcd4f></div></div>`)\n}\n}\n\n})",
-      "start": 1711508359461,
-      "end": 1711508359461,
+      "start": 1711509481417,
+      "end": 1711509481417,
       "sourcemaps": {
         "version": 3,
         "sources": [
@@ -20,45 +20,45 @@
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1711508359461,
-      "end": 1711508359461,
+      "start": 1711509481417,
+      "end": 1711509481417,
       "order": "pre"
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1711508359461,
-      "end": 1711508359461,
+      "start": 1711509481417,
+      "end": 1711509481417,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1711508359462,
-      "end": 1711508359462,
+      "start": 1711509481417,
+      "end": 1711509481417,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1711508359462,
-      "end": 1711508359462,
+      "start": 1711509481417,
+      "end": 1711509481417,
       "order": "pre"
     },
     {
       "name": "nuxt:client-fallback-auto-id",
-      "start": 1711508359462,
-      "end": 1711508359462,
+      "start": 1711509481417,
+      "end": 1711509481417,
       "order": "pre"
     },
     {
       "name": "vite:css",
-      "start": 1711508359462,
-      "end": 1711508359462,
+      "start": 1711509481417,
+      "end": 1711509481417,
       "order": "normal"
     },
     {
       "name": "vite:esbuild",
       "result": "import { defineComponent as _defineComponent } from \"vue\";\nimport { unref as _unref, mergeProps as _mergeProps } from \"vue\";\nimport { ssrRenderAttr as _ssrRenderAttr, ssrRenderClass as _ssrRenderClass, ssrRenderAttrs as _ssrRenderAttrs } from \"vue/server-renderer\";\nimport _imports_0 from \"@/assets/common/images/default/img_smaple_03@2x.jpg\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"modal-notice\",\n  __ssrInlineRender: true,\n  setup(__props) {\n    const isScrollBottom = ref(false);\n    const isShadow = ref(false);\n    const scrollTop = ref(0);\n    const scrollbarRef = ref(null);\n    const innerRef = ref(null);\n    onMounted(() => {\n      const marginError = 10;\n      if (innerRef.value.offsetHeight > scrollbarRef.value.offsetHeight) {\n        isShadow.value = true;\n      } else {\n        isShadow.value = false;\n      }\n      scrollbarRef.value.addEventListener(\"scroll\", () => {\n        scrollTop.value = scrollbarRef.value.scrollTop;\n        if (scrollTop.value + marginError > innerRef.value.offsetHeight - scrollbarRef.value.offsetHeight) {\n          isScrollBottom.value = true;\n        } else {\n          isScrollBottom.value = false;\n        }\n      });\n    });\n    return (_ctx, _push, _parent, _attrs) => {\n      _push(`<div${_ssrRenderAttrs(_mergeProps({ class: \"modal modal-memo\" }, _attrs))} data-v-5a6dcd4f><div class=\"modal-dialog\" data-v-5a6dcd4f><div class=\"modal-container\" data-v-5a6dcd4f><div class=\"modal-header\" data-v-5a6dcd4f><h2 class=\"modal-title\" data-v-5a6dcd4f>매장 알림</h2><button class=\"btn-close\" data-v-5a6dcd4f></button></div><div class=\"modal-body\" data-v-5a6dcd4f><div class=\"${_ssrRenderClass([{ on: _unref(isScrollBottom) === true }, \"body-inner\"])}\" data-v-5a6dcd4f><div class=\"scrollbar-y\" data-v-5a6dcd4f><div class=\"scroll-inner\" data-v-5a6dcd4f><div class=\"memo-img\" data-v-5a6dcd4f><div class=\"img-wrap\" data-v-5a6dcd4f><img${_ssrRenderAttr(\"src\", _imports_0)} alt=\"\" data-v-5a6dcd4f></div></div><div class=\"memo-text\" data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f></div></div></div></div>`);\n      if (_unref(isShadow)) {\n        _push(`<span class=\"shadow-bottom\" data-v-5a6dcd4f></span>`);\n      } else {\n        _push(`<!---->`);\n      }\n      _push(`</div></div></div><div class=\"modal-backdrop\" data-v-5a6dcd4f></div></div>`);\n    };\n  }\n});\n",
-      "start": 1711508359463,
-      "end": 1711508376479,
+      "start": 1711509481419,
+      "end": 1711509493905,
       "order": "normal",
       "sourcemaps": {
         "version": 3,
@@ -74,135 +74,135 @@
     },
     {
       "name": "vite:json",
-      "start": 1711508376479,
-      "end": 1711508376479,
+      "start": 1711509493905,
+      "end": 1711509493905,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1711508376479,
-      "end": 1711508376479,
+      "start": 1711509493906,
+      "end": 1711509493906,
       "order": "normal"
     },
     {
       "name": "vite:vue",
-      "start": 1711508376479,
-      "end": 1711508376479,
+      "start": 1711509493906,
+      "end": 1711509493906,
       "order": "normal"
     },
     {
       "name": "vite:vue-jsx",
-      "start": 1711508376479,
-      "end": 1711508376479,
+      "start": 1711509493906,
+      "end": 1711509493906,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1711508376480,
-      "end": 1711508376480,
+      "start": 1711509493906,
+      "end": 1711509493906,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1711508376480,
-      "end": 1711508376480,
+      "start": 1711509493906,
+      "end": 1711509493906,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1711508376480,
-      "end": 1711508376480,
+      "start": 1711509493906,
+      "end": 1711509493906,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1711508376480,
-      "end": 1711508376480,
+      "start": 1711509493906,
+      "end": 1711509493906,
       "order": "normal"
     },
     {
       "name": "nuxt:components:imports",
-      "start": 1711508376480,
-      "end": 1711508376480,
+      "start": 1711509493906,
+      "end": 1711509493906,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1711508376481,
-      "end": 1711508376481,
+      "start": 1711509493907,
+      "end": 1711509493907,
       "order": "normal"
     },
     {
       "name": "ssr-styles",
-      "start": 1711508376482,
-      "end": 1711508376482,
+      "start": 1711509493908,
+      "end": 1711509493911,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1711508376484,
-      "end": 1711508376484,
+      "start": 1711509493914,
+      "end": 1711509493915,
       "order": "normal"
     },
     {
       "name": "vite:css-post",
-      "start": 1711508376485,
-      "end": 1711508376485,
+      "start": 1711509493916,
+      "end": 1711509493916,
       "order": "normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1711508376485,
-      "end": 1711508376485,
+      "start": 1711509493916,
+      "end": 1711509493916,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1711508376486,
-      "end": 1711508376486,
+      "start": 1711509493919,
+      "end": 1711509493919,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1711508376486,
-      "end": 1711508376486,
+      "start": 1711509493919,
+      "end": 1711509493919,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1711508376486,
-      "end": 1711508376486,
+      "start": 1711509493919,
+      "end": 1711509493919,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1711508376487,
-      "end": 1711508376487,
+      "start": 1711509493920,
+      "end": 1711509493920,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1711508376488,
-      "end": 1711508376488,
+      "start": 1711509493920,
+      "end": 1711509493920,
       "order": "normal"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1711508376489,
-      "end": 1711508376489,
+      "start": 1711509493920,
+      "end": 1711509493920,
       "order": "post"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1711508376489,
-      "end": 1711508376489,
+      "start": 1711509493920,
+      "end": 1711509493920,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
       "result": "import { ref, onMounted } from 'vue';\nimport { defineComponent as _defineComponent } from \"vue\";\nimport { unref as _unref, mergeProps as _mergeProps } from \"vue\";\nimport { ssrRenderAttr as _ssrRenderAttr, ssrRenderClass as _ssrRenderClass, ssrRenderAttrs as _ssrRenderAttrs } from \"vue/server-renderer\";\nimport _imports_0 from \"@/assets/common/images/default/img_smaple_03@2x.jpg\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"modal-notice\",\n  __ssrInlineRender: true,\n  setup(__props) {\n    const isScrollBottom = ref(false);\n    const isShadow = ref(false);\n    const scrollTop = ref(0);\n    const scrollbarRef = ref(null);\n    const innerRef = ref(null);\n    onMounted(() => {\n      const marginError = 10;\n      if (innerRef.value.offsetHeight > scrollbarRef.value.offsetHeight) {\n        isShadow.value = true;\n      } else {\n        isShadow.value = false;\n      }\n      scrollbarRef.value.addEventListener(\"scroll\", () => {\n        scrollTop.value = scrollbarRef.value.scrollTop;\n        if (scrollTop.value + marginError > innerRef.value.offsetHeight - scrollbarRef.value.offsetHeight) {\n          isScrollBottom.value = true;\n        } else {\n          isScrollBottom.value = false;\n        }\n      });\n    });\n    return (_ctx, _push, _parent, _attrs) => {\n      _push(`<div${_ssrRenderAttrs(_mergeProps({ class: \"modal modal-memo\" }, _attrs))} data-v-5a6dcd4f><div class=\"modal-dialog\" data-v-5a6dcd4f><div class=\"modal-container\" data-v-5a6dcd4f><div class=\"modal-header\" data-v-5a6dcd4f><h2 class=\"modal-title\" data-v-5a6dcd4f>매장 알림</h2><button class=\"btn-close\" data-v-5a6dcd4f></button></div><div class=\"modal-body\" data-v-5a6dcd4f><div class=\"${_ssrRenderClass([{ on: _unref(isScrollBottom) === true }, \"body-inner\"])}\" data-v-5a6dcd4f><div class=\"scrollbar-y\" data-v-5a6dcd4f><div class=\"scroll-inner\" data-v-5a6dcd4f><div class=\"memo-img\" data-v-5a6dcd4f><div class=\"img-wrap\" data-v-5a6dcd4f><img${_ssrRenderAttr(\"src\", _imports_0)} alt=\"\" data-v-5a6dcd4f></div></div><div class=\"memo-text\" data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f></div></div></div></div>`);\n      if (_unref(isShadow)) {\n        _push(`<span class=\"shadow-bottom\" data-v-5a6dcd4f></span>`);\n      } else {\n        _push(`<!---->`);\n      }\n      _push(`</div></div></div><div class=\"modal-backdrop\" data-v-5a6dcd4f></div></div>`);\n    };\n  }\n});\n",
-      "start": 1711508376491,
-      "end": 1711508376492,
+      "start": 1711509493922,
+      "end": 1711509493924,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -216,8 +216,8 @@
     {
       "name": "nuxt:imports-transform",
       "result": "import { ref, onMounted } from 'vue';\nimport { defineComponent as _defineComponent } from \"vue\";\nimport { unref as _unref, mergeProps as _mergeProps } from \"vue\";\nimport { ssrRenderAttr as _ssrRenderAttr, ssrRenderClass as _ssrRenderClass, ssrRenderAttrs as _ssrRenderAttrs } from \"vue/server-renderer\";\nimport _imports_0 from \"@/assets/common/images/default/img_smaple_03@2x.jpg\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"modal-notice\",\n  __ssrInlineRender: true,\n  setup(__props) {\n    const isScrollBottom = ref(false);\n    const isShadow = ref(false);\n    const scrollTop = ref(0);\n    const scrollbarRef = ref(null);\n    const innerRef = ref(null);\n    onMounted(() => {\n      const marginError = 10;\n      if (innerRef.value.offsetHeight > scrollbarRef.value.offsetHeight) {\n        isShadow.value = true;\n      } else {\n        isShadow.value = false;\n      }\n      scrollbarRef.value.addEventListener(\"scroll\", () => {\n        scrollTop.value = scrollbarRef.value.scrollTop;\n        if (scrollTop.value + marginError > innerRef.value.offsetHeight - scrollbarRef.value.offsetHeight) {\n          isScrollBottom.value = true;\n        } else {\n          isScrollBottom.value = false;\n        }\n      });\n    });\n    return (_ctx, _push, _parent, _attrs) => {\n      _push(`<div${_ssrRenderAttrs(_mergeProps({ class: \"modal modal-memo\" }, _attrs))} data-v-5a6dcd4f><div class=\"modal-dialog\" data-v-5a6dcd4f><div class=\"modal-container\" data-v-5a6dcd4f><div class=\"modal-header\" data-v-5a6dcd4f><h2 class=\"modal-title\" data-v-5a6dcd4f>매장 알림</h2><button class=\"btn-close\" data-v-5a6dcd4f></button></div><div class=\"modal-body\" data-v-5a6dcd4f><div class=\"${_ssrRenderClass([{ on: _unref(isScrollBottom) === true }, \"body-inner\"])}\" data-v-5a6dcd4f><div class=\"scrollbar-y\" data-v-5a6dcd4f><div class=\"scroll-inner\" data-v-5a6dcd4f><div class=\"memo-img\" data-v-5a6dcd4f><div class=\"img-wrap\" data-v-5a6dcd4f><img${_ssrRenderAttr(\"src\", _imports_0)} alt=\"\" data-v-5a6dcd4f></div></div><div class=\"memo-text\" data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f></div></div></div></div>`);\n      if (_unref(isShadow)) {\n        _push(`<span class=\"shadow-bottom\" data-v-5a6dcd4f></span>`);\n      } else {\n        _push(`<!---->`);\n      }\n      _push(`</div></div></div><div class=\"modal-backdrop\" data-v-5a6dcd4f></div></div>`);\n    };\n  }\n});\n",
-      "start": 1711508376491,
-      "end": 1711508376492,
+      "start": 1711509493922,
+      "end": 1711509493924,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -230,45 +230,45 @@
     },
     {
       "name": "unctx:transform",
-      "start": 1711508376492,
-      "end": 1711508376492,
+      "start": 1711509493924,
+      "end": 1711509493924,
       "order": "post"
     },
     {
       "name": "unctx:transform",
-      "start": 1711508376492,
-      "end": 1711508376492,
+      "start": 1711509493924,
+      "end": 1711509493924,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1711508376492,
-      "end": 1711508376492,
+      "start": 1711509493924,
+      "end": 1711509493924,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1711508376492,
-      "end": 1711508376492,
+      "start": 1711509493924,
+      "end": 1711509493924,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-template",
-      "start": 1711508376492,
-      "end": 1711508376492,
+      "start": 1711509493924,
+      "end": 1711509493924,
       "order": "post"
     },
     {
       "name": "nuxt:components-loader",
-      "start": 1711508376492,
-      "end": 1711508376492,
+      "start": 1711509493924,
+      "end": 1711509493924,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-composables:transform",
       "result": "import { ref, onMounted } from 'vue';\nimport { defineComponent as _defineComponent } from \"vue\";\nimport { unref as _unref, mergeProps as _mergeProps } from \"vue\";\nimport { ssrRenderAttr as _ssrRenderAttr, ssrRenderClass as _ssrRenderClass, ssrRenderAttrs as _ssrRenderAttrs } from \"vue/server-renderer\";\nimport _imports_0 from \"@/assets/common/images/default/img_smaple_03@2x.jpg\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"modal-notice\",\n  __ssrInlineRender: true,\n  setup(__props) {\n    const isScrollBottom = ref(false);\n    const isShadow = ref(false);\n    const scrollTop = ref(0);\n    const scrollbarRef = ref(null);\n    const innerRef = ref(null);\n     false && /*@__PURE__*/ onMounted(() => {\n      const marginError = 10;\n      if (innerRef.value.offsetHeight > scrollbarRef.value.offsetHeight) {\n        isShadow.value = true;\n      } else {\n        isShadow.value = false;\n      }\n      scrollbarRef.value.addEventListener(\"scroll\", () => {\n        scrollTop.value = scrollbarRef.value.scrollTop;\n        if (scrollTop.value + marginError > innerRef.value.offsetHeight - scrollbarRef.value.offsetHeight) {\n          isScrollBottom.value = true;\n        } else {\n          isScrollBottom.value = false;\n        }\n      });\n    });\n    return (_ctx, _push, _parent, _attrs) => {\n      _push(`<div${_ssrRenderAttrs(_mergeProps({ class: \"modal modal-memo\" }, _attrs))} data-v-5a6dcd4f><div class=\"modal-dialog\" data-v-5a6dcd4f><div class=\"modal-container\" data-v-5a6dcd4f><div class=\"modal-header\" data-v-5a6dcd4f><h2 class=\"modal-title\" data-v-5a6dcd4f>매장 알림</h2><button class=\"btn-close\" data-v-5a6dcd4f></button></div><div class=\"modal-body\" data-v-5a6dcd4f><div class=\"${_ssrRenderClass([{ on: _unref(isScrollBottom) === true }, \"body-inner\"])}\" data-v-5a6dcd4f><div class=\"scrollbar-y\" data-v-5a6dcd4f><div class=\"scroll-inner\" data-v-5a6dcd4f><div class=\"memo-img\" data-v-5a6dcd4f><div class=\"img-wrap\" data-v-5a6dcd4f><img${_ssrRenderAttr(\"src\", _imports_0)} alt=\"\" data-v-5a6dcd4f></div></div><div class=\"memo-text\" data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f> 매장알림 매장알림<br data-v-5a6dcd4f></div></div></div></div>`);\n      if (_unref(isShadow)) {\n        _push(`<span class=\"shadow-bottom\" data-v-5a6dcd4f></span>`);\n      } else {\n        _push(`<!---->`);\n      }\n      _push(`</div></div></div><div class=\"modal-backdrop\" data-v-5a6dcd4f></div></div>`);\n    };\n  }\n});\n",
-      "start": 1711508376492,
-      "end": 1711508376493,
+      "start": 1711509493924,
+      "end": 1711509493925,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -281,14 +281,14 @@
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1711508376493,
-      "end": 1711508376498,
+      "start": 1711509493925,
+      "end": 1711509493925,
       "order": "normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1711508376498,
-      "end": 1711508376498,
+      "start": 1711509493925,
+      "end": 1711509493925,
       "order": "normal"
     }
   ]

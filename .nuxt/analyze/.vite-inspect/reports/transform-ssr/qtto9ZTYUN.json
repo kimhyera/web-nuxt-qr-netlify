@@ -4,69 +4,69 @@
     {
       "name": "vite:load-fallback",
       "result": "<script setup lang=\"ts\">\r\n</script>\r\n<template>\r\n\t<header class=\"header-common fixed\">\r\n\t\t<div class=\"header-row\"><button title=\"이전페이지로 이동\" class=\"btn-history-back\"></button>\r\n\t\t\t<h1 class=\"header-title\">결제하기</h1>\r\n\t\t\t<div class=\"right-utils\"><a href=\"/shop/mns/\" class=\"btn-home\" title=\"홈으로 이동\"></a></div>\r\n\t\t</div>\r\n\t</header>\r\n\t<main class=\"pay-page page-pt\">\r\n\r\n\t\t<div class=\"form-box\">\r\n\t\t\t<h3 class=\"title\">픽업 정보 </h3>\r\n\t\t\t<div class=\"d-flex\">\r\n\r\n\r\n\t\t\t\t<div class=\"form-check-wrap\"><input class=\"form-check\" id=\"hall\" type=\"checkbox\">\r\n\t\t\t\t\t<label class=\"form-check-label\" for=\"hall\">매장 이용\r\n\t\t\t\t\t</label>\r\n\t\t\t\t</div> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\r\n\r\n\r\n\t\t\t\t<div class=\"form-check-wrap\"><input class=\"form-check\" id=\"takeout\" type=\"checkbox\" checked>\r\n\t\t\t\t\t<label class=\"form-check-label\" for=\"takeout\">테이크 아웃\r\n\t\t\t\t\t</label>\r\n\t\t\t\t</div>\r\n\r\n\t\t\t</div>\r\n\t\t</div>\r\n\r\n\t\t<section class=\"form-section\">\r\n\r\n\t\t\t<div class=\"form-box form-line\">\r\n\t\t\t\t<h3 class=\"title\"> 휴대폰번호</h3>\r\n\t\t\t\t<div>\r\n\t\t\t\t\t<input type=\"tel\" class=\"form-input-round\"\r\n\t\t\t\t\t\t\tplaceholder=\"휴대폰 번호를 입력하세요.\">\r\n\t\t\t\t</div>\r\n\r\n\t\t\r\n\t\t\t\t\t\t<div class=\"notice-msg\">* 매장에는 안심번호로 제공됩니다.</div>\r\n\t\t\t\t\t\t<div class=\"notice-msg\">* 조리에 필요한 최소 준비시간은 ${30}분입니다.</div>\r\n\r\n\r\n\t\t\t</div>\r\n\t\t\t<div class=\"form-box form-line\">\r\n\t\t\t\t<!-- 픽업시간 선택 클릭시 팝업  -->\r\n\t\t\t\t<h3 class=\"title\">픽업 시간선택</h3><button type=\"button\" class=\"btn-show-pickup\">바로 픽업 <i\r\n\t\t\t\t\t\tclass=\"icon_time_14\"></i></button>\r\n\t\t\t</div>\r\n\t\t\t<div class=\"form-box form-line\">\r\n\t\t\t\t<h3 class=\"title\">매장에 요청사항</h3>\r\n\t\t\t\t<ul class=\"form-list\">\r\n\t\t\t\t\t<li>\r\n\t\t\t\t\t\t<div class=\"form-check-wrap\"><input class=\"form-check-sm\" id=\"disposable\" type=\"checkbox\"><label\r\n\t\t\t\t\t\t\t\tclass=\"form-check-label label-round-box\" for=\"disposable\">일회용 수저, 포크 필요해요.</label>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t</li>\r\n\t\t\t\t\t<li><input type=\"text\" class=\"form-input-round\" placeholder=\"EX) 조리요청사항 \"></li>\r\n\t\t\t\t</ul>\r\n\r\n\t\t\t</div>\r\n\t\t</section>\r\n\t\t<section class=\"total-wrap form-line\">\r\n\t\t\t<div class=\"desc\">\r\n\t\t\t\t<p class=\"title\">최종 결제 정보</p>\r\n\t\t\t\t<dl>\r\n\t\t\t\t\t<dt>총 주문금액</dt>\r\n\t\t\t\t\t<dd>4,500원</dd>\r\n\t\t\t\t</dl>\r\n\r\n\t\t\t</div>\r\n\t\t\t<div class=\"total\">\r\n\t\t\t\t<dl>\r\n\t\t\t\t\t<dt>결제 금액</dt>\r\n\t\t\t\t\t<dd><em class=\"total-price\">4,500원</em></dd>\r\n\t\t\t\t</dl>\r\n\t\t\t</div>\r\n\t\t</section>\r\n\t\t<section class=\"pay-wrap form-box form-line\">\r\n\t\t\t<p class=\"title\">결제방법</p><button type=\"button\" class=\"btn-pay-type on\"><span class=\"name\">선결제</span><i\r\n\t\t\t\t\tclass=\"icon-down\"></i></button>\r\n\t\t\t<div class=\"contents-pay mb-md on\">\r\n\t\t\t\t<ul class=\"btn-group-pay\">\r\n\t\t\t\t\t<li><button type=\"button\" class=\"on btn-card\"> 신용카드</button></li>\r\n\t\t\t\t\t<li><button type=\"button\" class=\"btn-card\"><i class=\"icon-toss\"></i> 토스페이</button></li>\r\n\t\t\t\t\t<li><button class=\"btn-pay\"><i class=\"icon-naver\"></i> 네이버페이 </button></li>\r\n\t\t\t\t</ul>\r\n\r\n\t\t\t\t<div class=\"notice-pay\">\r\n\t\t\t\t\t[결제혜택]\r\n\t\t\t\t\t<br>\r\n\t\t\t\t\t<dl>\r\n\t\t\t\t\t\t<dt>신용카드</dt>\r\n\t\t\t\t\t\t<dt>신용카드 결제시 1프로 할인</dt>\r\n\t\t\t\t\t</dl>\r\n\t\t\t\t\t<dl>\r\n\t\t\t\t\t\t<dt>하나카드</dt>\r\n\t\t\t\t\t\t<dt>하나카드 결제시 11프로 할인</dt>\r\n\t\t\t\t\t</dl>\r\n\t\t\t\t\t<dl>\r\n\t\t\t\t\t\t<dt>토스페이</dt>\r\n\t\t\t\t\t\t<dt>토스페이 결제시 1%페이백</dt>\r\n\t\t\t\t\t</dl>\r\n\t\t\t\t</div>\r\n\t\t\t</div>\r\n\t\t</section>\r\n\t\t<section class=\"bottom-btn-default-section\">\r\n\t\t\t<div class=\"terms-agree-wrap\">\r\n\t\t\t\t<div class=\"agree-box\">\r\n\t\t\t\t\t<div class=\"form-check-wrap\"><input class=\"form-check\" id=\"ok\" type=\"checkbox\">\r\n\t\t\t\t\t\t<label class=\"form-check-label\" for=\"ok\">개인정보 제 3자 제공 동의\r\n\t\t\t\t\t\t</label>\r\n\t\t\t\t\t</div>\r\n\r\n\r\n\t\t\t\t\t<a href=\"/pb/terms/informationClause\" target=\"_blank\" class=\"btn-link\">><i></i></a>\r\n\t\t\t\t</div>\r\n\r\n\t\t\t\t<div class=\"agree-box\">\r\n\t\t\t\t\t<div class=\"form-check-wrap\"><input class=\"form-check\" id=\"phoneAllow\" type=\"checkbox\"><label\r\n\t\t\t\t\t\t\tclass=\"form-check-label\" for=\"phoneAllow\">휴대폰번호 수집/이용\r\n\t\t\t\t\t\t\t동의</label></div>\r\n\t\t\t\t</div>\r\n\t\t\t</div>\r\n\t\t\t<div class=\"btn-wrap\"><button type=\"button\" class=\"btn-primary-1 btn-block-lg\" disabled>결제하기\r\n\t\t\t\t</button></div>\r\n\t\t</section>\r\n\t</main>\r\n</template>\r\n<style lang=\"scss\" scoped>\r\n@import \"@/assets/default/scss/style\"; // 공통 \r\n@import \"@/assets/default/scss/components/header\";\r\n@import \"@/assets/default/scss/contents/order/order\";\r\n</style>\r\n",
-      "start": 1711508358056,
-      "end": 1711508358555,
+      "start": 1711509479752,
+      "end": 1711509480346,
       "sourcemaps": null
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1711508358555,
-      "end": 1711508358555,
+      "start": 1711509480346,
+      "end": 1711509480346,
       "order": "pre"
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1711508358555,
-      "end": 1711508358555,
+      "start": 1711509480346,
+      "end": 1711509480346,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1711508358555,
-      "end": 1711508358555,
+      "start": 1711509480346,
+      "end": 1711509480346,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1711508358555,
-      "end": 1711508358555,
+      "start": 1711509480346,
+      "end": 1711509480346,
       "order": "pre"
     },
     {
       "name": "nuxt:client-fallback-auto-id",
-      "start": 1711508358555,
-      "end": 1711508358555,
+      "start": 1711509480346,
+      "end": 1711509480346,
       "order": "pre"
     },
     {
       "name": "vite:css",
-      "start": 1711508358555,
-      "end": 1711508358555,
+      "start": 1711509480346,
+      "end": 1711509480346,
       "order": "normal"
     },
     {
       "name": "vite:esbuild",
-      "start": 1711508358555,
-      "end": 1711508358555,
+      "start": 1711509480346,
+      "end": 1711509480346,
       "order": "normal"
     },
     {
       "name": "vite:json",
-      "start": 1711508358555,
-      "end": 1711508358555,
+      "start": 1711509480346,
+      "end": 1711509480346,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1711508358555,
-      "end": 1711508358555,
+      "start": 1711509480346,
+      "end": 1711509480346,
       "order": "normal"
     },
     {
       "name": "vite:vue",
       "result": "const _sfc_main = {}\n\nfunction _sfc_ssrRender(_ctx, _push, _parent, _attrs) {\n  _push(`<!--[--><header class=\"header-common fixed\" data-v-682578c4><div class=\"header-row\" data-v-682578c4><button title=\"이전페이지로 이동\" class=\"btn-history-back\" data-v-682578c4></button><h1 class=\"header-title\" data-v-682578c4>결제하기</h1><div class=\"right-utils\" data-v-682578c4><a href=\"/shop/mns/\" class=\"btn-home\" title=\"홈으로 이동\" data-v-682578c4></a></div></div></header><main class=\"pay-page page-pt\" data-v-682578c4><div class=\"form-box\" data-v-682578c4><h3 class=\"title\" data-v-682578c4>픽업 정보 </h3><div class=\"d-flex\" data-v-682578c4><div class=\"form-check-wrap\" data-v-682578c4><input class=\"form-check\" id=\"hall\" type=\"checkbox\" data-v-682578c4><label class=\"form-check-label\" for=\"hall\" data-v-682578c4>매장 이용 </label></div>        <div class=\"form-check-wrap\" data-v-682578c4><input class=\"form-check\" id=\"takeout\" type=\"checkbox\" checked data-v-682578c4><label class=\"form-check-label\" for=\"takeout\" data-v-682578c4>테이크 아웃 </label></div></div></div><section class=\"form-section\" data-v-682578c4><div class=\"form-box form-line\" data-v-682578c4><h3 class=\"title\" data-v-682578c4> 휴대폰번호</h3><div data-v-682578c4><input type=\"tel\" class=\"form-input-round\" placeholder=\"휴대폰 번호를 입력하세요.\" data-v-682578c4></div><div class=\"notice-msg\" data-v-682578c4>* 매장에는 안심번호로 제공됩니다.</div><div class=\"notice-msg\" data-v-682578c4>* 조리에 필요한 최소 준비시간은 \\${30}분입니다.</div></div><div class=\"form-box form-line\" data-v-682578c4><h3 class=\"title\" data-v-682578c4>픽업 시간선택</h3><button type=\"button\" class=\"btn-show-pickup\" data-v-682578c4>바로 픽업 <i class=\"icon_time_14\" data-v-682578c4></i></button></div><div class=\"form-box form-line\" data-v-682578c4><h3 class=\"title\" data-v-682578c4>매장에 요청사항</h3><ul class=\"form-list\" data-v-682578c4><li data-v-682578c4><div class=\"form-check-wrap\" data-v-682578c4><input class=\"form-check-sm\" id=\"disposable\" type=\"checkbox\" data-v-682578c4><label class=\"form-check-label label-round-box\" for=\"disposable\" data-v-682578c4>일회용 수저, 포크 필요해요.</label></div></li><li data-v-682578c4><input type=\"text\" class=\"form-input-round\" placeholder=\"EX) 조리요청사항 \" data-v-682578c4></li></ul></div></section><section class=\"total-wrap form-line\" data-v-682578c4><div class=\"desc\" data-v-682578c4><p class=\"title\" data-v-682578c4>최종 결제 정보</p><dl data-v-682578c4><dt data-v-682578c4>총 주문금액</dt><dd data-v-682578c4>4,500원</dd></dl></div><div class=\"total\" data-v-682578c4><dl data-v-682578c4><dt data-v-682578c4>결제 금액</dt><dd data-v-682578c4><em class=\"total-price\" data-v-682578c4>4,500원</em></dd></dl></div></section><section class=\"pay-wrap form-box form-line\" data-v-682578c4><p class=\"title\" data-v-682578c4>결제방법</p><button type=\"button\" class=\"btn-pay-type on\" data-v-682578c4><span class=\"name\" data-v-682578c4>선결제</span><i class=\"icon-down\" data-v-682578c4></i></button><div class=\"contents-pay mb-md on\" data-v-682578c4><ul class=\"btn-group-pay\" data-v-682578c4><li data-v-682578c4><button type=\"button\" class=\"on btn-card\" data-v-682578c4> 신용카드</button></li><li data-v-682578c4><button type=\"button\" class=\"btn-card\" data-v-682578c4><i class=\"icon-toss\" data-v-682578c4></i> 토스페이</button></li><li data-v-682578c4><button class=\"btn-pay\" data-v-682578c4><i class=\"icon-naver\" data-v-682578c4></i> 네이버페이 </button></li></ul><div class=\"notice-pay\" data-v-682578c4> [결제혜택] <br data-v-682578c4><dl data-v-682578c4><dt data-v-682578c4>신용카드</dt><dt data-v-682578c4>신용카드 결제시 1프로 할인</dt></dl><dl data-v-682578c4><dt data-v-682578c4>하나카드</dt><dt data-v-682578c4>하나카드 결제시 11프로 할인</dt></dl><dl data-v-682578c4><dt data-v-682578c4>토스페이</dt><dt data-v-682578c4>토스페이 결제시 1%페이백</dt></dl></div></div></section><section class=\"bottom-btn-default-section\" data-v-682578c4><div class=\"terms-agree-wrap\" data-v-682578c4><div class=\"agree-box\" data-v-682578c4><div class=\"form-check-wrap\" data-v-682578c4><input class=\"form-check\" id=\"ok\" type=\"checkbox\" data-v-682578c4><label class=\"form-check-label\" for=\"ok\" data-v-682578c4>개인정보 제 3자 제공 동의 </label></div><a href=\"/pb/terms/informationClause\" target=\"_blank\" class=\"btn-link\" data-v-682578c4>&gt;<i data-v-682578c4></i></a></div><div class=\"agree-box\" data-v-682578c4><div class=\"form-check-wrap\" data-v-682578c4><input class=\"form-check\" id=\"phoneAllow\" type=\"checkbox\" data-v-682578c4><label class=\"form-check-label\" for=\"phoneAllow\" data-v-682578c4>휴대폰번호 수집/이용 동의</label></div></div></div><div class=\"btn-wrap\" data-v-682578c4><button type=\"button\" class=\"btn-primary-1 btn-block-lg\" disabled data-v-682578c4>결제하기 </button></div></section></main><!--]-->`)\n}\n\nimport \"D:/localserver/web-nuxt-sdk/web-nuxt-qr-netlify/pages/pb/order/pay-togo.vue?vue&type=style&index=0&scoped=682578c4&lang.scss\"\n\nimport { useSSRContext as __vite_useSSRContext } from 'vue'\nconst _sfc_setup = _sfc_main.setup\n_sfc_main.setup = (props, ctx) => {\n  const ssrContext = __vite_useSSRContext()\n  ;(ssrContext.modules || (ssrContext.modules = new Set())).add(\"pages/pb/order/pay-togo.vue\")\n  return _sfc_setup ? _sfc_setup(props, ctx) : undefined\n}\nimport _export_sfc from '\u0000plugin-vue:export-helper'\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['ssrRender',_sfc_ssrRender],['__scopeId',\"data-v-682578c4\"]])",
-      "start": 1711508358555,
-      "end": 1711508358557,
+      "start": 1711509480346,
+      "end": 1711509480349,
       "order": "normal",
       "sourcemaps": {
         "version": 3,
@@ -82,141 +82,141 @@
     },
     {
       "name": "vite:vue-jsx",
-      "start": 1711508358557,
-      "end": 1711508358557,
+      "start": 1711509480349,
+      "end": 1711509480349,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1711508358557,
-      "end": 1711508358557,
+      "start": 1711509480349,
+      "end": 1711509480349,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1711508358557,
-      "end": 1711508358557,
+      "start": 1711509480349,
+      "end": 1711509480349,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1711508358557,
-      "end": 1711508358557,
+      "start": 1711509480349,
+      "end": 1711509480349,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1711508358557,
-      "end": 1711508358557,
+      "start": 1711509480349,
+      "end": 1711509480349,
       "order": "normal"
     },
     {
       "name": "nuxt:components:imports",
-      "start": 1711508358557,
-      "end": 1711508358557,
+      "start": 1711509480349,
+      "end": 1711509480350,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1711508358557,
-      "end": 1711508358557,
+      "start": 1711509480350,
+      "end": 1711509480350,
       "order": "normal"
     },
     {
       "name": "ssr-styles",
-      "start": 1711508358557,
-      "end": 1711508358557,
+      "start": 1711509480350,
+      "end": 1711509480350,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1711508358557,
-      "end": 1711508358557,
+      "start": 1711509480350,
+      "end": 1711509480350,
       "order": "normal"
     },
     {
       "name": "vite:css-post",
-      "start": 1711508358557,
-      "end": 1711508358557,
+      "start": 1711509480350,
+      "end": 1711509480350,
       "order": "normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1711508358557,
-      "end": 1711508358557,
+      "start": 1711509480350,
+      "end": 1711509480350,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1711508358557,
-      "end": 1711508358557,
+      "start": 1711509480350,
+      "end": 1711509480350,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1711508358557,
-      "end": 1711508358557,
+      "start": 1711509480350,
+      "end": 1711509480350,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1711508358557,
-      "end": 1711508358557,
+      "start": 1711509480350,
+      "end": 1711509480350,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1711508358557,
-      "end": 1711508358557,
+      "start": 1711509480350,
+      "end": 1711509480350,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1711508358557,
-      "end": 1711508358557,
+      "start": 1711509480350,
+      "end": 1711509480350,
       "order": "normal"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1711508358557,
-      "end": 1711508358557,
+      "start": 1711509480350,
+      "end": 1711509480350,
       "order": "post"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1711508358557,
-      "end": 1711508358557,
+      "start": 1711509480350,
+      "end": 1711509480350,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
-      "start": 1711508358557,
-      "end": 1711508358558,
+      "start": 1711509480350,
+      "end": 1711509480350,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
-      "start": 1711508358557,
-      "end": 1711508358558,
+      "start": 1711509480350,
+      "end": 1711509480350,
       "order": "post"
     },
     {
       "name": "unctx:transform",
-      "start": 1711508358558,
-      "end": 1711508358558,
+      "start": 1711509480350,
+      "end": 1711509480350,
       "order": "post"
     },
     {
       "name": "unctx:transform",
-      "start": 1711508358558,
-      "end": 1711508358558,
+      "start": 1711509480350,
+      "end": 1711509480350,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
       "result": "\nconst __nuxt_page_meta = null\nexport default __nuxt_page_meta\n",
-      "start": 1711508358558,
-      "end": 1711508358558,
+      "start": 1711509480350,
+      "end": 1711509480351,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -230,8 +230,8 @@
     {
       "name": "nuxt:pages-macros-transform",
       "result": "\nconst __nuxt_page_meta = null\nexport default __nuxt_page_meta\n",
-      "start": 1711508358558,
-      "end": 1711508358558,
+      "start": 1711509480350,
+      "end": 1711509480351,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -244,32 +244,32 @@
     },
     {
       "name": "nuxt:tree-shake-template",
-      "start": 1711508358558,
-      "end": 1711508358558,
+      "start": 1711509480351,
+      "end": 1711509480351,
       "order": "post"
     },
     {
       "name": "nuxt:components-loader",
-      "start": 1711508358558,
-      "end": 1711508358558,
+      "start": 1711509480351,
+      "end": 1711509480351,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-composables:transform",
-      "start": 1711508358558,
-      "end": 1711508358558,
+      "start": 1711509480351,
+      "end": 1711509480351,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1711508358558,
-      "end": 1711508358558,
+      "start": 1711509480351,
+      "end": 1711509480351,
       "order": "normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1711508358558,
-      "end": 1711508358558,
+      "start": 1711509480351,
+      "end": 1711509480351,
       "order": "normal"
     }
   ]

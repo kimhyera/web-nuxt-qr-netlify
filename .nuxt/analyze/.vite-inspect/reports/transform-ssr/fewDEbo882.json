@@ -4,8 +4,8 @@
     {
       "name": "vite:vue",
       "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { mergeProps as _mergeProps } from \"vue\"\nimport { ssrRenderAttrs as _ssrRenderAttrs } from \"vue/server-renderer\"\n\nimport { ref, computed, onMounted } from 'vue';\r\nimport { useRouter } from 'vue-router';\r\nimport imageSrc from '@/assets/default/images/icon/icon_map_pin_28.svg';\r\n\r\ndeclare global {\r\n\tinterface Window {\r\n\t\tapp: unknown;\r\n\t\tKakao: any;\r\n\t\tkakao: any;\r\n\t\tmyMtsAuth: any;\r\n\t}\r\n}\r\n\r\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'map',\n  __ssrInlineRender: true,\n  props: {\r\n\tthemeName: {\r\n\t\ttype: String,\r\n\t\tdefault: 'default',\r\n\t},\r\n},\n  setup(__props) {\n\r\nconst props = __props;\r\n\r\nconst router = useRouter();\r\n\r\n\r\n\r\n// reactivity data\r\nconst imageSrcPath = ref(imageSrc);\r\nconst mapContainer = ref<HTMLElement | null>(null);\r\nconst inputRef: any = ref(null);\r\nconst stLatY = ref('37.5090492151745');\r\nconst stLngX = ref('126.8869873429');\r\nconst locPosition = computed<any>(() => new window.kakao.maps.LatLng(stLatY.value, stLngX.value));\r\n\r\n// methods \r\n\r\n// 지도 초기화\r\nfunction initMap() {\r\n\tif (!mapContainer.value) return;\r\n\tlet map = new window.kakao.maps.Map(mapContainer.value, {\r\n\t\tcenter: locPosition.value,\r\n\t\tlevel: 3,\r\n\t});\r\n\r\n\tcreateMarker(map);\r\n\tdrawCustomOverlay(map);\r\n};\r\n\r\n\r\n// 마커표시\r\nfunction createMarker(map: any) {\r\n\tconst imageSize = new window.kakao.maps.Size(30, 30);\r\n\tconst imageOption = { offset: new window.kakao.maps.Point(15, 15) };\r\n\tconst markerImage = new window.kakao.maps.MarkerImage(imageSrcPath.value, imageSize, imageOption);\r\n\tlet marker = new window.kakao.maps.Marker({\r\n\t\tposition: locPosition.value,\r\n\t\timage: markerImage,\r\n\t});\r\n\tmarker.setMap(map);\r\n};\r\n// 오버레이\r\nfunction drawCustomOverlay(map: any) {\r\n\tvar customOverlay = new window.kakao.maps.CustomOverlay({\r\n\t\tclickable: true,\r\n\t\tcontent: `<div class=\"customOverlay arrow_box\">가맹점이름</div>`,\r\n\t\tposition: locPosition.value,\r\n\t\tzIndex: 4,\r\n\t});\r\n\r\n\tcustomOverlay.setMap(map);\r\n};\r\nconst runtimeConfig = useRuntimeConfig();\r\n\r\n\r\nfunction onCopy() {\r\n\tinputRef.value.select();\r\n\tdocument.execCommand('copy');\r\n}\r\n\r\nonMounted(async () => {\r\n\tif (window.kakao && window.kakao.maps) {\r\n\t\tinitMap();\r\n\t} else {\r\n\t\tconst script = document.createElement('script');\r\n\t\tscript.src = `//dapi.kakao.com/v2/maps/sdk.js?autoload=false&appkey=${runtimeConfig.public.VITE_KAKAO_API_KEY}&libraries=services`;\r\n\t\tdocument.head.appendChild(script);\r\n\r\n\t\tscript.onload = () =>\r\n\t\t\twindow.kakao.maps.load(() => {\r\n\t\t\t\tinitMap();\r\n\t\t\t});\r\n\t}\r\n});\r\n\r\n\r\n\r\n\nreturn (_ctx: any,_push: any,_parent: any,_attrs: any) => {\n  _push(`<div${_ssrRenderAttrs(_mergeProps({ class: \"layout1\" }, _attrs))} data-v-2679e18a><header class=\"header-main fixed\" data-v-2679e18a><div class=\"header-row\" data-v-2679e18a><h1 class=\"store-name\" data-v-2679e18a> 지도보기 </h1><button class=\"btn-user\" title=\"마이페이지 바로가기\" data-v-2679e18a></button></div></header><div class=\"address-layer\" data-v-2679e18a><div class=\"inner\" data-v-2679e18a><div class=\"layer-head\" data-v-2679e18a><h2 data-v-2679e18a>매장주소</h2><button class=\"btn-copy\" data-v-2679e18a>주소복사</button></div><div class=\"address-text\" data-v-2679e18a><input type=\"text\" readonly value=\"서울 구로구 경인로 661 (신도림동, 신도림1차푸르지오)\" class=\"input-address\" data-v-2679e18a><div class=\"front-address\" data-v-2679e18a>서울 구로구 경인로 661 (신도림동, 신도림1차푸르지오)</div></div></div></div><div id=\"map\" data-v-2679e18a></div></div>`)\n}\n}\n\n})",
-      "start": 1711508359270,
-      "end": 1711508359270,
+      "start": 1711509481231,
+      "end": 1711509481231,
       "sourcemaps": {
         "version": 3,
         "sources": [
@@ -20,45 +20,45 @@
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1711508359270,
-      "end": 1711508359270,
+      "start": 1711509481231,
+      "end": 1711509481231,
       "order": "pre"
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1711508359270,
-      "end": 1711508359270,
+      "start": 1711509481231,
+      "end": 1711509481231,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1711508359270,
-      "end": 1711508359270,
+      "start": 1711509481231,
+      "end": 1711509481231,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1711508359270,
-      "end": 1711508359270,
+      "start": 1711509481231,
+      "end": 1711509481231,
       "order": "pre"
     },
     {
       "name": "nuxt:client-fallback-auto-id",
-      "start": 1711508359270,
-      "end": 1711508359270,
+      "start": 1711509481231,
+      "end": 1711509481232,
       "order": "pre"
     },
     {
       "name": "vite:css",
-      "start": 1711508359270,
-      "end": 1711508359270,
+      "start": 1711509481232,
+      "end": 1711509481232,
       "order": "normal"
     },
     {
       "name": "vite:esbuild",
       "result": "import { defineComponent as _defineComponent } from \"vue\";\nimport { mergeProps as _mergeProps } from \"vue\";\nimport { ssrRenderAttrs as _ssrRenderAttrs } from \"vue/server-renderer\";\nimport { ref, computed, onMounted } from \"vue\";\nimport { useRouter } from \"vue-router\";\nimport imageSrc from \"@/assets/default/images/icon/icon_map_pin_28.svg\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"map\",\n  __ssrInlineRender: true,\n  props: {\n    themeName: {\n      type: String,\n      default: \"default\"\n    }\n  },\n  setup(__props) {\n    const props = __props;\n    const router = useRouter();\n    const imageSrcPath = ref(imageSrc);\n    const mapContainer = ref(null);\n    const inputRef = ref(null);\n    const stLatY = ref(\"37.5090492151745\");\n    const stLngX = ref(\"126.8869873429\");\n    const locPosition = computed(() => new window.kakao.maps.LatLng(stLatY.value, stLngX.value));\n    function initMap() {\n      if (!mapContainer.value)\n        return;\n      let map = new window.kakao.maps.Map(mapContainer.value, {\n        center: locPosition.value,\n        level: 3\n      });\n      createMarker(map);\n      drawCustomOverlay(map);\n    }\n    ;\n    function createMarker(map) {\n      const imageSize = new window.kakao.maps.Size(30, 30);\n      const imageOption = { offset: new window.kakao.maps.Point(15, 15) };\n      const markerImage = new window.kakao.maps.MarkerImage(imageSrcPath.value, imageSize, imageOption);\n      let marker = new window.kakao.maps.Marker({\n        position: locPosition.value,\n        image: markerImage\n      });\n      marker.setMap(map);\n    }\n    ;\n    function drawCustomOverlay(map) {\n      var customOverlay = new window.kakao.maps.CustomOverlay({\n        clickable: true,\n        content: `<div class=\"customOverlay arrow_box\">가맹점이름</div>`,\n        position: locPosition.value,\n        zIndex: 4\n      });\n      customOverlay.setMap(map);\n    }\n    ;\n    const runtimeConfig = useRuntimeConfig();\n    function onCopy() {\n      inputRef.value.select();\n      document.execCommand(\"copy\");\n    }\n    onMounted(async () => {\n      if (window.kakao && window.kakao.maps) {\n        initMap();\n      } else {\n        const script = document.createElement(\"script\");\n        script.src = `//dapi.kakao.com/v2/maps/sdk.js?autoload=false&appkey=${runtimeConfig.public.VITE_KAKAO_API_KEY}&libraries=services`;\n        document.head.appendChild(script);\n        script.onload = () => window.kakao.maps.load(() => {\n          initMap();\n        });\n      }\n    });\n    return (_ctx, _push, _parent, _attrs) => {\n      _push(`<div${_ssrRenderAttrs(_mergeProps({ class: \"layout1\" }, _attrs))} data-v-2679e18a><header class=\"header-main fixed\" data-v-2679e18a><div class=\"header-row\" data-v-2679e18a><h1 class=\"store-name\" data-v-2679e18a> 지도보기 </h1><button class=\"btn-user\" title=\"마이페이지 바로가기\" data-v-2679e18a></button></div></header><div class=\"address-layer\" data-v-2679e18a><div class=\"inner\" data-v-2679e18a><div class=\"layer-head\" data-v-2679e18a><h2 data-v-2679e18a>매장주소</h2><button class=\"btn-copy\" data-v-2679e18a>주소복사</button></div><div class=\"address-text\" data-v-2679e18a><input type=\"text\" readonly value=\"서울 구로구 경인로 661 (신도림동, 신도림1차푸르지오)\" class=\"input-address\" data-v-2679e18a><div class=\"front-address\" data-v-2679e18a>서울 구로구 경인로 661 (신도림동, 신도림1차푸르지오)</div></div></div></div><div id=\"map\" data-v-2679e18a></div></div>`);\n    };\n  }\n});\n",
-      "start": 1711508359270,
-      "end": 1711508359413,
+      "start": 1711509481232,
+      "end": 1711509481377,
       "order": "normal",
       "sourcemaps": {
         "version": 3,
@@ -74,137 +74,137 @@
     },
     {
       "name": "vite:json",
-      "start": 1711508359413,
-      "end": 1711508359413,
+      "start": 1711509481377,
+      "end": 1711509481377,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1711508359413,
-      "end": 1711508359413,
+      "start": 1711509481377,
+      "end": 1711509481377,
       "order": "normal"
     },
     {
       "name": "vite:vue",
-      "start": 1711508359413,
-      "end": 1711508359414,
+      "start": 1711509481377,
+      "end": 1711509481378,
       "order": "normal"
     },
     {
       "name": "vite:vue-jsx",
-      "start": 1711508359414,
-      "end": 1711508359414,
+      "start": 1711509481378,
+      "end": 1711509481378,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1711508359414,
-      "end": 1711508359414,
+      "start": 1711509481378,
+      "end": 1711509481378,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1711508359414,
-      "end": 1711508359414,
+      "start": 1711509481378,
+      "end": 1711509481378,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1711508359414,
-      "end": 1711508359414,
+      "start": 1711509481378,
+      "end": 1711509481378,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1711508359414,
-      "end": 1711508359415,
+      "start": 1711509481378,
+      "end": 1711509481379,
       "order": "normal"
     },
     {
       "name": "nuxt:components:imports",
-      "start": 1711508359415,
-      "end": 1711508359415,
+      "start": 1711509481379,
+      "end": 1711509481379,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1711508359415,
-      "end": 1711508359415,
+      "start": 1711509481379,
+      "end": 1711509481379,
       "order": "normal"
     },
     {
       "name": "ssr-styles",
-      "start": 1711508359415,
-      "end": 1711508359416,
+      "start": 1711509481379,
+      "end": 1711509481380,
       "order": "normal"
     },
     {
       "name": "vite:define",
       "result": "import { defineComponent as _defineComponent } from \"vue\";\nimport { mergeProps as _mergeProps } from \"vue\";\nimport { ssrRenderAttrs as _ssrRenderAttrs } from \"vue/server-renderer\";\nimport { ref, computed, onMounted } from \"vue\";\nimport { useRouter } from \"vue-router\";\nimport imageSrc from \"@/assets/default/images/icon/icon_map_pin_28.svg\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"map\",\n  __ssrInlineRender: true,\n  props: {\n    themeName: {\n      type: String,\n      default: \"default\"\n    }\n  },\n  setup(__props) {\n    const props = __props;\n    const router = useRouter();\n    const imageSrcPath = ref(imageSrc);\n    const mapContainer = ref(null);\n    const inputRef = ref(null);\n    const stLatY = ref(\"37.5090492151745\");\n    const stLngX = ref(\"126.8869873429\");\n    const locPosition = computed(() => new (void 0).kakao.maps.LatLng(stLatY.value, stLngX.value));\n    function initMap() {\n      if (!mapContainer.value)\n        return;\n      let map = new (void 0).kakao.maps.Map(mapContainer.value, {\n        center: locPosition.value,\n        level: 3\n      });\n      createMarker(map);\n      drawCustomOverlay(map);\n    }\n    ;\n    function createMarker(map) {\n      const imageSize = new (void 0).kakao.maps.Size(30, 30);\n      const imageOption = { offset: new (void 0).kakao.maps.Point(15, 15) };\n      const markerImage = new (void 0).kakao.maps.MarkerImage(imageSrcPath.value, imageSize, imageOption);\n      let marker = new (void 0).kakao.maps.Marker({\n        position: locPosition.value,\n        image: markerImage\n      });\n      marker.setMap(map);\n    }\n    ;\n    function drawCustomOverlay(map) {\n      var customOverlay = new (void 0).kakao.maps.CustomOverlay({\n        clickable: true,\n        content: `<div class=\"customOverlay arrow_box\">가맹점이름</div>`,\n        position: locPosition.value,\n        zIndex: 4\n      });\n      customOverlay.setMap(map);\n    }\n    ;\n    const runtimeConfig = useRuntimeConfig();\n    function onCopy() {\n      inputRef.value.select();\n      (void 0).execCommand(\"copy\");\n    }\n    onMounted(async () => {\n      if ((void 0).kakao && (void 0).kakao.maps) {\n        initMap();\n      } else {\n        const script = (void 0).createElement(\"script\");\n        script.src = `//dapi.kakao.com/v2/maps/sdk.js?autoload=false&appkey=${runtimeConfig.public.VITE_KAKAO_API_KEY}&libraries=services`;\n        (void 0).head.appendChild(script);\n        script.onload = () => (void 0).kakao.maps.load(() => {\n          initMap();\n        });\n      }\n    });\n    return (_ctx, _push, _parent, _attrs) => {\n      _push(`<div${_ssrRenderAttrs(_mergeProps({ class: \"layout1\" }, _attrs))} data-v-2679e18a><header class=\"header-main fixed\" data-v-2679e18a><div class=\"header-row\" data-v-2679e18a><h1 class=\"store-name\" data-v-2679e18a> 지도보기 </h1><button class=\"btn-user\" title=\"마이페이지 바로가기\" data-v-2679e18a></button></div></header><div class=\"address-layer\" data-v-2679e18a><div class=\"inner\" data-v-2679e18a><div class=\"layer-head\" data-v-2679e18a><h2 data-v-2679e18a>매장주소</h2><button class=\"btn-copy\" data-v-2679e18a>주소복사</button></div><div class=\"address-text\" data-v-2679e18a><input type=\"text\" readonly value=\"서울 구로구 경인로 661 (신도림동, 신도림1차푸르지오)\" class=\"input-address\" data-v-2679e18a><div class=\"front-address\" data-v-2679e18a>서울 구로구 경인로 661 (신도림동, 신도림1차푸르지오)</div></div></div></div><div id=\"map\" data-v-2679e18a></div></div>`);\n    };\n  }\n});\n",
-      "start": 1711508359416,
-      "end": 1711508376479,
+      "start": 1711509481380,
+      "end": 1711509493905,
       "order": "normal",
       "sourcemaps": "{\n  \"version\": 3,\n  \"sources\": [\"D:/localserver/web-nuxt-sdk/web-nuxt-qr-netlify/pages/pb/map.vue?macro=true&vue&type=script&setup=true&lang.ts\"],\n  \"sourcesContent\": [\"import { defineComponent as _defineComponent } from \\\"vue\\\";\\nimport { mergeProps as _mergeProps } from \\\"vue\\\";\\nimport { ssrRenderAttrs as _ssrRenderAttrs } from \\\"vue/server-renderer\\\";\\nimport { ref, computed, onMounted } from \\\"vue\\\";\\nimport { useRouter } from \\\"vue-router\\\";\\nimport imageSrc from \\\"@/assets/default/images/icon/icon_map_pin_28.svg\\\";\\nexport default /* @__PURE__ */ _defineComponent({\\n  __name: \\\"map\\\",\\n  __ssrInlineRender: true,\\n  props: {\\n    themeName: {\\n      type: String,\\n      default: \\\"default\\\"\\n    }\\n  },\\n  setup(__props) {\\n    const props = __props;\\n    const router = useRouter();\\n    const imageSrcPath = ref(imageSrc);\\n    const mapContainer = ref(null);\\n    const inputRef = ref(null);\\n    const stLatY = ref(\\\"37.5090492151745\\\");\\n    const stLngX = ref(\\\"126.8869873429\\\");\\n    const locPosition = computed(() => new window.kakao.maps.LatLng(stLatY.value, stLngX.value));\\n    function initMap() {\\n      if (!mapContainer.value)\\n        return;\\n      let map = new window.kakao.maps.Map(mapContainer.value, {\\n        center: locPosition.value,\\n        level: 3\\n      });\\n      createMarker(map);\\n      drawCustomOverlay(map);\\n    }\\n    ;\\n    function createMarker(map) {\\n      const imageSize = new window.kakao.maps.Size(30, 30);\\n      const imageOption = { offset: new window.kakao.maps.Point(15, 15) };\\n      const markerImage = new window.kakao.maps.MarkerImage(imageSrcPath.value, imageSize, imageOption);\\n      let marker = new window.kakao.maps.Marker({\\n        position: locPosition.value,\\n        image: markerImage\\n      });\\n      marker.setMap(map);\\n    }\\n    ;\\n    function drawCustomOverlay(map) {\\n      var customOverlay = new window.kakao.maps.CustomOverlay({\\n        clickable: true,\\n        content: `<div class=\\\"customOverlay arrow_box\\\">가맹점이름</div>`,\\n        position: locPosition.value,\\n        zIndex: 4\\n      });\\n      customOverlay.setMap(map);\\n    }\\n    ;\\n    const runtimeConfig = useRuntimeConfig();\\n    function onCopy() {\\n      inputRef.value.select();\\n      document.execCommand(\\\"copy\\\");\\n    }\\n    onMounted(async () => {\\n      if (window.kakao && window.kakao.maps) {\\n        initMap();\\n      } else {\\n        const script = document.createElement(\\\"script\\\");\\n        script.src = `//dapi.kakao.com/v2/maps/sdk.js?autoload=false&appkey=${runtimeConfig.public.VITE_KAKAO_API_KEY}&libraries=services`;\\n        document.head.appendChild(script);\\n        script.onload = () => window.kakao.maps.load(() => {\\n          initMap();\\n        });\\n      }\\n    });\\n    return (_ctx, _push, _parent, _attrs) => {\\n      _push(`<div${_ssrRenderAttrs(_mergeProps({ class: \\\"layout1\\\" }, _attrs))} data-v-2679e18a><header class=\\\"header-main fixed\\\" data-v-2679e18a><div class=\\\"header-row\\\" data-v-2679e18a><h1 class=\\\"store-name\\\" data-v-2679e18a> 지도보기 </h1><button class=\\\"btn-user\\\" title=\\\"마이페이지 바로가기\\\" data-v-2679e18a></button></div></header><div class=\\\"address-layer\\\" data-v-2679e18a><div class=\\\"inner\\\" data-v-2679e18a><div class=\\\"layer-head\\\" data-v-2679e18a><h2 data-v-2679e18a>매장주소</h2><button class=\\\"btn-copy\\\" data-v-2679e18a>주소복사</button></div><div class=\\\"address-text\\\" data-v-2679e18a><input type=\\\"text\\\" readonly value=\\\"서울 구로구 경인로 661 (신도림동, 신도림1차푸르지오)\\\" class=\\\"input-address\\\" data-v-2679e18a><div class=\\\"front-address\\\" data-v-2679e18a>서울 구로구 경인로 661 (신도림동, 신도림1차푸르지오)</div></div></div></div><div id=\\\"map\\\" data-v-2679e18a></div></div>`);\\n    };\\n  }\\n});\\n\"],\n  \"mappings\": \"AAAA,SAAS,mBAAmB,wBAAwB;AACpD,SAAS,cAAc,mBAAmB;AAC1C,SAAS,kBAAkB,uBAAuB;AAClD,SAAS,KAAK,UAAU,iBAAiB;AACzC,SAAS,iBAAiB;AAC1B,OAAO,cAAc;AACrB,eAA+B,iCAAiB;AAAA,EAC9C,QAAQ;AAAA,EACR,mBAAmB;AAAA,EACnB,OAAO;AAAA,IACL,WAAW;AAAA,MACT,MAAM;AAAA,MACN,SAAS;AAAA,IACX;AAAA,EACF;AAAA,EACA,MAAM,SAAS;AACb,UAAM,QAAQ;AACd,UAAM,SAAS,UAAU;AACzB,UAAM,eAAe,IAAI,QAAQ;AACjC,UAAM,eAAe,IAAI,IAAI;AAC7B,UAAM,WAAW,IAAI,IAAI;AACzB,UAAM,SAAS,IAAI,kBAAkB;AACrC,UAAM,SAAS,IAAI,gBAAgB;AACnC,UAAM,cAAc,SAAS,MAAM,IAAI,SAAO,MAAM,KAAK,OAAO,OAAO,OAAO,OAAO,KAAK,CAAC;AAC3F,aAAS,UAAU;AACjB,UAAI,CAAC,aAAa;AAChB;AACF,UAAI,MAAM,IAAI,SAAO,MAAM,KAAK,IAAI,aAAa,OAAO;AAAA,QACtD,QAAQ,YAAY;AAAA,QACpB,OAAO;AAAA,MACT,CAAC;AACD,mBAAa,GAAG;AAChB,wBAAkB,GAAG;AAAA,IACvB;AACA;AACA,aAAS,aAAa,KAAK;AACzB,YAAM,YAAY,IAAI,SAAO,MAAM,KAAK,KAAK,IAAI,EAAE;AACnD,YAAM,cAAc,EAAE,QAAQ,IAAI,SAAO,MAAM,KAAK,MAAM,IAAI,EAAE,EAAE;AAClE,YAAM,cAAc,IAAI,SAAO,MAAM,KAAK,YAAY,aAAa,OAAO,WAAW,WAAW;AAChG,UAAI,SAAS,IAAI,SAAO,MAAM,KAAK,OAAO;AAAA,QACxC,UAAU,YAAY;AAAA,QACtB,OAAO;AAAA,MACT,CAAC;AACD,aAAO,OAAO,GAAG;AAAA,IACnB;AACA;AACA,aAAS,kBAAkB,KAAK;AAC9B,UAAI,gBAAgB,IAAI,SAAO,MAAM,KAAK,cAAc;AAAA,QACtD,WAAW;AAAA,QACX,SAAS;AAAA,QACT,UAAU,YAAY;AAAA,QACtB,QAAQ;AAAA,MACV,CAAC;AACD,oBAAc,OAAO,GAAG;AAAA,IAC1B;AACA;AACA,UAAM,gBAAgB,iBAAiB;AACvC,aAAS,SAAS;AAChB,eAAS,MAAM,OAAO;AACtB,eAAS,YAAY,MAAM;AAAA,IAC7B;AACA,cAAU,YAAY;AACpB,UAAI,SAAO,SAAS,SAAO,MAAM,MAAM;AACrC,gBAAQ;AAAA,MACV,OAAO;AACL,cAAM,SAAS,SAAS,cAAc,QAAQ;AAC9C,eAAO,MAAM,yDAAyD,cAAc,OAAO,kBAAkB;AAC7G,iBAAS,KAAK,YAAY,MAAM;AAChC,eAAO,SAAS,MAAM,SAAO,MAAM,KAAK,KAAK,MAAM;AACjD,kBAAQ;AAAA,QACV,CAAC;AAAA,MACH;AAAA,IACF,CAAC;AACD,WAAO,CAAC,MAAM,OAAO,SAAS,WAAW;AACvC,YAAM,OAAO,gBAAgB,YAAY,EAAE,OAAO,UAAU,GAAG,MAAM,CAAC,CAAC,ouBAAouB;AAAA,IAC7yB;AAAA,EACF;AACF,CAAC;\",\n  \"names\": []\n}\n"
     },
     {
       "name": "vite:css-post",
-      "start": 1711508376479,
-      "end": 1711508376479,
+      "start": 1711509493905,
+      "end": 1711509493905,
       "order": "normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1711508376479,
-      "end": 1711508376479,
+      "start": 1711509493906,
+      "end": 1711509493906,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1711508376479,
-      "end": 1711508376479,
+      "start": 1711509493906,
+      "end": 1711509493906,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1711508376479,
-      "end": 1711508376479,
+      "start": 1711509493906,
+      "end": 1711509493906,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1711508376479,
-      "end": 1711508376480,
+      "start": 1711509493906,
+      "end": 1711509493906,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1711508376480,
-      "end": 1711508376480,
+      "start": 1711509493906,
+      "end": 1711509493906,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1711508376480,
-      "end": 1711508376480,
+      "start": 1711509493906,
+      "end": 1711509493906,
       "order": "normal"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1711508376480,
-      "end": 1711508376481,
+      "start": 1711509493906,
+      "end": 1711509493907,
       "order": "post"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1711508376480,
-      "end": 1711508376481,
+      "start": 1711509493906,
+      "end": 1711509493907,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
       "result": "import { useRuntimeConfig } from '#app/nuxt';\nimport { defineComponent as _defineComponent } from \"vue\";\nimport { mergeProps as _mergeProps } from \"vue\";\nimport { ssrRenderAttrs as _ssrRenderAttrs } from \"vue/server-renderer\";\nimport { ref, computed, onMounted } from \"vue\";\nimport { useRouter } from \"vue-router\";\nimport imageSrc from \"@/assets/default/images/icon/icon_map_pin_28.svg\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"map\",\n  __ssrInlineRender: true,\n  props: {\n    themeName: {\n      type: String,\n      default: \"default\"\n    }\n  },\n  setup(__props) {\n    const props = __props;\n    const router = useRouter();\n    const imageSrcPath = ref(imageSrc);\n    const mapContainer = ref(null);\n    const inputRef = ref(null);\n    const stLatY = ref(\"37.5090492151745\");\n    const stLngX = ref(\"126.8869873429\");\n    const locPosition = computed(() => new (void 0).kakao.maps.LatLng(stLatY.value, stLngX.value));\n    function initMap() {\n      if (!mapContainer.value)\n        return;\n      let map = new (void 0).kakao.maps.Map(mapContainer.value, {\n        center: locPosition.value,\n        level: 3\n      });\n      createMarker(map);\n      drawCustomOverlay(map);\n    }\n    ;\n    function createMarker(map) {\n      const imageSize = new (void 0).kakao.maps.Size(30, 30);\n      const imageOption = { offset: new (void 0).kakao.maps.Point(15, 15) };\n      const markerImage = new (void 0).kakao.maps.MarkerImage(imageSrcPath.value, imageSize, imageOption);\n      let marker = new (void 0).kakao.maps.Marker({\n        position: locPosition.value,\n        image: markerImage\n      });\n      marker.setMap(map);\n    }\n    ;\n    function drawCustomOverlay(map) {\n      var customOverlay = new (void 0).kakao.maps.CustomOverlay({\n        clickable: true,\n        content: `<div class=\"customOverlay arrow_box\">가맹점이름</div>`,\n        position: locPosition.value,\n        zIndex: 4\n      });\n      customOverlay.setMap(map);\n    }\n    ;\n    const runtimeConfig = useRuntimeConfig();\n    function onCopy() {\n      inputRef.value.select();\n      (void 0).execCommand(\"copy\");\n    }\n    onMounted(async () => {\n      if ((void 0).kakao && (void 0).kakao.maps) {\n        initMap();\n      } else {\n        const script = (void 0).createElement(\"script\");\n        script.src = `//dapi.kakao.com/v2/maps/sdk.js?autoload=false&appkey=${runtimeConfig.public.VITE_KAKAO_API_KEY}&libraries=services`;\n        (void 0).head.appendChild(script);\n        script.onload = () => (void 0).kakao.maps.load(() => {\n          initMap();\n        });\n      }\n    });\n    return (_ctx, _push, _parent, _attrs) => {\n      _push(`<div${_ssrRenderAttrs(_mergeProps({ class: \"layout1\" }, _attrs))} data-v-2679e18a><header class=\"header-main fixed\" data-v-2679e18a><div class=\"header-row\" data-v-2679e18a><h1 class=\"store-name\" data-v-2679e18a> 지도보기 </h1><button class=\"btn-user\" title=\"마이페이지 바로가기\" data-v-2679e18a></button></div></header><div class=\"address-layer\" data-v-2679e18a><div class=\"inner\" data-v-2679e18a><div class=\"layer-head\" data-v-2679e18a><h2 data-v-2679e18a>매장주소</h2><button class=\"btn-copy\" data-v-2679e18a>주소복사</button></div><div class=\"address-text\" data-v-2679e18a><input type=\"text\" readonly value=\"서울 구로구 경인로 661 (신도림동, 신도림1차푸르지오)\" class=\"input-address\" data-v-2679e18a><div class=\"front-address\" data-v-2679e18a>서울 구로구 경인로 661 (신도림동, 신도림1차푸르지오)</div></div></div></div><div id=\"map\" data-v-2679e18a></div></div>`);\n    };\n  }\n});\n",
-      "start": 1711508376481,
-      "end": 1711508376485,
+      "start": 1711509493907,
+      "end": 1711509493916,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -218,8 +218,8 @@
     {
       "name": "nuxt:imports-transform",
       "result": "import { useRuntimeConfig } from '#app/nuxt';\nimport { defineComponent as _defineComponent } from \"vue\";\nimport { mergeProps as _mergeProps } from \"vue\";\nimport { ssrRenderAttrs as _ssrRenderAttrs } from \"vue/server-renderer\";\nimport { ref, computed, onMounted } from \"vue\";\nimport { useRouter } from \"vue-router\";\nimport imageSrc from \"@/assets/default/images/icon/icon_map_pin_28.svg\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"map\",\n  __ssrInlineRender: true,\n  props: {\n    themeName: {\n      type: String,\n      default: \"default\"\n    }\n  },\n  setup(__props) {\n    const props = __props;\n    const router = useRouter();\n    const imageSrcPath = ref(imageSrc);\n    const mapContainer = ref(null);\n    const inputRef = ref(null);\n    const stLatY = ref(\"37.5090492151745\");\n    const stLngX = ref(\"126.8869873429\");\n    const locPosition = computed(() => new (void 0).kakao.maps.LatLng(stLatY.value, stLngX.value));\n    function initMap() {\n      if (!mapContainer.value)\n        return;\n      let map = new (void 0).kakao.maps.Map(mapContainer.value, {\n        center: locPosition.value,\n        level: 3\n      });\n      createMarker(map);\n      drawCustomOverlay(map);\n    }\n    ;\n    function createMarker(map) {\n      const imageSize = new (void 0).kakao.maps.Size(30, 30);\n      const imageOption = { offset: new (void 0).kakao.maps.Point(15, 15) };\n      const markerImage = new (void 0).kakao.maps.MarkerImage(imageSrcPath.value, imageSize, imageOption);\n      let marker = new (void 0).kakao.maps.Marker({\n        position: locPosition.value,\n        image: markerImage\n      });\n      marker.setMap(map);\n    }\n    ;\n    function drawCustomOverlay(map) {\n      var customOverlay = new (void 0).kakao.maps.CustomOverlay({\n        clickable: true,\n        content: `<div class=\"customOverlay arrow_box\">가맹점이름</div>`,\n        position: locPosition.value,\n        zIndex: 4\n      });\n      customOverlay.setMap(map);\n    }\n    ;\n    const runtimeConfig = useRuntimeConfig();\n    function onCopy() {\n      inputRef.value.select();\n      (void 0).execCommand(\"copy\");\n    }\n    onMounted(async () => {\n      if ((void 0).kakao && (void 0).kakao.maps) {\n        initMap();\n      } else {\n        const script = (void 0).createElement(\"script\");\n        script.src = `//dapi.kakao.com/v2/maps/sdk.js?autoload=false&appkey=${runtimeConfig.public.VITE_KAKAO_API_KEY}&libraries=services`;\n        (void 0).head.appendChild(script);\n        script.onload = () => (void 0).kakao.maps.load(() => {\n          initMap();\n        });\n      }\n    });\n    return (_ctx, _push, _parent, _attrs) => {\n      _push(`<div${_ssrRenderAttrs(_mergeProps({ class: \"layout1\" }, _attrs))} data-v-2679e18a><header class=\"header-main fixed\" data-v-2679e18a><div class=\"header-row\" data-v-2679e18a><h1 class=\"store-name\" data-v-2679e18a> 지도보기 </h1><button class=\"btn-user\" title=\"마이페이지 바로가기\" data-v-2679e18a></button></div></header><div class=\"address-layer\" data-v-2679e18a><div class=\"inner\" data-v-2679e18a><div class=\"layer-head\" data-v-2679e18a><h2 data-v-2679e18a>매장주소</h2><button class=\"btn-copy\" data-v-2679e18a>주소복사</button></div><div class=\"address-text\" data-v-2679e18a><input type=\"text\" readonly value=\"서울 구로구 경인로 661 (신도림동, 신도림1차푸르지오)\" class=\"input-address\" data-v-2679e18a><div class=\"front-address\" data-v-2679e18a>서울 구로구 경인로 661 (신도림동, 신도림1차푸르지오)</div></div></div></div><div id=\"map\" data-v-2679e18a></div></div>`);\n    };\n  }\n});\n",
-      "start": 1711508376481,
-      "end": 1711508376485,
+      "start": 1711509493907,
+      "end": 1711509493916,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -232,21 +232,21 @@
     },
     {
       "name": "unctx:transform",
-      "start": 1711508376485,
-      "end": 1711508376485,
+      "start": 1711509493916,
+      "end": 1711509493916,
       "order": "post"
     },
     {
       "name": "unctx:transform",
-      "start": 1711508376485,
-      "end": 1711508376485,
+      "start": 1711509493916,
+      "end": 1711509493916,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
       "result": "\nconst __nuxt_page_meta = null\nexport default __nuxt_page_meta\n",
-      "start": 1711508376485,
-      "end": 1711508376486,
+      "start": 1711509493919,
+      "end": 1711509493919,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -260,8 +260,8 @@
     {
       "name": "nuxt:pages-macros-transform",
       "result": "\nconst __nuxt_page_meta = null\nexport default __nuxt_page_meta\n",
-      "start": 1711508376485,
-      "end": 1711508376486,
+      "start": 1711509493919,
+      "end": 1711509493919,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -274,32 +274,32 @@
     },
     {
       "name": "nuxt:tree-shake-template",
-      "start": 1711508376486,
-      "end": 1711508376486,
+      "start": 1711509493919,
+      "end": 1711509493919,
       "order": "post"
     },
     {
       "name": "nuxt:components-loader",
-      "start": 1711508376486,
-      "end": 1711508376486,
+      "start": 1711509493919,
+      "end": 1711509493919,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-composables:transform",
-      "start": 1711508376487,
-      "end": 1711508376487,
+      "start": 1711509493920,
+      "end": 1711509493920,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1711508376488,
-      "end": 1711508376488,
+      "start": 1711509493920,
+      "end": 1711509493920,
       "order": "normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1711508376488,
-      "end": 1711508376489,
+      "start": 1711509493920,
+      "end": 1711509493920,
       "order": "normal"
     }
   ]

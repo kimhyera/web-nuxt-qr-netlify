@@ -4,208 +4,208 @@
     {
       "name": "virtual",
       "result": "import { default as indexPpea3RIQGbMeta } from \"D:/localserver/web-nuxt-sdk/web-nuxt-qr-netlify/pages/cart/index.vue?macro=true\";\nimport { default as index3sqAP7m4oAMeta } from \"D:/localserver/web-nuxt-sdk/web-nuxt-qr-netlify/pages/index.vue?macro=true\";\nimport { default as BackdropHz4BO0fN9cMeta } from \"D:/localserver/web-nuxt-sdk/web-nuxt-qr-netlify/pages/pb/components/Backdrop.vue?macro=true\";\nimport { default as guide0mpgbAA2dDMeta } from \"D:/localserver/web-nuxt-sdk/web-nuxt-qr-netlify/pages/pb/guide.vue?macro=true\";\nimport { default as mapZo1JlPpfzWMeta } from \"D:/localserver/web-nuxt-sdk/web-nuxt-qr-netlify/pages/pb/map.vue?macro=true\";\nimport { default as _91goodsNo_93qrBpCbfE89Meta } from \"D:/localserver/web-nuxt-sdk/web-nuxt-qr-netlify/pages/pb/order/[groupNo]/[goodsNo].vue?macro=true\";\nimport { default as _1001_45popup1Lft1wfLZxRMeta } from \"D:/localserver/web-nuxt-sdk/web-nuxt-qr-netlify/pages/pb/order/1001-popup1.vue?macro=true\";\nimport { default as _1001_45popup2J0srJYvQNKMeta } from \"D:/localserver/web-nuxt-sdk/web-nuxt-qr-netlify/pages/pb/order/1001-popup2.vue?macro=true\";\nimport { default as basket_45closedliy32Np2JNMeta } from \"D:/localserver/web-nuxt-sdk/web-nuxt-qr-netlify/pages/pb/order/basket-closed.vue?macro=true\";\nimport { default as basket_45noneSQlJgp0XwmMeta } from \"D:/localserver/web-nuxt-sdk/web-nuxt-qr-netlify/pages/pb/order/basket-none.vue?macro=true\";\nimport { default as basketcfBFxTA98NMeta } from \"D:/localserver/web-nuxt-sdk/web-nuxt-qr-netlify/pages/pb/order/basket.vue?macro=true\";\nimport { default as detail_45add_45basketGXnE2TunfJMeta } from \"D:/localserver/web-nuxt-sdk/web-nuxt-qr-netlify/pages/pb/order/detail-add-basket.vue?macro=true\";\nimport { default as history_45paylaterHvRnUgJPXMMeta } from \"D:/localserver/web-nuxt-sdk/web-nuxt-qr-netlify/pages/pb/order/history-paylater.vue?macro=true\";\nimport { default as pay_45completedcpRuS7CH94Meta } from \"D:/localserver/web-nuxt-sdk/web-nuxt-qr-netlify/pages/pb/order/pay-completed.vue?macro=true\";\nimport { default as pay_45halljKoMobt3YKMeta } from \"D:/localserver/web-nuxt-sdk/web-nuxt-qr-netlify/pages/pb/order/pay-hall.vue?macro=true\";\nimport { default as pay_45laterbhzyZX0WjJMeta } from \"D:/localserver/web-nuxt-sdk/web-nuxt-qr-netlify/pages/pb/order/pay-later.vue?macro=true\";\nimport { default as pay_45togoKKUPWa7hTHMeta } from \"D:/localserver/web-nuxt-sdk/web-nuxt-qr-netlify/pages/pb/order/pay-togo.vue?macro=true\";\nimport { default as payYhCvezvu4BMeta } from \"D:/localserver/web-nuxt-sdk/web-nuxt-qr-netlify/pages/pb/order/pay.vue?macro=true\";\nimport { default as popup_45history_45paylaterTHDGeAVdpEMeta } from \"D:/localserver/web-nuxt-sdk/web-nuxt-qr-netlify/pages/pb/order/popup-history-paylater.vue?macro=true\";\nimport { default as store_45infovppmum97kjMeta } from \"D:/localserver/web-nuxt-sdk/web-nuxt-qr-netlify/pages/pb/order/store-info.vue?macro=true\";\nimport { default as store_45noticelAHxCe3vzLMeta } from \"D:/localserver/web-nuxt-sdk/web-nuxt-qr-netlify/pages/pb/order/store-notice.vue?macro=true\";\nimport { default as table2TyjLZD3VeMeta } from \"D:/localserver/web-nuxt-sdk/web-nuxt-qr-netlify/pages/pb/order/table.vue?macro=true\";\nimport { default as togogFrS0rdytBMeta } from \"D:/localserver/web-nuxt-sdk/web-nuxt-qr-netlify/pages/pb/order/togo.vue?macro=true\";\nimport { default as path3ZwYJMDaG1Meta } from \"D:/localserver/web-nuxt-sdk/web-nuxt-qr-netlify/pages/pb/path.vue?macro=true\";\nimport { default as modal_45notice0ACZW4SUaRMeta } from \"D:/localserver/web-nuxt-sdk/web-nuxt-qr-netlify/pages/pb/popup/modal-notice.vue?macro=true\";\nimport { default as modal_45store_45infoxgCQeSj83iMeta } from \"D:/localserver/web-nuxt-sdk/web-nuxt-qr-netlify/pages/pb/popup/modal-store-info.vue?macro=true\";\nimport { default as toastQUTPJBBnarMeta } from \"D:/localserver/web-nuxt-sdk/web-nuxt-qr-netlify/pages/pb/popup/toast.vue?macro=true\";\nimport { default as AdolescentClauseuoiy5PE4WlMeta } from \"D:/localserver/web-nuxt-sdk/web-nuxt-qr-netlify/pages/pb/terms/AdolescentClause.vue?macro=true\";\nimport { default as conditionsOfUseGJoHv9l8bSMeta } from \"D:/localserver/web-nuxt-sdk/web-nuxt-qr-netlify/pages/pb/terms/conditionsOfUse.vue?macro=true\";\nimport { default as informationClauseA9XfshQmSkMeta } from \"D:/localserver/web-nuxt-sdk/web-nuxt-qr-netlify/pages/pb/terms/informationClause.vue?macro=true\";\nimport { default as LocationAgreementVWgciiusO2Meta } from \"D:/localserver/web-nuxt-sdk/web-nuxt-qr-netlify/pages/pb/terms/LocationAgreement.vue?macro=true\";\nimport { default as privacyNoticenwGQVu4qO0Meta } from \"D:/localserver/web-nuxt-sdk/web-nuxt-qr-netlify/pages/pb/terms/privacyNotice.vue?macro=true\";\nexport default [\n  {\n    name: indexPpea3RIQGbMeta?.name ?? \"cart\",\n    path: indexPpea3RIQGbMeta?.path ?? \"/cart\",\n    meta: indexPpea3RIQGbMeta || {},\n    alias: indexPpea3RIQGbMeta?.alias || [],\n    redirect: indexPpea3RIQGbMeta?.redirect,\n    component: () => import(\"D:/localserver/web-nuxt-sdk/web-nuxt-qr-netlify/pages/cart/index.vue\").then(m => m.default || m)\n  },\n  {\n    name: index3sqAP7m4oAMeta?.name ?? \"index\",\n    path: index3sqAP7m4oAMeta?.path ?? \"/\",\n    meta: index3sqAP7m4oAMeta || {},\n    alias: index3sqAP7m4oAMeta?.alias || [],\n    redirect: index3sqAP7m4oAMeta?.redirect,\n    component: () => import(\"D:/localserver/web-nuxt-sdk/web-nuxt-qr-netlify/pages/index.vue\").then(m => m.default || m)\n  },\n  {\n    name: BackdropHz4BO0fN9cMeta?.name ?? \"pb-components-Backdrop\",\n    path: BackdropHz4BO0fN9cMeta?.path ?? \"/pb/components/Backdrop\",\n    meta: BackdropHz4BO0fN9cMeta || {},\n    alias: BackdropHz4BO0fN9cMeta?.alias || [],\n    redirect: BackdropHz4BO0fN9cMeta?.redirect,\n    component: () => import(\"D:/localserver/web-nuxt-sdk/web-nuxt-qr-netlify/pages/pb/components/Backdrop.vue\").then(m => m.default || m)\n  },\n  {\n    name: guide0mpgbAA2dDMeta?.name ?? \"pb-guide\",\n    path: guide0mpgbAA2dDMeta?.path ?? \"/pb/guide\",\n    meta: guide0mpgbAA2dDMeta || {},\n    alias: guide0mpgbAA2dDMeta?.alias || [],\n    redirect: guide0mpgbAA2dDMeta?.redirect,\n    component: () => import(\"D:/localserver/web-nuxt-sdk/web-nuxt-qr-netlify/pages/pb/guide.vue\").then(m => m.default || m)\n  },\n  {\n    name: mapZo1JlPpfzWMeta?.name ?? \"pb-map\",\n    path: mapZo1JlPpfzWMeta?.path ?? \"/pb/map\",\n    meta: mapZo1JlPpfzWMeta || {},\n    alias: mapZo1JlPpfzWMeta?.alias || [],\n    redirect: mapZo1JlPpfzWMeta?.redirect,\n    component: () => import(\"D:/localserver/web-nuxt-sdk/web-nuxt-qr-netlify/pages/pb/map.vue\").then(m => m.default || m)\n  },\n  {\n    name: _91goodsNo_93qrBpCbfE89Meta?.name ?? \"pb-order-groupNo-goodsNo\",\n    path: _91goodsNo_93qrBpCbfE89Meta?.path ?? \"/pb/order/:groupNo()/:goodsNo()\",\n    meta: _91goodsNo_93qrBpCbfE89Meta || {},\n    alias: _91goodsNo_93qrBpCbfE89Meta?.alias || [],\n    redirect: _91goodsNo_93qrBpCbfE89Meta?.redirect,\n    component: () => import(\"D:/localserver/web-nuxt-sdk/web-nuxt-qr-netlify/pages/pb/order/[groupNo]/[goodsNo].vue\").then(m => m.default || m)\n  },\n  {\n    name: _1001_45popup1Lft1wfLZxRMeta?.name ?? \"pb-order-1001-popup1\",\n    path: _1001_45popup1Lft1wfLZxRMeta?.path ?? \"/pb/order/1001-popup1\",\n    meta: _1001_45popup1Lft1wfLZxRMeta || {},\n    alias: _1001_45popup1Lft1wfLZxRMeta?.alias || [],\n    redirect: _1001_45popup1Lft1wfLZxRMeta?.redirect,\n    component: () => import(\"D:/localserver/web-nuxt-sdk/web-nuxt-qr-netlify/pages/pb/order/1001-popup1.vue\").then(m => m.default || m)\n  },\n  {\n    name: _1001_45popup2J0srJYvQNKMeta?.name ?? \"pb-order-1001-popup2\",\n    path: _1001_45popup2J0srJYvQNKMeta?.path ?? \"/pb/order/1001-popup2\",\n    meta: _1001_45popup2J0srJYvQNKMeta || {},\n    alias: _1001_45popup2J0srJYvQNKMeta?.alias || [],\n    redirect: _1001_45popup2J0srJYvQNKMeta?.redirect,\n    component: () => import(\"D:/localserver/web-nuxt-sdk/web-nuxt-qr-netlify/pages/pb/order/1001-popup2.vue\").then(m => m.default || m)\n  },\n  {\n    name: basket_45closedliy32Np2JNMeta?.name ?? \"pb-order-basket-closed\",\n    path: basket_45closedliy32Np2JNMeta?.path ?? \"/pb/order/basket-closed\",\n    meta: basket_45closedliy32Np2JNMeta || {},\n    alias: basket_45closedliy32Np2JNMeta?.alias || [],\n    redirect: basket_45closedliy32Np2JNMeta?.redirect,\n    component: () => import(\"D:/localserver/web-nuxt-sdk/web-nuxt-qr-netlify/pages/pb/order/basket-closed.vue\").then(m => m.default || m)\n  },\n  {\n    name: basket_45noneSQlJgp0XwmMeta?.name ?? \"pb-order-basket-none\",\n    path: basket_45noneSQlJgp0XwmMeta?.path ?? \"/pb/order/basket-none\",\n    meta: basket_45noneSQlJgp0XwmMeta || {},\n    alias: basket_45noneSQlJgp0XwmMeta?.alias || [],\n    redirect: basket_45noneSQlJgp0XwmMeta?.redirect,\n    component: () => import(\"D:/localserver/web-nuxt-sdk/web-nuxt-qr-netlify/pages/pb/order/basket-none.vue\").then(m => m.default || m)\n  },\n  {\n    name: basketcfBFxTA98NMeta?.name ?? \"pb-order-basket\",\n    path: basketcfBFxTA98NMeta?.path ?? \"/pb/order/basket\",\n    meta: basketcfBFxTA98NMeta || {},\n    alias: basketcfBFxTA98NMeta?.alias || [],\n    redirect: basketcfBFxTA98NMeta?.redirect,\n    component: () => import(\"D:/localserver/web-nuxt-sdk/web-nuxt-qr-netlify/pages/pb/order/basket.vue\").then(m => m.default || m)\n  },\n  {\n    name: detail_45add_45basketGXnE2TunfJMeta?.name ?? \"pb-order-detail-add-basket\",\n    path: detail_45add_45basketGXnE2TunfJMeta?.path ?? \"/pb/order/detail-add-basket\",\n    meta: detail_45add_45basketGXnE2TunfJMeta || {},\n    alias: detail_45add_45basketGXnE2TunfJMeta?.alias || [],\n    redirect: detail_45add_45basketGXnE2TunfJMeta?.redirect,\n    component: () => import(\"D:/localserver/web-nuxt-sdk/web-nuxt-qr-netlify/pages/pb/order/detail-add-basket.vue\").then(m => m.default || m)\n  },\n  {\n    name: history_45paylaterHvRnUgJPXMMeta?.name ?? \"pb-order-history-paylater\",\n    path: history_45paylaterHvRnUgJPXMMeta?.path ?? \"/pb/order/history-paylater\",\n    meta: history_45paylaterHvRnUgJPXMMeta || {},\n    alias: history_45paylaterHvRnUgJPXMMeta?.alias || [],\n    redirect: history_45paylaterHvRnUgJPXMMeta?.redirect,\n    component: () => import(\"D:/localserver/web-nuxt-sdk/web-nuxt-qr-netlify/pages/pb/order/history-paylater.vue\").then(m => m.default || m)\n  },\n  {\n    name: pay_45completedcpRuS7CH94Meta?.name ?? \"pb-order-pay-completed\",\n    path: pay_45completedcpRuS7CH94Meta?.path ?? \"/pb/order/pay-completed\",\n    meta: pay_45completedcpRuS7CH94Meta || {},\n    alias: pay_45completedcpRuS7CH94Meta?.alias || [],\n    redirect: pay_45completedcpRuS7CH94Meta?.redirect,\n    component: () => import(\"D:/localserver/web-nuxt-sdk/web-nuxt-qr-netlify/pages/pb/order/pay-completed.vue\").then(m => m.default || m)\n  },\n  {\n    name: pay_45halljKoMobt3YKMeta?.name ?? \"pb-order-pay-hall\",\n    path: pay_45halljKoMobt3YKMeta?.path ?? \"/pb/order/pay-hall\",\n    meta: pay_45halljKoMobt3YKMeta || {},\n    alias: pay_45halljKoMobt3YKMeta?.alias || [],\n    redirect: pay_45halljKoMobt3YKMeta?.redirect,\n    component: () => import(\"D:/localserver/web-nuxt-sdk/web-nuxt-qr-netlify/pages/pb/order/pay-hall.vue\").then(m => m.default || m)\n  },\n  {\n    name: pay_45laterbhzyZX0WjJMeta?.name ?? \"pb-order-pay-later\",\n    path: pay_45laterbhzyZX0WjJMeta?.path ?? \"/pb/order/pay-later\",\n    meta: pay_45laterbhzyZX0WjJMeta || {},\n    alias: pay_45laterbhzyZX0WjJMeta?.alias || [],\n    redirect: pay_45laterbhzyZX0WjJMeta?.redirect,\n    component: () => import(\"D:/localserver/web-nuxt-sdk/web-nuxt-qr-netlify/pages/pb/order/pay-later.vue\").then(m => m.default || m)\n  },\n  {\n    name: pay_45togoKKUPWa7hTHMeta?.name ?? \"pb-order-pay-togo\",\n    path: pay_45togoKKUPWa7hTHMeta?.path ?? \"/pb/order/pay-togo\",\n    meta: pay_45togoKKUPWa7hTHMeta || {},\n    alias: pay_45togoKKUPWa7hTHMeta?.alias || [],\n    redirect: pay_45togoKKUPWa7hTHMeta?.redirect,\n    component: () => import(\"D:/localserver/web-nuxt-sdk/web-nuxt-qr-netlify/pages/pb/order/pay-togo.vue\").then(m => m.default || m)\n  },\n  {\n    name: payYhCvezvu4BMeta?.name ?? \"pb-order-pay\",\n    path: payYhCvezvu4BMeta?.path ?? \"/pb/order/pay\",\n    meta: payYhCvezvu4BMeta || {},\n    alias: payYhCvezvu4BMeta?.alias || [],\n    redirect: payYhCvezvu4BMeta?.redirect,\n    component: () => import(\"D:/localserver/web-nuxt-sdk/web-nuxt-qr-netlify/pages/pb/order/pay.vue\").then(m => m.default || m)\n  },\n  {\n    name: popup_45history_45paylaterTHDGeAVdpEMeta?.name ?? \"pb-order-popup-history-paylater\",\n    path: popup_45history_45paylaterTHDGeAVdpEMeta?.path ?? \"/pb/order/popup-history-paylater\",\n    meta: popup_45history_45paylaterTHDGeAVdpEMeta || {},\n    alias: popup_45history_45paylaterTHDGeAVdpEMeta?.alias || [],\n    redirect: popup_45history_45paylaterTHDGeAVdpEMeta?.redirect,\n    component: () => import(\"D:/localserver/web-nuxt-sdk/web-nuxt-qr-netlify/pages/pb/order/popup-history-paylater.vue\").then(m => m.default || m)\n  },\n  {\n    name: store_45infovppmum97kjMeta?.name ?? \"pb-order-store-info\",\n    path: store_45infovppmum97kjMeta?.path ?? \"/pb/order/store-info\",\n    meta: store_45infovppmum97kjMeta || {},\n    alias: store_45infovppmum97kjMeta?.alias || [],\n    redirect: store_45infovppmum97kjMeta?.redirect,\n    component: () => import(\"D:/localserver/web-nuxt-sdk/web-nuxt-qr-netlify/pages/pb/order/store-info.vue\").then(m => m.default || m)\n  },\n  {\n    name: store_45noticelAHxCe3vzLMeta?.name ?? \"pb-order-store-notice\",\n    path: store_45noticelAHxCe3vzLMeta?.path ?? \"/pb/order/store-notice\",\n    meta: store_45noticelAHxCe3vzLMeta || {},\n    alias: store_45noticelAHxCe3vzLMeta?.alias || [],\n    redirect: store_45noticelAHxCe3vzLMeta?.redirect,\n    component: () => import(\"D:/localserver/web-nuxt-sdk/web-nuxt-qr-netlify/pages/pb/order/store-notice.vue\").then(m => m.default || m)\n  },\n  {\n    name: table2TyjLZD3VeMeta?.name ?? \"pb-order-table\",\n    path: table2TyjLZD3VeMeta?.path ?? \"/pb/order/table\",\n    meta: table2TyjLZD3VeMeta || {},\n    alias: table2TyjLZD3VeMeta?.alias || [],\n    redirect: table2TyjLZD3VeMeta?.redirect,\n    component: () => import(\"D:/localserver/web-nuxt-sdk/web-nuxt-qr-netlify/pages/pb/order/table.vue\").then(m => m.default || m)\n  },\n  {\n    name: togogFrS0rdytBMeta?.name ?? \"pb-order-togo\",\n    path: togogFrS0rdytBMeta?.path ?? \"/pb/order/togo\",\n    meta: togogFrS0rdytBMeta || {},\n    alias: togogFrS0rdytBMeta?.alias || [],\n    redirect: togogFrS0rdytBMeta?.redirect,\n    component: () => import(\"D:/localserver/web-nuxt-sdk/web-nuxt-qr-netlify/pages/pb/order/togo.vue\").then(m => m.default || m)\n  },\n  {\n    name: path3ZwYJMDaG1Meta?.name ?? \"pb-path\",\n    path: path3ZwYJMDaG1Meta?.path ?? \"/pb/path\",\n    meta: path3ZwYJMDaG1Meta || {},\n    alias: path3ZwYJMDaG1Meta?.alias || [],\n    redirect: path3ZwYJMDaG1Meta?.redirect,\n    component: () => import(\"D:/localserver/web-nuxt-sdk/web-nuxt-qr-netlify/pages/pb/path.vue\").then(m => m.default || m)\n  },\n  {\n    name: modal_45notice0ACZW4SUaRMeta?.name ?? \"pb-popup-modal-notice\",\n    path: modal_45notice0ACZW4SUaRMeta?.path ?? \"/pb/popup/modal-notice\",\n    meta: modal_45notice0ACZW4SUaRMeta || {},\n    alias: modal_45notice0ACZW4SUaRMeta?.alias || [],\n    redirect: modal_45notice0ACZW4SUaRMeta?.redirect,\n    component: () => import(\"D:/localserver/web-nuxt-sdk/web-nuxt-qr-netlify/pages/pb/popup/modal-notice.vue\").then(m => m.default || m)\n  },\n  {\n    name: modal_45store_45infoxgCQeSj83iMeta?.name ?? \"pb-popup-modal-store-info\",\n    path: modal_45store_45infoxgCQeSj83iMeta?.path ?? \"/pb/popup/modal-store-info\",\n    meta: modal_45store_45infoxgCQeSj83iMeta || {},\n    alias: modal_45store_45infoxgCQeSj83iMeta?.alias || [],\n    redirect: modal_45store_45infoxgCQeSj83iMeta?.redirect,\n    component: () => import(\"D:/localserver/web-nuxt-sdk/web-nuxt-qr-netlify/pages/pb/popup/modal-store-info.vue\").then(m => m.default || m)\n  },\n  {\n    name: toastQUTPJBBnarMeta?.name ?? \"pb-popup-toast\",\n    path: toastQUTPJBBnarMeta?.path ?? \"/pb/popup/toast\",\n    meta: toastQUTPJBBnarMeta || {},\n    alias: toastQUTPJBBnarMeta?.alias || [],\n    redirect: toastQUTPJBBnarMeta?.redirect,\n    component: () => import(\"D:/localserver/web-nuxt-sdk/web-nuxt-qr-netlify/pages/pb/popup/toast.vue\").then(m => m.default || m)\n  },\n  {\n    name: AdolescentClauseuoiy5PE4WlMeta?.name ?? \"pb-terms-AdolescentClause\",\n    path: AdolescentClauseuoiy5PE4WlMeta?.path ?? \"/pb/terms/AdolescentClause\",\n    meta: AdolescentClauseuoiy5PE4WlMeta || {},\n    alias: AdolescentClauseuoiy5PE4WlMeta?.alias || [],\n    redirect: AdolescentClauseuoiy5PE4WlMeta?.redirect,\n    component: () => import(\"D:/localserver/web-nuxt-sdk/web-nuxt-qr-netlify/pages/pb/terms/AdolescentClause.vue\").then(m => m.default || m)\n  },\n  {\n    name: conditionsOfUseGJoHv9l8bSMeta?.name ?? \"pb-terms-conditionsOfUse\",\n    path: conditionsOfUseGJoHv9l8bSMeta?.path ?? \"/pb/terms/conditionsOfUse\",\n    meta: conditionsOfUseGJoHv9l8bSMeta || {},\n    alias: conditionsOfUseGJoHv9l8bSMeta?.alias || [],\n    redirect: conditionsOfUseGJoHv9l8bSMeta?.redirect,\n    component: () => import(\"D:/localserver/web-nuxt-sdk/web-nuxt-qr-netlify/pages/pb/terms/conditionsOfUse.vue\").then(m => m.default || m)\n  },\n  {\n    name: informationClauseA9XfshQmSkMeta?.name ?? \"pb-terms-informationClause\",\n    path: informationClauseA9XfshQmSkMeta?.path ?? \"/pb/terms/informationClause\",\n    meta: informationClauseA9XfshQmSkMeta || {},\n    alias: informationClauseA9XfshQmSkMeta?.alias || [],\n    redirect: informationClauseA9XfshQmSkMeta?.redirect,\n    component: () => import(\"D:/localserver/web-nuxt-sdk/web-nuxt-qr-netlify/pages/pb/terms/informationClause.vue\").then(m => m.default || m)\n  },\n  {\n    name: LocationAgreementVWgciiusO2Meta?.name ?? \"pb-terms-LocationAgreement\",\n    path: LocationAgreementVWgciiusO2Meta?.path ?? \"/pb/terms/LocationAgreement\",\n    meta: LocationAgreementVWgciiusO2Meta || {},\n    alias: LocationAgreementVWgciiusO2Meta?.alias || [],\n    redirect: LocationAgreementVWgciiusO2Meta?.redirect,\n    component: () => import(\"D:/localserver/web-nuxt-sdk/web-nuxt-qr-netlify/pages/pb/terms/LocationAgreement.vue\").then(m => m.default || m)\n  },\n  {\n    name: privacyNoticenwGQVu4qO0Meta?.name ?? \"pb-terms-privacyNotice\",\n    path: privacyNoticenwGQVu4qO0Meta?.path ?? \"/pb/terms/privacyNotice\",\n    meta: privacyNoticenwGQVu4qO0Meta || {},\n    alias: privacyNoticenwGQVu4qO0Meta?.alias || [],\n    redirect: privacyNoticenwGQVu4qO0Meta?.redirect,\n    component: () => import(\"D:/localserver/web-nuxt-sdk/web-nuxt-qr-netlify/pages/pb/terms/privacyNotice.vue\").then(m => m.default || m)\n  }\n]",
-      "start": 1711508328643,
-      "end": 1711508328643,
+      "start": 1711509446726,
+      "end": 1711509446726,
       "sourcemaps": null
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1711508328644,
-      "end": 1711508328644,
+      "start": 1711509446726,
+      "end": 1711509446726,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1711508328644,
-      "end": 1711508328644,
+      "start": 1711509446727,
+      "end": 1711509446727,
       "order": "pre"
     },
     {
       "name": "nuxt:client-fallback-auto-id",
-      "start": 1711508328644,
-      "end": 1711508328644,
+      "start": 1711509446727,
+      "end": 1711509446727,
       "order": "pre"
     },
     {
       "name": "vite:css",
-      "start": 1711508328644,
-      "end": 1711508328644,
+      "start": 1711509446727,
+      "end": 1711509446727,
       "order": "normal"
     },
     {
       "name": "vite:esbuild",
-      "start": 1711508328644,
-      "end": 1711508328644,
+      "start": 1711509446727,
+      "end": 1711509446727,
       "order": "normal"
     },
     {
       "name": "vite:json",
-      "start": 1711508328644,
-      "end": 1711508328644,
+      "start": 1711509446727,
+      "end": 1711509446727,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1711508328644,
-      "end": 1711508328644,
+      "start": 1711509446727,
+      "end": 1711509446727,
       "order": "normal"
     },
     {
       "name": "vite:vue",
-      "start": 1711508328644,
-      "end": 1711508328644,
+      "start": 1711509446727,
+      "end": 1711509446727,
       "order": "normal"
     },
     {
       "name": "vite:vue-jsx",
-      "start": 1711508328644,
-      "end": 1711508328644,
+      "start": 1711509446727,
+      "end": 1711509446727,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1711508328644,
-      "end": 1711508328644,
+      "start": 1711509446727,
+      "end": 1711509446727,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1711508328644,
-      "end": 1711508328644,
+      "start": 1711509446727,
+      "end": 1711509446727,
       "order": "normal"
     },
     {
       "name": "nuxt:chunk-error",
-      "start": 1711508328644,
-      "end": 1711508328644,
+      "start": 1711509446727,
+      "end": 1711509446727,
       "order": "normal"
     },
     {
       "name": "nuxt:components:imports",
-      "start": 1711508328644,
-      "end": 1711508328644,
+      "start": 1711509446727,
+      "end": 1711509446727,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1711508328644,
-      "end": 1711508328644,
+      "start": 1711509446727,
+      "end": 1711509446727,
       "order": "normal"
     },
     {
       "name": "ssr-styles",
-      "start": 1711508328644,
-      "end": 1711508328644,
+      "start": 1711509446727,
+      "end": 1711509446727,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1711508328644,
-      "end": 1711508328644,
+      "start": 1711509446727,
+      "end": 1711509446727,
       "order": "normal"
     },
     {
       "name": "vite:css-post",
-      "start": 1711508328644,
-      "end": 1711508328644,
+      "start": 1711509446727,
+      "end": 1711509446727,
       "order": "normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1711508328644,
-      "end": 1711508328644,
+      "start": 1711509446727,
+      "end": 1711509446727,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1711508328644,
-      "end": 1711508328644,
+      "start": 1711509446727,
+      "end": 1711509446727,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1711508328645,
-      "end": 1711508328645,
+      "start": 1711509446727,
+      "end": 1711509446727,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1711508328645,
-      "end": 1711508328645,
+      "start": 1711509446727,
+      "end": 1711509446727,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1711508328645,
-      "end": 1711508328646,
+      "start": 1711509446727,
+      "end": 1711509446728,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1711508328646,
-      "end": 1711508328646,
+      "start": 1711509446728,
+      "end": 1711509446728,
       "order": "normal"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1711508328646,
-      "end": 1711508328646,
+      "start": 1711509446728,
+      "end": 1711509446728,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
-      "start": 1711508328646,
-      "end": 1711508328653,
+      "start": 1711509446735,
+      "end": 1711509446740,
       "order": "post"
     },
     {
       "name": "unctx:transform",
-      "start": 1711508328653,
-      "end": 1711508328653,
+      "start": 1711509446741,
+      "end": 1711509446741,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1711508328653,
-      "end": 1711508328653,
+      "start": 1711509446741,
+      "end": 1711509446741,
       "order": "post"
     },
     {
       "name": "nuxt:runtime-paths-dep",
-      "start": 1711508328653,
-      "end": 1711508328653,
+      "start": 1711509446741,
+      "end": 1711509446741,
       "order": "post"
     },
     {
       "name": "nuxt:route-injection-plugin",
-      "start": 1711508328653,
-      "end": 1711508328653,
+      "start": 1711509446741,
+      "end": 1711509446741,
       "order": "post"
     },
     {
       "name": "nuxt:components-loader",
-      "start": 1711508328653,
-      "end": 1711508328653,
+      "start": 1711509446741,
+      "end": 1711509446741,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-composables:transform",
-      "start": 1711508328654,
-      "end": 1711508328654,
+      "start": 1711509446741,
+      "end": 1711509446741,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
       "result": "import { __vitePreload } from \"\u0000vite/preload-helper.js\";import { default as indexPpea3RIQGbMeta } from \"D:/localserver/web-nuxt-sdk/web-nuxt-qr-netlify/pages/cart/index.vue?macro=true\";\nimport { default as index3sqAP7m4oAMeta } from \"D:/localserver/web-nuxt-sdk/web-nuxt-qr-netlify/pages/index.vue?macro=true\";\nimport { default as BackdropHz4BO0fN9cMeta } from \"D:/localserver/web-nuxt-sdk/web-nuxt-qr-netlify/pages/pb/components/Backdrop.vue?macro=true\";\nimport { default as guide0mpgbAA2dDMeta } from \"D:/localserver/web-nuxt-sdk/web-nuxt-qr-netlify/pages/pb/guide.vue?macro=true\";\nimport { default as mapZo1JlPpfzWMeta } from \"D:/localserver/web-nuxt-sdk/web-nuxt-qr-netlify/pages/pb/map.vue?macro=true\";\nimport { default as _91goodsNo_93qrBpCbfE89Meta } from \"D:/localserver/web-nuxt-sdk/web-nuxt-qr-netlify/pages/pb/order/[groupNo]/[goodsNo].vue?macro=true\";\nimport { default as _1001_45popup1Lft1wfLZxRMeta } from \"D:/localserver/web-nuxt-sdk/web-nuxt-qr-netlify/pages/pb/order/1001-popup1.vue?macro=true\";\nimport { default as _1001_45popup2J0srJYvQNKMeta } from \"D:/localserver/web-nuxt-sdk/web-nuxt-qr-netlify/pages/pb/order/1001-popup2.vue?macro=true\";\nimport { default as basket_45closedliy32Np2JNMeta } from \"D:/localserver/web-nuxt-sdk/web-nuxt-qr-netlify/pages/pb/order/basket-closed.vue?macro=true\";\nimport { default as basket_45noneSQlJgp0XwmMeta } from \"D:/localserver/web-nuxt-sdk/web-nuxt-qr-netlify/pages/pb/order/basket-none.vue?macro=true\";\nimport { default as basketcfBFxTA98NMeta } from \"D:/localserver/web-nuxt-sdk/web-nuxt-qr-netlify/pages/pb/order/basket.vue?macro=true\";\nimport { default as detail_45add_45basketGXnE2TunfJMeta } from \"D:/localserver/web-nuxt-sdk/web-nuxt-qr-netlify/pages/pb/order/detail-add-basket.vue?macro=true\";\nimport { default as history_45paylaterHvRnUgJPXMMeta } from \"D:/localserver/web-nuxt-sdk/web-nuxt-qr-netlify/pages/pb/order/history-paylater.vue?macro=true\";\nimport { default as pay_45completedcpRuS7CH94Meta } from \"D:/localserver/web-nuxt-sdk/web-nuxt-qr-netlify/pages/pb/order/pay-completed.vue?macro=true\";\nimport { default as pay_45halljKoMobt3YKMeta } from \"D:/localserver/web-nuxt-sdk/web-nuxt-qr-netlify/pages/pb/order/pay-hall.vue?macro=true\";\nimport { default as pay_45laterbhzyZX0WjJMeta } from \"D:/localserver/web-nuxt-sdk/web-nuxt-qr-netlify/pages/pb/order/pay-later.vue?macro=true\";\nimport { default as pay_45togoKKUPWa7hTHMeta } from \"D:/localserver/web-nuxt-sdk/web-nuxt-qr-netlify/pages/pb/order/pay-togo.vue?macro=true\";\nimport { default as payYhCvezvu4BMeta } from \"D:/localserver/web-nuxt-sdk/web-nuxt-qr-netlify/pages/pb/order/pay.vue?macro=true\";\nimport { default as popup_45history_45paylaterTHDGeAVdpEMeta } from \"D:/localserver/web-nuxt-sdk/web-nuxt-qr-netlify/pages/pb/order/popup-history-paylater.vue?macro=true\";\nimport { default as store_45infovppmum97kjMeta } from \"D:/localserver/web-nuxt-sdk/web-nuxt-qr-netlify/pages/pb/order/store-info.vue?macro=true\";\nimport { default as store_45noticelAHxCe3vzLMeta } from \"D:/localserver/web-nuxt-sdk/web-nuxt-qr-netlify/pages/pb/order/store-notice.vue?macro=true\";\nimport { default as table2TyjLZD3VeMeta } from \"D:/localserver/web-nuxt-sdk/web-nuxt-qr-netlify/pages/pb/order/table.vue?macro=true\";\nimport { default as togogFrS0rdytBMeta } from \"D:/localserver/web-nuxt-sdk/web-nuxt-qr-netlify/pages/pb/order/togo.vue?macro=true\";\nimport { default as path3ZwYJMDaG1Meta } from \"D:/localserver/web-nuxt-sdk/web-nuxt-qr-netlify/pages/pb/path.vue?macro=true\";\nimport { default as modal_45notice0ACZW4SUaRMeta } from \"D:/localserver/web-nuxt-sdk/web-nuxt-qr-netlify/pages/pb/popup/modal-notice.vue?macro=true\";\nimport { default as modal_45store_45infoxgCQeSj83iMeta } from \"D:/localserver/web-nuxt-sdk/web-nuxt-qr-netlify/pages/pb/popup/modal-store-info.vue?macro=true\";\nimport { default as toastQUTPJBBnarMeta } from \"D:/localserver/web-nuxt-sdk/web-nuxt-qr-netlify/pages/pb/popup/toast.vue?macro=true\";\nimport { default as AdolescentClauseuoiy5PE4WlMeta } from \"D:/localserver/web-nuxt-sdk/web-nuxt-qr-netlify/pages/pb/terms/AdolescentClause.vue?macro=true\";\nimport { default as conditionsOfUseGJoHv9l8bSMeta } from \"D:/localserver/web-nuxt-sdk/web-nuxt-qr-netlify/pages/pb/terms/conditionsOfUse.vue?macro=true\";\nimport { default as informationClauseA9XfshQmSkMeta } from \"D:/localserver/web-nuxt-sdk/web-nuxt-qr-netlify/pages/pb/terms/informationClause.vue?macro=true\";\nimport { default as LocationAgreementVWgciiusO2Meta } from \"D:/localserver/web-nuxt-sdk/web-nuxt-qr-netlify/pages/pb/terms/LocationAgreement.vue?macro=true\";\nimport { default as privacyNoticenwGQVu4qO0Meta } from \"D:/localserver/web-nuxt-sdk/web-nuxt-qr-netlify/pages/pb/terms/privacyNotice.vue?macro=true\";\nexport default [\n  {\n    name: indexPpea3RIQGbMeta?.name ?? \"cart\",\n    path: indexPpea3RIQGbMeta?.path ?? \"/cart\",\n    meta: indexPpea3RIQGbMeta || {},\n    alias: indexPpea3RIQGbMeta?.alias || [],\n    redirect: indexPpea3RIQGbMeta?.redirect,\n    component: () => __vitePreload(() => import(\"D:/localserver/web-nuxt-sdk/web-nuxt-qr-netlify/pages/cart/index.vue\"),__VITE_IS_MODERN__?\"__VITE_PRELOAD__\":void 0,import.meta.url).then(m => m.default || m)\n  },\n  {\n    name: index3sqAP7m4oAMeta?.name ?? \"index\",\n    path: index3sqAP7m4oAMeta?.path ?? \"/\",\n    meta: index3sqAP7m4oAMeta || {},\n    alias: index3sqAP7m4oAMeta?.alias || [],\n    redirect: index3sqAP7m4oAMeta?.redirect,\n    component: () => __vitePreload(() => import(\"D:/localserver/web-nuxt-sdk/web-nuxt-qr-netlify/pages/index.vue\"),__VITE_IS_MODERN__?\"__VITE_PRELOAD__\":void 0,import.meta.url).then(m => m.default || m)\n  },\n  {\n    name: BackdropHz4BO0fN9cMeta?.name ?? \"pb-components-Backdrop\",\n    path: BackdropHz4BO0fN9cMeta?.path ?? \"/pb/components/Backdrop\",\n    meta: BackdropHz4BO0fN9cMeta || {},\n    alias: BackdropHz4BO0fN9cMeta?.alias || [],\n    redirect: BackdropHz4BO0fN9cMeta?.redirect,\n    component: () => __vitePreload(() => import(\"D:/localserver/web-nuxt-sdk/web-nuxt-qr-netlify/pages/pb/components/Backdrop.vue\"),__VITE_IS_MODERN__?\"__VITE_PRELOAD__\":void 0,import.meta.url).then(m => m.default || m)\n  },\n  {\n    name: guide0mpgbAA2dDMeta?.name ?? \"pb-guide\",\n    path: guide0mpgbAA2dDMeta?.path ?? \"/pb/guide\",\n    meta: guide0mpgbAA2dDMeta || {},\n    alias: guide0mpgbAA2dDMeta?.alias || [],\n    redirect: guide0mpgbAA2dDMeta?.redirect,\n    component: () => __vitePreload(() => import(\"D:/localserver/web-nuxt-sdk/web-nuxt-qr-netlify/pages/pb/guide.vue\"),__VITE_IS_MODERN__?\"__VITE_PRELOAD__\":void 0,import.meta.url).then(m => m.default || m)\n  },\n  {\n    name: mapZo1JlPpfzWMeta?.name ?? \"pb-map\",\n    path: mapZo1JlPpfzWMeta?.path ?? \"/pb/map\",\n    meta: mapZo1JlPpfzWMeta || {},\n    alias: mapZo1JlPpfzWMeta?.alias || [],\n    redirect: mapZo1JlPpfzWMeta?.redirect,\n    component: () => __vitePreload(() => import(\"D:/localserver/web-nuxt-sdk/web-nuxt-qr-netlify/pages/pb/map.vue\"),__VITE_IS_MODERN__?\"__VITE_PRELOAD__\":void 0,import.meta.url).then(m => m.default || m)\n  },\n  {\n    name: _91goodsNo_93qrBpCbfE89Meta?.name ?? \"pb-order-groupNo-goodsNo\",\n    path: _91goodsNo_93qrBpCbfE89Meta?.path ?? \"/pb/order/:groupNo()/:goodsNo()\",\n    meta: _91goodsNo_93qrBpCbfE89Meta || {},\n    alias: _91goodsNo_93qrBpCbfE89Meta?.alias || [],\n    redirect: _91goodsNo_93qrBpCbfE89Meta?.redirect,\n    component: () => __vitePreload(() => import(\"D:/localserver/web-nuxt-sdk/web-nuxt-qr-netlify/pages/pb/order/[groupNo]/[goodsNo].vue\"),__VITE_IS_MODERN__?\"__VITE_PRELOAD__\":void 0,import.meta.url).then(m => m.default || m)\n  },\n  {\n    name: _1001_45popup1Lft1wfLZxRMeta?.name ?? \"pb-order-1001-popup1\",\n    path: _1001_45popup1Lft1wfLZxRMeta?.path ?? \"/pb/order/1001-popup1\",\n    meta: _1001_45popup1Lft1wfLZxRMeta || {},\n    alias: _1001_45popup1Lft1wfLZxRMeta?.alias || [],\n    redirect: _1001_45popup1Lft1wfLZxRMeta?.redirect,\n    component: () => __vitePreload(() => import(\"D:/localserver/web-nuxt-sdk/web-nuxt-qr-netlify/pages/pb/order/1001-popup1.vue\"),__VITE_IS_MODERN__?\"__VITE_PRELOAD__\":void 0,import.meta.url).then(m => m.default || m)\n  },\n  {\n    name: _1001_45popup2J0srJYvQNKMeta?.name ?? \"pb-order-1001-popup2\",\n    path: _1001_45popup2J0srJYvQNKMeta?.path ?? \"/pb/order/1001-popup2\",\n    meta: _1001_45popup2J0srJYvQNKMeta || {},\n    alias: _1001_45popup2J0srJYvQNKMeta?.alias || [],\n    redirect: _1001_45popup2J0srJYvQNKMeta?.redirect,\n    component: () => __vitePreload(() => import(\"D:/localserver/web-nuxt-sdk/web-nuxt-qr-netlify/pages/pb/order/1001-popup2.vue\"),__VITE_IS_MODERN__?\"__VITE_PRELOAD__\":void 0,import.meta.url).then(m => m.default || m)\n  },\n  {\n    name: basket_45closedliy32Np2JNMeta?.name ?? \"pb-order-basket-closed\",\n    path: basket_45closedliy32Np2JNMeta?.path ?? \"/pb/order/basket-closed\",\n    meta: basket_45closedliy32Np2JNMeta || {},\n    alias: basket_45closedliy32Np2JNMeta?.alias || [],\n    redirect: basket_45closedliy32Np2JNMeta?.redirect,\n    component: () => __vitePreload(() => import(\"D:/localserver/web-nuxt-sdk/web-nuxt-qr-netlify/pages/pb/order/basket-closed.vue\"),__VITE_IS_MODERN__?\"__VITE_PRELOAD__\":void 0,import.meta.url).then(m => m.default || m)\n  },\n  {\n    name: basket_45noneSQlJgp0XwmMeta?.name ?? \"pb-order-basket-none\",\n    path: basket_45noneSQlJgp0XwmMeta?.path ?? \"/pb/order/basket-none\",\n    meta: basket_45noneSQlJgp0XwmMeta || {},\n    alias: basket_45noneSQlJgp0XwmMeta?.alias || [],\n    redirect: basket_45noneSQlJgp0XwmMeta?.redirect,\n    component: () => __vitePreload(() => import(\"D:/localserver/web-nuxt-sdk/web-nuxt-qr-netlify/pages/pb/order/basket-none.vue\"),__VITE_IS_MODERN__?\"__VITE_PRELOAD__\":void 0,import.meta.url).then(m => m.default || m)\n  },\n  {\n    name: basketcfBFxTA98NMeta?.name ?? \"pb-order-basket\",\n    path: basketcfBFxTA98NMeta?.path ?? \"/pb/order/basket\",\n    meta: basketcfBFxTA98NMeta || {},\n    alias: basketcfBFxTA98NMeta?.alias || [],\n    redirect: basketcfBFxTA98NMeta?.redirect,\n    component: () => __vitePreload(() => import(\"D:/localserver/web-nuxt-sdk/web-nuxt-qr-netlify/pages/pb/order/basket.vue\"),__VITE_IS_MODERN__?\"__VITE_PRELOAD__\":void 0,import.meta.url).then(m => m.default || m)\n  },\n  {\n    name: detail_45add_45basketGXnE2TunfJMeta?.name ?? \"pb-order-detail-add-basket\",\n    path: detail_45add_45basketGXnE2TunfJMeta?.path ?? \"/pb/order/detail-add-basket\",\n    meta: detail_45add_45basketGXnE2TunfJMeta || {},\n    alias: detail_45add_45basketGXnE2TunfJMeta?.alias || [],\n    redirect: detail_45add_45basketGXnE2TunfJMeta?.redirect,\n    component: () => __vitePreload(() => import(\"D:/localserver/web-nuxt-sdk/web-nuxt-qr-netlify/pages/pb/order/detail-add-basket.vue\"),__VITE_IS_MODERN__?\"__VITE_PRELOAD__\":void 0,import.meta.url).then(m => m.default || m)\n  },\n  {\n    name: history_45paylaterHvRnUgJPXMMeta?.name ?? \"pb-order-history-paylater\",\n    path: history_45paylaterHvRnUgJPXMMeta?.path ?? \"/pb/order/history-paylater\",\n    meta: history_45paylaterHvRnUgJPXMMeta || {},\n    alias: history_45paylaterHvRnUgJPXMMeta?.alias || [],\n    redirect: history_45paylaterHvRnUgJPXMMeta?.redirect,\n    component: () => __vitePreload(() => import(\"D:/localserver/web-nuxt-sdk/web-nuxt-qr-netlify/pages/pb/order/history-paylater.vue\"),__VITE_IS_MODERN__?\"__VITE_PRELOAD__\":void 0,import.meta.url).then(m => m.default || m)\n  },\n  {\n    name: pay_45completedcpRuS7CH94Meta?.name ?? \"pb-order-pay-completed\",\n    path: pay_45completedcpRuS7CH94Meta?.path ?? \"/pb/order/pay-completed\",\n    meta: pay_45completedcpRuS7CH94Meta || {},\n    alias: pay_45completedcpRuS7CH94Meta?.alias || [],\n    redirect: pay_45completedcpRuS7CH94Meta?.redirect,\n    component: () => __vitePreload(() => import(\"D:/localserver/web-nuxt-sdk/web-nuxt-qr-netlify/pages/pb/order/pay-completed.vue\"),__VITE_IS_MODERN__?\"__VITE_PRELOAD__\":void 0,import.meta.url).then(m => m.default || m)\n  },\n  {\n    name: pay_45halljKoMobt3YKMeta?.name ?? \"pb-order-pay-hall\",\n    path: pay_45halljKoMobt3YKMeta?.path ?? \"/pb/order/pay-hall\",\n    meta: pay_45halljKoMobt3YKMeta || {},\n    alias: pay_45halljKoMobt3YKMeta?.alias || [],\n    redirect: pay_45halljKoMobt3YKMeta?.redirect,\n    component: () => __vitePreload(() => import(\"D:/localserver/web-nuxt-sdk/web-nuxt-qr-netlify/pages/pb/order/pay-hall.vue\"),__VITE_IS_MODERN__?\"__VITE_PRELOAD__\":void 0,import.meta.url).then(m => m.default || m)\n  },\n  {\n    name: pay_45laterbhzyZX0WjJMeta?.name ?? \"pb-order-pay-later\",\n    path: pay_45laterbhzyZX0WjJMeta?.path ?? \"/pb/order/pay-later\",\n    meta: pay_45laterbhzyZX0WjJMeta || {},\n    alias: pay_45laterbhzyZX0WjJMeta?.alias || [],\n    redirect: pay_45laterbhzyZX0WjJMeta?.redirect,\n    component: () => __vitePreload(() => import(\"D:/localserver/web-nuxt-sdk/web-nuxt-qr-netlify/pages/pb/order/pay-later.vue\"),__VITE_IS_MODERN__?\"__VITE_PRELOAD__\":void 0,import.meta.url).then(m => m.default || m)\n  },\n  {\n    name: pay_45togoKKUPWa7hTHMeta?.name ?? \"pb-order-pay-togo\",\n    path: pay_45togoKKUPWa7hTHMeta?.path ?? \"/pb/order/pay-togo\",\n    meta: pay_45togoKKUPWa7hTHMeta || {},\n    alias: pay_45togoKKUPWa7hTHMeta?.alias || [],\n    redirect: pay_45togoKKUPWa7hTHMeta?.redirect,\n    component: () => __vitePreload(() => import(\"D:/localserver/web-nuxt-sdk/web-nuxt-qr-netlify/pages/pb/order/pay-togo.vue\"),__VITE_IS_MODERN__?\"__VITE_PRELOAD__\":void 0,import.meta.url).then(m => m.default || m)\n  },\n  {\n    name: payYhCvezvu4BMeta?.name ?? \"pb-order-pay\",\n    path: payYhCvezvu4BMeta?.path ?? \"/pb/order/pay\",\n    meta: payYhCvezvu4BMeta || {},\n    alias: payYhCvezvu4BMeta?.alias || [],\n    redirect: payYhCvezvu4BMeta?.redirect,\n    component: () => __vitePreload(() => import(\"D:/localserver/web-nuxt-sdk/web-nuxt-qr-netlify/pages/pb/order/pay.vue\"),__VITE_IS_MODERN__?\"__VITE_PRELOAD__\":void 0,import.meta.url).then(m => m.default || m)\n  },\n  {\n    name: popup_45history_45paylaterTHDGeAVdpEMeta?.name ?? \"pb-order-popup-history-paylater\",\n    path: popup_45history_45paylaterTHDGeAVdpEMeta?.path ?? \"/pb/order/popup-history-paylater\",\n    meta: popup_45history_45paylaterTHDGeAVdpEMeta || {},\n    alias: popup_45history_45paylaterTHDGeAVdpEMeta?.alias || [],\n    redirect: popup_45history_45paylaterTHDGeAVdpEMeta?.redirect,\n    component: () => __vitePreload(() => import(\"D:/localserver/web-nuxt-sdk/web-nuxt-qr-netlify/pages/pb/order/popup-history-paylater.vue\"),__VITE_IS_MODERN__?\"__VITE_PRELOAD__\":void 0,import.meta.url).then(m => m.default || m)\n  },\n  {\n    name: store_45infovppmum97kjMeta?.name ?? \"pb-order-store-info\",\n    path: store_45infovppmum97kjMeta?.path ?? \"/pb/order/store-info\",\n    meta: store_45infovppmum97kjMeta || {},\n    alias: store_45infovppmum97kjMeta?.alias || [],\n    redirect: store_45infovppmum97kjMeta?.redirect,\n    component: () => __vitePreload(() => import(\"D:/localserver/web-nuxt-sdk/web-nuxt-qr-netlify/pages/pb/order/store-info.vue\"),__VITE_IS_MODERN__?\"__VITE_PRELOAD__\":void 0,import.meta.url).then(m => m.default || m)\n  },\n  {\n    name: store_45noticelAHxCe3vzLMeta?.name ?? \"pb-order-store-notice\",\n    path: store_45noticelAHxCe3vzLMeta?.path ?? \"/pb/order/store-notice\",\n    meta: store_45noticelAHxCe3vzLMeta || {},\n    alias: store_45noticelAHxCe3vzLMeta?.alias || [],\n    redirect: store_45noticelAHxCe3vzLMeta?.redirect,\n    component: () => __vitePreload(() => import(\"D:/localserver/web-nuxt-sdk/web-nuxt-qr-netlify/pages/pb/order/store-notice.vue\"),__VITE_IS_MODERN__?\"__VITE_PRELOAD__\":void 0,import.meta.url).then(m => m.default || m)\n  },\n  {\n    name: table2TyjLZD3VeMeta?.name ?? \"pb-order-table\",\n    path: table2TyjLZD3VeMeta?.path ?? \"/pb/order/table\",\n    meta: table2TyjLZD3VeMeta || {},\n    alias: table2TyjLZD3VeMeta?.alias || [],\n    redirect: table2TyjLZD3VeMeta?.redirect,\n    component: () => __vitePreload(() => import(\"D:/localserver/web-nuxt-sdk/web-nuxt-qr-netlify/pages/pb/order/table.vue\"),__VITE_IS_MODERN__?\"__VITE_PRELOAD__\":void 0,import.meta.url).then(m => m.default || m)\n  },\n  {\n    name: togogFrS0rdytBMeta?.name ?? \"pb-order-togo\",\n    path: togogFrS0rdytBMeta?.path ?? \"/pb/order/togo\",\n    meta: togogFrS0rdytBMeta || {},\n    alias: togogFrS0rdytBMeta?.alias || [],\n    redirect: togogFrS0rdytBMeta?.redirect,\n    component: () => __vitePreload(() => import(\"D:/localserver/web-nuxt-sdk/web-nuxt-qr-netlify/pages/pb/order/togo.vue\"),__VITE_IS_MODERN__?\"__VITE_PRELOAD__\":void 0,import.meta.url).then(m => m.default || m)\n  },\n  {\n    name: path3ZwYJMDaG1Meta?.name ?? \"pb-path\",\n    path: path3ZwYJMDaG1Meta?.path ?? \"/pb/path\",\n    meta: path3ZwYJMDaG1Meta || {},\n    alias: path3ZwYJMDaG1Meta?.alias || [],\n    redirect: path3ZwYJMDaG1Meta?.redirect,\n    component: () => __vitePreload(() => import(\"D:/localserver/web-nuxt-sdk/web-nuxt-qr-netlify/pages/pb/path.vue\"),__VITE_IS_MODERN__?\"__VITE_PRELOAD__\":void 0,import.meta.url).then(m => m.default || m)\n  },\n  {\n    name: modal_45notice0ACZW4SUaRMeta?.name ?? \"pb-popup-modal-notice\",\n    path: modal_45notice0ACZW4SUaRMeta?.path ?? \"/pb/popup/modal-notice\",\n    meta: modal_45notice0ACZW4SUaRMeta || {},\n    alias: modal_45notice0ACZW4SUaRMeta?.alias || [],\n    redirect: modal_45notice0ACZW4SUaRMeta?.redirect,\n    component: () => __vitePreload(() => import(\"D:/localserver/web-nuxt-sdk/web-nuxt-qr-netlify/pages/pb/popup/modal-notice.vue\"),__VITE_IS_MODERN__?\"__VITE_PRELOAD__\":void 0,import.meta.url).then(m => m.default || m)\n  },\n  {\n    name: modal_45store_45infoxgCQeSj83iMeta?.name ?? \"pb-popup-modal-store-info\",\n    path: modal_45store_45infoxgCQeSj83iMeta?.path ?? \"/pb/popup/modal-store-info\",\n    meta: modal_45store_45infoxgCQeSj83iMeta || {},\n    alias: modal_45store_45infoxgCQeSj83iMeta?.alias || [],\n    redirect: modal_45store_45infoxgCQeSj83iMeta?.redirect,\n    component: () => __vitePreload(() => import(\"D:/localserver/web-nuxt-sdk/web-nuxt-qr-netlify/pages/pb/popup/modal-store-info.vue\"),__VITE_IS_MODERN__?\"__VITE_PRELOAD__\":void 0,import.meta.url).then(m => m.default || m)\n  },\n  {\n    name: toastQUTPJBBnarMeta?.name ?? \"pb-popup-toast\",\n    path: toastQUTPJBBnarMeta?.path ?? \"/pb/popup/toast\",\n    meta: toastQUTPJBBnarMeta || {},\n    alias: toastQUTPJBBnarMeta?.alias || [],\n    redirect: toastQUTPJBBnarMeta?.redirect,\n    component: () => __vitePreload(() => import(\"D:/localserver/web-nuxt-sdk/web-nuxt-qr-netlify/pages/pb/popup/toast.vue\"),__VITE_IS_MODERN__?\"__VITE_PRELOAD__\":void 0,import.meta.url).then(m => m.default || m)\n  },\n  {\n    name: AdolescentClauseuoiy5PE4WlMeta?.name ?? \"pb-terms-AdolescentClause\",\n    path: AdolescentClauseuoiy5PE4WlMeta?.path ?? \"/pb/terms/AdolescentClause\",\n    meta: AdolescentClauseuoiy5PE4WlMeta || {},\n    alias: AdolescentClauseuoiy5PE4WlMeta?.alias || [],\n    redirect: AdolescentClauseuoiy5PE4WlMeta?.redirect,\n    component: () => __vitePreload(() => import(\"D:/localserver/web-nuxt-sdk/web-nuxt-qr-netlify/pages/pb/terms/AdolescentClause.vue\"),__VITE_IS_MODERN__?\"__VITE_PRELOAD__\":void 0,import.meta.url).then(m => m.default || m)\n  },\n  {\n    name: conditionsOfUseGJoHv9l8bSMeta?.name ?? \"pb-terms-conditionsOfUse\",\n    path: conditionsOfUseGJoHv9l8bSMeta?.path ?? \"/pb/terms/conditionsOfUse\",\n    meta: conditionsOfUseGJoHv9l8bSMeta || {},\n    alias: conditionsOfUseGJoHv9l8bSMeta?.alias || [],\n    redirect: conditionsOfUseGJoHv9l8bSMeta?.redirect,\n    component: () => __vitePreload(() => import(\"D:/localserver/web-nuxt-sdk/web-nuxt-qr-netlify/pages/pb/terms/conditionsOfUse.vue\"),__VITE_IS_MODERN__?\"__VITE_PRELOAD__\":void 0,import.meta.url).then(m => m.default || m)\n  },\n  {\n    name: informationClauseA9XfshQmSkMeta?.name ?? \"pb-terms-informationClause\",\n    path: informationClauseA9XfshQmSkMeta?.path ?? \"/pb/terms/informationClause\",\n    meta: informationClauseA9XfshQmSkMeta || {},\n    alias: informationClauseA9XfshQmSkMeta?.alias || [],\n    redirect: informationClauseA9XfshQmSkMeta?.redirect,\n    component: () => __vitePreload(() => import(\"D:/localserver/web-nuxt-sdk/web-nuxt-qr-netlify/pages/pb/terms/informationClause.vue\"),__VITE_IS_MODERN__?\"__VITE_PRELOAD__\":void 0,import.meta.url).then(m => m.default || m)\n  },\n  {\n    name: LocationAgreementVWgciiusO2Meta?.name ?? \"pb-terms-LocationAgreement\",\n    path: LocationAgreementVWgciiusO2Meta?.path ?? \"/pb/terms/LocationAgreement\",\n    meta: LocationAgreementVWgciiusO2Meta || {},\n    alias: LocationAgreementVWgciiusO2Meta?.alias || [],\n    redirect: LocationAgreementVWgciiusO2Meta?.redirect,\n    component: () => __vitePreload(() => import(\"D:/localserver/web-nuxt-sdk/web-nuxt-qr-netlify/pages/pb/terms/LocationAgreement.vue\"),__VITE_IS_MODERN__?\"__VITE_PRELOAD__\":void 0,import.meta.url).then(m => m.default || m)\n  },\n  {\n    name: privacyNoticenwGQVu4qO0Meta?.name ?? \"pb-terms-privacyNotice\",\n    path: privacyNoticenwGQVu4qO0Meta?.path ?? \"/pb/terms/privacyNotice\",\n    meta: privacyNoticenwGQVu4qO0Meta || {},\n    alias: privacyNoticenwGQVu4qO0Meta?.alias || [],\n    redirect: privacyNoticenwGQVu4qO0Meta?.redirect,\n    component: () => __vitePreload(() => import(\"D:/localserver/web-nuxt-sdk/web-nuxt-qr-netlify/pages/pb/terms/privacyNotice.vue\"),__VITE_IS_MODERN__?\"__VITE_PRELOAD__\":void 0,import.meta.url).then(m => m.default || m)\n  }\n]",
-      "start": 1711508328654,
-      "end": 1711508328655,
+      "start": 1711509446741,
+      "end": 1711509446742,
       "order": "normal",
       "sourcemaps": null
     },
     {
       "name": "vite:reporter",
-      "start": 1711508328655,
-      "end": 1711508328655,
+      "start": 1711509446742,
+      "end": 1711509446743,
       "order": "normal"
     }
   ]

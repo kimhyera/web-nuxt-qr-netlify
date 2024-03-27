@@ -4,69 +4,69 @@
     {
       "name": "vite:load-fallback",
       "result": "<script setup lang=\"ts\">\r\n</script>\r\n<template>\r\n\t<div class=\"layout1\">\r\n\r\n\t\t<header class=\"header-common fixed\">\r\n\t\t\t<div class=\"header-row\"><button @click=\"$router.go(-1)\" title=\"이전페이지로 이동\" class=\"btn-history-back\"></button>\r\n\t\t\t\t<h1 class=\"header-title\">청소년 보호방침</h1>\r\n\r\n\t\t\t</div>\r\n\t\t</header>\r\n\r\n\t\t<!--헤더 //-->\r\n\t\t<main class=\"terms-page page-contents\">\r\n\r\n\t\t\t\t\r\n\t\t\t<ul class=\"terms-list\">\r\n\t\t\t\t<li>\r\n\t\t\t\t\t<p>\r\n\t\t\t\t\t\t㈜만나플래닛(이하 “회사”라고 합니다)은 청소년들이 유해한 정보로부터 보호될 수 있도록 정보통신망 이용 촉진 및 정보보호 등에\r\n\t\t\t\t\t\t관한 법률, 청소년보호법, 전자상거래 등에서의 소비자보호에 관한 법률 등 관계법률에 근거하여 청소년 보호방침을 시행하고\r\n\t\t\t\t\t\t있습니다.\r\n\t\t\t\t\t</p>\r\n\t\t\t\t</li>\r\n\t\t\t\t<li>\r\n\t\t\t\t\t<h2>1. 청소년 접근제한 및 관리조치</h2>\r\n\t\t\t\t\t<p>\r\n\t\t\t\t\t\t회사는 별도의 인증장치와 청소년유해매체물의 표시를 운영하고 있으며, 이를 통해, 청소년에 대한 유해정보의 접근 가능성을 사전에\r\n\t\t\t\t\t\t예방하고 있으며, 청소년유해상품(유해물건, 약물, 매체)의 주문도 제한하고 있습니다.\r\n\t\t\t\t\t</p>\r\n\t\t\t\t</li>\r\n\t\t\t\t<li>\r\n\t\t\t\t\t<h2>2. 청소년 보호를 위한 교육</h2>\r\n\t\t\t\t\t<p>\r\n\t\t\t\t\t\t회사는 청소년 보호와 관련한 업무 담당자를 대상으로 정보통신망 이용 촉진 및 정보보호에 관한 법률 및 청소년보호법 등 관련법령 및\r\n\t\t\t\t\t\t유해정보 발견 시 처리 방법 등의 교육을 시행하고 있습니다.\r\n\t\t\t\t\t</p>\r\n\t\t\t\t</li>\r\n\t\t\t\t<li>\r\n\t\t\t\t\t<h2>3. 청소년 보호에 대한 의견수렴과 피해상담 및 고충처리</h2>\r\n\t\t\t\t\t<p>\r\n\t\t\t\t\t\t회사는 청소년 유해매체와 상품에 대한 피해상담, 고충처리를 위해 청소년보호책임자, 관리자, 담당자를 지정하고, 청소년 보호 민원\r\n\t\t\t\t\t\t창구를 운영하고 있습니다. 관련상담은 청소년보호책임자, 관리자, 담당자를 통해 접수해 주시면, 안전하고 공정하게 처리될 수 있도록\r\n\t\t\t\t\t\t하겠습니다.\r\n\t\t\t\t\t</p>\r\n\t\t\t\t</li>\r\n\t\t\t\t<li>\r\n\t\t\t\t\t<h2>4. 청소년보호책임자, 관리자, 담당자의 지정</h2>\r\n\t\t\t\t\t<p>\r\n\t\t\t\t\t\t1. 청소년보호책임자 (피해상담 및 고충처리책임자)<br />\r\n\t\t\t\t\t\t· 성명 : 신태수 단장 (부장)<br />\r\n\t\t\t\t\t\t· 소속부서 : 스마트스토어사업본부 DSS사업단<br />\r\n\t\t\t\t\t\t· 전화번호 : 070-7595-0022<br />\r\n\t\t\t\t\t\t· 팩스번호 : 02-3439-7044<br />\r\n\t\t\t\t\t\t· 전자우편 : roy7419@manna-corp.com\r\n\t\t\t\t\t</p>\r\n\t\t\t\t\t<p class=\"mt-4\">\r\n\t\t\t\t\t\t2. 청소년보호관리자 및 담당자<br />\r\n\t\t\t\t\t\t· 성명 : 신태수 단장 (부장)<br />\r\n\t\t\t\t\t\t· 소속부서 : 스마트스토어사업본부 DSS사업단<br />\r\n\t\t\t\t\t\t· 전화번호 : 070-7595-0022<br />\r\n\t\t\t\t\t\t· 팩스번호 : 02-3439-7044<br />\r\n\t\t\t\t\t\t· 전자우편 : roy7419@manna-corp.com\r\n\t\t\t\t\t</p>\r\n\t\t\t\t</li>\r\n\t\t\t</ul>\r\n\t\t</main>\r\n\t</div>\r\n</template>\r\n<style lang=\"scss\" scoped>\r\n@import \"@/assets/default/scss/style\"; // 공통 \r\n@import \"@/assets/default/scss/components/header\";\r\n@import '@/assets/default/scss/contents/terms';\r\n</style>",
-      "start": 1711508359188,
-      "end": 1711508359316,
+      "start": 1711509480891,
+      "end": 1711509481302,
       "sourcemaps": null
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1711508359316,
-      "end": 1711508359316,
+      "start": 1711509481302,
+      "end": 1711509481302,
       "order": "pre"
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1711508359316,
-      "end": 1711508359316,
+      "start": 1711509481302,
+      "end": 1711509481302,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1711508359316,
-      "end": 1711508359316,
+      "start": 1711509481302,
+      "end": 1711509481302,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1711508359316,
-      "end": 1711508359316,
+      "start": 1711509481302,
+      "end": 1711509481302,
       "order": "pre"
     },
     {
       "name": "nuxt:client-fallback-auto-id",
-      "start": 1711508359316,
-      "end": 1711508359316,
+      "start": 1711509481302,
+      "end": 1711509481302,
       "order": "pre"
     },
     {
       "name": "vite:css",
-      "start": 1711508359316,
-      "end": 1711508359316,
+      "start": 1711509481302,
+      "end": 1711509481302,
       "order": "normal"
     },
     {
       "name": "vite:esbuild",
-      "start": 1711508359316,
-      "end": 1711508359316,
+      "start": 1711509481302,
+      "end": 1711509481302,
       "order": "normal"
     },
     {
       "name": "vite:json",
-      "start": 1711508359316,
-      "end": 1711508359316,
+      "start": 1711509481302,
+      "end": 1711509481302,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1711508359316,
-      "end": 1711508359316,
+      "start": 1711509481302,
+      "end": 1711509481302,
       "order": "normal"
     },
     {
       "name": "vite:vue",
       "result": "const _sfc_main = {}\nimport { mergeProps as _mergeProps } from \"vue\"\nimport { ssrRenderAttrs as _ssrRenderAttrs } from \"vue/server-renderer\"\n\nfunction _sfc_ssrRender(_ctx, _push, _parent, _attrs) {\n  _push(`<div${_ssrRenderAttrs(_mergeProps({ class: \"layout1\" }, _attrs))} data-v-8620424c><header class=\"header-common fixed\" data-v-8620424c><div class=\"header-row\" data-v-8620424c><button title=\"이전페이지로 이동\" class=\"btn-history-back\" data-v-8620424c></button><h1 class=\"header-title\" data-v-8620424c>청소년 보호방침</h1></div></header><main class=\"terms-page page-contents\" data-v-8620424c><ul class=\"terms-list\" data-v-8620424c><li data-v-8620424c><p data-v-8620424c> ㈜만나플래닛(이하 “회사”라고 합니다)은 청소년들이 유해한 정보로부터 보호될 수 있도록 정보통신망 이용 촉진 및 정보보호 등에 관한 법률, 청소년보호법, 전자상거래 등에서의 소비자보호에 관한 법률 등 관계법률에 근거하여 청소년 보호방침을 시행하고 있습니다. </p></li><li data-v-8620424c><h2 data-v-8620424c>1. 청소년 접근제한 및 관리조치</h2><p data-v-8620424c> 회사는 별도의 인증장치와 청소년유해매체물의 표시를 운영하고 있으며, 이를 통해, 청소년에 대한 유해정보의 접근 가능성을 사전에 예방하고 있으며, 청소년유해상품(유해물건, 약물, 매체)의 주문도 제한하고 있습니다. </p></li><li data-v-8620424c><h2 data-v-8620424c>2. 청소년 보호를 위한 교육</h2><p data-v-8620424c> 회사는 청소년 보호와 관련한 업무 담당자를 대상으로 정보통신망 이용 촉진 및 정보보호에 관한 법률 및 청소년보호법 등 관련법령 및 유해정보 발견 시 처리 방법 등의 교육을 시행하고 있습니다. </p></li><li data-v-8620424c><h2 data-v-8620424c>3. 청소년 보호에 대한 의견수렴과 피해상담 및 고충처리</h2><p data-v-8620424c> 회사는 청소년 유해매체와 상품에 대한 피해상담, 고충처리를 위해 청소년보호책임자, 관리자, 담당자를 지정하고, 청소년 보호 민원 창구를 운영하고 있습니다. 관련상담은 청소년보호책임자, 관리자, 담당자를 통해 접수해 주시면, 안전하고 공정하게 처리될 수 있도록 하겠습니다. </p></li><li data-v-8620424c><h2 data-v-8620424c>4. 청소년보호책임자, 관리자, 담당자의 지정</h2><p data-v-8620424c> 1. 청소년보호책임자 (피해상담 및 고충처리책임자)<br data-v-8620424c> · 성명 : 신태수 단장 (부장)<br data-v-8620424c> · 소속부서 : 스마트스토어사업본부 DSS사업단<br data-v-8620424c> · 전화번호 : 070-7595-0022<br data-v-8620424c> · 팩스번호 : 02-3439-7044<br data-v-8620424c> · 전자우편 : roy7419@manna-corp.com </p><p class=\"mt-4\" data-v-8620424c> 2. 청소년보호관리자 및 담당자<br data-v-8620424c> · 성명 : 신태수 단장 (부장)<br data-v-8620424c> · 소속부서 : 스마트스토어사업본부 DSS사업단<br data-v-8620424c> · 전화번호 : 070-7595-0022<br data-v-8620424c> · 팩스번호 : 02-3439-7044<br data-v-8620424c> · 전자우편 : roy7419@manna-corp.com </p></li></ul></main></div>`)\n}\n\nimport \"D:/localserver/web-nuxt-sdk/web-nuxt-qr-netlify/pages/pb/terms/AdolescentClause.vue?vue&type=style&index=0&scoped=8620424c&lang.scss\"\n\nimport { useSSRContext as __vite_useSSRContext } from 'vue'\nconst _sfc_setup = _sfc_main.setup\n_sfc_main.setup = (props, ctx) => {\n  const ssrContext = __vite_useSSRContext()\n  ;(ssrContext.modules || (ssrContext.modules = new Set())).add(\"pages/pb/terms/AdolescentClause.vue\")\n  return _sfc_setup ? _sfc_setup(props, ctx) : undefined\n}\nimport _export_sfc from '\u0000plugin-vue:export-helper'\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['ssrRender',_sfc_ssrRender],['__scopeId',\"data-v-8620424c\"]])",
-      "start": 1711508359316,
-      "end": 1711508359317,
+      "start": 1711509481302,
+      "end": 1711509481303,
       "order": "normal",
       "sourcemaps": {
         "version": 3,
@@ -82,176 +82,176 @@
     },
     {
       "name": "vite:vue-jsx",
-      "start": 1711508359317,
-      "end": 1711508359317,
+      "start": 1711509481303,
+      "end": 1711509481303,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1711508359317,
-      "end": 1711508359317,
+      "start": 1711509481303,
+      "end": 1711509481303,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1711508359317,
-      "end": 1711508359317,
+      "start": 1711509481303,
+      "end": 1711509481303,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1711508359318,
-      "end": 1711508359319,
+      "start": 1711509481303,
+      "end": 1711509481303,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1711508359318,
-      "end": 1711508359319,
+      "start": 1711509481303,
+      "end": 1711509481303,
       "order": "normal"
     },
     {
       "name": "nuxt:components:imports",
-      "start": 1711508359319,
-      "end": 1711508359319,
+      "start": 1711509481303,
+      "end": 1711509481303,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1711508359319,
-      "end": 1711508359319,
+      "start": 1711509481303,
+      "end": 1711509481303,
       "order": "normal"
     },
     {
       "name": "ssr-styles",
-      "start": 1711508359319,
-      "end": 1711508359321,
+      "start": 1711509481303,
+      "end": 1711509481304,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1711508359321,
-      "end": 1711508359321,
+      "start": 1711509481304,
+      "end": 1711509481304,
       "order": "normal"
     },
     {
       "name": "vite:css-post",
-      "start": 1711508359321,
-      "end": 1711508359321,
+      "start": 1711509481304,
+      "end": 1711509481304,
       "order": "normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1711508359322,
-      "end": 1711508359322,
+      "start": 1711509481304,
+      "end": 1711509481304,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1711508359322,
-      "end": 1711508359322,
+      "start": 1711509481304,
+      "end": 1711509481304,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1711508359323,
-      "end": 1711508359323,
+      "start": 1711509481304,
+      "end": 1711509481304,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1711508359323,
-      "end": 1711508359323,
+      "start": 1711509481304,
+      "end": 1711509481304,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1711508359323,
-      "end": 1711508359323,
+      "start": 1711509481304,
+      "end": 1711509481304,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1711508359323,
-      "end": 1711508359323,
+      "start": 1711509481304,
+      "end": 1711509481304,
       "order": "normal"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1711508359323,
-      "end": 1711508359323,
+      "start": 1711509481304,
+      "end": 1711509481304,
       "order": "post"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1711508359323,
-      "end": 1711508359323,
+      "start": 1711509481304,
+      "end": 1711509481304,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
-      "start": 1711508359323,
-      "end": 1711508359324,
+      "start": 1711509481304,
+      "end": 1711509481305,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
-      "start": 1711508359323,
-      "end": 1711508359324,
+      "start": 1711509481304,
+      "end": 1711509481305,
       "order": "post"
     },
     {
       "name": "unctx:transform",
-      "start": 1711508359326,
-      "end": 1711508359326,
+      "start": 1711509481305,
+      "end": 1711509481305,
       "order": "post"
     },
     {
       "name": "unctx:transform",
-      "start": 1711508359326,
-      "end": 1711508359326,
+      "start": 1711509481305,
+      "end": 1711509481305,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1711508359326,
-      "end": 1711508359326,
+      "start": 1711509481305,
+      "end": 1711509481305,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1711508359326,
-      "end": 1711508359326,
+      "start": 1711509481305,
+      "end": 1711509481305,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-template",
-      "start": 1711508359326,
-      "end": 1711508359326,
+      "start": 1711509481305,
+      "end": 1711509481305,
       "order": "post"
     },
     {
       "name": "nuxt:components-loader",
-      "start": 1711508359326,
-      "end": 1711508359326,
+      "start": 1711509481305,
+      "end": 1711509481305,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-composables:transform",
-      "start": 1711508359326,
-      "end": 1711508359326,
+      "start": 1711509481305,
+      "end": 1711509481305,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1711508359326,
-      "end": 1711508359326,
+      "start": 1711509481305,
+      "end": 1711509481305,
       "order": "normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1711508359326,
-      "end": 1711508359326,
+      "start": 1711509481305,
+      "end": 1711509481305,
       "order": "normal"
     }
   ]

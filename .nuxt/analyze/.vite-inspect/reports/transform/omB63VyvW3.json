@@ -4,38 +4,38 @@
     {
       "name": "vite:vue",
       "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { createElementVNode as _createElementVNode, openBlock as _openBlock, createElementBlock as _createElementBlock, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\"\n\nconst _withScopeId = n => (_pushScopeId(\"data-v-2679e18a\"),n=n(),_popScopeId(),n)\nconst _hoisted_1 = { class: \"layout1\" }\nconst _hoisted_2 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"header\", { class: \"header-main fixed\" }, [\n  /*#__PURE__*/_createElementVNode(\"div\", { class: \"header-row\" }, [\n    /*#__PURE__*/_createElementVNode(\"h1\", { class: \"store-name\" }, \" 지도보기 \"),\n    /*#__PURE__*/_createElementVNode(\"button\", {\n      class: \"btn-user\",\n      title: \"마이페이지 바로가기\"\n    })\n  ])\n], -1))\nconst _hoisted_3 = { class: \"address-layer\" }\nconst _hoisted_4 = { class: \"inner\" }\nconst _hoisted_5 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"h2\", null, \"매장주소\", -1))\nconst _hoisted_6 = { class: \"address-text\" }\nconst _hoisted_7 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"div\", { class: \"front-address\" }, \"서울 구로구 경인로 661 (신도림동, 신도림1차푸르지오)\", -1))\n\nimport { ref, computed, onMounted } from 'vue';\r\nimport { useRouter } from 'vue-router';\r\nimport imageSrc from '@/assets/default/images/icon/icon_map_pin_28.svg';\r\n\r\ndeclare global {\r\n\tinterface Window {\r\n\t\tapp: unknown;\r\n\t\tKakao: any;\r\n\t\tkakao: any;\r\n\t\tmyMtsAuth: any;\r\n\t}\r\n}\r\n\r\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'map',\n  props: {\r\n\tthemeName: {\r\n\t\ttype: String,\r\n\t\tdefault: 'default',\r\n\t},\r\n},\n  setup(__props) {\n\r\nconst props = __props;\r\n\r\nconst router = useRouter();\r\n\r\n\r\n\r\n// reactivity data\r\nconst imageSrcPath = ref(imageSrc);\r\nconst mapContainer = ref<HTMLElement | null>(null);\r\nconst inputRef: any = ref(null);\r\nconst stLatY = ref('37.5090492151745');\r\nconst stLngX = ref('126.8869873429');\r\nconst locPosition = computed<any>(() => new window.kakao.maps.LatLng(stLatY.value, stLngX.value));\r\n\r\n// methods \r\n\r\n// 지도 초기화\r\nfunction initMap() {\r\n\tif (!mapContainer.value) return;\r\n\tlet map = new window.kakao.maps.Map(mapContainer.value, {\r\n\t\tcenter: locPosition.value,\r\n\t\tlevel: 3,\r\n\t});\r\n\r\n\tcreateMarker(map);\r\n\tdrawCustomOverlay(map);\r\n};\r\n\r\n\r\n// 마커표시\r\nfunction createMarker(map: any) {\r\n\tconst imageSize = new window.kakao.maps.Size(30, 30);\r\n\tconst imageOption = { offset: new window.kakao.maps.Point(15, 15) };\r\n\tconst markerImage = new window.kakao.maps.MarkerImage(imageSrcPath.value, imageSize, imageOption);\r\n\tlet marker = new window.kakao.maps.Marker({\r\n\t\tposition: locPosition.value,\r\n\t\timage: markerImage,\r\n\t});\r\n\tmarker.setMap(map);\r\n};\r\n// 오버레이\r\nfunction drawCustomOverlay(map: any) {\r\n\tvar customOverlay = new window.kakao.maps.CustomOverlay({\r\n\t\tclickable: true,\r\n\t\tcontent: `<div class=\"customOverlay arrow_box\">가맹점이름</div>`,\r\n\t\tposition: locPosition.value,\r\n\t\tzIndex: 4,\r\n\t});\r\n\r\n\tcustomOverlay.setMap(map);\r\n};\r\nconst runtimeConfig = useRuntimeConfig();\r\n\r\n\r\nfunction onCopy() {\r\n\tinputRef.value.select();\r\n\tdocument.execCommand('copy');\r\n}\r\n\r\nonMounted(async () => {\r\n\tif (window.kakao && window.kakao.maps) {\r\n\t\tinitMap();\r\n\t} else {\r\n\t\tconst script = document.createElement('script');\r\n\t\tscript.src = `//dapi.kakao.com/v2/maps/sdk.js?autoload=false&appkey=${runtimeConfig.public.VITE_KAKAO_API_KEY}&libraries=services`;\r\n\t\tdocument.head.appendChild(script);\r\n\r\n\t\tscript.onload = () =>\r\n\t\t\twindow.kakao.maps.load(() => {\r\n\t\t\t\tinitMap();\r\n\t\t\t});\r\n\t}\r\n});\r\n\r\n\r\n\r\n\nreturn (_ctx: any,_cache: any) => {\n  return (_openBlock(), _createElementBlock(\"div\", _hoisted_1, [\n    _hoisted_2,\n    _createElementVNode(\"div\", _hoisted_3, [\n      _createElementVNode(\"div\", _hoisted_4, [\n        _createElementVNode(\"div\", { class: \"layer-head\" }, [\n          _hoisted_5,\n          _createElementVNode(\"button\", {\n            class: \"btn-copy\",\n            onClick: onCopy\n          }, \"주소복사\")\n        ]),\n        _createElementVNode(\"div\", _hoisted_6, [\n          _createElementVNode(\"input\", {\n            type: \"text\",\n            ref_key: \"inputRef\",\n            ref: inputRef,\n            readonly: \"\",\n            value: \"서울 구로구 경인로 661 (신도림동, 신도림1차푸르지오)\",\n            class: \"input-address\"\n          }, null, 512),\n          _hoisted_7\n        ])\n      ])\n    ]),\n    _createElementVNode(\"div\", {\n      id: \"map\",\n      ref_key: \"mapContainer\",\n      ref: mapContainer\n    }, null, 512)\n  ]))\n}\n}\n\n})",
-      "start": 1711508330065,
-      "end": 1711508330065
+      "start": 1711509448259,
+      "end": 1711509448259
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1711508330066,
-      "end": 1711508330066,
+      "start": 1711509448259,
+      "end": 1711509448259,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1711508330066,
-      "end": 1711508330066,
+      "start": 1711509448259,
+      "end": 1711509448259,
       "order": "pre"
     },
     {
       "name": "nuxt:client-fallback-auto-id",
-      "start": 1711508330066,
-      "end": 1711508330066,
+      "start": 1711509448259,
+      "end": 1711509448259,
       "order": "pre"
     },
     {
       "name": "vite:css",
-      "start": 1711508330066,
-      "end": 1711508330066,
+      "start": 1711509448259,
+      "end": 1711509448259,
       "order": "normal"
     },
     {
       "name": "vite:esbuild",
       "result": "import { defineComponent as _defineComponent } from \"vue\";\nimport { createElementVNode as _createElementVNode, openBlock as _openBlock, createElementBlock as _createElementBlock, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\";\nconst _withScopeId = (n) => (_pushScopeId(\"data-v-2679e18a\"), n = n(), _popScopeId(), n);\nconst _hoisted_1 = { class: \"layout1\" };\nconst _hoisted_2 = /* @__PURE__ */ _withScopeId(() => /* @__PURE__ */ _createElementVNode(\"header\", { class: \"header-main fixed\" }, [\n  /* @__PURE__ */ _createElementVNode(\"div\", { class: \"header-row\" }, [\n    /* @__PURE__ */ _createElementVNode(\"h1\", { class: \"store-name\" }, \" 지도보기 \"),\n    /* @__PURE__ */ _createElementVNode(\"button\", {\n      class: \"btn-user\",\n      title: \"마이페이지 바로가기\"\n    })\n  ])\n], -1));\nconst _hoisted_3 = { class: \"address-layer\" };\nconst _hoisted_4 = { class: \"inner\" };\nconst _hoisted_5 = /* @__PURE__ */ _withScopeId(() => /* @__PURE__ */ _createElementVNode(\"h2\", null, \"매장주소\", -1));\nconst _hoisted_6 = { class: \"address-text\" };\nconst _hoisted_7 = /* @__PURE__ */ _withScopeId(() => /* @__PURE__ */ _createElementVNode(\"div\", { class: \"front-address\" }, \"서울 구로구 경인로 661 (신도림동, 신도림1차푸르지오)\", -1));\nimport { ref, computed, onMounted } from \"vue\";\nimport { useRouter } from \"vue-router\";\nimport imageSrc from \"@/assets/default/images/icon/icon_map_pin_28.svg\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"map\",\n  props: {\n    themeName: {\n      type: String,\n      default: \"default\"\n    }\n  },\n  setup(__props) {\n    const props = __props;\n    const router = useRouter();\n    const imageSrcPath = ref(imageSrc);\n    const mapContainer = ref(null);\n    const inputRef = ref(null);\n    const stLatY = ref(\"37.5090492151745\");\n    const stLngX = ref(\"126.8869873429\");\n    const locPosition = computed(() => new window.kakao.maps.LatLng(stLatY.value, stLngX.value));\n    function initMap() {\n      if (!mapContainer.value)\n        return;\n      let map = new window.kakao.maps.Map(mapContainer.value, {\n        center: locPosition.value,\n        level: 3\n      });\n      createMarker(map);\n      drawCustomOverlay(map);\n    }\n    ;\n    function createMarker(map) {\n      const imageSize = new window.kakao.maps.Size(30, 30);\n      const imageOption = { offset: new window.kakao.maps.Point(15, 15) };\n      const markerImage = new window.kakao.maps.MarkerImage(imageSrcPath.value, imageSize, imageOption);\n      let marker = new window.kakao.maps.Marker({\n        position: locPosition.value,\n        image: markerImage\n      });\n      marker.setMap(map);\n    }\n    ;\n    function drawCustomOverlay(map) {\n      var customOverlay = new window.kakao.maps.CustomOverlay({\n        clickable: true,\n        content: `<div class=\"customOverlay arrow_box\">가맹점이름</div>`,\n        position: locPosition.value,\n        zIndex: 4\n      });\n      customOverlay.setMap(map);\n    }\n    ;\n    const runtimeConfig = useRuntimeConfig();\n    function onCopy() {\n      inputRef.value.select();\n      document.execCommand(\"copy\");\n    }\n    onMounted(async () => {\n      if (window.kakao && window.kakao.maps) {\n        initMap();\n      } else {\n        const script = document.createElement(\"script\");\n        script.src = `//dapi.kakao.com/v2/maps/sdk.js?autoload=false&appkey=${runtimeConfig.public.VITE_KAKAO_API_KEY}&libraries=services`;\n        document.head.appendChild(script);\n        script.onload = () => window.kakao.maps.load(() => {\n          initMap();\n        });\n      }\n    });\n    return (_ctx, _cache) => {\n      return _openBlock(), _createElementBlock(\"div\", _hoisted_1, [\n        _hoisted_2,\n        _createElementVNode(\"div\", _hoisted_3, [\n          _createElementVNode(\"div\", _hoisted_4, [\n            _createElementVNode(\"div\", { class: \"layer-head\" }, [\n              _hoisted_5,\n              _createElementVNode(\"button\", {\n                class: \"btn-copy\",\n                onClick: onCopy\n              }, \"주소복사\")\n            ]),\n            _createElementVNode(\"div\", _hoisted_6, [\n              _createElementVNode(\"input\", {\n                type: \"text\",\n                ref_key: \"inputRef\",\n                ref: inputRef,\n                readonly: \"\",\n                value: \"서울 구로구 경인로 661 (신도림동, 신도림1차푸르지오)\",\n                class: \"input-address\"\n              }, null, 512),\n              _hoisted_7\n            ])\n          ])\n        ]),\n        _createElementVNode(\"div\", {\n          id: \"map\",\n          ref_key: \"mapContainer\",\n          ref: mapContainer\n        }, null, 512)\n      ]);\n    };\n  }\n});\n",
-      "start": 1711508330066,
-      "end": 1711508330265,
+      "start": 1711509448259,
+      "end": 1711509448370,
       "order": "normal",
       "sourcemaps": {
         "version": 3,
@@ -51,123 +51,123 @@
     },
     {
       "name": "vite:json",
-      "start": 1711508330265,
-      "end": 1711508330265,
+      "start": 1711509448370,
+      "end": 1711509448370,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1711508330265,
-      "end": 1711508330265,
+      "start": 1711509448370,
+      "end": 1711509448370,
       "order": "normal"
     },
     {
       "name": "vite:vue",
-      "start": 1711508330265,
-      "end": 1711508330265,
+      "start": 1711509448370,
+      "end": 1711509448370,
       "order": "normal"
     },
     {
       "name": "vite:vue-jsx",
-      "start": 1711508330265,
-      "end": 1711508330265,
+      "start": 1711509448370,
+      "end": 1711509448370,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1711508330266,
-      "end": 1711508330266,
+      "start": 1711509448370,
+      "end": 1711509448370,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1711508330266,
-      "end": 1711508330266,
+      "start": 1711509448370,
+      "end": 1711509448370,
       "order": "normal"
     },
     {
       "name": "nuxt:chunk-error",
-      "start": 1711508330266,
-      "end": 1711508330266,
+      "start": 1711509448371,
+      "end": 1711509448371,
       "order": "normal"
     },
     {
       "name": "nuxt:components:imports",
-      "start": 1711508330266,
-      "end": 1711508330266,
+      "start": 1711509448371,
+      "end": 1711509448371,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1711508330266,
-      "end": 1711508330266,
+      "start": 1711509448371,
+      "end": 1711509448371,
       "order": "normal"
     },
     {
       "name": "ssr-styles",
-      "start": 1711508330266,
-      "end": 1711508330266,
+      "start": 1711509448371,
+      "end": 1711509448371,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1711508330266,
-      "end": 1711508330266,
+      "start": 1711509448371,
+      "end": 1711509448371,
       "order": "normal"
     },
     {
       "name": "vite:css-post",
-      "start": 1711508330266,
-      "end": 1711508330266,
+      "start": 1711509448371,
+      "end": 1711509448371,
       "order": "normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1711508330266,
-      "end": 1711508330266,
+      "start": 1711509448371,
+      "end": 1711509448371,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1711508330266,
-      "end": 1711508330266,
+      "start": 1711509448371,
+      "end": 1711509448371,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1711508330266,
-      "end": 1711508330266,
+      "start": 1711509448371,
+      "end": 1711509448372,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1711508330267,
-      "end": 1711508330267,
+      "start": 1711509448372,
+      "end": 1711509448372,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1711508330267,
-      "end": 1711508330267,
+      "start": 1711509448372,
+      "end": 1711509448372,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1711508330267,
-      "end": 1711508330267,
+      "start": 1711509448372,
+      "end": 1711509448372,
       "order": "normal"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1711508330267,
-      "end": 1711508330267,
+      "start": 1711509448372,
+      "end": 1711509448372,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
       "result": "import { useRuntimeConfig } from '#app/nuxt';\nimport { defineComponent as _defineComponent } from \"vue\";\nimport { createElementVNode as _createElementVNode, openBlock as _openBlock, createElementBlock as _createElementBlock, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\";\nconst _withScopeId = (n) => (_pushScopeId(\"data-v-2679e18a\"), n = n(), _popScopeId(), n);\nconst _hoisted_1 = { class: \"layout1\" };\nconst _hoisted_2 = /* @__PURE__ */ _withScopeId(() => /* @__PURE__ */ _createElementVNode(\"header\", { class: \"header-main fixed\" }, [\n  /* @__PURE__ */ _createElementVNode(\"div\", { class: \"header-row\" }, [\n    /* @__PURE__ */ _createElementVNode(\"h1\", { class: \"store-name\" }, \" 지도보기 \"),\n    /* @__PURE__ */ _createElementVNode(\"button\", {\n      class: \"btn-user\",\n      title: \"마이페이지 바로가기\"\n    })\n  ])\n], -1));\nconst _hoisted_3 = { class: \"address-layer\" };\nconst _hoisted_4 = { class: \"inner\" };\nconst _hoisted_5 = /* @__PURE__ */ _withScopeId(() => /* @__PURE__ */ _createElementVNode(\"h2\", null, \"매장주소\", -1));\nconst _hoisted_6 = { class: \"address-text\" };\nconst _hoisted_7 = /* @__PURE__ */ _withScopeId(() => /* @__PURE__ */ _createElementVNode(\"div\", { class: \"front-address\" }, \"서울 구로구 경인로 661 (신도림동, 신도림1차푸르지오)\", -1));\nimport { ref, computed, onMounted } from \"vue\";\nimport { useRouter } from \"vue-router\";\nimport imageSrc from \"@/assets/default/images/icon/icon_map_pin_28.svg\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"map\",\n  props: {\n    themeName: {\n      type: String,\n      default: \"default\"\n    }\n  },\n  setup(__props) {\n    const props = __props;\n    const router = useRouter();\n    const imageSrcPath = ref(imageSrc);\n    const mapContainer = ref(null);\n    const inputRef = ref(null);\n    const stLatY = ref(\"37.5090492151745\");\n    const stLngX = ref(\"126.8869873429\");\n    const locPosition = computed(() => new window.kakao.maps.LatLng(stLatY.value, stLngX.value));\n    function initMap() {\n      if (!mapContainer.value)\n        return;\n      let map = new window.kakao.maps.Map(mapContainer.value, {\n        center: locPosition.value,\n        level: 3\n      });\n      createMarker(map);\n      drawCustomOverlay(map);\n    }\n    ;\n    function createMarker(map) {\n      const imageSize = new window.kakao.maps.Size(30, 30);\n      const imageOption = { offset: new window.kakao.maps.Point(15, 15) };\n      const markerImage = new window.kakao.maps.MarkerImage(imageSrcPath.value, imageSize, imageOption);\n      let marker = new window.kakao.maps.Marker({\n        position: locPosition.value,\n        image: markerImage\n      });\n      marker.setMap(map);\n    }\n    ;\n    function drawCustomOverlay(map) {\n      var customOverlay = new window.kakao.maps.CustomOverlay({\n        clickable: true,\n        content: `<div class=\"customOverlay arrow_box\">가맹점이름</div>`,\n        position: locPosition.value,\n        zIndex: 4\n      });\n      customOverlay.setMap(map);\n    }\n    ;\n    const runtimeConfig = useRuntimeConfig();\n    function onCopy() {\n      inputRef.value.select();\n      document.execCommand(\"copy\");\n    }\n    onMounted(async () => {\n      if (window.kakao && window.kakao.maps) {\n        initMap();\n      } else {\n        const script = document.createElement(\"script\");\n        script.src = `//dapi.kakao.com/v2/maps/sdk.js?autoload=false&appkey=${runtimeConfig.public.VITE_KAKAO_API_KEY}&libraries=services`;\n        document.head.appendChild(script);\n        script.onload = () => window.kakao.maps.load(() => {\n          initMap();\n        });\n      }\n    });\n    return (_ctx, _cache) => {\n      return _openBlock(), _createElementBlock(\"div\", _hoisted_1, [\n        _hoisted_2,\n        _createElementVNode(\"div\", _hoisted_3, [\n          _createElementVNode(\"div\", _hoisted_4, [\n            _createElementVNode(\"div\", { class: \"layer-head\" }, [\n              _hoisted_5,\n              _createElementVNode(\"button\", {\n                class: \"btn-copy\",\n                onClick: onCopy\n              }, \"주소복사\")\n            ]),\n            _createElementVNode(\"div\", _hoisted_6, [\n              _createElementVNode(\"input\", {\n                type: \"text\",\n                ref_key: \"inputRef\",\n                ref: inputRef,\n                readonly: \"\",\n                value: \"서울 구로구 경인로 661 (신도림동, 신도림1차푸르지오)\",\n                class: \"input-address\"\n              }, null, 512),\n              _hoisted_7\n            ])\n          ])\n        ]),\n        _createElementVNode(\"div\", {\n          id: \"map\",\n          ref_key: \"mapContainer\",\n          ref: mapContainer\n        }, null, 512)\n      ]);\n    };\n  }\n});\n",
-      "start": 1711508330267,
-      "end": 1711508330274,
+      "start": 1711509448372,
+      "end": 1711509448389,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -180,50 +180,50 @@
     },
     {
       "name": "unctx:transform",
-      "start": 1711508330274,
-      "end": 1711508330274,
+      "start": 1711509448390,
+      "end": 1711509448390,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1711508330276,
-      "end": 1711508330276,
+      "start": 1711509448390,
+      "end": 1711509448394,
       "order": "post"
     },
     {
       "name": "nuxt:runtime-paths-dep",
-      "start": 1711508330276,
-      "end": 1711508330276,
+      "start": 1711509448394,
+      "end": 1711509448394,
       "order": "post"
     },
     {
       "name": "nuxt:route-injection-plugin",
-      "start": 1711508330276,
-      "end": 1711508330276,
+      "start": 1711509448395,
+      "end": 1711509448395,
       "order": "post"
     },
     {
       "name": "nuxt:components-loader",
-      "start": 1711508330276,
-      "end": 1711508330276,
+      "start": 1711509448395,
+      "end": 1711509448395,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-composables:transform",
-      "start": 1711508330277,
-      "end": 1711508330277,
+      "start": 1711509448395,
+      "end": 1711509448395,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1711508330277,
-      "end": 1711508330277,
+      "start": 1711509448395,
+      "end": 1711509448395,
       "order": "normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1711508330277,
-      "end": 1711508330277,
+      "start": 1711509448395,
+      "end": 1711509448395,
       "order": "normal"
     }
   ]
