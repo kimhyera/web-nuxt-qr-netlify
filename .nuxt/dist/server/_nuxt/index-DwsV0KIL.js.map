@@ -1,1 +1,0 @@
-{"version":3,"file":"index-DwsV0KIL.js","sources":["../../../../pages/index.vue"],"sourcesContent":["<script setup lang=\"ts\">\r\n</script>\r\n<template>\r\n  <div class=\"Main\">\r\n    <h1>Hello Nuxt3</h1>\r\n  </div>\r\n</template>\r\n"],"names":[],"mappings":";;;;AAAA,SAAA,eAAA,MAAA,OAAA,SAGY;;;;;;;;;;"}

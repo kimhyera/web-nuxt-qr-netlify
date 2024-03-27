@@ -4,57 +4,57 @@
     {
       "name": "vite:load-fallback",
       "result": "<script setup lang=\"ts\">\r\nimport { ref } from 'vue';\r\nimport { Swiper, SwiperSlide } from 'swiper/vue';\r\nimport SwiperCore, { Autoplay } from 'swiper';\r\nimport 'swiper/css';\r\nimport modalStoreInfo from '../popup/modal-store-info.vue';\r\nimport modalMemo from '../popup/modal-notice.vue';\r\nimport Backdrop from '../components/Backdrop.vue';\r\n\r\nSwiperCore.use([Autoplay]);\r\n\r\n\r\nconst isBusinessTime = ref(false);\r\nconst isStoreInfo = ref(false);\r\nconst isMemo = ref(false);\r\n\r\n\r\n\r\nconst showBusinessTime = () => {\r\n\tisBusinessTime.value = true;\r\n\tconst app = document.querySelector('#__nuxt');\r\n\tapp?.classList.add('modal-open-overflow');\r\n};\r\n\r\nconst closeBusinessTime = () => {\r\n\tisBusinessTime.value = false;\r\n\tconst app = document.querySelector('#__nuxt');\r\n\tapp?.classList.remove('modal-open-overflow');\r\n};\r\n\r\nconst showStoreInfo = () => {\r\n\tisStoreInfo.value = true;\r\n\tconst app = document.querySelector('#__nuxt');\r\n\tapp?.classList.add('modal-open-fixed');\r\n};\r\n\r\n\r\nconst closeStoreInfo = () => {\r\n\tisStoreInfo.value = false;\r\n\tconst app = document.querySelector('#__nuxt');\r\n\tapp?.classList.remove('modal-open-fixed');\r\n};\r\n\r\n\r\nconst closeMemo = () =>{\r\n\tisMemo.value = false\r\n}\r\n\r\n//메뉴리스트\r\n\r\n\r\nconst scrollTop = ref(0);\r\nconst thisIdx = ref(0);\r\nconst isClicked = ref(false);\r\n\r\nconst setMenuList = () => {\r\n\tconst slideItem = document.querySelectorAll('.menu-group-slide li');\r\n\tslideItem.forEach((item, index) => {\r\n\t\tif (index === 0) {\r\n\t\t\titem.classList.add('on');\r\n\t\t}\r\n\t});\r\n};\r\n\r\nonMounted(() => {\r\n\tsetMenuList();\r\n\twindow.addEventListener('scroll', () => {\r\n\t\tscrollTop.value = window.pageYOffset;\r\n\t\tscrollLoopY();\r\n\t\tscrollFixed();\r\n\t});\r\n});\r\n\r\nconst onScrollTo = (idx: number, event: any) => {\r\n\tevent.preventDefault();\r\n\tisClicked.value = true;\r\n\r\n\tsetTimeout(() => {\r\n\t\tisClicked.value = false;\r\n\t}, 500);\r\n\tconst target = event.currentTarget;\r\n\tthisIdx.value = idx;\r\n\tconst targetA = event.target;\r\n\tmoveScrollLeft(target, idx);\r\n\tmoveScrollTop(targetA);\r\n};\r\n\r\nconst moveScrollTop = (target: any) => {\r\n\tconst targetHash = target.hash;\r\n\tconsole.log('targetHash', targetHash);\r\n\r\n\tif (targetHash) {\r\n\t\tconst targetLink = document.querySelector(targetHash);\r\n\t\tconst elementPosition = targetLink.getBoundingClientRect().top;\r\n\t\tconst groupSlide: HTMLUListElement | null = document.querySelector('.menu-group-slide');\r\n\t\tif (groupSlide === null) return;\r\n\t\tconst grpH = groupSlide.getBoundingClientRect().height;\r\n\t\tconst offsetPosition = elementPosition + window.pageYOffset - (grpH - 1);\r\n\t\twindow.scrollTo({\r\n\t\t\ttop: offsetPosition,\r\n\t\t\tbehavior: 'smooth',\r\n\t\t});\r\n\t}\r\n};\r\n\r\nconst moveScrollLeft = (target: any, idx: number) => {\r\n\tconst thisLi = target;\r\n\tconst thiLiW = thisLi.getBoundingClientRect().width;\r\n\tconst groupSlide: HTMLUListElement | null = document.querySelector('.menu-group-slide');\r\n\tconst groupItem = document.querySelectorAll('.menu-group-list > li');\r\n\tconst slideItem = document.querySelectorAll('.menu-group-slide li');\r\n\tconst centerX = window.innerWidth / 2;\r\n\tlet clickIdx = idx;\r\n\tlet prevTotalW = 0;\r\n\tslideItem.forEach((item, i) => {\r\n\t\tif (i < clickIdx) {\r\n\t\t\tprevTotalW += item.getBoundingClientRect().width;\r\n\t\t}\r\n\t});\r\n\tif (centerX > prevTotalW + thiLiW) {\r\n\t\tprevTotalW = 0;\r\n\t} else {\r\n\t\tprevTotalW = prevTotalW - centerX + thiLiW / 2;\r\n\t}\r\n\tif (isClicked.value === true) {\r\n\t\tif (groupSlide === null) return;\r\n\t\tgroupSlide.scrollTo({\r\n\t\t\tleft: prevTotalW,\r\n\t\t});\r\n\t} else {\r\n\t\tif (groupSlide === null) return;\r\n\t\tgroupSlide.scrollTo({\r\n\t\t\tleft: prevTotalW,\r\n\t\t\tbehavior: 'smooth',\r\n\t\t});\r\n\t}\r\n\tif (isClicked.value) {\r\n\t\tslideItem.forEach((item, index) => {\r\n\t\t\tif (thisIdx.value !== index) {\r\n\t\t\t\titem.classList.remove('on');\r\n\t\t\t}\r\n\t\t});\r\n\t\tslideItem[thisIdx.value].classList.add('on');\r\n\r\n\t}\r\n};\r\n\r\nconst scrollLoopY = () => {\r\n\tconst grpItem = document.querySelectorAll('.menu-group-list > li');\r\n\tconst groupSlide: HTMLElement | null = document.querySelector('.menu-group-slide');\r\n\tif (groupSlide === null)\r\n\t\treturn;\r\n\tconst grpH = groupSlide.getBoundingClientRect().height;\r\n\tconst spaceTop = grpH;\r\n\tconst slideItem = document.querySelectorAll('.menu-group-slide li');\r\n\tgrpItem.forEach((item: any) => {\r\n\t\tconst elem = item;\r\n\t\tconst elemT = elem.offsetTop - spaceTop;\r\n\t\tconst elemH = elem.getBoundingClientRect().height;\r\n\t\tif (isClicked.value)\r\n\t\t\treturn;\r\n\t\tif (scrollTop.value >= elemT && scrollTop.value < elemT + elemH) {\r\n\r\n\t\t\t// 윈도우 스크롤 위치가 현재 컨텐츠 스크롤보다 크거나 같고,\r\n\t\t\t// 윈도우 스크롤의 위치가 컨텐츠의 끝보다 작을때\r\n\t\t\tconst nodes = [...item.parentElement.children];\r\n\t\t\t// 스크롤 위치 업데이트\r\n\t\t\tthisIdx.value = nodes.indexOf(item);\r\n\t\t\tslideItem[thisIdx.value].classList.add('on');\r\n\t\t} else {\r\n\t\t\tslideItem.forEach((item, index) => {\r\n\t\t\t\tif (thisIdx.value !== index) {\r\n\t\t\t\t\titem.classList.remove('on');\r\n\t\t\t\t}\r\n\t\t\t});\r\n\t\t}\r\n\t});\r\n\tmoveScrollLeft(slideItem[thisIdx.value], thisIdx.value);\r\n};\r\n\r\nconst scrollFixed = () => {\r\n\tconst menuList: HTMLElement | null = document.querySelector('.menu-list-section');\r\n\tconst groupSlide: HTMLElement | null = document.querySelector('.menu-group-slide');\r\n\tif (menuList === null)\r\n\t\treturn;\r\n\tconst groupSlideOffsetTop = menuList.getBoundingClientRect().top + window.scrollY;\r\n\tif (groupSlide === null)\r\n\t\treturn;\r\n\tif (scrollTop.value > groupSlideOffsetTop) {\r\n\t\tgroupSlide.classList.add('fixed');\r\n\t} else {\r\n\t\tgroupSlide.classList.remove('fixed');\r\n\t}\r\n};\r\n\r\nconst toggleMenu = (event: any) => {\r\n\tlet targetH = null;\r\n\tlet currentTarget = event.currentTarget;\r\n\tif (event.tagName === 'BUTTON') {\r\n\t\tlet targetButton = event;\r\n\t\tlet target = targetButton.nextElementSibling;\r\n\t\ttargetButton.parentElement.classList.remove('hidden');\r\n\t\ttarget.style.height = 'auto';\r\n\t\treturn;\r\n\t}\r\n\tif (currentTarget === null)\r\n\t\treturn;\r\n\tlet target = currentTarget.nextElementSibling;\r\n\tif (0 === target.offsetHeight) {\r\n\t\tcurrentTarget.parentElement.classList.remove('hidden');\r\n\t\ttarget.style.height = 'auto';\r\n\t\ttargetH = target.offsetHeight;\r\n\t\ttarget.style.height = 0;\r\n\t\tvoid target.offsetHeight;\r\n\t\ttarget.style.height = `${targetH}px`;\r\n\t} else {\r\n\t\tcurrentTarget.parentElement.classList.add('hidden');\r\n\t\ttarget.style.height = 'auto';\r\n\t\ttargetH = target.offsetHeight;\r\n\t\ttarget.style.height = `${targetH}px`;\r\n\t\tvoid target.offsetHeight;\r\n\t\ttarget.style.height = 0;\r\n\t}\r\n};\r\n\r\n</script>\r\n\r\n<template>\r\n\t<div class=\"layout1\">\r\n\t\t<header class=\"header-main\">\r\n\t\t\t<div class=\"header-row\">\r\n\t\t\t\t<h1 class=\"store-name\">\r\n\t\t\t\t\t스토어 이름\r\n\t\t\t\t\t<i class=\"i-store-info\" @click=\"showStoreInfo\"></i>\r\n\t\t\t\t</h1>\r\n\r\n\r\n\t\t\t</div>\r\n\t\t</header>\r\n\t\t<main class=\"order-page order-main\">\r\n\t\t\t<section class=\"order-dashboard\">\r\n\t\t\t\t<div class=\"table-info\">\r\n\t\t\t\t\t<dl class=\"table-No\">\r\n\t\t\t\t\t\t<dt>테이블 번호</dt>\r\n\t\t\t\t\t\t<dd>2</dd>\r\n\t\t\t\t\t</dl>\r\n\t\t\t\t</div>\r\n\t\t\t</section>\r\n\r\n\r\n\t\t\t<section class=\"store-notice-event\">\r\n\t\t\t\t<div class=\"memo-event-slider\">\r\n\t\t\t\t\t<swiper class=\"slider-item\" :speed=\"700\" :autoplay=\"{ delay: 4000, disableOnInteraction: false }\"\r\n\t\t\t\t\t\t:loop=\"true\">\r\n\t\t\t\t\t\t<swiper-slide>\r\n\t\t\t\t\t\t\t<div class=\"item-overflow\">\r\n\t\t\t\t\t\t\t\t<i class=\"icon-notice\"></i>\r\n\t\t\t\t\t\t\t\t<button type=\"button\" class=\"btn-link\" @click=\"isMemo = true\">\r\n\t\t\t\t\t\t\t\t\t매장에서 설정한 문구 출력 영역 한줄만 처리\r\n\t\t\t\t\t\t\t\t\t매장에서 설정한 문구 출력 영역 한줄만 처리\r\n\r\n\t\t\t\t\t\t\t\t</button>\r\n\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t</swiper-slide>\r\n\t\t\t\t\t\t<swiper-slide>\r\n\t\t\t\t\t\t\t<div class=\"item-overflow\">\r\n\t\t\t\t\t\t\t\t<i class=\"icon-notice\"></i>\r\n\t\t\t\t\t\t\t\t<button type=\"button\" class=\"btn-link\" @click=\"isMemo = true\">\r\n\t\t\t\t\t\t\t\t\t제목 노출\r\n\r\n\t\t\t\t\t\t\t\t</button>\r\n\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t</swiper-slide>\r\n\t\t\t\t\t</swiper>\r\n\t\t\t\t</div>\r\n\t\t\t</section>\r\n\t\t\t<!-- 메뉴리스트 -->\r\n\t\t\t<section class=\"menu-list-section\">\r\n\t\t\t\t<!-- 스크롤 도달시 클래스 fixed -->\r\n\t\t\t\t<ul class=\"menu-group-slide\">\r\n\r\n\r\n\t\t\t\t\t<li data-id=\"#grp_best3\" @click=\"onScrollTo(0, $event)\">\r\n\t\t\t\t\t\t<a class=\"btn-smooth\" href=\"#grp_best3\">인기메뉴</a>\r\n\t\t\t\t\t</li>\r\n\r\n\t\t\t\t\t<li data-id=\"#grp_100\" @click=\"onScrollTo(1, $event)\">\r\n\t\t\t\t\t\t<a class=\"btn-smooth\" href=\"#grp_100\">대표메뉴</a>\r\n\t\t\t\t\t</li>\r\n\r\n\t\t\t\t\t<li data-id=\"#grp_101\" @click=\"onScrollTo(2, $event)\">\r\n\t\t\t\t\t\t<a class=\"btn-smooth\" href=\"#grp_101\">신메뉴</a>\r\n\t\t\t\t\t</li>\r\n\r\n\t\t\t\t\t<li data-id=\"#grp_102\" @click=\"onScrollTo(3, $event)\">\r\n\t\t\t\t\t\t<a class=\"btn-smooth\" href=\"#grp_102\">추천메뉴</a>\r\n\t\t\t\t\t</li>\r\n\r\n\t\t\t\t\t<li data-id=\"#grp_103\" @click=\"onScrollTo(4, $event)\">\r\n\t\t\t\t\t\t<a class=\"btn-smooth\" href=\"#grp_103\">콜드부르</a>\r\n\t\t\t\t\t</li>\r\n\r\n\t\t\t\t\t<li data-id=\"#grp_104\" @click=\"onScrollTo(5, $event)\">\r\n\t\t\t\t\t\t<a class=\"btn-smooth\" href=\"#grp_104\">홀케이크</a>\r\n\t\t\t\t\t</li>\r\n\t\t\t\t\t<li data-id=\"#grp_105\" @click=\"onScrollTo(6, $event)\">\r\n\t\t\t\t\t\t<a class=\"btn-smooth\" href=\"#grp_105\">티</a>\r\n\t\t\t\t\t</li>\r\n\t\t\t\t</ul>\r\n\t\t\t\t<!-- menu-group-slide fixed 여백 조정 -->\r\n\t\t\t\t<div class=\"menu-group-slide-fixed-fake-area\"></div>\r\n\r\n\t\t\t\t<!-- 메뉴 리스트  -->\r\n\t\t\t\t<ul class=\"menu-group-list\">\r\n\t\t\t\t\t<li class=\"li-best3\">\r\n\t\t\t\t\t\t<!-- 인기메뉴 -->\r\n\t\t\t\t\t\t<div id=\"grp_best3\" class=\"best3-menu\">\r\n\t\t\t\t\t\t\t<p class=\"grp-title\">인기메뉴</p>\r\n\t\t\t\t\t\t\t<ul class=\"best-goods-list\">\r\n\t\t\t\t\t\t\t\t<li>\r\n\t\t\t\t\t\t\t\t\t<router-link to=\"pb/path\" class=\"btn-link\">\r\n\t\t\t\t\t\t\t\t\t\t<div class=\"info-wrap\">\r\n\t\t\t\t\t\t\t\t\t\t\t<span class=\"name\">아이스 디카페인 카페라떼</span>\r\n\t\t\t\t\t\t\t\t\t\t\t<span class=\"price\"><em>12,000</em>원</span>\r\n\r\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"sale-value\">\r\n\t\t\t\t\t\t\t\t\t\t\t\t<span>월 평균 판매량</span>\r\n\t\t\t\t\t\t\t\t\t\t\t\t<span> 126개 </span>\r\n\t\t\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t\t<div class=\"position-relative\">\r\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"img-wrap col-auto img-ratio-menu-list\">\r\n\t\t\t\t\t\t\t\t\t\t\t\t<!-- 이미지가 없는경우 디폴트 이미지 노출 -->\r\n\t\t\t\t\t\t\t\t\t\t\t\t<img src=\"@/assets/common/images/default/icon_food_default@2x.png\"\r\n\t\t\t\t\t\t\t\t\t\t\t\t\talt=\"\" />\r\n\t\t\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t\t\t<i class=\"icon_best_30\"></i>\r\n\t\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t</router-link>\r\n\t\t\t\t\t\t\t\t</li>\r\n\t\t\t\t\t\t\t\t<li>\r\n\t\t\t\t\t\t\t\t\t<router-link to=\"pb/path\" class=\"btn-link\">\r\n\t\t\t\t\t\t\t\t\t\t<div class=\"info-wrap\">\r\n\t\t\t\t\t\t\t\t\t\t\t<span class=\"name\">블루베리 쿠키 치즈 케이크</span>\r\n\t\t\t\t\t\t\t\t\t\t\t<span class=\"price\"><em>12,000</em>원</span>\r\n\r\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"sale-value\">\r\n\t\t\t\t\t\t\t\t\t\t\t\t<span>월 평균 판매량</span>\r\n\t\t\t\t\t\t\t\t\t\t\t\t<span> 100개 </span>\r\n\t\t\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t\t<div class=\"position-relative\">\r\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"img-wrap img-ratio-menu-list\">\r\n\t\t\t\t\t\t\t\t\t\t\t\t<img src=\"@/assets/common/images/default/img_smaple_03@2x.jpg\" alt=\"\" />\r\n\t\t\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t\t\t<i class=\"icon_best_30\"></i>\r\n\t\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t</router-link>\r\n\t\t\t\t\t\t\t\t</li>\r\n\t\t\t\t\t\t\t</ul>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t<!-- 인기메뉴 // -->\r\n\t\t\t\t\t</li>\r\n\t\t\t\t\t<!-- 토글 클래스 hidden -->\r\n\t\t\t\t\t<li id=\"grp_100\" class=\"\">\r\n\t\t\t\t\t\t<button class=\"btn-grp-title\" @click=\"toggleMenu\">\r\n\t\t\t\t\t\t\t대표메뉴 <i class=\"icon_arrow\"></i>\r\n\t\t\t\t\t\t</button>\r\n\t\t\t\t\t\t<ul class=\"goods-list\">\r\n\t\t\t\t\t\t\t<li>\r\n\t\t\t\t\t\t\t\t<router-link to=\"pb/path\" class=\"btn-link\">\r\n\t\t\t\t\t\t\t\t\t<div class=\"info-wrap\">\r\n\t\t\t\t\t\t\t\t\t\t<div class=\"badges\">\r\n\t\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t\t<span class=\"name\">블루베리 쿠키 치즈 케이크</span>\r\n\t\t\t\t\t\t\t\t\t\t<span class=\"desc\">\r\n\t\t\t\t\t\t\t\t\t\t\t고소한 쿠키와 크림치즈를 듬뿍 넣어 만든\r\n\t\t\t\t\t\t\t\t\t\t\t케이크 위에 달콤 상큼한 블루베리가 올라가\r\n\t\t\t\t\t\t\t\t\t\t\t있는 치즈 케이크 메뉴 설명 입력 최대\r\n\t\t\t\t\t\t\t\t\t\t\t두줄입력 두줄까지 입력\r\n\t\t\t\t\t\t\t\t\t\t</span>\r\n\t\t\t\t\t\t\t\t\t\t<span class=\"price\"> <em>12,000</em>원 </span>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t<div class=\"img-wrap ratio\">\r\n\t\t\t\t\t\t\t\t\t\t<img src=\"@/assets/common/images/default/img_smaple_03@2x.jpg\" alt=\"\" />\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t</router-link>\r\n\t\t\t\t\t\t\t</li>\r\n\t\t\t\t\t\t\t<li>\r\n\t\t\t\t\t\t\t\t<router-link to=\"pb/path\" class=\"btn-link\">\r\n\t\t\t\t\t\t\t\t\t<div class=\"info-wrap\">\r\n\t\t\t\t\t\t\t\t\t\t<span class=\"name\">아이스 디카페인 카페라떼</span>\r\n\t\t\t\t\t\t\t\t\t\t<span class=\"desc\">메뉴 설명 입력 최대 두줄입력 두줄까지 입력\r\n\t\t\t\t\t\t\t\t\t\t</span>\r\n\t\t\t\t\t\t\t\t\t\t<span class=\"price\"> <em>6,000</em>원 </span>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t<div class=\"img-wrap ratio\">\r\n\t\t\t\t\t\t\t\t\t\t<img src=\"@/assets/common/images/default/img_smaple_02@2x.jpg\" alt=\"\" />\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t</router-link>\r\n\t\t\t\t\t\t\t</li>\r\n\t\t\t\t\t\t\t<li>\r\n\t\t\t\t\t\t\t\t<router-link to=\"pb/path\" class=\"btn-link\">\r\n\t\t\t\t\t\t\t\t\t<div class=\"info-wrap\">\r\n\t\t\t\t\t\t\t\t\t\t<div class=\"badges\">\r\n\t\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t\t<span class=\"name\">스페셜 햄 치즈 토스트</span>\r\n\t\t\t\t\t\t\t\t\t\t<span class=\"price\"> <em>18,800</em>원 </span>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t<div class=\"img-wrap ratio\">\r\n\t\t\t\t\t\t\t\t\t\t<img src=\"@/assets/common/images/default/img_smaple_01@2x.jpg\" alt=\"\" />\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t</router-link>\r\n\t\t\t\t\t\t\t</li>\r\n\t\t\t\t\t\t</ul>\r\n\t\t\t\t\t</li>\r\n\t\t\t\t\t<li id=\"grp_101\" class=\"\">\r\n\t\t\t\t\t\t<button class=\"btn-grp-title\" @click=\"toggleMenu\">\r\n\t\t\t\t\t\t\t신메뉴<i class=\"icon_arrow\"></i>\r\n\t\t\t\t\t\t</button>\r\n\t\t\t\t\t\t<ul class=\"goods-list\">\r\n\t\t\t\t\t\t\t<li>\r\n\t\t\t\t\t\t\t\t<router-link to=\"pb/path\" class=\"btn-link\">\r\n\t\t\t\t\t\t\t\t\t<div class=\"info-wrap\">\r\n\t\t\t\t\t\t\t\t\t\t<span class=\"name\">블루베리 쿠키 치즈 케이크</span>\r\n\t\t\t\t\t\t\t\t\t\t<span class=\"desc\">\r\n\t\t\t\t\t\t\t\t\t\t\t고소한 쿠키와 크림치즈를 듬뿍 넣어 만든\r\n\t\t\t\t\t\t\t\t\t\t\t케이크 위에 달콤 상큼한 블루베리가 올라가\r\n\t\t\t\t\t\t\t\t\t\t\t있는 치즈 케이크 메뉴 설명 입력 최대\r\n\t\t\t\t\t\t\t\t\t\t\t두줄입력 두줄까지 입력\r\n\t\t\t\t\t\t\t\t\t\t</span>\r\n\t\t\t\t\t\t\t\t\t\t<span class=\"price\"> <em>12,000</em>원 </span>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t</router-link>\r\n\t\t\t\t\t\t\t</li>\r\n\t\t\t\t\t\t\t<li>\r\n\t\t\t\t\t\t\t\t<router-link to=\"pb/path\" class=\"btn-link\">\r\n\t\t\t\t\t\t\t\t\t<div class=\"info-wrap\">\r\n\t\t\t\t\t\t\t\t\t\t<span class=\"name\">아이스 디카페인 카페라떼</span>\r\n\t\t\t\t\t\t\t\t\t\t<span class=\"price\"> <em>6,000</em>원 </span>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t</router-link>\r\n\t\t\t\t\t\t\t</li>\r\n\t\t\t\t\t\t\t<li>\r\n\t\t\t\t\t\t\t\t<router-link to=\"pb/path\" class=\"btn-link\">\r\n\t\t\t\t\t\t\t\t\t<div class=\"info-wrap\">\r\n\t\t\t\t\t\t\t\t\t\t<span class=\"name\">스페셜 햄 치즈 토스트</span>\r\n\t\t\t\t\t\t\t\t\t\t<span class=\"price\"> <em>18,800</em>원 </span>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t</router-link>\r\n\t\t\t\t\t\t\t</li>\r\n\t\t\t\t\t\t</ul>\r\n\t\t\t\t\t</li>\r\n\r\n\t\t\t\t\t<li id=\"grp_102\" class=\"\">\r\n\t\t\t\t\t\t<button class=\"btn-grp-title\" @click=\"toggleMenu\">\r\n\t\t\t\t\t\t\t추천메뉴<i class=\"icon_arrow\"></i>\r\n\t\t\t\t\t\t</button>\r\n\t\t\t\t\t\t<ul class=\"goods-list\">\r\n\t\t\t\t\t\t\t<li>\r\n\t\t\t\t\t\t\t\t<router-link to=\"pb/path\" class=\"btn-link\">\r\n\t\t\t\t\t\t\t\t\t<div class=\"info-wrap\">\r\n\t\t\t\t\t\t\t\t\t\t<span class=\"name\">블루베리 쿠키 치즈 케이크</span>\r\n\t\t\t\t\t\t\t\t\t\t<span class=\"desc\">\r\n\t\t\t\t\t\t\t\t\t\t\t고소한 쿠키와 크림치즈를 듬뿍 넣어 만든\r\n\t\t\t\t\t\t\t\t\t\t\t케이크 위에 달콤 상큼한 블루베리가 올라가\r\n\t\t\t\t\t\t\t\t\t\t\t있는 치즈 케이크 메뉴 설명 입력 최대\r\n\t\t\t\t\t\t\t\t\t\t\t두줄입력 두줄까지 입력\r\n\t\t\t\t\t\t\t\t\t\t</span>\r\n\t\t\t\t\t\t\t\t\t\t<span class=\"price\"> <em>12,000</em>원 </span>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t</router-link>\r\n\t\t\t\t\t\t\t</li>\r\n\t\t\t\t\t\t\t<li>\r\n\t\t\t\t\t\t\t\t<router-link to=\"pb/path\" class=\"btn-link\">\r\n\t\t\t\t\t\t\t\t\t<div class=\"info-wrap\">\r\n\t\t\t\t\t\t\t\t\t\t<span class=\"name\">아이스 디카페인 카페라떼</span>\r\n\t\t\t\t\t\t\t\t\t\t<span class=\"price\"> <em>6,000</em>원 </span>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t</router-link>\r\n\t\t\t\t\t\t\t</li>\r\n\t\t\t\t\t\t\t<li>\r\n\t\t\t\t\t\t\t\t<router-link to=\"pb/path\" class=\"btn-link\">\r\n\t\t\t\t\t\t\t\t\t<div class=\"info-wrap\">\r\n\t\t\t\t\t\t\t\t\t\t<span class=\"name\">스페셜 햄 치즈 토스트</span>\r\n\t\t\t\t\t\t\t\t\t\t<span class=\"price\"> <em>18,800</em>원 </span>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t</router-link>\r\n\t\t\t\t\t\t\t</li>\r\n\t\t\t\t\t\t</ul>\r\n\t\t\t\t\t</li>\r\n\t\t\t\t\t<li id=\"grp_103\" class=\"hidden\">\r\n\t\t\t\t\t\t<button class=\"btn-grp-title\" @click=\"toggleMenu\">\r\n\t\t\t\t\t\t\t콜드부르<i class=\"icon_arrow\"></i>\r\n\t\t\t\t\t\t</button>\r\n\t\t\t\t\t\t<ul class=\"goods-list\">\r\n\t\t\t\t\t\t\t<li>\r\n\t\t\t\t\t\t\t\t<router-link to=\"pb/path\" class=\"btn-link\">\r\n\t\t\t\t\t\t\t\t\t<div class=\"info-wrap\">\r\n\t\t\t\t\t\t\t\t\t\t<span class=\"name\">블루베리 쿠키 치즈 케이크</span>\r\n\t\t\t\t\t\t\t\t\t\t<span class=\"desc\">\r\n\t\t\t\t\t\t\t\t\t\t\t고소한 쿠키와 크림치즈를 듬뿍 넣어 만든\r\n\t\t\t\t\t\t\t\t\t\t\t케이크 위에 달콤 상큼한 블루베리가 올라가\r\n\t\t\t\t\t\t\t\t\t\t\t있는 치즈 케이크 메뉴 설명 입력 최대\r\n\t\t\t\t\t\t\t\t\t\t\t두줄입력 두줄까지 입력\r\n\t\t\t\t\t\t\t\t\t\t</span>\r\n\t\t\t\t\t\t\t\t\t\t<span class=\"price\"> <em>12,000</em>원 </span>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t</router-link>\r\n\t\t\t\t\t\t\t</li>\r\n\t\t\t\t\t\t\t<li>\r\n\t\t\t\t\t\t\t\t<router-link to=\"pb/path\" class=\"btn-link\">\r\n\t\t\t\t\t\t\t\t\t<div class=\"info-wrap\">\r\n\t\t\t\t\t\t\t\t\t\t<span class=\"name\">아이스 디카페인 카페라떼</span>\r\n\t\t\t\t\t\t\t\t\t\t<span class=\"price\"> <em>6,000</em>원 </span>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t</router-link>\r\n\t\t\t\t\t\t\t</li>\r\n\t\t\t\t\t\t\t<li>\r\n\t\t\t\t\t\t\t\t<router-link to=\"pb/path\" class=\"btn-link\">\r\n\t\t\t\t\t\t\t\t\t<div class=\"info-wrap\">\r\n\t\t\t\t\t\t\t\t\t\t<span class=\"name\">스페셜 햄 치즈 토스트</span>\r\n\t\t\t\t\t\t\t\t\t\t<span class=\"price\"> <em>18,800</em>원 </span>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t</router-link>\r\n\t\t\t\t\t\t\t</li>\r\n\t\t\t\t\t\t</ul>\r\n\t\t\t\t\t</li>\r\n\r\n\t\t\t\t\t<li id=\"grp_104\" class=\"hidden\">\r\n\t\t\t\t\t\t<button class=\"btn-grp-title\" @click=\"toggleMenu\">\r\n\t\t\t\t\t\t\t홀케이크<i class=\"icon_arrow\"></i>\r\n\t\t\t\t\t\t</button>\r\n\t\t\t\t\t\t<ul class=\"goods-list\">\r\n\t\t\t\t\t\t\t<li>\r\n\t\t\t\t\t\t\t\t<router-link to=\"pb/path\" class=\"btn-link\">\r\n\t\t\t\t\t\t\t\t\t<div class=\"info-wrap\">\r\n\t\t\t\t\t\t\t\t\t\t<span class=\"name\">블루베리 쿠키 치즈 케이크</span>\r\n\t\t\t\t\t\t\t\t\t\t<span class=\"desc\">\r\n\t\t\t\t\t\t\t\t\t\t\t고소한 쿠키와 크림치즈를 듬뿍 넣어 만든\r\n\t\t\t\t\t\t\t\t\t\t\t케이크 위에 달콤 상큼한 블루베리가 올라가\r\n\t\t\t\t\t\t\t\t\t\t\t있는 치즈 케이크 메뉴 설명 입력 최대\r\n\t\t\t\t\t\t\t\t\t\t\t두줄입력 두줄까지 입력\r\n\t\t\t\t\t\t\t\t\t\t</span>\r\n\t\t\t\t\t\t\t\t\t\t<span class=\"price\"> <em>12,000</em>원 </span>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t</router-link>\r\n\t\t\t\t\t\t\t</li>\r\n\t\t\t\t\t\t</ul>\r\n\t\t\t\t\t</li>\r\n\t\t\t\t\t<li id=\"grp_105\" class=\"hidden\">\r\n\t\t\t\t\t\t<button class=\"btn-grp-title\" @click=\"toggleMenu\">\r\n\t\t\t\t\t\t\t티<i class=\"icon_arrow\"></i>\r\n\t\t\t\t\t\t</button>\r\n\t\t\t\t\t\t<ul class=\"goods-list\">\r\n\t\t\t\t\t\t\t<li>\r\n\t\t\t\t\t\t\t\t<router-link to=\"pb/path\" class=\"btn-link\">\r\n\t\t\t\t\t\t\t\t\t<div class=\"info-wrap\">\r\n\t\t\t\t\t\t\t\t\t\t<span class=\"name\">카모마일 티</span>\r\n\t\t\t\t\t\t\t\t\t\t<span class=\"desc\"> 숙면에 좋은 티 </span>\r\n\t\t\t\t\t\t\t\t\t\t<span class=\"price\"> <em>6,000</em>원 </span>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t</router-link>\r\n\t\t\t\t\t\t\t</li>\r\n\t\t\t\t\t\t\t<li>\r\n\t\t\t\t\t\t\t\t<router-link to=\"pb/path\" class=\"btn-link\">\r\n\t\t\t\t\t\t\t\t\t<div class=\"info-wrap\">\r\n\t\t\t\t\t\t\t\t\t\t<span class=\"name\">페퍼민트 티</span>\r\n\t\t\t\t\t\t\t\t\t\t<span class=\"price\"> <em>6,000</em>원 </span>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t</router-link>\r\n\t\t\t\t\t\t\t</li>\r\n\t\t\t\t\t\t\t<li>\r\n\t\t\t\t\t\t\t\t<router-link to=\"pb/path\" class=\"btn-link\">\r\n\t\t\t\t\t\t\t\t\t<div class=\"info-wrap\">\r\n\t\t\t\t\t\t\t\t\t\t<span class=\"name\">페퍼민트 티</span>\r\n\t\t\t\t\t\t\t\t\t\t<span class=\"price\"> <em>6,000</em>원 </span>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t</router-link>\r\n\t\t\t\t\t\t\t</li>\r\n\t\t\t\t\t\t</ul>\r\n\t\t\t\t\t</li>\r\n\t\t\t\t</ul>\r\n\t\t\t\t<!-- 메뉴 리스트 // -->\r\n\t\t\t</section>\r\n\t\t\t<!-- // 메뉴리스트 -->\r\n\r\n\t\t\t<div class=\"btn-wrap-fixed\">\r\n\t\t\t\t<div class=\"btn-row\"><button class=\"btn-cart-link\"> 장바구니 <span class=\"count\">0</span></button><button\r\n\t\t\t\t\t\tclass=\"btn-order-link\">35,000원 주문하기\r\n\t\t\t\t\t</button></div>\r\n\t\t\t</div>\r\n\t\t</main>\r\n\r\n\t</div>\r\n\r\n\t<!-- 영업시간 -->\r\n\t<transition name=\"fade\">\r\n\t\t<BusinessTime v-if=\"isBusinessTime\" @close=\"closeBusinessTime\" />\r\n\t</transition>\r\n\r\n\t<!-- 매장정보  -->\r\n\t<transition name=\"slide-up\">\r\n\t\t<modalStoreInfo v-if=\"isStoreInfo\" @close=\"closeStoreInfo\" />\r\n\t</transition>\r\n\t<transition name=\"fade\">\r\n\t\t<Backdrop v-if=\"isStoreInfo\" />\r\n\t</transition>\r\n\r\n\t<transition name=\"fade\">\r\n\t\t<modalMemo v-if=\"isMemo\" @close=\"closeMemo\" />\r\n\t</transition>\r\n\r\n\r\n</template>\r\n\r\n<style lang=\"scss\" scoped>\r\n@import \"@/assets/default/scss/components/header\";\r\n@import \"@/assets/default/scss/components/navtab\";\r\n@import '@/assets/default/scss/components/ui/buttons';\r\n@import '@/assets/default/scss/components/order/orderDashboardTable';\r\n@import '@/assets/default/scss/components/order/menuList';\r\n@import '@/assets/default/scss/components/store/storeWorkTime';\r\n@import '@/assets/default/scss/components/store/storeNoticeEventBar';\r\n</style>\r\n",
-      "start": 1711512684170,
-      "end": 1711512685207,
+      "start": 1711515364297,
+      "end": 1711515365161,
       "sourcemaps": null
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1711512685207,
-      "end": 1711512685207,
+      "start": 1711515365161,
+      "end": 1711515365161,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1711512685207,
-      "end": 1711512685207,
+      "start": 1711515365161,
+      "end": 1711515365161,
       "order": "pre"
     },
     {
       "name": "nuxt:client-fallback-auto-id",
-      "start": 1711512685207,
-      "end": 1711512685207,
+      "start": 1711515365161,
+      "end": 1711515365161,
       "order": "pre"
     },
     {
       "name": "vite:css",
-      "start": 1711512685207,
-      "end": 1711512685207,
+      "start": 1711515365161,
+      "end": 1711515365161,
       "order": "normal"
     },
     {
       "name": "vite:esbuild",
-      "start": 1711512685207,
-      "end": 1711512685207,
+      "start": 1711515365161,
+      "end": 1711515365161,
       "order": "normal"
     },
     {
       "name": "vite:json",
-      "start": 1711512685207,
-      "end": 1711512685207,
+      "start": 1711515365161,
+      "end": 1711515365161,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1711512685207,
-      "end": 1711512685207,
+      "start": 1711515365161,
+      "end": 1711515365161,
       "order": "normal"
     },
     {
       "name": "vite:vue",
       "result": "import _sfc_main from \"D:/localserver/web-nuxt-sdk/web-nuxt-qr-netlify/pages/pb/order/table.vue?vue&type=script&setup=true&lang.ts\";\nexport * from \"D:/localserver/web-nuxt-sdk/web-nuxt-qr-netlify/pages/pb/order/table.vue?vue&type=script&setup=true&lang.ts\";\nimport \"D:/localserver/web-nuxt-sdk/web-nuxt-qr-netlify/pages/pb/order/table.vue?vue&type=style&index=0&scoped=92896c87&lang.scss\";\nimport _export_sfc from \"\\0plugin-vue:export-helper\";\nexport default /* @__PURE__ */ _export_sfc(_sfc_main, [[\"__scopeId\", \"data-v-92896c87\"]]);\n",
-      "start": 1711512685207,
-      "end": 1711512685891,
+      "start": 1711515365161,
+      "end": 1711515365786,
       "order": "normal",
       "sourcemaps": {
         "mappings": ""
@@ -62,117 +62,117 @@
     },
     {
       "name": "vite:vue-jsx",
-      "start": 1711512685891,
-      "end": 1711512685891,
+      "start": 1711515365786,
+      "end": 1711515365786,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1711512685891,
-      "end": 1711512685892,
+      "start": 1711515365786,
+      "end": 1711515365786,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1711512685892,
-      "end": 1711512685892,
+      "start": 1711515365786,
+      "end": 1711515365786,
       "order": "normal"
     },
     {
       "name": "nuxt:chunk-error",
-      "start": 1711512685892,
-      "end": 1711512685892,
+      "start": 1711515365787,
+      "end": 1711515365787,
       "order": "normal"
     },
     {
       "name": "nuxt:components:imports",
-      "start": 1711512685892,
-      "end": 1711512685893,
+      "start": 1711515365787,
+      "end": 1711515365793,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1711512685893,
-      "end": 1711512685893,
+      "start": 1711515365793,
+      "end": 1711515365793,
       "order": "normal"
     },
     {
       "name": "ssr-styles",
-      "start": 1711512685894,
-      "end": 1711512685894,
+      "start": 1711515365793,
+      "end": 1711515365793,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1711512685894,
-      "end": 1711512685894,
+      "start": 1711515365794,
+      "end": 1711515365794,
       "order": "normal"
     },
     {
       "name": "vite:css-post",
-      "start": 1711512685894,
-      "end": 1711512685894,
+      "start": 1711515365794,
+      "end": 1711515365794,
       "order": "normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1711512685894,
-      "end": 1711512685894,
+      "start": 1711515365794,
+      "end": 1711515365794,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1711512685895,
-      "end": 1711512685895,
+      "start": 1711515365794,
+      "end": 1711515365794,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1711512685895,
-      "end": 1711512685895,
+      "start": 1711515365794,
+      "end": 1711515365795,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1711512685895,
-      "end": 1711512685895,
+      "start": 1711515365795,
+      "end": 1711515365795,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1711512685895,
-      "end": 1711512685895,
+      "start": 1711515365795,
+      "end": 1711515365795,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1711512685895,
-      "end": 1711512685895,
+      "start": 1711515365795,
+      "end": 1711515365795,
       "order": "normal"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1711512685896,
-      "end": 1711512685916,
+      "start": 1711515365796,
+      "end": 1711515365796,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
-      "start": 1711512685916,
-      "end": 1711512686061,
+      "start": 1711515365797,
+      "end": 1711515365800,
       "order": "post"
     },
     {
       "name": "unctx:transform",
-      "start": 1711512686061,
-      "end": 1711512686061,
+      "start": 1711515365801,
+      "end": 1711515365801,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
       "result": "export { default } from \"D:/localserver/web-nuxt-sdk/web-nuxt-qr-netlify/pages/pb/order/table.vue?macro=true&vue&type=script&setup=true&lang.ts\"",
-      "start": 1711512686061,
-      "end": 1711512686063,
+      "start": 1711515365802,
+      "end": 1711515365803,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -185,38 +185,38 @@
     },
     {
       "name": "nuxt:runtime-paths-dep",
-      "start": 1711512686064,
-      "end": 1711512686065,
+      "start": 1711515365803,
+      "end": 1711515365803,
       "order": "post"
     },
     {
       "name": "nuxt:route-injection-plugin",
-      "start": 1711512686065,
-      "end": 1711512686066,
+      "start": 1711515365804,
+      "end": 1711515365804,
       "order": "post"
     },
     {
       "name": "nuxt:components-loader",
-      "start": 1711512686067,
-      "end": 1711512686069,
+      "start": 1711515365804,
+      "end": 1711515365804,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-composables:transform",
-      "start": 1711512686069,
-      "end": 1711512686072,
+      "start": 1711515365805,
+      "end": 1711515365805,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1711512686072,
-      "end": 1711512686074,
+      "start": 1711515365805,
+      "end": 1711515365806,
       "order": "normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1711512686074,
-      "end": 1711512686074,
+      "start": 1711515365806,
+      "end": 1711515365806,
       "order": "normal"
     }
   ]

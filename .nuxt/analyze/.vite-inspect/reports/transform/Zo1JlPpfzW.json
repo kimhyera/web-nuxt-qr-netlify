@@ -4,57 +4,57 @@
     {
       "name": "vite:load-fallback",
       "result": "<script setup lang=\"ts\">\r\nimport { ref, computed, onMounted } from 'vue';\r\nimport { useRouter } from 'vue-router';\r\nimport imageSrc from '@/assets/default/images/icon/icon_map_pin_28.svg';\r\n\r\ndeclare global {\r\n\tinterface Window {\r\n\t\tapp: unknown;\r\n\t\tKakao: any;\r\n\t\tkakao: any;\r\n\t\tmyMtsAuth: any;\r\n\t}\r\n}\r\n\r\nconst props = defineProps({\r\n\tthemeName: {\r\n\t\ttype: String,\r\n\t\tdefault: 'default',\r\n\t},\r\n});\r\n\r\nconst router = useRouter();\r\n\r\n\r\n\r\n// reactivity data\r\nconst imageSrcPath = ref(imageSrc);\r\nconst mapContainer = ref<HTMLElement | null>(null);\r\nconst inputRef: any = ref(null);\r\nconst stLatY = ref('37.5090492151745');\r\nconst stLngX = ref('126.8869873429');\r\nconst locPosition = computed<any>(() => new window.kakao.maps.LatLng(stLatY.value, stLngX.value));\r\n\r\n// methods \r\n\r\n// 지도 초기화\r\nfunction initMap() {\r\n\tif (!mapContainer.value) return;\r\n\tlet map = new window.kakao.maps.Map(mapContainer.value, {\r\n\t\tcenter: locPosition.value,\r\n\t\tlevel: 3,\r\n\t});\r\n\r\n\tcreateMarker(map);\r\n\tdrawCustomOverlay(map);\r\n};\r\n\r\n\r\n// 마커표시\r\nfunction createMarker(map: any) {\r\n\tconst imageSize = new window.kakao.maps.Size(30, 30);\r\n\tconst imageOption = { offset: new window.kakao.maps.Point(15, 15) };\r\n\tconst markerImage = new window.kakao.maps.MarkerImage(imageSrcPath.value, imageSize, imageOption);\r\n\tlet marker = new window.kakao.maps.Marker({\r\n\t\tposition: locPosition.value,\r\n\t\timage: markerImage,\r\n\t});\r\n\tmarker.setMap(map);\r\n};\r\n// 오버레이\r\nfunction drawCustomOverlay(map: any) {\r\n\tvar customOverlay = new window.kakao.maps.CustomOverlay({\r\n\t\tclickable: true,\r\n\t\tcontent: `<div class=\"customOverlay arrow_box\">가맹점이름</div>`,\r\n\t\tposition: locPosition.value,\r\n\t\tzIndex: 4,\r\n\t});\r\n\r\n\tcustomOverlay.setMap(map);\r\n};\r\nconst runtimeConfig = useRuntimeConfig();\r\n\r\n\r\nfunction onCopy() {\r\n\tinputRef.value.select();\r\n\tdocument.execCommand('copy');\r\n}\r\n\r\nonMounted(async () => {\r\n\tif (window.kakao && window.kakao.maps) {\r\n\t\tinitMap();\r\n\t} else {\r\n\t\tconst script = document.createElement('script');\r\n\t\tscript.src = `//dapi.kakao.com/v2/maps/sdk.js?autoload=false&appkey=${runtimeConfig.public.VITE_KAKAO_API_KEY}&libraries=services`;\r\n\t\tdocument.head.appendChild(script);\r\n\r\n\t\tscript.onload = () =>\r\n\t\t\twindow.kakao.maps.load(() => {\r\n\t\t\t\tinitMap();\r\n\t\t\t});\r\n\t}\r\n});\r\n\r\n\r\n\r\n</script>\r\n\r\n<template>\r\n\t<div class=\"layout1\">\r\n\r\n\t\t<header class=\"header-main fixed\">\r\n\t\t\t<div class=\"header-row\">\r\n\t\t\t\t<h1 class=\"store-name\">\r\n\t\t\t\t\t지도보기\r\n\t\t\t\t</h1>\r\n\t\t\t\t<button class=\"btn-user\" title=\"마이페이지 바로가기\"></button>\r\n\t\t\t</div>\r\n\t\t</header>\r\n\t\t<div class=\"address-layer\">\r\n\t\t\t<div class=\"inner\">\r\n\t\t\t\t<div class=\"layer-head\">\r\n\t\t\t\t\t<h2>매장주소</h2>\r\n\t\t\t\t\t<button class=\"btn-copy\" @click=\"onCopy\">주소복사</button>\r\n\t\t\t\t</div>\r\n\r\n\t\t\t\t<div class=\"address-text\">\r\n\t\t\t\t\t<input type=\"text\" ref=\"inputRef\" readonly value=\"서울 구로구 경인로 661 (신도림동, 신도림1차푸르지오)\"\r\n\t\t\t\t\t\tclass=\"input-address\" />\r\n\t\t\t\t\t<div class=\"front-address\">서울 구로구 경인로 661 (신도림동, 신도림1차푸르지오)</div>\r\n\t\t\t\t</div>\r\n\t\t\t</div>\r\n\t\t</div>\r\n\t\t<div id=\"map\" ref=\"mapContainer\"></div>\r\n\t</div>\r\n</template>\r\n\r\n<style lang=\"scss\" scoped>\r\n@import \"@/assets/default/scss/style\"; // 공통 \r\n@import \"@/assets/default/scss/components/header\";\r\n@import '@/assets/default/scss/contents/storeMap';\r\n</style>",
-      "start": 1711512684370,
-      "end": 1711512685344,
+      "start": 1711515365061,
+      "end": 1711515365352,
       "sourcemaps": null
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1711512685344,
-      "end": 1711512685344,
+      "start": 1711515365352,
+      "end": 1711515365352,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1711512685344,
-      "end": 1711512685344,
+      "start": 1711515365352,
+      "end": 1711515365352,
       "order": "pre"
     },
     {
       "name": "nuxt:client-fallback-auto-id",
-      "start": 1711512685344,
-      "end": 1711512685344,
+      "start": 1711515365352,
+      "end": 1711515365352,
       "order": "pre"
     },
     {
       "name": "vite:css",
-      "start": 1711512685344,
-      "end": 1711512685344,
+      "start": 1711515365352,
+      "end": 1711515365352,
       "order": "normal"
     },
     {
       "name": "vite:esbuild",
-      "start": 1711512685344,
-      "end": 1711512685344,
+      "start": 1711515365352,
+      "end": 1711515365352,
       "order": "normal"
     },
     {
       "name": "vite:json",
-      "start": 1711512685345,
-      "end": 1711512685345,
+      "start": 1711515365352,
+      "end": 1711515365353,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1711512685345,
-      "end": 1711512685345,
+      "start": 1711515365353,
+      "end": 1711515365353,
       "order": "normal"
     },
     {
       "name": "vite:vue",
       "result": "import _sfc_main from \"D:/localserver/web-nuxt-sdk/web-nuxt-qr-netlify/pages/pb/map.vue?vue&type=script&setup=true&lang.ts\";\nexport * from \"D:/localserver/web-nuxt-sdk/web-nuxt-qr-netlify/pages/pb/map.vue?vue&type=script&setup=true&lang.ts\";\nimport \"D:/localserver/web-nuxt-sdk/web-nuxt-qr-netlify/pages/pb/map.vue?vue&type=style&index=0&scoped=2679e18a&lang.scss\";\nimport _export_sfc from \"\\0plugin-vue:export-helper\";\nexport default /* @__PURE__ */ _export_sfc(_sfc_main, [[\"__scopeId\", \"data-v-2679e18a\"]]);\n",
-      "start": 1711512685345,
-      "end": 1711512685891,
+      "start": 1711515365353,
+      "end": 1711515365786,
       "order": "normal",
       "sourcemaps": {
         "mappings": ""
@@ -62,152 +62,152 @@
     },
     {
       "name": "vite:vue-jsx",
-      "start": 1711512685891,
-      "end": 1711512685891,
+      "start": 1711515365786,
+      "end": 1711515365786,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1711512685891,
-      "end": 1711512685892,
+      "start": 1711515365786,
+      "end": 1711515365786,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1711512685892,
-      "end": 1711512685892,
+      "start": 1711515365786,
+      "end": 1711515365786,
       "order": "normal"
     },
     {
       "name": "nuxt:chunk-error",
-      "start": 1711512685892,
-      "end": 1711512685892,
+      "start": 1711515365787,
+      "end": 1711515365787,
       "order": "normal"
     },
     {
       "name": "nuxt:components:imports",
-      "start": 1711512685892,
-      "end": 1711512685893,
+      "start": 1711515365787,
+      "end": 1711515365793,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1711512685893,
-      "end": 1711512685893,
+      "start": 1711515365793,
+      "end": 1711515365793,
       "order": "normal"
     },
     {
       "name": "ssr-styles",
-      "start": 1711512685893,
-      "end": 1711512685894,
+      "start": 1711515365793,
+      "end": 1711515365793,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1711512685894,
-      "end": 1711512685894,
+      "start": 1711515365794,
+      "end": 1711515365794,
       "order": "normal"
     },
     {
       "name": "vite:css-post",
-      "start": 1711512685894,
-      "end": 1711512685894,
+      "start": 1711515365794,
+      "end": 1711515365794,
       "order": "normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1711512685894,
-      "end": 1711512685894,
+      "start": 1711515365794,
+      "end": 1711515365794,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1711512685895,
-      "end": 1711512685895,
+      "start": 1711515365794,
+      "end": 1711515365794,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1711512685895,
-      "end": 1711512685895,
+      "start": 1711515365794,
+      "end": 1711515365795,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1711512685895,
-      "end": 1711512685895,
+      "start": 1711515365795,
+      "end": 1711515365795,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1711512685895,
-      "end": 1711512685895,
+      "start": 1711515365795,
+      "end": 1711515365795,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1711512685895,
-      "end": 1711512685895,
+      "start": 1711515365795,
+      "end": 1711515365795,
       "order": "normal"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1711512685896,
-      "end": 1711512685916,
+      "start": 1711515365796,
+      "end": 1711515365796,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
-      "start": 1711512685916,
-      "end": 1711512686061,
+      "start": 1711515365797,
+      "end": 1711515365800,
       "order": "post"
     },
     {
       "name": "unctx:transform",
-      "start": 1711512686061,
-      "end": 1711512686061,
+      "start": 1711515365801,
+      "end": 1711515365801,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1711512686061,
-      "end": 1711512686063,
+      "start": 1711515365802,
+      "end": 1711515365803,
       "order": "post"
     },
     {
       "name": "nuxt:runtime-paths-dep",
-      "start": 1711512686064,
-      "end": 1711512686065,
+      "start": 1711515365803,
+      "end": 1711515365803,
       "order": "post"
     },
     {
       "name": "nuxt:route-injection-plugin",
-      "start": 1711512686065,
-      "end": 1711512686066,
+      "start": 1711515365804,
+      "end": 1711515365804,
       "order": "post"
     },
     {
       "name": "nuxt:components-loader",
-      "start": 1711512686066,
-      "end": 1711512686069,
+      "start": 1711515365804,
+      "end": 1711515365804,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-composables:transform",
-      "start": 1711512686069,
-      "end": 1711512686072,
+      "start": 1711515365805,
+      "end": 1711515365805,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1711512686072,
-      "end": 1711512686074,
+      "start": 1711515365805,
+      "end": 1711515365806,
       "order": "normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1711512686074,
-      "end": 1711512686074,
+      "start": 1711515365806,
+      "end": 1711515365806,
       "order": "normal"
     }
   ]
