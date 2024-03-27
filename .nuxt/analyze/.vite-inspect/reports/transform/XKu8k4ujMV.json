@@ -4,38 +4,38 @@
     {
       "name": "vite:vue",
       "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { createElementVNode as _createElementVNode, unref as _unref, createTextVNode as _createTextVNode, openBlock as _openBlock, createElementBlock as _createElementBlock, createCommentVNode as _createCommentVNode, createStaticVNode as _createStaticVNode, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\"\n\nconst _withScopeId = n => (_pushScopeId(\"data-v-ca1a1a94\"),n=n(),_popScopeId(),n)\nconst _hoisted_1 = { class: \"layout1\" }\nconst _hoisted_2 = /*#__PURE__*/_createStaticVNode(\"<header class=\\\"header-common fixed\\\" data-v-ca1a1a94><div class=\\\"header-row\\\" data-v-ca1a1a94><button title=\\\"이전페이지로 이동\\\" class=\\\"btn-history-back\\\" data-v-ca1a1a94></button><h1 class=\\\"header-title\\\" data-v-ca1a1a94>장바구니</h1></div></header><div class=\\\"header-fixed-fake-area\\\" data-v-ca1a1a94></div>\", 2)\nconst _hoisted_4 = {\n  key: 0,\n  class: \"basket-page\"\n}\nconst _hoisted_5 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"section\", { class: \"tab-wrap\" }, [\n  /*#__PURE__*/_createElementVNode(\"ul\", { class: \"tab-order\" }, [\n    /*#__PURE__*/_createElementVNode(\"li\", null, [\n      /*#__PURE__*/_createElementVNode(\"button\", null, \"배달\")\n    ]),\n    /*#__PURE__*/_createElementVNode(\"li\", null, [\n      /*#__PURE__*/_createElementVNode(\"a\", {\n        \"aria-current\": \"page\",\n        href: \"/basket-togo\",\n        class: \"router-link-active router-link-exact-active on\"\n      }, \"포장\")\n    ])\n  ])\n], -1))\nconst _hoisted_6 = { class: \"basket-wrap\" }\nconst _hoisted_7 = /*#__PURE__*/_createStaticVNode(\"<div class=\\\"all-check-row\\\" data-v-ca1a1a94><div class=\\\"form-check-wrap\\\" data-v-ca1a1a94><input class=\\\"form-check-sm\\\" id=\\\"checkAll\\\" type=\\\"checkbox\\\" data-v-ca1a1a94><label class=\\\"form-check-label\\\" for=\\\"checkAll\\\" data-v-ca1a1a94> 전체선택 </label></div><button class=\\\"btn-remove-all\\\" data-v-ca1a1a94>선택삭제</button></div><ul class=\\\"basket-list\\\" data-v-ca1a1a94><li data-v-ca1a1a94><div class=\\\"inner\\\" data-v-ca1a1a94><div class=\\\"title-row\\\" data-v-ca1a1a94><div class=\\\"form-check-wrap\\\" data-v-ca1a1a94><input class=\\\"form-check-sm\\\" id=\\\"grp01_1234\\\" type=\\\"checkbox\\\" data-v-ca1a1a94><label class=\\\"form-check-label\\\" for=\\\"grp01_1234\\\" data-v-ca1a1a94> 블루베리 쿠키 치즈 케이크 </label></div><button class=\\\"btn-remove-goods\\\" title=\\\"상품비우기\\\" data-v-ca1a1a94></button></div><ul class=\\\"option-add-list\\\" data-v-ca1a1a94><li data-v-ca1a1a94>사이즈 : Tall 355ml(+0원)</li><li data-v-ca1a1a94> 토핑추가선택 : 카라멜 드리즐(+1,500원), 초콜릿 드리즐(+2,000), 에스프레소 크림(+2,000) </li><li data-v-ca1a1a94>추가선택 : 휘핑크림(+2,000원)</li></ul><div class=\\\"price-row\\\" data-v-ca1a1a94><span class=\\\"price\\\" data-v-ca1a1a94><em data-v-ca1a1a94>12,000</em>원 </span><ul class=\\\"count-btn-wrap\\\" data-v-ca1a1a94><li data-v-ca1a1a94><button type=\\\"button\\\" class=\\\"btn-minus\\\" disabled=\\\"\\\" data-v-ca1a1a94></button></li><li class=\\\"num-count\\\" data-v-ca1a1a94>1</li><li data-v-ca1a1a94><button type=\\\"button\\\" class=\\\"btn-plus\\\" data-v-ca1a1a94></button></li></ul></div></div></li><li data-v-ca1a1a94><div class=\\\"inner\\\" data-v-ca1a1a94><div class=\\\"title-row\\\" data-v-ca1a1a94><div class=\\\"form-check-wrap\\\" data-v-ca1a1a94><input class=\\\"form-check-sm\\\" id=\\\"grp02_1235\\\" type=\\\"checkbox\\\" data-v-ca1a1a94><label class=\\\"form-check-label\\\" for=\\\"grp02_1235\\\" data-v-ca1a1a94> 아이스 디카페인 카페라떼 </label></div><button class=\\\"btn-remove-goods\\\" title=\\\"상품비우기\\\" data-v-ca1a1a94></button></div><ul class=\\\"option-add-list\\\" data-v-ca1a1a94><li data-v-ca1a1a94>사이즈 : Tall 355ml(+0원)</li></ul><div class=\\\"price-row\\\" data-v-ca1a1a94><span class=\\\"price\\\" data-v-ca1a1a94><em data-v-ca1a1a94>12,000</em>원 </span><ul class=\\\"count-btn-wrap\\\" data-v-ca1a1a94><li data-v-ca1a1a94><button type=\\\"button\\\" class=\\\"btn-minus\\\" data-v-ca1a1a94></button></li><li class=\\\"num-count\\\" data-v-ca1a1a94>2</li><li data-v-ca1a1a94><button type=\\\"button\\\" class=\\\"btn-plus\\\" data-v-ca1a1a94></button></li></ul></div></div></li></ul>\", 2)\nconst _hoisted_9 = { class: \"btn-add-menu-wrap\" }\nconst _hoisted_10 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"i\", { class: \"icon-add\" }, null, -1))\nconst _hoisted_11 = /*#__PURE__*/_createStaticVNode(\"<section class=\\\"total-wrap\\\" data-v-ca1a1a94><div class=\\\"desc\\\" data-v-ca1a1a94><dl data-v-ca1a1a94><dt data-v-ca1a1a94>총 주문금액</dt><dd data-v-ca1a1a94>24,000원</dd></dl></div><div class=\\\"total\\\" data-v-ca1a1a94><dl data-v-ca1a1a94><dt data-v-ca1a1a94>결제 예상 금액</dt><dd data-v-ca1a1a94><em class=\\\"total-price\\\" data-v-ca1a1a94>25,500원</em><span class=\\\"min-price\\\" data-v-ca1a1a94>최소주문금액:10,000원</span></dd></dl></div></section>\", 1)\nconst _hoisted_12 = {\n  key: 0,\n  class: \"btn-wrap-fixed basket\"\n}\nconst _hoisted_13 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"p\", { class: \"btn-text\" }, \" 할인쿠폰 및 이벤트 적용은 주문 페이지에서 확인가능 합니다. \", -1))\nconst _hoisted_14 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"button\", { class: \"btn-primary-1 btn-block-lg\" }, \" 주문하기 \", -1))\nconst _hoisted_15 = [\n  _hoisted_13,\n  _hoisted_14\n]\nconst _hoisted_16 = {\n  key: 1,\n  class: \"btn-wrap-fixed\"\n}\nconst _hoisted_17 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"button\", { class: \"btn-closed btn-block-lg\" }, \"영업이 종료되었습니다\", -1))\nconst _hoisted_18 = [\n  _hoisted_17\n]\nconst _hoisted_19 = {\n  key: 1,\n  class: \"basket-page\"\n}\nconst _hoisted_20 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"section\", { class: \"basket-result\" }, [\n  /*#__PURE__*/_createElementVNode(\"div\", { class: \"basket-none\" }, [\n    /*#__PURE__*/_createElementVNode(\"i\", { class: \"icon-none-basket\" }),\n    /*#__PURE__*/_createElementVNode(\"p\", { class: \"text\" }, \"담긴 상품이 없습니다.\")\n  ])\n], -1))\nconst _hoisted_21 = [\n  _hoisted_20\n]\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'index',\n  setup(__props) {\n\r\nconst modeList = ['available', 'notAvailable', 'empty'];\r\nconst mode = ref('available')\r\nlet num = 0;\r\n\r\nonMounted(() => {\r\n  setInterval(() => {\r\n    mode.value = modeList[++num % 3];\r\n  }, 3000)\r\n});\r\n\nreturn (_ctx: any,_cache: any) => {\n  return (_openBlock(), _createElementBlock(\"div\", _hoisted_1, [\n    _hoisted_2,\n    (_unref(mode) !== 'empty')\n      ? (_openBlock(), _createElementBlock(\"main\", _hoisted_4, [\n          _hoisted_5,\n          _createElementVNode(\"section\", _hoisted_6, [\n            _hoisted_7,\n            _createElementVNode(\"div\", _hoisted_9, [\n              _createElementVNode(\"button\", {\n                type: \"button\",\n                class: \"btn-add-menu\",\n                onClick: _cache[0] || (_cache[0] = ($event: any) => (_ctx.$router.push('/pb/order/table')))\n              }, [\n                _hoisted_10,\n                _createTextVNode(\"메뉴추가 \")\n              ])\n            ])\n          ]),\n          _hoisted_11,\n          (_unref(mode) === 'available')\n            ? (_openBlock(), _createElementBlock(\"div\", _hoisted_12, _hoisted_15))\n            : (_unref(mode) === 'notAvailable')\n              ? (_openBlock(), _createElementBlock(\"div\", _hoisted_16, _hoisted_18))\n              : _createCommentVNode(\"\", true)\n        ]))\n      : (_unref(mode) === 'empty')\n        ? (_openBlock(), _createElementBlock(\"main\", _hoisted_19, _hoisted_21))\n        : _createCommentVNode(\"\", true)\n  ]))\n}\n}\n\n})",
-      "start": 1711509448088,
-      "end": 1711509448088
+      "start": 1711511827480,
+      "end": 1711511827480
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1711509448088,
-      "end": 1711509448088,
+      "start": 1711511827480,
+      "end": 1711511827480,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1711509448088,
-      "end": 1711509448088,
+      "start": 1711511827480,
+      "end": 1711511827480,
       "order": "pre"
     },
     {
       "name": "nuxt:client-fallback-auto-id",
-      "start": 1711509448088,
-      "end": 1711509448088,
+      "start": 1711511827480,
+      "end": 1711511827480,
       "order": "pre"
     },
     {
       "name": "vite:css",
-      "start": 1711509448088,
-      "end": 1711509448088,
+      "start": 1711511827480,
+      "end": 1711511827480,
       "order": "normal"
     },
     {
       "name": "vite:esbuild",
       "result": "import { defineComponent as _defineComponent } from \"vue\";\nimport { createElementVNode as _createElementVNode, unref as _unref, createTextVNode as _createTextVNode, openBlock as _openBlock, createElementBlock as _createElementBlock, createCommentVNode as _createCommentVNode, createStaticVNode as _createStaticVNode, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\";\nconst _withScopeId = (n) => (_pushScopeId(\"data-v-ca1a1a94\"), n = n(), _popScopeId(), n);\nconst _hoisted_1 = { class: \"layout1\" };\nconst _hoisted_2 = /* @__PURE__ */ _createStaticVNode('<header class=\"header-common fixed\" data-v-ca1a1a94><div class=\"header-row\" data-v-ca1a1a94><button title=\"이전페이지로 이동\" class=\"btn-history-back\" data-v-ca1a1a94></button><h1 class=\"header-title\" data-v-ca1a1a94>장바구니</h1></div></header><div class=\"header-fixed-fake-area\" data-v-ca1a1a94></div>', 2);\nconst _hoisted_4 = {\n  key: 0,\n  class: \"basket-page\"\n};\nconst _hoisted_5 = /* @__PURE__ */ _withScopeId(() => /* @__PURE__ */ _createElementVNode(\"section\", { class: \"tab-wrap\" }, [\n  /* @__PURE__ */ _createElementVNode(\"ul\", { class: \"tab-order\" }, [\n    /* @__PURE__ */ _createElementVNode(\"li\", null, [\n      /* @__PURE__ */ _createElementVNode(\"button\", null, \"배달\")\n    ]),\n    /* @__PURE__ */ _createElementVNode(\"li\", null, [\n      /* @__PURE__ */ _createElementVNode(\"a\", {\n        \"aria-current\": \"page\",\n        href: \"/basket-togo\",\n        class: \"router-link-active router-link-exact-active on\"\n      }, \"포장\")\n    ])\n  ])\n], -1));\nconst _hoisted_6 = { class: \"basket-wrap\" };\nconst _hoisted_7 = /* @__PURE__ */ _createStaticVNode('<div class=\"all-check-row\" data-v-ca1a1a94><div class=\"form-check-wrap\" data-v-ca1a1a94><input class=\"form-check-sm\" id=\"checkAll\" type=\"checkbox\" data-v-ca1a1a94><label class=\"form-check-label\" for=\"checkAll\" data-v-ca1a1a94> 전체선택 </label></div><button class=\"btn-remove-all\" data-v-ca1a1a94>선택삭제</button></div><ul class=\"basket-list\" data-v-ca1a1a94><li data-v-ca1a1a94><div class=\"inner\" data-v-ca1a1a94><div class=\"title-row\" data-v-ca1a1a94><div class=\"form-check-wrap\" data-v-ca1a1a94><input class=\"form-check-sm\" id=\"grp01_1234\" type=\"checkbox\" data-v-ca1a1a94><label class=\"form-check-label\" for=\"grp01_1234\" data-v-ca1a1a94> 블루베리 쿠키 치즈 케이크 </label></div><button class=\"btn-remove-goods\" title=\"상품비우기\" data-v-ca1a1a94></button></div><ul class=\"option-add-list\" data-v-ca1a1a94><li data-v-ca1a1a94>사이즈 : Tall 355ml(+0원)</li><li data-v-ca1a1a94> 토핑추가선택 : 카라멜 드리즐(+1,500원), 초콜릿 드리즐(+2,000), 에스프레소 크림(+2,000) </li><li data-v-ca1a1a94>추가선택 : 휘핑크림(+2,000원)</li></ul><div class=\"price-row\" data-v-ca1a1a94><span class=\"price\" data-v-ca1a1a94><em data-v-ca1a1a94>12,000</em>원 </span><ul class=\"count-btn-wrap\" data-v-ca1a1a94><li data-v-ca1a1a94><button type=\"button\" class=\"btn-minus\" disabled=\"\" data-v-ca1a1a94></button></li><li class=\"num-count\" data-v-ca1a1a94>1</li><li data-v-ca1a1a94><button type=\"button\" class=\"btn-plus\" data-v-ca1a1a94></button></li></ul></div></div></li><li data-v-ca1a1a94><div class=\"inner\" data-v-ca1a1a94><div class=\"title-row\" data-v-ca1a1a94><div class=\"form-check-wrap\" data-v-ca1a1a94><input class=\"form-check-sm\" id=\"grp02_1235\" type=\"checkbox\" data-v-ca1a1a94><label class=\"form-check-label\" for=\"grp02_1235\" data-v-ca1a1a94> 아이스 디카페인 카페라떼 </label></div><button class=\"btn-remove-goods\" title=\"상품비우기\" data-v-ca1a1a94></button></div><ul class=\"option-add-list\" data-v-ca1a1a94><li data-v-ca1a1a94>사이즈 : Tall 355ml(+0원)</li></ul><div class=\"price-row\" data-v-ca1a1a94><span class=\"price\" data-v-ca1a1a94><em data-v-ca1a1a94>12,000</em>원 </span><ul class=\"count-btn-wrap\" data-v-ca1a1a94><li data-v-ca1a1a94><button type=\"button\" class=\"btn-minus\" data-v-ca1a1a94></button></li><li class=\"num-count\" data-v-ca1a1a94>2</li><li data-v-ca1a1a94><button type=\"button\" class=\"btn-plus\" data-v-ca1a1a94></button></li></ul></div></div></li></ul>', 2);\nconst _hoisted_9 = { class: \"btn-add-menu-wrap\" };\nconst _hoisted_10 = /* @__PURE__ */ _withScopeId(() => /* @__PURE__ */ _createElementVNode(\"i\", { class: \"icon-add\" }, null, -1));\nconst _hoisted_11 = /* @__PURE__ */ _createStaticVNode('<section class=\"total-wrap\" data-v-ca1a1a94><div class=\"desc\" data-v-ca1a1a94><dl data-v-ca1a1a94><dt data-v-ca1a1a94>총 주문금액</dt><dd data-v-ca1a1a94>24,000원</dd></dl></div><div class=\"total\" data-v-ca1a1a94><dl data-v-ca1a1a94><dt data-v-ca1a1a94>결제 예상 금액</dt><dd data-v-ca1a1a94><em class=\"total-price\" data-v-ca1a1a94>25,500원</em><span class=\"min-price\" data-v-ca1a1a94>최소주문금액:10,000원</span></dd></dl></div></section>', 1);\nconst _hoisted_12 = {\n  key: 0,\n  class: \"btn-wrap-fixed basket\"\n};\nconst _hoisted_13 = /* @__PURE__ */ _withScopeId(() => /* @__PURE__ */ _createElementVNode(\"p\", { class: \"btn-text\" }, \" 할인쿠폰 및 이벤트 적용은 주문 페이지에서 확인가능 합니다. \", -1));\nconst _hoisted_14 = /* @__PURE__ */ _withScopeId(() => /* @__PURE__ */ _createElementVNode(\"button\", { class: \"btn-primary-1 btn-block-lg\" }, \" 주문하기 \", -1));\nconst _hoisted_15 = [\n  _hoisted_13,\n  _hoisted_14\n];\nconst _hoisted_16 = {\n  key: 1,\n  class: \"btn-wrap-fixed\"\n};\nconst _hoisted_17 = /* @__PURE__ */ _withScopeId(() => /* @__PURE__ */ _createElementVNode(\"button\", { class: \"btn-closed btn-block-lg\" }, \"영업이 종료되었습니다\", -1));\nconst _hoisted_18 = [\n  _hoisted_17\n];\nconst _hoisted_19 = {\n  key: 1,\n  class: \"basket-page\"\n};\nconst _hoisted_20 = /* @__PURE__ */ _withScopeId(() => /* @__PURE__ */ _createElementVNode(\"section\", { class: \"basket-result\" }, [\n  /* @__PURE__ */ _createElementVNode(\"div\", { class: \"basket-none\" }, [\n    /* @__PURE__ */ _createElementVNode(\"i\", { class: \"icon-none-basket\" }),\n    /* @__PURE__ */ _createElementVNode(\"p\", { class: \"text\" }, \"담긴 상품이 없습니다.\")\n  ])\n], -1));\nconst _hoisted_21 = [\n  _hoisted_20\n];\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"index\",\n  setup(__props) {\n    const modeList = [\"available\", \"notAvailable\", \"empty\"];\n    const mode = ref(\"available\");\n    let num = 0;\n    onMounted(() => {\n      setInterval(() => {\n        mode.value = modeList[++num % 3];\n      }, 3e3);\n    });\n    return (_ctx, _cache) => {\n      return _openBlock(), _createElementBlock(\"div\", _hoisted_1, [\n        _hoisted_2,\n        _unref(mode) !== \"empty\" ? (_openBlock(), _createElementBlock(\"main\", _hoisted_4, [\n          _hoisted_5,\n          _createElementVNode(\"section\", _hoisted_6, [\n            _hoisted_7,\n            _createElementVNode(\"div\", _hoisted_9, [\n              _createElementVNode(\"button\", {\n                type: \"button\",\n                class: \"btn-add-menu\",\n                onClick: _cache[0] || (_cache[0] = ($event) => _ctx.$router.push(\"/pb/order/table\"))\n              }, [\n                _hoisted_10,\n                _createTextVNode(\"메뉴추가 \")\n              ])\n            ])\n          ]),\n          _hoisted_11,\n          _unref(mode) === \"available\" ? (_openBlock(), _createElementBlock(\"div\", _hoisted_12, _hoisted_15)) : _unref(mode) === \"notAvailable\" ? (_openBlock(), _createElementBlock(\"div\", _hoisted_16, _hoisted_18)) : _createCommentVNode(\"\", true)\n        ])) : _unref(mode) === \"empty\" ? (_openBlock(), _createElementBlock(\"main\", _hoisted_19, _hoisted_21)) : _createCommentVNode(\"\", true)\n      ]);\n    };\n  }\n});\n",
-      "start": 1711509448088,
-      "end": 1711509448226,
+      "start": 1711511827480,
+      "end": 1711511827604,
       "order": "normal",
       "sourcemaps": {
         "version": 3,
@@ -51,123 +51,123 @@
     },
     {
       "name": "vite:json",
-      "start": 1711509448226,
-      "end": 1711509448226,
+      "start": 1711511827604,
+      "end": 1711511827604,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1711509448226,
-      "end": 1711509448226,
+      "start": 1711511827604,
+      "end": 1711511827604,
       "order": "normal"
     },
     {
       "name": "vite:vue",
-      "start": 1711509448226,
-      "end": 1711509448226,
+      "start": 1711511827604,
+      "end": 1711511827604,
       "order": "normal"
     },
     {
       "name": "vite:vue-jsx",
-      "start": 1711509448226,
-      "end": 1711509448226,
+      "start": 1711511827604,
+      "end": 1711511827604,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1711509448226,
-      "end": 1711509448226,
+      "start": 1711511827604,
+      "end": 1711511827604,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1711509448226,
-      "end": 1711509448226,
+      "start": 1711511827604,
+      "end": 1711511827604,
       "order": "normal"
     },
     {
       "name": "nuxt:chunk-error",
-      "start": 1711509448226,
-      "end": 1711509448226,
+      "start": 1711511827604,
+      "end": 1711511827604,
       "order": "normal"
     },
     {
       "name": "nuxt:components:imports",
-      "start": 1711509448226,
-      "end": 1711509448226,
+      "start": 1711511827604,
+      "end": 1711511827604,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1711509448226,
-      "end": 1711509448226,
+      "start": 1711511827604,
+      "end": 1711511827604,
       "order": "normal"
     },
     {
       "name": "ssr-styles",
-      "start": 1711509448226,
-      "end": 1711509448226,
+      "start": 1711511827604,
+      "end": 1711511827604,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1711509448226,
-      "end": 1711509448226,
+      "start": 1711511827604,
+      "end": 1711511827604,
       "order": "normal"
     },
     {
       "name": "vite:css-post",
-      "start": 1711509448226,
-      "end": 1711509448226,
+      "start": 1711511827604,
+      "end": 1711511827604,
       "order": "normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1711509448226,
-      "end": 1711509448226,
+      "start": 1711511827604,
+      "end": 1711511827604,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1711509448226,
-      "end": 1711509448226,
+      "start": 1711511827604,
+      "end": 1711511827604,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1711509448226,
-      "end": 1711509448226,
+      "start": 1711511827604,
+      "end": 1711511827604,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1711509448226,
-      "end": 1711509448226,
+      "start": 1711511827604,
+      "end": 1711511827604,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1711509448226,
-      "end": 1711509448226,
+      "start": 1711511827605,
+      "end": 1711511827605,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1711509448226,
-      "end": 1711509448226,
+      "start": 1711511827605,
+      "end": 1711511827605,
       "order": "normal"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1711509448226,
-      "end": 1711509448226,
+      "start": 1711511827605,
+      "end": 1711511827605,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
       "result": "import { ref, onMounted } from 'vue';\nimport { setInterval } from '#app/compat/interval';\nimport { defineComponent as _defineComponent } from \"vue\";\nimport { createElementVNode as _createElementVNode, unref as _unref, createTextVNode as _createTextVNode, openBlock as _openBlock, createElementBlock as _createElementBlock, createCommentVNode as _createCommentVNode, createStaticVNode as _createStaticVNode, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\";\nconst _withScopeId = (n) => (_pushScopeId(\"data-v-ca1a1a94\"), n = n(), _popScopeId(), n);\nconst _hoisted_1 = { class: \"layout1\" };\nconst _hoisted_2 = /* @__PURE__ */ _createStaticVNode('<header class=\"header-common fixed\" data-v-ca1a1a94><div class=\"header-row\" data-v-ca1a1a94><button title=\"이전페이지로 이동\" class=\"btn-history-back\" data-v-ca1a1a94></button><h1 class=\"header-title\" data-v-ca1a1a94>장바구니</h1></div></header><div class=\"header-fixed-fake-area\" data-v-ca1a1a94></div>', 2);\nconst _hoisted_4 = {\n  key: 0,\n  class: \"basket-page\"\n};\nconst _hoisted_5 = /* @__PURE__ */ _withScopeId(() => /* @__PURE__ */ _createElementVNode(\"section\", { class: \"tab-wrap\" }, [\n  /* @__PURE__ */ _createElementVNode(\"ul\", { class: \"tab-order\" }, [\n    /* @__PURE__ */ _createElementVNode(\"li\", null, [\n      /* @__PURE__ */ _createElementVNode(\"button\", null, \"배달\")\n    ]),\n    /* @__PURE__ */ _createElementVNode(\"li\", null, [\n      /* @__PURE__ */ _createElementVNode(\"a\", {\n        \"aria-current\": \"page\",\n        href: \"/basket-togo\",\n        class: \"router-link-active router-link-exact-active on\"\n      }, \"포장\")\n    ])\n  ])\n], -1));\nconst _hoisted_6 = { class: \"basket-wrap\" };\nconst _hoisted_7 = /* @__PURE__ */ _createStaticVNode('<div class=\"all-check-row\" data-v-ca1a1a94><div class=\"form-check-wrap\" data-v-ca1a1a94><input class=\"form-check-sm\" id=\"checkAll\" type=\"checkbox\" data-v-ca1a1a94><label class=\"form-check-label\" for=\"checkAll\" data-v-ca1a1a94> 전체선택 </label></div><button class=\"btn-remove-all\" data-v-ca1a1a94>선택삭제</button></div><ul class=\"basket-list\" data-v-ca1a1a94><li data-v-ca1a1a94><div class=\"inner\" data-v-ca1a1a94><div class=\"title-row\" data-v-ca1a1a94><div class=\"form-check-wrap\" data-v-ca1a1a94><input class=\"form-check-sm\" id=\"grp01_1234\" type=\"checkbox\" data-v-ca1a1a94><label class=\"form-check-label\" for=\"grp01_1234\" data-v-ca1a1a94> 블루베리 쿠키 치즈 케이크 </label></div><button class=\"btn-remove-goods\" title=\"상품비우기\" data-v-ca1a1a94></button></div><ul class=\"option-add-list\" data-v-ca1a1a94><li data-v-ca1a1a94>사이즈 : Tall 355ml(+0원)</li><li data-v-ca1a1a94> 토핑추가선택 : 카라멜 드리즐(+1,500원), 초콜릿 드리즐(+2,000), 에스프레소 크림(+2,000) </li><li data-v-ca1a1a94>추가선택 : 휘핑크림(+2,000원)</li></ul><div class=\"price-row\" data-v-ca1a1a94><span class=\"price\" data-v-ca1a1a94><em data-v-ca1a1a94>12,000</em>원 </span><ul class=\"count-btn-wrap\" data-v-ca1a1a94><li data-v-ca1a1a94><button type=\"button\" class=\"btn-minus\" disabled=\"\" data-v-ca1a1a94></button></li><li class=\"num-count\" data-v-ca1a1a94>1</li><li data-v-ca1a1a94><button type=\"button\" class=\"btn-plus\" data-v-ca1a1a94></button></li></ul></div></div></li><li data-v-ca1a1a94><div class=\"inner\" data-v-ca1a1a94><div class=\"title-row\" data-v-ca1a1a94><div class=\"form-check-wrap\" data-v-ca1a1a94><input class=\"form-check-sm\" id=\"grp02_1235\" type=\"checkbox\" data-v-ca1a1a94><label class=\"form-check-label\" for=\"grp02_1235\" data-v-ca1a1a94> 아이스 디카페인 카페라떼 </label></div><button class=\"btn-remove-goods\" title=\"상품비우기\" data-v-ca1a1a94></button></div><ul class=\"option-add-list\" data-v-ca1a1a94><li data-v-ca1a1a94>사이즈 : Tall 355ml(+0원)</li></ul><div class=\"price-row\" data-v-ca1a1a94><span class=\"price\" data-v-ca1a1a94><em data-v-ca1a1a94>12,000</em>원 </span><ul class=\"count-btn-wrap\" data-v-ca1a1a94><li data-v-ca1a1a94><button type=\"button\" class=\"btn-minus\" data-v-ca1a1a94></button></li><li class=\"num-count\" data-v-ca1a1a94>2</li><li data-v-ca1a1a94><button type=\"button\" class=\"btn-plus\" data-v-ca1a1a94></button></li></ul></div></div></li></ul>', 2);\nconst _hoisted_9 = { class: \"btn-add-menu-wrap\" };\nconst _hoisted_10 = /* @__PURE__ */ _withScopeId(() => /* @__PURE__ */ _createElementVNode(\"i\", { class: \"icon-add\" }, null, -1));\nconst _hoisted_11 = /* @__PURE__ */ _createStaticVNode('<section class=\"total-wrap\" data-v-ca1a1a94><div class=\"desc\" data-v-ca1a1a94><dl data-v-ca1a1a94><dt data-v-ca1a1a94>총 주문금액</dt><dd data-v-ca1a1a94>24,000원</dd></dl></div><div class=\"total\" data-v-ca1a1a94><dl data-v-ca1a1a94><dt data-v-ca1a1a94>결제 예상 금액</dt><dd data-v-ca1a1a94><em class=\"total-price\" data-v-ca1a1a94>25,500원</em><span class=\"min-price\" data-v-ca1a1a94>최소주문금액:10,000원</span></dd></dl></div></section>', 1);\nconst _hoisted_12 = {\n  key: 0,\n  class: \"btn-wrap-fixed basket\"\n};\nconst _hoisted_13 = /* @__PURE__ */ _withScopeId(() => /* @__PURE__ */ _createElementVNode(\"p\", { class: \"btn-text\" }, \" 할인쿠폰 및 이벤트 적용은 주문 페이지에서 확인가능 합니다. \", -1));\nconst _hoisted_14 = /* @__PURE__ */ _withScopeId(() => /* @__PURE__ */ _createElementVNode(\"button\", { class: \"btn-primary-1 btn-block-lg\" }, \" 주문하기 \", -1));\nconst _hoisted_15 = [\n  _hoisted_13,\n  _hoisted_14\n];\nconst _hoisted_16 = {\n  key: 1,\n  class: \"btn-wrap-fixed\"\n};\nconst _hoisted_17 = /* @__PURE__ */ _withScopeId(() => /* @__PURE__ */ _createElementVNode(\"button\", { class: \"btn-closed btn-block-lg\" }, \"영업이 종료되었습니다\", -1));\nconst _hoisted_18 = [\n  _hoisted_17\n];\nconst _hoisted_19 = {\n  key: 1,\n  class: \"basket-page\"\n};\nconst _hoisted_20 = /* @__PURE__ */ _withScopeId(() => /* @__PURE__ */ _createElementVNode(\"section\", { class: \"basket-result\" }, [\n  /* @__PURE__ */ _createElementVNode(\"div\", { class: \"basket-none\" }, [\n    /* @__PURE__ */ _createElementVNode(\"i\", { class: \"icon-none-basket\" }),\n    /* @__PURE__ */ _createElementVNode(\"p\", { class: \"text\" }, \"담긴 상품이 없습니다.\")\n  ])\n], -1));\nconst _hoisted_21 = [\n  _hoisted_20\n];\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"index\",\n  setup(__props) {\n    const modeList = [\"available\", \"notAvailable\", \"empty\"];\n    const mode = ref(\"available\");\n    let num = 0;\n    onMounted(() => {\n      setInterval(() => {\n        mode.value = modeList[++num % 3];\n      }, 3e3);\n    });\n    return (_ctx, _cache) => {\n      return _openBlock(), _createElementBlock(\"div\", _hoisted_1, [\n        _hoisted_2,\n        _unref(mode) !== \"empty\" ? (_openBlock(), _createElementBlock(\"main\", _hoisted_4, [\n          _hoisted_5,\n          _createElementVNode(\"section\", _hoisted_6, [\n            _hoisted_7,\n            _createElementVNode(\"div\", _hoisted_9, [\n              _createElementVNode(\"button\", {\n                type: \"button\",\n                class: \"btn-add-menu\",\n                onClick: _cache[0] || (_cache[0] = ($event) => _ctx.$router.push(\"/pb/order/table\"))\n              }, [\n                _hoisted_10,\n                _createTextVNode(\"메뉴추가 \")\n              ])\n            ])\n          ]),\n          _hoisted_11,\n          _unref(mode) === \"available\" ? (_openBlock(), _createElementBlock(\"div\", _hoisted_12, _hoisted_15)) : _unref(mode) === \"notAvailable\" ? (_openBlock(), _createElementBlock(\"div\", _hoisted_16, _hoisted_18)) : _createCommentVNode(\"\", true)\n        ])) : _unref(mode) === \"empty\" ? (_openBlock(), _createElementBlock(\"main\", _hoisted_19, _hoisted_21)) : _createCommentVNode(\"\", true)\n      ]);\n    };\n  }\n});\n",
-      "start": 1711509448226,
-      "end": 1711509448228,
+      "start": 1711511827605,
+      "end": 1711511827606,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -180,50 +180,50 @@
     },
     {
       "name": "unctx:transform",
-      "start": 1711509448228,
-      "end": 1711509448228,
+      "start": 1711511827606,
+      "end": 1711511827607,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1711509448228,
-      "end": 1711509448228,
+      "start": 1711511827607,
+      "end": 1711511827607,
       "order": "post"
     },
     {
       "name": "nuxt:runtime-paths-dep",
-      "start": 1711509448228,
-      "end": 1711509448228,
+      "start": 1711511827607,
+      "end": 1711511827607,
       "order": "post"
     },
     {
       "name": "nuxt:route-injection-plugin",
-      "start": 1711509448228,
-      "end": 1711509448228,
+      "start": 1711511827607,
+      "end": 1711511827607,
       "order": "post"
     },
     {
       "name": "nuxt:components-loader",
-      "start": 1711509448228,
-      "end": 1711509448228,
+      "start": 1711511827607,
+      "end": 1711511827607,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-composables:transform",
-      "start": 1711509448228,
-      "end": 1711509448228,
+      "start": 1711511827607,
+      "end": 1711511827607,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1711509448228,
-      "end": 1711509448228,
+      "start": 1711511827607,
+      "end": 1711511827607,
       "order": "normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1711509448228,
-      "end": 1711509448228,
+      "start": 1711511827607,
+      "end": 1711511827607,
       "order": "normal"
     }
   ]

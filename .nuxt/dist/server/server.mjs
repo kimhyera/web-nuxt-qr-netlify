@@ -2950,12 +2950,12 @@ const _sfc_main$2 = {
   setup(__props) {
     const common = commonStore();
     console.log("app.vue - theme - ", common.getTheme());
-    const layoutName = common.getTheme().name;
+    common.getTheme().name;
     return (_ctx, _push, _parent, _attrs) => {
       const _component_NuxtLayout = __nuxt_component_0;
       const _component_NuxtPage = __nuxt_component_1;
       _push(`<div${ssrRenderAttrs(_attrs)}>`);
-      _push(ssrRenderComponent(_component_NuxtLayout, { name: unref(layoutName) }, {
+      _push(ssrRenderComponent(_component_NuxtLayout, { name: "default" }, {
         default: withCtx((_, _push2, _parent2, _scopeId) => {
           if (_push2) {
             _push2(ssrRenderComponent(_component_NuxtPage, null, null, _parent2, _scopeId));

@@ -4,57 +4,57 @@
     {
       "name": "vite:load-fallback",
       "result": "<script setup lang=\"ts\">\r\nimport { ref, defineEmits } from 'vue';\r\nimport { Swiper, SwiperSlide } from 'swiper/vue';\r\nimport SwiperCore, { Autoplay } from 'swiper';\r\nimport 'swiper/css';\r\n\r\nconst common = commonStore();\r\n\r\nconst isToggleWorkTime = ref(true)\r\nconst isToggleMemo = ref(false)\r\n\r\n\r\n\r\nconst emit = defineEmits(['close']);\r\n\r\nSwiperCore.use([Autoplay]);\r\n\r\n// reactivity data\r\nconst modalTranslateY = ref<any>(null);\r\nlet startY = 0;\r\n\r\n\r\n// methods\r\n\r\nconst handleTouchStart = (event: TouchEvent) => {\r\n\tstartY = event.touches[0].clientY;\r\n\r\n};\r\n\r\nconst handleTouchMove = (event: TouchEvent) => {\r\n\tconst deltaY = event.touches[0].clientY - startY;\r\n\tmodalTranslateY.value = Math.min(1000, Math.max(0, deltaY));\r\n};\r\n\r\nconst handleTouchEnd = () => {\r\n\t// 터치 종료 후 \r\n\tconst winH = window.innerHeight * 0.8;\r\n\tif (winH < modalTranslateY.value) {\r\n\t\temit('close');\r\n\t} else {\r\n\t\tmodalTranslateY.value = 0;\r\n\t}\r\n\r\n};\r\n\r\n\r\n\r\n</script>\r\n\r\n<template>\r\n\r\n\t<div class=\"modal-storeinfo\" :style=\"{ transform: `translateY(${modalTranslateY}px)` }\">\r\n\t\t<div class=\"modal-handlebar\"  @touchstart=\"handleTouchStart\" @touchmove=\"handleTouchMove\" @touchend=\"handleTouchEnd\">\r\n\t\t\t<div class=\"modal-header header-page\">\r\n\t\t\t\t<button class=\"btn-close\" @click=\"emit('close')\"></button>\r\n\t\t\t</div>\r\n\r\n\r\n\r\n\t\t\t<i class=\"handlebar\"></i>\r\n\t\t</div>\r\n\r\n\t\t<div class=\"scrollbar-y\">\r\n\r\n\t\t\t<main class=\"store-contentss\">\r\n\t\t\t\t<!-- storeSummery -->\r\n\t\t\t\t<section class=\"store-summery\">\r\n\r\n\r\n\t\t\t\t\t<div class=\"status-row\">\r\n\r\n\t\t\t\t\t\t<span class=\"status open\">영업중</span>\r\n\t\t\t\t\t\t<span class=\"takeout\">포장가능</span>\r\n\t\t\t\t\t</div>\r\n\t\t\t\t\t<h2 class=\"store-name\">동대문엽기떡볶이 - 신도림점</h2>\r\n\t\t\t\t\t<!-- storeWorkTime -->\r\n\t\t\t\t\t<div class=\"store-worktime\">\r\n\t\t\t\t\t\t<div class=\"time-head\" @click=\"isToggleWorkTime = !isToggleWorkTime\"  :class=\"{on: isToggleWorkTime }\">\r\n\t\t\t\t\t\t\t수 09:00 ~19:00\r\n\t\t\t\t\t\t\t<i class=\"i-arrow\"></i>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t<div v-if=\"isToggleWorkTime\" class=\"time-list\">\r\n\t\t\t\t\t\t\t<ul>\r\n\t\t\t\t\t\t\t\t<li>\r\n\t\t\t\t\t\t\t\t\t월-금 09:00 ~ 19:00\r\n\t\t\t\t\t\t\t\t</li>\r\n\t\t\t\t\t\t\t\t<li>\r\n\t\t\t\t\t\t\t\t\t토 09:00 ~ 19:00\r\n\t\t\t\t\t\t\t\t</li>\r\n\t\t\t\t\t\t\t\t<li>\r\n\t\t\t\t\t\t\t\t\t일 휴무\r\n\t\t\t\t\t\t\t\t</li>\r\n\t\t\t\t\t\t\t</ul>\r\n\t\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t</div>\r\n\t\t\t\t\t<!-- End storeWorkTime -->\r\n\r\n\t\t\t\t\t<div class=\"store-links\">\r\n\t\t\t\t\t\t<ul class=\"link-row\">\r\n\t\t\t\t\t\t\t<li>\r\n\t\t\t\t\t\t\t\t<a href=\"`tel:0000000000\">\r\n\t\t\t\t\t\t\t\t\t<i class=\"icon-call\"></i>\r\n\t\t\t\t\t\t\t\t\t<span class=\"text\"> 전화걸기 </span>\r\n\t\t\t\t\t\t\t\t</a>\r\n\t\t\t\t\t\t\t</li>\r\n\t\t\t\t\t\t\t<li>\r\n\t\t\t\t\t\t\t\t<router-link to=\"/pb/map\">\r\n\t\t\t\t\t\t\t\t\t<i class=\"icon-map\"></i>\r\n\t\t\t\t\t\t\t\t\t<span class=\"text\"> 지도보기 </span>\r\n\t\t\t\t\t\t\t\t</router-link>\r\n\t\t\t\t\t\t\t</li>\r\n\t\t\t\t\t\t</ul>\r\n\t\t\t\t\t</div>\r\n\r\n\t\t\t\t</section>\r\n\r\n\t\t\t\t<!--End storeSummery -->\r\n\r\n\r\n\t\t\t\t<!-- storeMemo -->\r\n\t\t\t\t<section class=\"store-memo\">\r\n\r\n\r\n\t\t\t\t\t<div class=\"store-slider\">\r\n\t\t\t\t\t\t<swiper class=\"slider-item\" :speed=\"400\" :pagination=\"{ clickable: false }\">\r\n\t\t\t\t\t\t\t<swiper-slide>\r\n\t\t\t\t\t\t\t\t<!-- 326 x 120 -->\r\n\t\t\t\t\t\t\t\t<div class=\"img-ratio-store img-wrap\"><img\r\n\t\t\t\t\t\t\t\t\t\tsrc=\"https://mannaplanetstorage.blob.core.windows.net/mannashop-img-test/banner//20230125165327AZ0480.png\"\r\n\t\t\t\t\t\t\t\t\t\talt=\"매장이미지\"></div>\r\n\t\t\t\t\t\t\t</swiper-slide>\r\n\t\t\t\t\t\t\t<swiper-slide>\r\n\t\t\t\t\t\t\t\t<!-- 326 x 120 -->\r\n\t\t\t\t\t\t\t\t<div class=\"img-ratio-store img-wrap\"><img\r\n\t\t\t\t\t\t\t\t\t\tsrc=\"https://mannaplanetstorage.blob.core.windows.net/mannashop-img-test/banner//20230125165327AZ0480.png\"\r\n\t\t\t\t\t\t\t\t\t\talt=\"매장이미지\"></div>\r\n\t\t\t\t\t\t\t</swiper-slide>\r\n\t\t\t\t\t\t</swiper>\r\n\r\n\t\t\t\t\t\t<div class=\"slide-count\">1 / 2</div>\r\n\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t<div class=\"about-text\"  :class=\"{on: isToggleMemo }\">\r\n\t\t\t\t\t\t매장 소개 문구 다섯 줄 이상 대기업 쉐프 출신 요리사가\r\n\t\t\t\t\t\t요리하는 건강하고 맛있는 중국 음식점 입니다. 최고의 맛과\r\n\t\t\t\t\t\t서비스를 제공하기 위해 끊임없이 연구하고 노력하겠습니다.\r\n\t\t\t\t\t\t매장 소개 문구 다섯 줄 이상 대기업 쉐프 출신 요리사가\r\n\t\t\t\t\t\t요리하는 건강하고 맛있는 중국 음식점 입니다. 최고의 맛과\r\n\t\t\t\t\t\t서비스를 제공하기 위해 끊임없이 연구하고 노력하겠습니다.\r\n\t\t\t\t\t\t매장 소개 문구 다섯 줄 이상 대기업 쉐프 출신 요리사가\r\n\t\t\t\t\t\t요리하는 건강하고 맛있는 중국 음식점 입니다. 최고의 맛과\r\n\t\t\t\t\t\t서비스를 제공하기 위해 끊임없이 연구하고 노력하겠습니다.\r\n\t\t\t\t\t</div>\r\n\r\n\r\n\t\t\t\t\t<button type=\"button\" class=\"btn-more\"  @click=\"isToggleMemo = !isToggleMemo\"  >\r\n\r\n\t\t\t\t\t\t<i class=\"icon-more\"></i>\r\n\t\t\t\t\t</button>\r\n\r\n\t\t\t\t</section>\r\n\r\n\t\t\t\t<!-- End storeMemo -->\r\n\t\t\t\t<span class=\"separator\"></span>\r\n\r\n\t\t\t\t<!-- storeBizInfo -->\r\n\t\t\t\t<section class=\"store-section\">\r\n\t\t\t\t\t<h2 class=\"section-title\">사업장 정보</h2>\r\n\t\t\t\t\t<div class=\"business-info\">\r\n\t\t\t\t\t\t<dl>\r\n\t\t\t\t\t\t\t<dt>상호명</dt>\r\n\t\t\t\t\t\t\t<dd>동대문엽기떡볶이 - 신도림점</dd>\r\n\t\t\t\t\t\t</dl>\r\n\t\t\t\t\t\t<dl>\r\n\t\t\t\t\t\t\t<dt>대표자</dt>\r\n\t\t\t\t\t\t\t<dd>김대표</dd>\r\n\t\t\t\t\t\t</dl>\r\n\t\t\t\t\t\t<dl>\r\n\t\t\t\t\t\t\t<dt>사업자등록번호</dt>\r\n\t\t\t\t\t\t\t<dd>123-00-00000</dd>\r\n\t\t\t\t\t\t</dl>\r\n\t\t\t\t\t\t<dl>\r\n\t\t\t\t\t\t\t<dt>주소</dt>\r\n\t\t\t\t\t\t\t<dd>서울 영등포구 대림동 688-27 1층</dd>\r\n\t\t\t\t\t\t</dl>\r\n\t\t\t\t\t</div>\r\n\t\t\t\t</section>\r\n\t\t\t\t<!-- End storeBizInfo -->\r\n\r\n\t\t\t\t<!-- storeOriginInfo -->\r\n\t\t\t\t<section class=\"store-section\">\r\n\t\t\t\t\t<h2 class=\"section-title\">원산지 정보</h2>\r\n\t\t\t\t\t<div class=\"orgin-info\">\r\n\t\t\t\t\t\t닭고기 - 국내산 / 쇠고기 - 국내산 한우, 호주산 / 명태연육 - 미국산\r\n\t\t\t\t\t</div>\r\n\t\t\t\t</section>\r\n\t\t\t\t<!-- End storeOriginInfo -->\r\n\r\n\t\t\t</main>\r\n\t\t\t<footer>\r\n\t\t\t\t<div class=\"footer-info\">\r\n\t\t\t\t\t<h1 class=\"btn-toggle-addr\">\r\n\t\t\t\t\t\t(주)만나플래닛\r\n\r\n\t\t\t\t\t</h1>\r\n\r\n\r\n\r\n\t\t\t\t\t<div class=\"terms-links\">\r\n\t\t\t\t\t\t<router-link to=\"/pb/terms/conditionsOfUse\">이용 약관</router-link>\r\n\t\t\t\t\t\t<router-link to=\"/pb/terms/privacyNotice\">개인정보 보호방침</router-link>\r\n\t\t\t\t\t\t<router-link to=\"/pb/terms/informationClause\">개인정보 제3자 동의</router-link>\r\n\t\t\t\t\t\t<div>\r\n\t\t\t\t\t\t\t<router-link to=\"/pb/terms/locationAgreement\">위치기반 서비스 이용 약관</router-link>\r\n\t\t\t\t\t\t\t<router-link to=\"/pb/terms/adolescentClause\">청소년 보호정책</router-link>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t</div>\r\n\t\t\t\t\t<div class=\"footer-notice\">\r\n\t\t\t\t\t\t㈜만나플래닛은 상품거래에 대한 통신판매 중개자이며, 통신판매의 당사자가 아닙니다. 따라서, ㈜만나플래닛은 상품거래정보 및 거래에 대한 책임을 지지 않습니다.\r\n\r\n\t\t\t\t\t</div>\r\n\t\t\t\t</div>\r\n\t\t\t</footer>\r\n\t\t</div>\r\n\t</div>\r\n\r\n\r\n\r\n</template>\r\n\r\n<style lang=\"scss\" scoped>\r\n@import '@/assets/default/scss/components/popups/storeinfo';\r\n@import '@/assets/default/scss/components/store/storeSummery';\r\n@import '@/assets/default/scss/components/store/storeWorkTime';\r\n@import '@/assets/default/scss/components/store/storeLinks';\r\n@import '@/assets/default/scss/components/store/storeMemo';\r\n@import '@/assets/default/scss/components/store/storeBizInfo';\r\n@import \"@/assets/default/scss/components/store/storeOriginInfo\";\r\n@import \"@/assets/default/scss/components/footer\";\r\n</style>\r\n",
-      "start": 1711509447875,
-      "end": 1711509447935,
+      "start": 1711511826523,
+      "end": 1711511826648,
       "sourcemaps": null
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1711509447935,
-      "end": 1711509447935,
+      "start": 1711511826648,
+      "end": 1711511826648,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1711509447935,
-      "end": 1711509447935,
+      "start": 1711511826648,
+      "end": 1711511826648,
       "order": "pre"
     },
     {
       "name": "nuxt:client-fallback-auto-id",
-      "start": 1711509447935,
-      "end": 1711509447935,
+      "start": 1711511826648,
+      "end": 1711511826648,
       "order": "pre"
     },
     {
       "name": "vite:css",
-      "start": 1711509447935,
-      "end": 1711509447935,
+      "start": 1711511826648,
+      "end": 1711511826648,
       "order": "normal"
     },
     {
       "name": "vite:esbuild",
-      "start": 1711509447935,
-      "end": 1711509447935,
+      "start": 1711511826648,
+      "end": 1711511826648,
       "order": "normal"
     },
     {
       "name": "vite:json",
-      "start": 1711509447935,
-      "end": 1711509447935,
+      "start": 1711511826648,
+      "end": 1711511826648,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1711509447935,
-      "end": 1711509447935,
+      "start": 1711511826648,
+      "end": 1711511826648,
       "order": "normal"
     },
     {
       "name": "vite:vue",
       "result": "import _sfc_main from \"D:/localserver/web-nuxt-sdk/web-nuxt-qr-netlify/pages/pb/popup/modal-store-info.vue?vue&type=script&setup=true&lang.ts\";\nexport * from \"D:/localserver/web-nuxt-sdk/web-nuxt-qr-netlify/pages/pb/popup/modal-store-info.vue?vue&type=script&setup=true&lang.ts\";\nimport \"D:/localserver/web-nuxt-sdk/web-nuxt-qr-netlify/pages/pb/popup/modal-store-info.vue?vue&type=style&index=0&scoped=c85106f6&lang.scss\";\nimport _export_sfc from \"\\0plugin-vue:export-helper\";\nexport default /* @__PURE__ */ _export_sfc(_sfc_main, [[\"__scopeId\", \"data-v-c85106f6\"]]);\n",
-      "start": 1711509447935,
-      "end": 1711509448026,
+      "start": 1711511826648,
+      "end": 1711511827337,
       "order": "normal",
       "sourcemaps": {
         "mappings": ""
@@ -62,152 +62,152 @@
     },
     {
       "name": "vite:vue-jsx",
-      "start": 1711509448026,
-      "end": 1711509448026,
+      "start": 1711511827338,
+      "end": 1711511827338,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1711509448026,
-      "end": 1711509448027,
+      "start": 1711511827338,
+      "end": 1711511827338,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1711509448028,
-      "end": 1711509448028,
+      "start": 1711511827338,
+      "end": 1711511827338,
       "order": "normal"
     },
     {
       "name": "nuxt:chunk-error",
-      "start": 1711509448028,
-      "end": 1711509448028,
+      "start": 1711511827338,
+      "end": 1711511827339,
       "order": "normal"
     },
     {
       "name": "nuxt:components:imports",
-      "start": 1711509448029,
-      "end": 1711509448029,
+      "start": 1711511827339,
+      "end": 1711511827345,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1711509448029,
-      "end": 1711509448029,
+      "start": 1711511827345,
+      "end": 1711511827345,
       "order": "normal"
     },
     {
       "name": "ssr-styles",
-      "start": 1711509448029,
-      "end": 1711509448029,
+      "start": 1711511827346,
+      "end": 1711511827346,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1711509448030,
-      "end": 1711509448030,
+      "start": 1711511827346,
+      "end": 1711511827346,
       "order": "normal"
     },
     {
       "name": "vite:css-post",
-      "start": 1711509448030,
-      "end": 1711509448030,
+      "start": 1711511827346,
+      "end": 1711511827346,
       "order": "normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1711509448030,
-      "end": 1711509448030,
+      "start": 1711511827346,
+      "end": 1711511827346,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1711509448030,
-      "end": 1711509448030,
+      "start": 1711511827347,
+      "end": 1711511827347,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1711509448030,
-      "end": 1711509448030,
+      "start": 1711511827347,
+      "end": 1711511827347,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1711509448030,
-      "end": 1711509448030,
+      "start": 1711511827347,
+      "end": 1711511827347,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1711509448030,
-      "end": 1711509448030,
+      "start": 1711511827347,
+      "end": 1711511827347,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1711509448030,
-      "end": 1711509448030,
+      "start": 1711511827347,
+      "end": 1711511827347,
       "order": "normal"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1711509448031,
-      "end": 1711509448031,
+      "start": 1711511827348,
+      "end": 1711511827348,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
-      "start": 1711509448032,
-      "end": 1711509448035,
+      "start": 1711511827348,
+      "end": 1711511827354,
       "order": "post"
     },
     {
       "name": "unctx:transform",
-      "start": 1711509448035,
-      "end": 1711509448035,
+      "start": 1711511827354,
+      "end": 1711511827355,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1711509448037,
-      "end": 1711509448038,
+      "start": 1711511827356,
+      "end": 1711511827358,
       "order": "post"
     },
     {
       "name": "nuxt:runtime-paths-dep",
-      "start": 1711509448039,
-      "end": 1711509448039,
+      "start": 1711511827358,
+      "end": 1711511827358,
       "order": "post"
     },
     {
       "name": "nuxt:route-injection-plugin",
-      "start": 1711509448039,
-      "end": 1711509448039,
+      "start": 1711511827358,
+      "end": 1711511827358,
       "order": "post"
     },
     {
       "name": "nuxt:components-loader",
-      "start": 1711509448039,
-      "end": 1711509448040,
+      "start": 1711511827358,
+      "end": 1711511827359,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-composables:transform",
-      "start": 1711509448040,
-      "end": 1711509448040,
+      "start": 1711511827359,
+      "end": 1711511827359,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1711509448040,
-      "end": 1711509448041,
+      "start": 1711511827360,
+      "end": 1711511827360,
       "order": "normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1711509448041,
-      "end": 1711509448041,
+      "start": 1711511827360,
+      "end": 1711511827360,
       "order": "normal"
     }
   ]

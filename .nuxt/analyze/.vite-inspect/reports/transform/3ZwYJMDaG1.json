@@ -4,57 +4,57 @@
     {
       "name": "vite:load-fallback",
       "result": "<script setup lang=\"ts\">\r\n\r\n</script>\r\n\r\n<template>\r\n\t<main class=\"guide-wrapper\">\r\n\t\t<table class=\"table-custom\">\r\n\t\t\t<caption></caption>\r\n\t\t\t<colgroup>\r\n\t\t\t\t<col width=\"15%\">\r\n\t\t\t\t<col>\r\n\t\t\t\t<col width=\"33%\">\r\n\t\t\t\t<col width=\"15%\">\r\n\t\t\t</colgroup>\r\n\t\t\t<thead>\r\n\t\t\t\t<tr>\r\n\t\t\t\t\t<th>1DEPTH</th>\r\n\t\t\t\t\t<th>2DEPTH</th>\r\n\t\t\t\t\t<th>PATH</th>\r\n\t\t\t\t\t<th>비고</th>\r\n\t\t\t\t</tr>\r\n\t\t\t</thead>\r\n\t\t\t<tbody>\r\n\t\t\t\t<tr>\r\n\t\t\t\t\t<td>가맹점 팝업</td>\r\n\t\t\t\t\t<td>가맹점 정보</td>\r\n\r\n\t\t\t\t\t<td><a href=\"/pb/order/store-info\" class=\"\">/pb/order/store-info </a></td>\r\n\t\t\t\t\t<td>완료 </td>\r\n\t\t\t\t</tr>\r\n\t\t\t\r\n\t\t\t\t<tr>\r\n\t\t\t\t\t<td></td>\r\n\r\n\t\t\t\t\t<td>팝업 - 매장알림</td>\r\n\r\n\t\t\t\t\t<td><a href=\"/pb/order/store-notice\" class=\"\">/pb/order/store-notice </a></td>\r\n\t\t\t\t\t<td>완료 </td>\r\n\t\t\t\t</tr>\r\n\t\t\t\t<tr>\r\n\t\t\t\t\t<td></td>\r\n\r\n\t\t\t\t\t<td>지도보기</td>\r\n\r\n\t\t\t\t\t<td><a href=\"/pb/map\" class=\"\">/pb/map </a></td>\r\n\t\t\t\t\t<td>완료</td>\r\n\t\t\t\t</tr>\r\n\r\n\t\t\t\t<tr class=\"line-gr\">\r\n\t\t\t\t\t<td>주문</td>\r\n\t\t\t\t\t<td>테이블</td>\r\n\r\n\t\t\t\t\t<td><a href=\"/pb/order/table\" class=\"\">/pb/order/table</a></td>\r\n\t\t\t\t\t<td>완료</td>\r\n\t\t\t\t</tr>\r\n\r\n\t\t\t\t<tr>\r\n\t\t\t\t\t<td></td>\r\n\r\n\t\t\t\t\t<td>매장이용/포장</td>\r\n\r\n\t\t\t\t\t<td><a href=\"/pb/order/togo\" class=\"\">/pb/order/togo</a></td>\r\n\t\t\t\t\t<td>완료</td>\r\n\t\t\t\t</tr>\r\n\r\n\r\n\t\t\t\t<tr>\r\n\t\t\t\t\t<td></td>\r\n\r\n\t\t\t\t\t<td>메뉴상세</td>\r\n\r\n\t\t\t\t\t<td><a href=\"/pb/order/1234/123456\" class=\"\">pb/order/1234/123456</a></td>\r\n\t\t\t\t\t<td> 완료 </td>\r\n\t\t\t\t</tr>\r\n\r\n\t\t\t\t<tr>\r\n\t\t\t\t\t<td></td>\r\n\r\n\t\t\t\t\t<td>메뉴상세 - 상품추가</td>\r\n\r\n\t\t\t\t\t<td><a href=\"/pb/order/detail-add-basket\" class=\"\">pb/order/detail-add-basket</a></td>\r\n\t\t\t\t\t<td> 완료 </td>\r\n\t\t\t\t</tr>\r\n\t\t\t\t<tr>\r\n\t\t\t\t\t<td></td>\r\n\r\n\t\t\t\t\t<td>장바구니</td>\r\n\r\n\t\t\t\t\t<td><a href=\"/pb/order/basket\" class=\"\">/pb/order/basket</a></td>\r\n\t\t\t\t\t<td>완료</td>\r\n\t\t\t\t</tr>\r\n\t\t\t\t<tr>\r\n\t\t\t\t\t<td></td>\r\n\r\n\r\n\t\t\t\t\t<td>장바구니- 영업시간 종료</td>\r\n\r\n\t\t\t\t\t<td><a href=\"/pb/order/basket-closed\" class=\"\">/pb/order/basket-closed</a></td>\r\n\t\t\t\t\t<td>완료</td>\r\n\t\t\t\t</tr>\r\n\r\n\t\t\t\t<tr>\r\n\t\t\t\t\t<td></td>\r\n\r\n\t\t\t\t\t<td>장바구니- 상품없는경우</td>\r\n\r\n\t\t\t\t\t<td><a href=\"/pb/order/basket-none\" class=\"\">/pb/order/basket-none</a></td>\r\n\t\t\t\t\t<td>완료</td>\r\n\t\t\t\t</tr>\r\n\r\n\t\t\t\t\r\n\t\t\t\t<tr class=\"line-gr\">\r\n\t\t\t\t\t<td>결제</td>\r\n\t\t\t\t\t<td>결제하기- 테이블 (공통) </td>\r\n\r\n\t\t\t\t\t<td><a href=\"/pb/order/pay\" class=\"\">/pb/order/pay</a></td>\r\n\t\t\t\t\t<td>완료</td>\r\n\r\n\t\t\t\t</tr>\r\n\t\t\t\t<tr>\r\n\t\t\t\t\t<td></td>\r\n\t\t\t\t\t<td>결제하기-매장이용(선불형) </td>\r\n\r\n\t\t\t\t\t<td><a href=\"/pb/order/pay-hall\" class=\"\">/pb/order/pay-hall</a></td>\r\n\r\n\t\t\t\t\t<td>완료</td>\r\n\r\n\t\t\t\t</tr>\r\n\t\t\t\t\r\n\t\t\t\t<tr>\r\n\t\t\t\t\t<td></td>\r\n\t\t\t\t\t<td>결제하기-테이크아웃 (선불형) </td>\r\n\r\n\t\t\t\t\t<td><a href=\"/pb/order/pay-togo\" class=\"\">/pb/order/pay-togo</a></td>\r\n\r\n\t\t\t\t\t<td>완료</td>\r\n\r\n\t\t\t\t</tr>\r\n\r\n\r\n\t\t\t\t<tr>\r\n\t\t\t\t\t<td></td>\r\n\r\n\t\t\t\t\t<td>주문 완료 (공통) </td>\r\n\r\n\t\t\t\t\t<td><a href=\"/pb/order/pay-completed\" class=\"\">/pb/order/pay-completed</a></td>\r\n\t\t\t\t\t<td>완료</td>\r\n\r\n\t\t\t\t</tr>\r\n\r\n\r\n\r\n\t\t\t\r\n\r\n\r\n\r\n\r\n\t\t\t\t<tr>\r\n\t\t\t\t\t<td></td>\r\n\t\t\t\t\t<td>주문내역 (후불형) </td>\r\n\r\n\t\t\t\t\t<td><a href=\"/pb/order/history-paylater\" class=\"\">/pb/order/histor-paylatery</a></td>\r\n\t\t\t\t\t<td></td>\r\n\r\n\t\t\t\t</tr>\r\n\r\n\r\n\t\t\t\t<tr>\r\n\t\t\t\t\t<td></td>\r\n\r\n\t\t\t\t\t<td>주문내역 - 팝업 (후불형)</td>\r\n\r\n\t\t\t\t\t<td><a href=\"/pb/order/popup-history-paylater\" class=\"\">/pb/order/popup-history-paylater</a></td>\r\n\t\t\t\t\t<td></td>\r\n\r\n\t\t\t\t</tr>\r\n\r\n\t\t\t\t\r\n\t\t\t\t\r\n\t\t\t\t<tr class=\"line-gr\">\r\n\t\t\t\t\t<td>약관</td>\r\n\t\t\t\t\t<td>서비스 이용약관\t </td>\r\n\r\n\t\t\t\t\t<td><a href=\"/pb/terms/conditionsOfUse\" class=\"\">/pb/terms/conditionsOfUse</a></td>\r\n\t\t\t\t\t<td>완료</td>\r\n\r\n\t\t\t\t</tr>\r\n\t\t\t\t<tr>\r\n\t\t\t\t\t<td></td>\r\n\t\t\t\t\t<td>개인정보처리방침 </td>\r\n\r\n\t\t\t\t\t<td><a href=\"/pb/terms/privacyNotice\" class=\"\">/pb/terms/privacyNotice</a></td>\r\n\t\t\t\t\t<td>완료</td>\r\n\r\n\t\t\t\t</tr>\r\n\t\t\t\t<tr>\r\n\t\t\t\t\t<td></td>\r\n\t\t\t\t\t<td>개인정보 제3자 동의\t </td>\r\n\r\n\t\t\t\t\t<td><a href=\"/pb/terms/informationClause\" class=\"\">/pb/terms/informationClause</a></td>\r\n\t\t\t\t\t<td>완료</td>\r\n\r\n\t\t\t\t</tr>\r\n\t\t\t\t<tr>\r\n\t\t\t\t\t<td></td>\r\n\t\t\t\t\t<td>위치기반 서비스 이용 약관 </td>\r\n\r\n\t\t\t\t\t<td><a href=\"/pb/terms/locationAgreement\" class=\"\">/pb/terms/locationAgreement</a></td>\r\n\t\t\t\t\t<td>완료</td>\r\n\r\n\t\t\t\t</tr>\r\n\t\t\t\t<tr>\r\n\t\t\t\t\t<td></td>\r\n\t\t\t\t\t<td>청소년 보호정책 </td>\r\n\r\n\t\t\t\t\t<td><a href=\"/pb/terms/adolescentClause\" class=\"\">/pb/terms/adolescentClause</a></td>\r\n\t\t\t\t\t<td>완료</td>\r\n\r\n\t\t\t\t</tr>\r\n\r\n\r\n\r\n\t\t\t</tbody>\r\n\t\t</table>\r\n\t</main>\r\n</template>\r\n\r\n<style lang=\"scss\" scoped>\r\n@import \"@/assets/default/scss/style\"; // 공통 \r\n\r\n.guide-wrapper {\r\n\tmax-width: 1100px;\r\n\tmargin: 0 auto;\r\n\tpadding: 40px 0 100px\r\n}\r\n\r\n.guide-title {\r\n\ttext-align: center;\r\n\tmargin-bottom: 30px;\r\n\tcolor: #000;\r\n\tfont-weight: 700\r\n}\r\n\r\n.card {\r\n\tmargin-bottom: 20px\r\n}\r\n\r\n.card dt {\r\n\tbackground: #f4f5f9;\r\n\tpadding: 10px\r\n}\r\n\r\n.card dd {\r\n\tpadding: 12px 0\r\n}\r\n\r\n.card .title {\r\n\tfont-weight: 700;\r\n\tcolor: #000;\r\n\tfont-size: 20px\r\n}\r\n\r\n.card .title-sub {\r\n\tfont-size: 18px;\r\n\tfont-weight: 500;\r\n\tpadding: 15px 0 10px;\r\n\tmargin-bottom: 0;\r\n\tcolor: #000\r\n}\r\n\r\n.card .color-box {\r\n\twidth: 100px;\r\n\tborder-radius: 5px;\r\n\tdisplay: inline-block;\r\n\tpadding: 10px;\r\n\tcolor: #fff;\r\n\ttext-align: center\r\n}\r\n\r\n.form-check-wrap {\r\n\tmargin-top: 6px\r\n}\r\n\r\n.guide-gatter-5 {\r\n\tmargin-right: 5px\r\n}\r\n\r\n.guide-gatter-5>:last-child {\r\n\tmargin-right: 0\r\n}\r\n\r\n.stretch {\r\n\talign-items: stretch;\r\n\tjustify-content: stretch;\r\n\tdisplay: flex;\r\n\tflex-direction: column\r\n}\r\n\r\n.stretch {\r\n\theight: 100%\r\n}\r\n\r\n.bg-dark {\r\n\tbackground: #333\r\n}\r\n\r\n.table-custom {\r\n\twidth: 100%;\r\n\ttext-align: left;\r\n\tbackground: #fff;\r\n\ttable-layout: fixed;\r\n\tborder: 1px solid #ddd\r\n}\r\n\r\n.table-custom thead th {\r\n\ttext-align: center;\r\n\tfont-weight: 700;\r\n\tcolor: #333;\r\n\tbackground-color: #f4f5f9;\r\n\tborder-top: 2px solid #9398a1\r\n}\r\n\r\n.table-custom td,\r\n.table-custom th {\r\n\tpadding: 8px 10px;\r\n\tborder: 1px solid #e8e8e8;\r\n\tborder-bottom: 0;\r\n\tcolor: #666;\r\n\tfont-size: .875rem\r\n}\r\n\r\n.table-custom td.status,\r\n.table-custom th.status {\r\n\tcolor: #777\r\n}\r\n\r\n.table-custom td.primary-1,\r\n.table-custom th.primary-1 {\r\n\tcolor: var(--primary-1)\r\n}\r\n\r\n.table-custom .line td {\r\n\tborder-top-color: #6b6d77\r\n}\r\n\r\n.table-custom .line-gr td {\r\n\tborder-top-color: #c2c2cc\r\n}\r\n\r\na {\r\n\ttext-decoration: underline\r\n}\r\n</style>\r\n",
-      "start": 1711509447862,
-      "end": 1711509447928,
+      "start": 1711511826500,
+      "end": 1711511826637,
       "sourcemaps": null
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1711509447928,
-      "end": 1711509447928,
+      "start": 1711511826637,
+      "end": 1711511826637,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1711509447928,
-      "end": 1711509447928,
+      "start": 1711511826637,
+      "end": 1711511826637,
       "order": "pre"
     },
     {
       "name": "nuxt:client-fallback-auto-id",
-      "start": 1711509447928,
-      "end": 1711509447928,
+      "start": 1711511826637,
+      "end": 1711511826637,
       "order": "pre"
     },
     {
       "name": "vite:css",
-      "start": 1711509447928,
-      "end": 1711509447928,
+      "start": 1711511826637,
+      "end": 1711511826637,
       "order": "normal"
     },
     {
       "name": "vite:esbuild",
-      "start": 1711509447928,
-      "end": 1711509447928,
+      "start": 1711511826637,
+      "end": 1711511826637,
       "order": "normal"
     },
     {
       "name": "vite:json",
-      "start": 1711509447928,
-      "end": 1711509447928,
+      "start": 1711511826637,
+      "end": 1711511826637,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1711509447928,
-      "end": 1711509447928,
+      "start": 1711511826637,
+      "end": 1711511826637,
       "order": "normal"
     },
     {
       "name": "vite:vue",
       "result": "const _sfc_main = {}\nimport { createElementVNode as _createElementVNode, createStaticVNode as _createStaticVNode, openBlock as _openBlock, createElementBlock as _createElementBlock, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\"\n\nconst _withScopeId = n => (_pushScopeId(\"data-v-2fc81d0c\"),n=n(),_popScopeId(),n)\nconst _hoisted_1 = { class: \"guide-wrapper\" }\nconst _hoisted_2 = /*#__PURE__*/_createStaticVNode(\"<table class=\\\"table-custom\\\" data-v-2fc81d0c><caption data-v-2fc81d0c></caption><colgroup data-v-2fc81d0c><col width=\\\"15%\\\" data-v-2fc81d0c><col data-v-2fc81d0c><col width=\\\"33%\\\" data-v-2fc81d0c><col width=\\\"15%\\\" data-v-2fc81d0c></colgroup><thead data-v-2fc81d0c><tr data-v-2fc81d0c><th data-v-2fc81d0c>1DEPTH</th><th data-v-2fc81d0c>2DEPTH</th><th data-v-2fc81d0c>PATH</th><th data-v-2fc81d0c>비고</th></tr></thead><tbody data-v-2fc81d0c><tr data-v-2fc81d0c><td data-v-2fc81d0c>가맹점 팝업</td><td data-v-2fc81d0c>가맹점 정보</td><td data-v-2fc81d0c><a href=\\\"/pb/order/store-info\\\" class=\\\"\\\" data-v-2fc81d0c>/pb/order/store-info </a></td><td data-v-2fc81d0c>완료 </td></tr><tr data-v-2fc81d0c><td data-v-2fc81d0c></td><td data-v-2fc81d0c>팝업 - 매장알림</td><td data-v-2fc81d0c><a href=\\\"/pb/order/store-notice\\\" class=\\\"\\\" data-v-2fc81d0c>/pb/order/store-notice </a></td><td data-v-2fc81d0c>완료 </td></tr><tr data-v-2fc81d0c><td data-v-2fc81d0c></td><td data-v-2fc81d0c>지도보기</td><td data-v-2fc81d0c><a href=\\\"/pb/map\\\" class=\\\"\\\" data-v-2fc81d0c>/pb/map </a></td><td data-v-2fc81d0c>완료</td></tr><tr class=\\\"line-gr\\\" data-v-2fc81d0c><td data-v-2fc81d0c>주문</td><td data-v-2fc81d0c>테이블</td><td data-v-2fc81d0c><a href=\\\"/pb/order/table\\\" class=\\\"\\\" data-v-2fc81d0c>/pb/order/table</a></td><td data-v-2fc81d0c>완료</td></tr><tr data-v-2fc81d0c><td data-v-2fc81d0c></td><td data-v-2fc81d0c>매장이용/포장</td><td data-v-2fc81d0c><a href=\\\"/pb/order/togo\\\" class=\\\"\\\" data-v-2fc81d0c>/pb/order/togo</a></td><td data-v-2fc81d0c>완료</td></tr><tr data-v-2fc81d0c><td data-v-2fc81d0c></td><td data-v-2fc81d0c>메뉴상세</td><td data-v-2fc81d0c><a href=\\\"/pb/order/1234/123456\\\" class=\\\"\\\" data-v-2fc81d0c>pb/order/1234/123456</a></td><td data-v-2fc81d0c> 완료 </td></tr><tr data-v-2fc81d0c><td data-v-2fc81d0c></td><td data-v-2fc81d0c>메뉴상세 - 상품추가</td><td data-v-2fc81d0c><a href=\\\"/pb/order/detail-add-basket\\\" class=\\\"\\\" data-v-2fc81d0c>pb/order/detail-add-basket</a></td><td data-v-2fc81d0c> 완료 </td></tr><tr data-v-2fc81d0c><td data-v-2fc81d0c></td><td data-v-2fc81d0c>장바구니</td><td data-v-2fc81d0c><a href=\\\"/pb/order/basket\\\" class=\\\"\\\" data-v-2fc81d0c>/pb/order/basket</a></td><td data-v-2fc81d0c>완료</td></tr><tr data-v-2fc81d0c><td data-v-2fc81d0c></td><td data-v-2fc81d0c>장바구니- 영업시간 종료</td><td data-v-2fc81d0c><a href=\\\"/pb/order/basket-closed\\\" class=\\\"\\\" data-v-2fc81d0c>/pb/order/basket-closed</a></td><td data-v-2fc81d0c>완료</td></tr><tr data-v-2fc81d0c><td data-v-2fc81d0c></td><td data-v-2fc81d0c>장바구니- 상품없는경우</td><td data-v-2fc81d0c><a href=\\\"/pb/order/basket-none\\\" class=\\\"\\\" data-v-2fc81d0c>/pb/order/basket-none</a></td><td data-v-2fc81d0c>완료</td></tr><tr class=\\\"line-gr\\\" data-v-2fc81d0c><td data-v-2fc81d0c>결제</td><td data-v-2fc81d0c>결제하기- 테이블 (공통) </td><td data-v-2fc81d0c><a href=\\\"/pb/order/pay\\\" class=\\\"\\\" data-v-2fc81d0c>/pb/order/pay</a></td><td data-v-2fc81d0c>완료</td></tr><tr data-v-2fc81d0c><td data-v-2fc81d0c></td><td data-v-2fc81d0c>결제하기-매장이용(선불형) </td><td data-v-2fc81d0c><a href=\\\"/pb/order/pay-hall\\\" class=\\\"\\\" data-v-2fc81d0c>/pb/order/pay-hall</a></td><td data-v-2fc81d0c>완료</td></tr><tr data-v-2fc81d0c><td data-v-2fc81d0c></td><td data-v-2fc81d0c>결제하기-테이크아웃 (선불형) </td><td data-v-2fc81d0c><a href=\\\"/pb/order/pay-togo\\\" class=\\\"\\\" data-v-2fc81d0c>/pb/order/pay-togo</a></td><td data-v-2fc81d0c>완료</td></tr><tr data-v-2fc81d0c><td data-v-2fc81d0c></td><td data-v-2fc81d0c>주문 완료 (공통) </td><td data-v-2fc81d0c><a href=\\\"/pb/order/pay-completed\\\" class=\\\"\\\" data-v-2fc81d0c>/pb/order/pay-completed</a></td><td data-v-2fc81d0c>완료</td></tr><tr data-v-2fc81d0c><td data-v-2fc81d0c></td><td data-v-2fc81d0c>주문내역 (후불형) </td><td data-v-2fc81d0c><a href=\\\"/pb/order/history-paylater\\\" class=\\\"\\\" data-v-2fc81d0c>/pb/order/histor-paylatery</a></td><td data-v-2fc81d0c></td></tr><tr data-v-2fc81d0c><td data-v-2fc81d0c></td><td data-v-2fc81d0c>주문내역 - 팝업 (후불형)</td><td data-v-2fc81d0c><a href=\\\"/pb/order/popup-history-paylater\\\" class=\\\"\\\" data-v-2fc81d0c>/pb/order/popup-history-paylater</a></td><td data-v-2fc81d0c></td></tr><tr class=\\\"line-gr\\\" data-v-2fc81d0c><td data-v-2fc81d0c>약관</td><td data-v-2fc81d0c>서비스 이용약관 </td><td data-v-2fc81d0c><a href=\\\"/pb/terms/conditionsOfUse\\\" class=\\\"\\\" data-v-2fc81d0c>/pb/terms/conditionsOfUse</a></td><td data-v-2fc81d0c>완료</td></tr><tr data-v-2fc81d0c><td data-v-2fc81d0c></td><td data-v-2fc81d0c>개인정보처리방침 </td><td data-v-2fc81d0c><a href=\\\"/pb/terms/privacyNotice\\\" class=\\\"\\\" data-v-2fc81d0c>/pb/terms/privacyNotice</a></td><td data-v-2fc81d0c>완료</td></tr><tr data-v-2fc81d0c><td data-v-2fc81d0c></td><td data-v-2fc81d0c>개인정보 제3자 동의 </td><td data-v-2fc81d0c><a href=\\\"/pb/terms/informationClause\\\" class=\\\"\\\" data-v-2fc81d0c>/pb/terms/informationClause</a></td><td data-v-2fc81d0c>완료</td></tr><tr data-v-2fc81d0c><td data-v-2fc81d0c></td><td data-v-2fc81d0c>위치기반 서비스 이용 약관 </td><td data-v-2fc81d0c><a href=\\\"/pb/terms/locationAgreement\\\" class=\\\"\\\" data-v-2fc81d0c>/pb/terms/locationAgreement</a></td><td data-v-2fc81d0c>완료</td></tr><tr data-v-2fc81d0c><td data-v-2fc81d0c></td><td data-v-2fc81d0c>청소년 보호정책 </td><td data-v-2fc81d0c><a href=\\\"/pb/terms/adolescentClause\\\" class=\\\"\\\" data-v-2fc81d0c>/pb/terms/adolescentClause</a></td><td data-v-2fc81d0c>완료</td></tr></tbody></table>\", 1)\nconst _hoisted_3 = [\n  _hoisted_2\n]\n\nfunction _sfc_render(_ctx, _cache) {\n  return (_openBlock(), _createElementBlock(\"main\", _hoisted_1, _hoisted_3))\n}\n\nimport \"D:/localserver/web-nuxt-sdk/web-nuxt-qr-netlify/pages/pb/path.vue?vue&type=style&index=0&scoped=2fc81d0c&lang.scss\"\n\nimport _export_sfc from '\u0000plugin-vue:export-helper'\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['render',_sfc_render],['__scopeId',\"data-v-2fc81d0c\"]])",
-      "start": 1711509447928,
-      "end": 1711509447930,
+      "start": 1711511826637,
+      "end": 1711511826639,
       "order": "normal",
       "sourcemaps": {
         "mappings": ""
@@ -62,152 +62,152 @@
     },
     {
       "name": "vite:vue-jsx",
-      "start": 1711509447930,
-      "end": 1711509447930,
+      "start": 1711511826639,
+      "end": 1711511826639,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1711509447930,
-      "end": 1711509447930,
+      "start": 1711511826639,
+      "end": 1711511826639,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1711509447930,
-      "end": 1711509447930,
+      "start": 1711511826639,
+      "end": 1711511826639,
       "order": "normal"
     },
     {
       "name": "nuxt:chunk-error",
-      "start": 1711509447930,
-      "end": 1711509447930,
+      "start": 1711511826639,
+      "end": 1711511826639,
       "order": "normal"
     },
     {
       "name": "nuxt:components:imports",
-      "start": 1711509447930,
-      "end": 1711509447930,
+      "start": 1711511826639,
+      "end": 1711511826639,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1711509447930,
-      "end": 1711509447930,
+      "start": 1711511826639,
+      "end": 1711511826639,
       "order": "normal"
     },
     {
       "name": "ssr-styles",
-      "start": 1711509447930,
-      "end": 1711509447930,
+      "start": 1711511826639,
+      "end": 1711511826639,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1711509447930,
-      "end": 1711509447930,
+      "start": 1711511826639,
+      "end": 1711511826639,
       "order": "normal"
     },
     {
       "name": "vite:css-post",
-      "start": 1711509447930,
-      "end": 1711509447930,
+      "start": 1711511826639,
+      "end": 1711511826639,
       "order": "normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1711509447930,
-      "end": 1711509447931,
+      "start": 1711511826639,
+      "end": 1711511826639,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1711509447931,
-      "end": 1711509447931,
+      "start": 1711511826639,
+      "end": 1711511826639,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1711509447931,
-      "end": 1711509447931,
+      "start": 1711511826639,
+      "end": 1711511826639,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1711509447931,
-      "end": 1711509447931,
+      "start": 1711511826639,
+      "end": 1711511826639,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1711509447931,
-      "end": 1711509447931,
+      "start": 1711511826639,
+      "end": 1711511826639,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1711509447931,
-      "end": 1711509447931,
+      "start": 1711511826639,
+      "end": 1711511826639,
       "order": "normal"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1711509447931,
-      "end": 1711509447931,
+      "start": 1711511826639,
+      "end": 1711511826639,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
-      "start": 1711509447931,
-      "end": 1711509447931,
+      "start": 1711511826639,
+      "end": 1711511826640,
       "order": "post"
     },
     {
       "name": "unctx:transform",
-      "start": 1711509447931,
-      "end": 1711509447931,
+      "start": 1711511826640,
+      "end": 1711511826640,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1711509447931,
-      "end": 1711509447931,
+      "start": 1711511826640,
+      "end": 1711511826640,
       "order": "post"
     },
     {
       "name": "nuxt:runtime-paths-dep",
-      "start": 1711509447931,
-      "end": 1711509447931,
+      "start": 1711511826640,
+      "end": 1711511826640,
       "order": "post"
     },
     {
       "name": "nuxt:route-injection-plugin",
-      "start": 1711509447931,
-      "end": 1711509447931,
+      "start": 1711511826640,
+      "end": 1711511826640,
       "order": "post"
     },
     {
       "name": "nuxt:components-loader",
-      "start": 1711509447931,
-      "end": 1711509447932,
+      "start": 1711511826640,
+      "end": 1711511826641,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-composables:transform",
-      "start": 1711509447932,
-      "end": 1711509447932,
+      "start": 1711511826641,
+      "end": 1711511826641,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1711509447932,
-      "end": 1711509447932,
+      "start": 1711511826641,
+      "end": 1711511826641,
       "order": "normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1711509447932,
-      "end": 1711509447932,
+      "start": 1711511826641,
+      "end": 1711511826643,
       "order": "normal"
     }
   ]

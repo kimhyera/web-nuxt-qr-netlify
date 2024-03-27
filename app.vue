@@ -8,7 +8,7 @@ const layoutName = common.getTheme().name;
 <template>
 	
   <div>
-    <NuxtLayout :name="layoutName">
+    <NuxtLayout name="default">
       <NuxtPage />
     </NuxtLayout>
   </div>
