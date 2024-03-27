@@ -5,7 +5,6 @@ import SwiperCore, { Autoplay } from 'swiper';
 import 'swiper/css';
 import modalStoreInfo from '../popup/modal-store-info.vue';
 import modalMemo from '../popup/modal-notice.vue';
-import BusinessTime from '../popup/modal-business-time.vue';
 import Backdrop from '../components/Backdrop.vue';
 
 SwiperCore.use([Autoplay]);
