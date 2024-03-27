@@ -4,57 +4,57 @@
     {
       "name": "vite:load-fallback",
       "result": "<script setup lang=\"ts\">\r\nconst isScrollBottom = ref(false);\r\nconst isShadow = ref(false);\r\nconst scrollTop = ref(0);\r\nconst scrollbarRef = ref<HTMLElement | null>(null);\r\nconst innerRef = ref<HTMLElement | null>(null);\r\n\r\n\r\nonMounted(() => {\r\n\tconst marginError = 10;\r\n\tif ((innerRef.value as HTMLElement).offsetHeight > (scrollbarRef.value as HTMLElement).offsetHeight) {\r\n\t\tisShadow.value = true;\r\n\t} else {\r\n\t\tisShadow.value = false;\r\n\t}\r\n\r\n\t(scrollbarRef.value as HTMLElement).addEventListener('scroll', () => {\r\n\t\tscrollTop.value = (scrollbarRef.value as HTMLElement).scrollTop;\r\n\r\n\t\tif (scrollTop.value + marginError > (innerRef.value as HTMLElement).offsetHeight - (scrollbarRef.value as HTMLElement).offsetHeight) {\r\n\t\t\tisScrollBottom.value = true;\r\n\t\t} else {\r\n\t\t\tisScrollBottom.value = false;\r\n\t\t}\r\n\t});\r\n});\r\n</script>\r\n\r\n<template>\r\n\t<div class=\"modal modal-memo\">\r\n\t\t<div class=\"modal-dialog\">\r\n\t\t\t<div class=\"modal-container\">\r\n\t\t\t\t<div class=\"modal-header\">\r\n\t\t\t\t\t<h2 class=\"modal-title\">매장 알림</h2>\r\n\t\t\t\t\t<button class=\"btn-close\" @click=\"$emit('close')\"></button>\r\n\t\t\t\t</div>\r\n\r\n\t\t\t\t<div class=\"modal-body\">\r\n\t\t\t\t\t<div class=\"body-inner\" :class=\"{ on: isScrollBottom === true }\">\r\n\t\t\t\t\t\t<div class=\"scrollbar-y\" ref=\"scrollbarRef\">\r\n\t\t\t\t\t\t\t<div class=\"scroll-inner\" ref=\"innerRef\">\r\n\t\t\t\t\t\t\t\t<div class=\"memo-img\">\r\n\t\t\t\t\t\t\t\t\t<!-- 720 x 170 -->\r\n\r\n\t\t\t\t\t\t\t\t\t<div class=\"img-wrap\">\r\n\t\t\t\t\t\t\t\t\t\t<img src=\"@/assets/common/images/default/img_smaple_03@2x.jpg\" alt=\"\" />\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t<div class=\"memo-text\">\r\n\r\n\t\t\t\t\t\t\t\t\t매장알림 매장알림<br>\r\n\t\t\t\t\t\t\t\t\t매장알림 매장알림<br>\r\n\t\t\t\t\t\t\t\t\t매장알림 매장알림<br>\r\n\t\t\t\t\t\t\t\t\t매장알림 매장알림<br>\r\n\t\t\t\t\t\t\t\t\t매장알림 매장알림<br>\r\n\t\t\t\t\t\t\t\t\t매장알림 매장알림<br>\r\n\r\n\t\t\t\t\t\t\t\t\t매장알림 매장알림<br>\r\n\t\t\t\t\t\t\t\t\t매장알림 매장알림<br>\r\n\t\t\t\t\t\t\t\t\t매장알림 매장알림<br>\r\n\t\t\t\t\t\t\t\t\t매장알림 매장알림<br>\r\n\t\t\t\t\t\t\t\t\t매장알림 매장알림<br>\r\n\t\t\t\t\t\t\t\t\t매장알림 매장알림<br>\r\n\r\n\t\t\t\t\t\t\t\t\t매장알림 매장알림<br>\r\n\t\t\t\t\t\t\t\t\t매장알림 매장알림<br>\r\n\t\t\t\t\t\t\t\t\t매장알림 매장알림<br>\r\n\t\t\t\t\t\t\t\t\t매장알림 매장알림<br>\r\n\t\t\t\t\t\t\t\t\t매장알림 매장알림<br>\r\n\t\t\t\t\t\t\t\t\t매장알림 매장알림<br>\r\n\r\n\t\t\t\t\t\t\t\t\t매장알림 매장알림<br>\r\n\t\t\t\t\t\t\t\t\t매장알림 매장알림<br>\r\n\t\t\t\t\t\t\t\t\t매장알림 매장알림<br>\r\n\t\t\t\t\t\t\t\t\t매장알림 매장알림<br>\r\n\t\t\t\t\t\t\t\t\t매장알림 매장알림<br>\r\n\t\t\t\t\t\t\t\t\t매장알림 매장알림<br>\r\n\r\n\t\t\t\t\t\t\t\t\t매장알림 매장알림<br>\r\n\t\t\t\t\t\t\t\t\t매장알림 매장알림<br>\r\n\t\t\t\t\t\t\t\t\t매장알림 매장알림<br>\r\n\t\t\t\t\t\t\t\t\t매장알림 매장알림<br>\r\n\t\t\t\t\t\t\t\t\t매장알림 매장알림<br>\r\n\t\t\t\t\t\t\t\t\t매장알림 매장알림<br>\r\n\r\n\t\t\t\t\t\t\t\t\t매장알림 매장알림<br>\r\n\t\t\t\t\t\t\t\t\t매장알림 매장알림<br>\r\n\t\t\t\t\t\t\t\t\t매장알림 매장알림<br>\r\n\t\t\t\t\t\t\t\t\t매장알림 매장알림<br>\r\n\t\t\t\t\t\t\t\t\t매장알림 매장알림<br>\r\n\t\t\t\t\t\t\t\t\t매장알림 매장알림<br>\r\n\r\n\t\t\t\t\t\t\t\t\t매장알림 매장알림<br>\r\n\t\t\t\t\t\t\t\t\t매장알림 매장알림<br>\r\n\t\t\t\t\t\t\t\t\t매장알림 매장알림<br>\r\n\t\t\t\t\t\t\t\t\t매장알림 매장알림<br>\r\n\t\t\t\t\t\t\t\t\t매장알림 매장알림<br>\r\n\t\t\t\t\t\t\t\t\t매장알림 매장알림<br>\r\n\r\n\t\t\t\t\t\t\t\t\t매장알림 매장알림<br>\r\n\t\t\t\t\t\t\t\t\t매장알림 매장알림<br>\r\n\t\t\t\t\t\t\t\t\t매장알림 매장알림<br>\r\n\t\t\t\t\t\t\t\t\t매장알림 매장알림<br>\r\n\t\t\t\t\t\t\t\t\t매장알림 매장알림<br>\r\n\t\t\t\t\t\t\t\t\t매장알림 매장알림<br>\r\n\r\n\t\t\t\t\t\t\t\t\t매장알림 매장알림<br>\r\n\t\t\t\t\t\t\t\t\t매장알림 매장알림<br>\r\n\t\t\t\t\t\t\t\t\t매장알림 매장알림<br>\r\n\t\t\t\t\t\t\t\t\t매장알림 매장알림<br>\r\n\t\t\t\t\t\t\t\t\t매장알림 매장알림<br>\r\n\t\t\t\t\t\t\t\t\t매장알림 매장알림<br>\r\n\r\n\t\t\t\t\t\t\t\t\t매장알림 매장알림<br>\r\n\t\t\t\t\t\t\t\t\t매장알림 매장알림<br>\r\n\t\t\t\t\t\t\t\t\t매장알림 매장알림<br>\r\n\t\t\t\t\t\t\t\t\t매장알림 매장알림<br>\r\n\t\t\t\t\t\t\t\t\t매장알림 매장알림<br>\r\n\t\t\t\t\t\t\t\t\t매장알림 매장알림<br>\r\n\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t<span class=\"shadow-bottom\" v-if=\"isShadow\"></span>\r\n\t\t\t\t</div>\r\n\t\t\t</div>\r\n\t\t</div>\r\n\r\n\t\t<div class=\"modal-backdrop\"></div>\r\n\t</div>\r\n</template>\r\n\r\n<style lang=\"scss\" scoped>\r\n@import '@/assets/default/scss/components/ui/modal';\r\n@import '@/assets/default/scss/components/popups/memo';\r\n</style>\r\n",
-      "start": 1711511825196,
-      "end": 1711511826406,
+      "start": 1711512684239,
+      "end": 1711512685232,
       "sourcemaps": null
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1711511826406,
-      "end": 1711511826406,
+      "start": 1711512685232,
+      "end": 1711512685232,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1711511826406,
-      "end": 1711511826407,
+      "start": 1711512685232,
+      "end": 1711512685232,
       "order": "pre"
     },
     {
       "name": "nuxt:client-fallback-auto-id",
-      "start": 1711511826407,
-      "end": 1711511826407,
+      "start": 1711512685232,
+      "end": 1711512685232,
       "order": "pre"
     },
     {
       "name": "vite:css",
-      "start": 1711511826407,
-      "end": 1711511826407,
+      "start": 1711512685232,
+      "end": 1711512685232,
       "order": "normal"
     },
     {
       "name": "vite:esbuild",
-      "start": 1711511826407,
-      "end": 1711511826407,
+      "start": 1711512685232,
+      "end": 1711512685232,
       "order": "normal"
     },
     {
       "name": "vite:json",
-      "start": 1711511826407,
-      "end": 1711511826407,
+      "start": 1711512685232,
+      "end": 1711512685232,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1711511826407,
-      "end": 1711511826407,
+      "start": 1711512685232,
+      "end": 1711512685232,
       "order": "normal"
     },
     {
       "name": "vite:vue",
       "result": "import _sfc_main from \"D:/localserver/web-nuxt-sdk/web-nuxt-qr-netlify/pages/pb/popup/modal-notice.vue?vue&type=script&setup=true&lang.ts\";\nexport * from \"D:/localserver/web-nuxt-sdk/web-nuxt-qr-netlify/pages/pb/popup/modal-notice.vue?vue&type=script&setup=true&lang.ts\";\nimport \"D:/localserver/web-nuxt-sdk/web-nuxt-qr-netlify/pages/pb/popup/modal-notice.vue?vue&type=style&index=0&scoped=5a6dcd4f&lang.scss\";\nimport _export_sfc from \"\\0plugin-vue:export-helper\";\nexport default /* @__PURE__ */ _export_sfc(_sfc_main, [[\"__scopeId\", \"data-v-5a6dcd4f\"]]);\n",
-      "start": 1711511826407,
-      "end": 1711511827337,
+      "start": 1711512685232,
+      "end": 1711512685891,
       "order": "normal",
       "sourcemaps": {
         "mappings": ""
@@ -62,117 +62,117 @@
     },
     {
       "name": "vite:vue-jsx",
-      "start": 1711511827338,
-      "end": 1711511827338,
+      "start": 1711512685891,
+      "end": 1711512685891,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1711511827338,
-      "end": 1711511827338,
+      "start": 1711512685891,
+      "end": 1711512685892,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1711511827338,
-      "end": 1711511827338,
+      "start": 1711512685892,
+      "end": 1711512685892,
       "order": "normal"
     },
     {
       "name": "nuxt:chunk-error",
-      "start": 1711511827338,
-      "end": 1711511827339,
+      "start": 1711512685892,
+      "end": 1711512685892,
       "order": "normal"
     },
     {
       "name": "nuxt:components:imports",
-      "start": 1711511827339,
-      "end": 1711511827345,
+      "start": 1711512685892,
+      "end": 1711512685893,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1711511827345,
-      "end": 1711511827345,
+      "start": 1711512685893,
+      "end": 1711512685893,
       "order": "normal"
     },
     {
       "name": "ssr-styles",
-      "start": 1711511827346,
-      "end": 1711511827346,
+      "start": 1711512685894,
+      "end": 1711512685894,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1711511827346,
-      "end": 1711511827346,
+      "start": 1711512685894,
+      "end": 1711512685894,
       "order": "normal"
     },
     {
       "name": "vite:css-post",
-      "start": 1711511827346,
-      "end": 1711511827346,
+      "start": 1711512685894,
+      "end": 1711512685894,
       "order": "normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1711511827346,
-      "end": 1711511827346,
+      "start": 1711512685894,
+      "end": 1711512685894,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1711511827347,
-      "end": 1711511827347,
+      "start": 1711512685895,
+      "end": 1711512685895,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1711511827347,
-      "end": 1711511827347,
+      "start": 1711512685895,
+      "end": 1711512685895,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1711511827347,
-      "end": 1711511827347,
+      "start": 1711512685895,
+      "end": 1711512685895,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1711511827347,
-      "end": 1711511827347,
+      "start": 1711512685895,
+      "end": 1711512685895,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1711511827347,
-      "end": 1711511827347,
+      "start": 1711512685895,
+      "end": 1711512685895,
       "order": "normal"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1711511827348,
-      "end": 1711511827348,
+      "start": 1711512685896,
+      "end": 1711512685916,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
-      "start": 1711511827348,
-      "end": 1711511827354,
+      "start": 1711512685916,
+      "end": 1711512686061,
       "order": "post"
     },
     {
       "name": "unctx:transform",
-      "start": 1711511827354,
-      "end": 1711511827355,
+      "start": 1711512686061,
+      "end": 1711512686061,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
       "result": "export { default } from \"D:/localserver/web-nuxt-sdk/web-nuxt-qr-netlify/pages/pb/popup/modal-notice.vue?macro=true&vue&type=script&setup=true&lang.ts\"",
-      "start": 1711511827356,
-      "end": 1711511827358,
+      "start": 1711512686062,
+      "end": 1711512686063,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -185,38 +185,38 @@
     },
     {
       "name": "nuxt:runtime-paths-dep",
-      "start": 1711511827358,
-      "end": 1711511827358,
+      "start": 1711512686064,
+      "end": 1711512686065,
       "order": "post"
     },
     {
       "name": "nuxt:route-injection-plugin",
-      "start": 1711511827358,
-      "end": 1711511827358,
+      "start": 1711512686066,
+      "end": 1711512686066,
       "order": "post"
     },
     {
       "name": "nuxt:components-loader",
-      "start": 1711511827359,
-      "end": 1711511827359,
+      "start": 1711512686067,
+      "end": 1711512686069,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-composables:transform",
-      "start": 1711511827359,
-      "end": 1711511827359,
+      "start": 1711512686069,
+      "end": 1711512686072,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1711511827360,
-      "end": 1711511827360,
+      "start": 1711512686072,
+      "end": 1711512686074,
       "order": "normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1711511827360,
-      "end": 1711511827360,
+      "start": 1711512686074,
+      "end": 1711512686074,
       "order": "normal"
     }
   ]

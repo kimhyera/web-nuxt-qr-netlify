@@ -4,57 +4,57 @@
     {
       "name": "vite:load-fallback",
       "result": "<script setup lang=\"ts\">\r\n</script>\r\n<template>\r\n\t\t\t<header class=\"header-common\">\r\n\t\t\t\t<div class=\"header-row\"><button title=\"이전페이지 닫기\" class=\"btn-router-close\"></button></div>\r\n\t\t\t</header>\r\n\t\t\t<main class=\"order-finish-page\">\r\n\t\t\t\t<section class=\"finish-head\"><span class=\"ordertype\">테이블</span>\r\n\t\t\t\t\t<h2 class=\"title\">주문이 완료 되었습니다.</h2><span class=\"date\">2022년 5월 29일 오후 4시 30분</span>\r\n\t\t\t\t</section>\r\n\t\t\t\t<section class=\"finish-body\">\r\n\t\t\t\t\t<div class=\"order-info\">\r\n\t\t\t\t\t\t<ul class=\"order-list\">\r\n\t\t\t\t\t\t\t<li>\r\n\t\t\t\t\t\t\t\t<div class=\"info-row\">\r\n\t\t\t\t\t\t\t\t\t<p class=\"name\">[ 1인찌개SET ] 1개</p>\r\n\t\t\t\t\t\t\t\t\t<p class=\"price\"><b>32,900</b>원</p>\r\n\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t<ul class=\"option-add-list\">\r\n\t\t\t\t\t\t\t\t\t<li>기본 : (+15,900원)</li>\r\n\t\t\t\t\t\t\t\t</ul>\r\n\t\t\t\t\t\t\t\t<ul class=\"option-add-list\"></ul>\r\n\t\t\t\t\t\t\t\t<ul class=\"option-add-list\">\r\n\t\t\t\t\t\t\t\t\t<li>추가선택 : 3종반찬 빼고로 변경 (+5,000원)</li>\r\n\t\t\t\t\t\t\t\t\t<li>추가선택 : 두부사리(4ea) 추가 (+1,000원)</li>\r\n\t\t\t\t\t\t\t\t\t<li>추가선택 : 두툼전지100g 추가 (+3,000원)</li>\r\n\t\t\t\t\t\t\t\t\t<li>추가선택 : 보들 \\'\\'계란말이\\'\\' (+0원)</li>\r\n\t\t\t\t\t\t\t\t\t<li>추가선택 : 직화 \\'\\'제육볶음\\'\\' 추가 (+8,000원)</li>\r\n\t\t\t\t\t\t\t\t</ul>\r\n\t\t\t\t\t\t\t</li>\r\n\t\t\t\t\t\t\t<li>\r\n\t\t\t\t\t\t\t\t<div class=\"info-row\">\r\n\t\t\t\t\t\t\t\t\t<p class=\"name\">도시락광천김 1개</p>\r\n\t\t\t\t\t\t\t\t\t<p class=\"price\"><b>1,000</b>원</p>\r\n\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t<ul class=\"option-add-list\">\r\n\t\t\t\t\t\t\t\t\t<li>기본 : (+1,000원)</li>\r\n\t\t\t\t\t\t\t\t</ul>\r\n\t\t\t\t\t\t\t\t<ul class=\"option-add-list\">\r\n\t\t\t\t\t\t\t\t\t<li>옵션1 : 2봉 (+0원)</li>\r\n\t\t\t\t\t\t\t\t</ul>\r\n\t\t\t\t\t\t\t</li>\r\n\t\t\t\t\t\t\t<li>\r\n\t\t\t\t\t\t\t\t<div class=\"info-row\">\r\n\t\t\t\t\t\t\t\t\t<p class=\"name\">대접밥 3개</p>\r\n\t\t\t\t\t\t\t\t\t<p class=\"price\"><b>3,000</b>원</p>\r\n\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t<ul class=\"option-add-list\">\r\n\t\t\t\t\t\t\t\t\t<li>기본 : (+1,000원)</li>\r\n\t\t\t\t\t\t\t\t</ul>\r\n\t\t\t\t\t\t\t\t<ul class=\"option-add-list\"></ul>\r\n\t\t\t\t\t\t\t</li>\r\n\t\t\t\t\t\t\t<li>\r\n\t\t\t\t\t\t\t\t<div class=\"info-row\">\r\n\t\t\t\t\t\t\t\t\t<p class=\"name\">[ 1인짜박SET ] 1개</p>\r\n\t\t\t\t\t\t\t\t\t<p class=\"price\"><b>16,900</b>원</p>\r\n\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t<ul class=\"option-add-list\">\r\n\t\t\t\t\t\t\t\t\t<li>기본 : (+16,900원)</li>\r\n\t\t\t\t\t\t\t\t</ul>\r\n\t\t\t\t\t\t\t\t<ul class=\"option-add-list\"></ul>\r\n\t\t\t\t\t\t\t</li>\r\n\t\t\t\t\t\t\t<li>\r\n\t\t\t\t\t\t\t\t<div class=\"info-row\">\r\n\t\t\t\t\t\t\t\t\t<p class=\"name\">중독 \\'\\'김치짜박이\\'\\' SET 1개</p>\r\n\t\t\t\t\t\t\t\t\t<p class=\"price\"><b>25,000</b>원</p>\r\n\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t<ul class=\"option-add-list\">\r\n\t\t\t\t\t\t\t\t\t<li>기본 : (+25,000원)</li>\r\n\t\t\t\t\t\t\t\t</ul>\r\n\t\t\t\t\t\t\t\t<ul class=\"option-add-list\">\r\n\t\t\t\t\t\t\t\t\t<li>옵션1 : 2~3인 (+0원)</li>\r\n\t\t\t\t\t\t\t\t</ul>\r\n\t\t\t\t\t\t\t</li>\r\n\t\t\t\t\t\t</ul>\r\n\t\t\t\t\t\t<div class=\"total-wrap\">\r\n\t\t\t\t\t\t\t<div class=\"desc\">\r\n\t\t\t\t\t\t\t\t<dl>\r\n\t\t\t\t\t\t\t\t\t<dt class=\"str-dt\">결제정보</dt>\r\n\t\t\t\t\t\t\t\t\t<dd class=\"str-dd\"></dd>\r\n\t\t\t\t\t\t\t\t</dl>\r\n\t\t\t\t\t\t\t\t<dl>\r\n\t\t\t\t\t\t\t\t\t<dt>주문금액</dt>\r\n\t\t\t\t\t\t\t\t\t<dd>90,500원</dd>\r\n\t\t\t\t\t\t\t\t</dl>\r\n\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t<div class=\"total\">\r\n\t\t\t\t\t\t\t\t<dl>\r\n\t\t\t\t\t\t\t\t\t<dt>총 결제 금액</dt>\r\n\t\t\t\t\t\t\t\t\t<dd><em class=\"total-price\">81,300원</em><span class=\"min-price\">결제방식: 현금</span></dd>\r\n\t\t\t\t\t\t\t\t</dl>\r\n\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t</div>\r\n\t\t\t\t\r\n\t\t\t\t\t<div class=\"btn-wrap\"><a href=\"/shop/mns/\" class=\"btn-primary-1 btn-block-lg\">확인</a></div>\r\n\t\t\t\t</section>\r\n\t\t\t</main>\r\n</template><style lang=\"scss\" scoped>\r\n@import \"@/assets/default/scss/components/header\";\r\n@import '@/assets/default/scss/contents/order/finish';\r\n</style>",
-      "start": 1711511825115,
-      "end": 1711511826305,
+      "start": 1711512684046,
+      "end": 1711512684331,
       "sourcemaps": null
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1711511826305,
-      "end": 1711511826305,
+      "start": 1711512684331,
+      "end": 1711512684331,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1711511826305,
-      "end": 1711511826305,
+      "start": 1711512684331,
+      "end": 1711512684331,
       "order": "pre"
     },
     {
       "name": "nuxt:client-fallback-auto-id",
-      "start": 1711511826305,
-      "end": 1711511826305,
+      "start": 1711512684331,
+      "end": 1711512684331,
       "order": "pre"
     },
     {
       "name": "vite:css",
-      "start": 1711511826306,
-      "end": 1711511826306,
+      "start": 1711512684331,
+      "end": 1711512684331,
       "order": "normal"
     },
     {
       "name": "vite:esbuild",
-      "start": 1711511826306,
-      "end": 1711511826306,
+      "start": 1711512684331,
+      "end": 1711512684331,
       "order": "normal"
     },
     {
       "name": "vite:json",
-      "start": 1711511826306,
-      "end": 1711511826306,
+      "start": 1711512684331,
+      "end": 1711512684331,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1711511826306,
-      "end": 1711511826306,
+      "start": 1711512684331,
+      "end": 1711512684331,
       "order": "normal"
     },
     {
       "name": "vite:vue",
       "result": "const _sfc_main = {}\nimport { createElementVNode as _createElementVNode, createTextVNode as _createTextVNode, createStaticVNode as _createStaticVNode, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\"\n\nconst _withScopeId = n => (_pushScopeId(\"data-v-e2bc976a\"),n=n(),_popScopeId(),n)\nconst _hoisted_1 = /*#__PURE__*/_createStaticVNode(\"<header class=\\\"header-common\\\" data-v-e2bc976a><div class=\\\"header-row\\\" data-v-e2bc976a><button title=\\\"이전페이지 닫기\\\" class=\\\"btn-router-close\\\" data-v-e2bc976a></button></div></header><main class=\\\"order-finish-page\\\" data-v-e2bc976a><section class=\\\"finish-head\\\" data-v-e2bc976a><span class=\\\"ordertype\\\" data-v-e2bc976a>테이블</span><h2 class=\\\"title\\\" data-v-e2bc976a>주문이 완료 되었습니다.</h2><span class=\\\"date\\\" data-v-e2bc976a>2022년 5월 29일 오후 4시 30분</span></section><section class=\\\"finish-body\\\" data-v-e2bc976a><div class=\\\"order-info\\\" data-v-e2bc976a><ul class=\\\"order-list\\\" data-v-e2bc976a><li data-v-e2bc976a><div class=\\\"info-row\\\" data-v-e2bc976a><p class=\\\"name\\\" data-v-e2bc976a>[ 1인찌개SET ] 1개</p><p class=\\\"price\\\" data-v-e2bc976a><b data-v-e2bc976a>32,900</b>원</p></div><ul class=\\\"option-add-list\\\" data-v-e2bc976a><li data-v-e2bc976a>기본 : (+15,900원)</li></ul><ul class=\\\"option-add-list\\\" data-v-e2bc976a></ul><ul class=\\\"option-add-list\\\" data-v-e2bc976a><li data-v-e2bc976a>추가선택 : 3종반찬 빼고로 변경 (+5,000원)</li><li data-v-e2bc976a>추가선택 : 두부사리(4ea) 추가 (+1,000원)</li><li data-v-e2bc976a>추가선택 : 두툼전지100g 추가 (+3,000원)</li><li data-v-e2bc976a>추가선택 : 보들 \\\\&#39;\\\\&#39;계란말이\\\\&#39;\\\\&#39; (+0원)</li><li data-v-e2bc976a>추가선택 : 직화 \\\\&#39;\\\\&#39;제육볶음\\\\&#39;\\\\&#39; 추가 (+8,000원)</li></ul></li><li data-v-e2bc976a><div class=\\\"info-row\\\" data-v-e2bc976a><p class=\\\"name\\\" data-v-e2bc976a>도시락광천김 1개</p><p class=\\\"price\\\" data-v-e2bc976a><b data-v-e2bc976a>1,000</b>원</p></div><ul class=\\\"option-add-list\\\" data-v-e2bc976a><li data-v-e2bc976a>기본 : (+1,000원)</li></ul><ul class=\\\"option-add-list\\\" data-v-e2bc976a><li data-v-e2bc976a>옵션1 : 2봉 (+0원)</li></ul></li><li data-v-e2bc976a><div class=\\\"info-row\\\" data-v-e2bc976a><p class=\\\"name\\\" data-v-e2bc976a>대접밥 3개</p><p class=\\\"price\\\" data-v-e2bc976a><b data-v-e2bc976a>3,000</b>원</p></div><ul class=\\\"option-add-list\\\" data-v-e2bc976a><li data-v-e2bc976a>기본 : (+1,000원)</li></ul><ul class=\\\"option-add-list\\\" data-v-e2bc976a></ul></li><li data-v-e2bc976a><div class=\\\"info-row\\\" data-v-e2bc976a><p class=\\\"name\\\" data-v-e2bc976a>[ 1인짜박SET ] 1개</p><p class=\\\"price\\\" data-v-e2bc976a><b data-v-e2bc976a>16,900</b>원</p></div><ul class=\\\"option-add-list\\\" data-v-e2bc976a><li data-v-e2bc976a>기본 : (+16,900원)</li></ul><ul class=\\\"option-add-list\\\" data-v-e2bc976a></ul></li><li data-v-e2bc976a><div class=\\\"info-row\\\" data-v-e2bc976a><p class=\\\"name\\\" data-v-e2bc976a>중독 \\\\&#39;\\\\&#39;김치짜박이\\\\&#39;\\\\&#39; SET 1개</p><p class=\\\"price\\\" data-v-e2bc976a><b data-v-e2bc976a>25,000</b>원</p></div><ul class=\\\"option-add-list\\\" data-v-e2bc976a><li data-v-e2bc976a>기본 : (+25,000원)</li></ul><ul class=\\\"option-add-list\\\" data-v-e2bc976a><li data-v-e2bc976a>옵션1 : 2~3인 (+0원)</li></ul></li></ul><div class=\\\"total-wrap\\\" data-v-e2bc976a><div class=\\\"desc\\\" data-v-e2bc976a><dl data-v-e2bc976a><dt class=\\\"str-dt\\\" data-v-e2bc976a>결제정보</dt><dd class=\\\"str-dd\\\" data-v-e2bc976a></dd></dl><dl data-v-e2bc976a><dt data-v-e2bc976a>주문금액</dt><dd data-v-e2bc976a>90,500원</dd></dl></div><div class=\\\"total\\\" data-v-e2bc976a><dl data-v-e2bc976a><dt data-v-e2bc976a>총 결제 금액</dt><dd data-v-e2bc976a><em class=\\\"total-price\\\" data-v-e2bc976a>81,300원</em><span class=\\\"min-price\\\" data-v-e2bc976a>결제방식: 현금</span></dd></dl></div></div></div><div class=\\\"btn-wrap\\\" data-v-e2bc976a><a href=\\\"/shop/mns/\\\" class=\\\"btn-primary-1 btn-block-lg\\\" data-v-e2bc976a>확인</a></div></section></main>\", 2)\n\nfunction _sfc_render(_ctx, _cache) {\n  return _hoisted_1\n}\n\nimport \"D:/localserver/web-nuxt-sdk/web-nuxt-qr-netlify/pages/pb/order/pay-completed.vue?vue&type=style&index=0&scoped=e2bc976a&lang.scss\"\n\nimport _export_sfc from '\u0000plugin-vue:export-helper'\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['render',_sfc_render],['__scopeId',\"data-v-e2bc976a\"]])",
-      "start": 1711511826306,
-      "end": 1711511826308,
+      "start": 1711512684331,
+      "end": 1711512684333,
       "order": "normal",
       "sourcemaps": {
         "mappings": ""
@@ -62,117 +62,117 @@
     },
     {
       "name": "vite:vue-jsx",
-      "start": 1711511826308,
-      "end": 1711511826308,
+      "start": 1711512684333,
+      "end": 1711512684333,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1711511826308,
-      "end": 1711511826308,
+      "start": 1711512684333,
+      "end": 1711512684333,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1711511826308,
-      "end": 1711511826308,
+      "start": 1711512684333,
+      "end": 1711512684333,
       "order": "normal"
     },
     {
       "name": "nuxt:chunk-error",
-      "start": 1711511826308,
-      "end": 1711511826308,
+      "start": 1711512684334,
+      "end": 1711512684334,
       "order": "normal"
     },
     {
       "name": "nuxt:components:imports",
-      "start": 1711511826308,
-      "end": 1711511826308,
+      "start": 1711512684334,
+      "end": 1711512684334,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1711511826308,
-      "end": 1711511826308,
+      "start": 1711512684334,
+      "end": 1711512684334,
       "order": "normal"
     },
     {
       "name": "ssr-styles",
-      "start": 1711511826308,
-      "end": 1711511826308,
+      "start": 1711512684334,
+      "end": 1711512684334,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1711511826308,
-      "end": 1711511826308,
+      "start": 1711512684334,
+      "end": 1711512684334,
       "order": "normal"
     },
     {
       "name": "vite:css-post",
-      "start": 1711511826308,
-      "end": 1711511826308,
+      "start": 1711512684334,
+      "end": 1711512684334,
       "order": "normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1711511826308,
-      "end": 1711511826308,
+      "start": 1711512684334,
+      "end": 1711512684334,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1711511826308,
-      "end": 1711511826308,
+      "start": 1711512684334,
+      "end": 1711512684334,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1711511826308,
-      "end": 1711511826308,
+      "start": 1711512684334,
+      "end": 1711512684334,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1711511826308,
-      "end": 1711511826308,
+      "start": 1711512684334,
+      "end": 1711512684334,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1711511826308,
-      "end": 1711511826308,
+      "start": 1711512684334,
+      "end": 1711512684334,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1711511826308,
-      "end": 1711511826308,
+      "start": 1711512684334,
+      "end": 1711512684334,
       "order": "normal"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1711511826308,
-      "end": 1711511826308,
+      "start": 1711512684334,
+      "end": 1711512684334,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
-      "start": 1711511826308,
-      "end": 1711511826309,
+      "start": 1711512684334,
+      "end": 1711512684335,
       "order": "post"
     },
     {
       "name": "unctx:transform",
-      "start": 1711511826309,
-      "end": 1711511826309,
+      "start": 1711512684335,
+      "end": 1711512684335,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
       "result": "\nconst __nuxt_page_meta = null\nexport default __nuxt_page_meta\n",
-      "start": 1711511826309,
-      "end": 1711511826310,
+      "start": 1711512684335,
+      "end": 1711512684335,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -185,38 +185,38 @@
     },
     {
       "name": "nuxt:runtime-paths-dep",
-      "start": 1711511826310,
-      "end": 1711511826310,
+      "start": 1711512684335,
+      "end": 1711512684335,
       "order": "post"
     },
     {
       "name": "nuxt:route-injection-plugin",
-      "start": 1711511826310,
-      "end": 1711511826310,
+      "start": 1711512684335,
+      "end": 1711512684335,
       "order": "post"
     },
     {
       "name": "nuxt:components-loader",
-      "start": 1711511826310,
-      "end": 1711511826310,
+      "start": 1711512684335,
+      "end": 1711512684335,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-composables:transform",
-      "start": 1711511826310,
-      "end": 1711511826310,
+      "start": 1711512684335,
+      "end": 1711512684335,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1711511826310,
-      "end": 1711511826310,
+      "start": 1711512684335,
+      "end": 1711512684335,
       "order": "normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1711511826310,
-      "end": 1711511826310,
+      "start": 1711512684335,
+      "end": 1711512684335,
       "order": "normal"
     }
   ]
