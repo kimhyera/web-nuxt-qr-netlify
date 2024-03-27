@@ -1,0 +1,33 @@
+.btn-store-about {
+  cursor: pointer;
+  align-items: center;
+  margin: 0 auto;
+  border: 1px solid #e6e6e6;
+  line-height: 1.1;
+  padding: rem(13) rem(15) rem(13) rem(38);
+  border-radius: rem(12);
+  font-size: rem(14);
+  color: #666;
+  display: flex;
+  justify-content: space-between;
+  background: url(@/assets/default/images/icon/icon_bell_16.svg) rem(15) center no-repeat;
+  background-color: #f4f5f9;
+
+  &.wh-bg {
+    background-color: #fff;
+  }
+
+  .text {
+    @include ellipsis;
+    flex: 1 0 0;
+    max-width: 100%;
+    margin-right: rem(10);
+  }
+
+  i {
+    margin-left: auto;
+    width: rem(10);
+    height: rem(10);
+    background: url(@/assets/default/images/icon/btn_more_10_aaa.svg) 0 center no-repeat;
+  }
+}

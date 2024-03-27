@@ -1,0 +1,37 @@
+.store-worktime{
+	.time-head{
+		color:#666;
+		font-weight: 500;
+		margin: 0 auto;
+		justify-content: center;
+		display: flex;
+		align-items: center;
+		.i-arrow{
+			background: url(@/assets/default/images/form/btn_down_12_down.svg) no-repeat 0 0;
+			width: rem(10);
+			background-size: rem(10) auto;
+			height: rem(10);
+			transition: 0.2s;
+			margin-left: rem(5);
+		}
+
+		&.on{
+			.i-arrow{
+				transform: rotate(180deg)
+			}
+	
+
+		}
+	}
+	.time-list{
+		margin-top: rem(10);
+		li{
+			line-height: 1.8;
+			color:#888;
+			font-weight: 300;
+			font-size: rem(14);
+
+		}
+	}
+	
+}

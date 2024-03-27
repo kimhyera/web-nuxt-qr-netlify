@@ -1,0 +1,45 @@
+
+
+.memo-event-slider {
+    background-color: #f4f5f9;
+    border: 1px solid $border-color-3;
+    border-radius: rem(12);
+    padding: 0 rem(15);
+    margin-bottom: rem(18);
+   
+
+        .item-overflow{
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+        }
+
+
+    .icon-notice {
+        width: rem(16);
+        height: rem(16);
+        background: url(@/assets/default/images/icon/icon_bell_16.svg) no-repeat 0 0;
+        margin-right: rem(7);
+        flex: 0 0 auto;
+    }
+    .icon-event{
+        width: rem(16);
+        height: rem(16);
+        background: url(@/assets/default/images/icon/icon_gift_16.svg) no-repeat 0 0;
+        margin-right: rem(7);
+        flex: 0 0 auto;
+
+    }
+
+    .btn-link {
+        padding-right: rem(16);
+
+        @include ellipsis;
+        font-size: rem(14);
+        color: #666;
+
+        height: rem(46);
+        line-height: rem(46);
+        background: url(@/assets/default/images/icon/btn_more_10_888.svg) no-repeat right center;
+    }
+}

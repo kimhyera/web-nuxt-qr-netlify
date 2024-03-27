@@ -1,0 +1,67 @@
+/* SUMMARY:
+// ratio
+// slider
+*/
+
+.review-images-list.lenth3 {
+  .img-ratio-review {
+    @include img-resize(150, 130, cover)
+  }
+
+
+}
+
+.review-images-list.lenth2 {
+  .img-ratio-review {
+    @include img-resize(160, 130, cover)
+  }
+
+
+}
+
+
+.review-images-list {
+  .img-ratio-review {
+    @include img-resize(326, 130, cover)
+  }
+
+
+}
+
+//매장 배너이벤트 
+.img-ratio-banner{
+  @include img-resize(360, 85, cover);
+
+}
+
+//매장소개 
+.img-ratio-store{
+  @include img-resize(326, 120, cover);
+
+}
+
+
+
+// 메뉴 리스트 
+.img-ratio-menu-list{
+
+  @include img-resize(168, 168, cover);
+  border:1px solid #f1f1f1;
+}
+// 메뉴 상세
+.img-ratio-detail-top {
+  @include img-resize(360, 200, cover)
+}
+
+
+// 리뷰 작성 
+.img-ratio-review-write {
+  @include img-resize(68, 68, cover)
+}
+
+
+// 매장 로고
+.img-ratio-store-logo{
+  @include img-resize(48, 48, cover)
+
+}

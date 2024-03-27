@@ -1,0 +1,30 @@
+
+// 검색
+.address-search {
+    @include wrapper;
+
+    margin-top: rem(15);
+    padding-bottom: rem(25);
+
+    .btn-current-location {
+        margin-top: rem(18);
+        padding-right: rem(15);
+        display: inline-flex;
+        align-items: center;
+        font-size: rem(14);
+        line-height: 1.1;
+
+        background: url(@/assets/default/images/icon/btn_more_10_aaa.svg) no-repeat right 48%;
+
+        i {
+            width: rem(17);
+            height: rem(17);
+            background: url(@/assets/default/images/icon/icon_location_17.svg) no-repeat 0 0;
+            margin-right: rem(4);
+
+
+        }
+
+    }
+
+}

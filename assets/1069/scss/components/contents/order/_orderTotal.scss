@@ -1,0 +1,140 @@
+
+// 총 주문금액
+
+
+.total-wrap {
+  padding: rem(28) rem(17) rem(30);
+
+  .title {
+    color: #222;
+    font-weight: bold;
+    font-size: rem(16);
+    line-height: 1.1;
+    margin-bottom: rem(17);
+  }
+
+  .desc {
+    padding-bottom: rem(20);
+
+    >dl {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .notice-msg-bullet {
+
+      display: block;
+      font-size: rem(13);
+      position: relative;
+      line-height: 1.5;
+      padding-left: rem(8);
+      color: #878c8f;
+      margin-top: rem(3);
+
+      &:first-of-type {
+        margin-top: rem(-5);
+      }
+
+
+      &:before {
+        content: "";
+        width: rem(2);
+        height: rem(2);
+        border-radius: rem(2);
+        background-color: #878c8f;
+        position: absolute;
+        top: rem(8);
+        left: 0;
+      }
+    }
+
+    dl {
+      align-items: center;
+      margin-bottom: rem(10);
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      dt {
+        font-weight: 400;
+        color: #666;
+        flex: 1 0 0;
+        max-width: 100%;
+
+        .btn-tooltip {
+          color: #666;
+          font-weight: 400;
+          display: flex;
+          align-items: center;
+          font-size: rem(15);
+
+          .btn_tooltip_16 {
+            display: inline-block;
+            width: rem(17);
+            height: rem(17);
+            margin-left: rem(4);
+
+            background: url(@/assets/default/images/icon/btn_tooltip_16.svg) 0 0 no-repeat;
+          }
+        }
+      }
+
+      dd {
+        text-align: right;
+        color: #444;
+        font-weight: 500;
+
+        flex: 0 0 auto;
+        margin-left: rem(30);
+      }
+    }
+  }
+
+  .total {
+    padding-top: rem(20);
+    border-top: 1px solid #ccc;
+
+    >dl {
+      align-items: flex-start;
+
+      display: flex;
+      justify-content: space-between;
+
+      dt {
+        color: #222;
+        font-weight: bold;
+        font-size: rem(15);
+        display: flex;
+        align-items: center;
+      }
+
+      dd {
+        text-align: right;
+        color: #444;
+        font-weight: 500;
+
+        .total-price {
+          display: block;
+          font-size: rem(18);
+          color: #222;
+          font-weight: bold;
+          margin-bottom: rem(8);
+          line-height: 1;
+        }
+
+        .on-site-pay {
+          font-size: rem(19);
+          color: #222;
+          font-weight: bold;
+          line-height: 1;
+        }
+
+        .min-price {
+          color: #878c8f;
+          font-size: rem(13);
+        }
+      }
+    }
+  }
+}

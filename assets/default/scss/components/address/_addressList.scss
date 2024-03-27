@@ -1,0 +1,105 @@
+.address-list {
+    > li{
+        position: relative;
+        &:first-child {
+            margin-top: 0;
+        }
+
+        margin-top: rem(23);
+    }
+    .address-item {
+        cursor: pointer;
+        width: 100%;
+        text-align: left;
+
+        .name {
+            font-size: rem(15);
+            font-weight: 500;
+            color: #444;
+            margin-bottom: rem(5);
+
+        }
+
+        .detail-list {
+            li {
+                &:first-child {
+                    margin-top: 0;
+                }
+
+                margin-top: rem(2);
+
+                font-size: rem(13);
+                color:#666;
+                line-height: 1.6;
+                em{
+                    color:#888;
+                }
+            }
+        }
+
+    }
+
+    .btn-remove-history{
+        width: rem(11);
+        height: rem(11);
+        background: url(@/assets/default/images/icon/btn_delete_11.svg) no-repeat right center;
+        position:absolute;
+        top:50%;
+        right:0;
+        transform: translateY(-50%);
+
+    }
+
+}
+
+
+
+
+//검색 결과
+.address-result{
+    // padding-top: rem(26);
+    @include wrapper;
+  
+
+}
+
+
+
+
+
+
+//검색결과 없음
+.search-none {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+	margin-top: rem(40);
+    width: 100%;
+    text-align: center;
+
+    .icon-none-search {
+        display: block;
+		margin: 0 auto;
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        width: rem(50);
+        height: rem(50);
+        background-image: url(@/assets/default/images/none/icon_address_empty_50.svg);
+        background-size:rem(50);
+    }
+
+    .text {
+        margin-top: rem(18);
+        color: #222;
+		font-weight: bold;
+		line-height: 1;
+        font-size: rem(16);
+
+    }
+    .des{
+        margin-top: rem(10);
+        font-size: rem(15);
+        color:#888;
+    }
+}

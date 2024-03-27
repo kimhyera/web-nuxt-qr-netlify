@@ -1,0 +1,59 @@
+
+
+/* SUMMARY:
+// fonts
+// border
+// color 
+// z-index 
+// transition
+// bg url
+*/
+
+
+// color
+$primary-1: #15c0f2;
+$primary-2: #303258;
+$primary-3: #e2f8ff; //worktime
+$primary-4: #f0fcff; //bg
+$primary-text-1: #00adee;
+$primary-text-validate: $primary-text-1;
+
+
+// button
+$primary-btn-1: $primary-1;
+$primary-btn-text-1: #fff;
+$primary-btn-2: $primary-2;
+$primary-btn-text-2: #fff;
+$primary-btn-outline-1: $primary-1;
+$primary-btn-outline-text-1: $primary-text-1;
+
+
+$status-bg: $primary-3;
+$status-text: $primary-text-1;
+$menu-btn-border-1: #15c0f2; // btn menu line
+$menu-btn-text-1: $primary-text-1; // btn menu text
+
+
+
+
+:root {
+    --primary-1: #{$primary-1};
+    --primary-2: #{$primary-2};
+    --primary-3: #{$primary-3};
+    --primary-4: #{$primary-4};
+    --primary-text-1: #{$primary-text-1};
+    --primary-text-validate: #{$primary-text-validate};
+
+	--primary-btn-1: #{$primary-btn-1};
+	--primary-btn-text-1: #{$primary-btn-text-1};
+	--primary-btn-2: #{$primary-btn-2};
+	--primary-btn-text-2: #{$primary-btn-text-2};
+	--primary-btn-outline-1: #{$primary-btn-outline-1};
+	--primary-btn-outline-text-1: #{$primary-btn-outline-text-1};
+
+	--menu-btn-border-1: #{$menu-btn-border-1};
+	--menu-btn-text-1: #{$menu-btn-text-1};
+	--status-bg: #{$status-bg};
+    --status-text: #{$status-text};
+  }
+  

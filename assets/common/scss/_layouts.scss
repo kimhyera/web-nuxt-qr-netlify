@@ -1,0 +1,120 @@
+/* SUMMARY:
+// global
+// layout
+// contents
+// section
+*/
+
+
+
+
+body {
+  font-size: rem(15);
+  font-family:SpoqaHanSansNeo, 'Spoqa Han Sans Neo', sans-serif;
+  font-weight:400;
+  letter-spacing:  -0.03em;
+  line-height: 1.5;
+  color:#666;
+  background-color: #fff;
+  // word-break: break-all;
+  // -webkit-text-size-adjust: none;
+  // touch-action: manipulation;
+  // touch-action: pan-y;
+
+
+}
+
+.dis-block-sm{
+  display: none;
+}
+
+@include size(sm) {
+  html {
+    font-size: 15.5px;
+  }
+
+  body {
+    letter-spacing: -0.08em;
+
+  }
+  .dis-block-sm{
+    display: block;
+  }
+}
+
+@include size(xs) {
+  html {
+    font-size: 15px;
+  }
+}
+
+
+
+
+
+
+// layout
+
+.wrapper {
+  @include wrapper;
+}
+
+
+#__nuxt,.layout-wrap,.layout-default {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+
+
+
+//하단 여백
+.page-contents{
+  padding-bottom: rem(35);
+
+}
+
+.pb-none {
+  padding-bottom: none !important;
+}
+
+.pt-none {
+	padding-top: none !important;
+  }
+
+.page-pb{
+    
+  padding-bottom: rem(35) !important;
+ }
+
+
+
+  
+
+// section
+
+
+// 모달 오픈시 레이아웃
+.modal-open-overflow {
+  overflow-y: hidden;
+}
+
+.modal-open-fixed {
+  overflow-y: hidden;
+  position: fixed;
+
+  left: 0;
+  right: 0;
+  width: 100%;
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+
+//page
+.order-page {
+	&.order-main {
+	  padding-bottom: rem(88);
+	}
+  }
+  

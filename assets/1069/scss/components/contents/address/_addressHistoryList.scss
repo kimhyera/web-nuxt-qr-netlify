@@ -1,0 +1,153 @@
+//최근주소
+
+
+.address-history {
+
+	padding-top: rem(26);
+	@include wrapper;
+
+	.title-area {
+
+		position: relative;
+	}
+
+	.btn-remove-history-all {
+		font-size: rem(13);
+		color: #888;
+		position: absolute;
+		top: 0;
+		right: 0;
+
+	}
+
+	.address-list {
+		> li{
+			position: relative;
+			
+			padding-right: rem(40);
+			margin-top: rem(23);
+			&:first-child {
+				margin-top: 0;
+			}
+	
+		}
+		.address-item {
+			cursor: pointer;
+			width: 100%;
+			text-align: left;
+	
+			.name {
+				font-size: rem(15);
+				font-weight: 500;
+				color: #444;
+				margin-bottom: rem(5);
+	
+			}
+	
+			.detail-list {
+				li {
+					&:first-child {
+						margin-top: 0;
+					}
+	
+					margin-top: rem(2);
+	
+					font-size: rem(13);
+					color:#666;
+					line-height: 1.6;
+					em{
+						color:#888;
+					}
+				}
+			}
+	
+		}
+	
+		.btn-remove-history{
+			width: rem(11);
+			height: rem(11);
+			background: url(@/assets/default/images/icon/btn_delete_11.svg) no-repeat right center;
+			position:absolute;
+			top:50%;
+			right:0;
+			transform: translateY(-50%);
+	
+		}
+	
+	}
+	
+	
+
+
+	.recent-tit {
+		font-size: rem(20);
+
+	}
+
+	.list {
+		li {
+
+			padding: rem(20) 0;
+		}
+
+	}
+
+
+}
+
+
+
+//검색 팁 
+.address-search-tip {
+	padding-top: rem(26);
+	@include wrapper;
+
+	.title {
+		font-size: rem(16);
+		color: #222;
+		font-weight: bold;
+		margin-bottom: rem(18);
+		line-height: 1.1;
+
+
+	}
+
+	dl {
+		display: flex;
+		align-items: center;
+		font-size: rem(15);
+		line-height: 1.1;
+		margin-top: rem(12);
+
+		&:first-child {
+			margin-top: 0;
+		}
+
+		dt {
+			color: #666;
+			font-weight: 500;
+			margin-right: rem(8);
+		}
+
+		dd {
+			color: #888;
+		}
+	}
+}
+
+
+
+.dviding-line {
+
+	@include form-line;
+
+}
+
+
+.address-title {
+	font-size: rem(16);
+	color: #222;
+	font-weight: bold;
+	margin-bottom: rem(18);
+	line-height: 1.1;
+}

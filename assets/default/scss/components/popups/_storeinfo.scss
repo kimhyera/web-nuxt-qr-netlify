@@ -1,0 +1,193 @@
+//모달
+//컨텐츠 공통 
+
+.modal-backdrop {
+	position: fixed;
+	top: 0;
+	left: 0;
+
+	width: 100%;
+	height: 100%;
+	background-color: rgba(#000, 0.6);
+}
+
+.modal-storeinfo {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	max-width: 720px;
+	height: 100%;
+	margin: 0 auto;
+	// overflow: hidden;
+	outline: 0;
+	background-color: #fff;
+	z-index: $zindex-modal;
+
+	border-radius: rem(20) rem(20) 0 0;
+	height: calc(100% - 150px);
+	background: #fff;
+	display: flex;
+	flex-direction: column;
+	transition: transform .3s ease;
+
+
+	.modal-header {
+		// height: rem(64);
+		position: relative;
+		text-align: center;
+
+		.btn-close {
+			position: absolute;
+			top: rem(17);
+			right: rem(12);
+			width: rem(15);
+			height: rem(15);
+			padding: rem(20);
+			background-repeat: no-repeat;
+			background-position: center center;
+			background-image: url(@/assets/default/images/icon/btn_popup_close_15.svg);
+
+			z-index: $zindex-modal-backdrop;
+		}
+	}
+
+	.modal-body {
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+
+	.scrollbar-y {
+		webkit-box-flex: 1;
+		-ms-flex: 1;
+		@include scrollbar-y;
+	}
+
+
+
+}
+
+
+
+
+
+//컨텐츠 공통 
+
+//제목
+.section-title, .section-title-sm{
+    font-weight: bold;
+    color: #222;
+
+}
+.section-title{
+	
+	font-size: rem(17);
+	margin-bottom: rem(18);
+}
+.section-title-sm{
+	font-size: rem(16);
+	margin-bottom: rem(12);
+
+}
+
+.section-info-wrap{
+   
+	@include wrapper;
+	padding-top: rem(24);
+	padding-bottom: rem(22);
+
+	@include form-line;
+}
+
+//공통
+
+%roundbox {
+	border: 1px solid #d6d6d6;
+	border-radius: rem(12);
+	padding: rem(20);
+}
+.store-section {
+	padding: rem(30) rem(17);
+}
+
+
+.separator{
+	display: block;
+	border-bottom: 1px solid $border-color-3;
+	margin: 0 rem(17)
+}
+
+
+
+
+//매장 상단 상태
+.st-info-top {
+	.l-area {
+		.line-box {
+			height: 100%;
+		}
+	}
+}
+
+//매장정보
+.store-page{
+   padding-top: rem(94);
+}
+
+
+// .separator{
+// 	display: block;
+// 	@include form-line;
+// }
+
+
+
+
+.title-icon {
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+
+	.icon-tooltip {
+		width: rem(18);
+		height: rem(18);
+		margin-left: rem(5);
+
+		background-repeat: no-repeat;
+		background-position: center;
+		background-image: url(@/assets/default/images/icon/btn_tooltip_18_ddd.svg);
+	}
+}
+
+
+
+.store-work-time{
+  padding-left: rem(17);
+  padding-right: rem(17);
+}
+
+
+
+// modal-handlebar
+
+.modal-handlebar{
+position: relative;
+top:rem(-20);
+padding: 10px 0;
+line-height: 5px;
+text-align: center;
+z-index: $zindex-fixed;
+cursor: pointer;
+	i.handlebar{
+	display: inline-block;
+    vertical-align: top;
+    width: rem(44);
+    height: 4px;
+    border-radius: 3px;
+    -webkit-box-shadow: inset 0px 0.5px 0.1px rgba(0,0,0,.06);
+    box-shadow: inset 0px 0.5px 0.1px rgba(0,0,0,.06);
+    background-color: #d9d9dc;
+
+	}
+}

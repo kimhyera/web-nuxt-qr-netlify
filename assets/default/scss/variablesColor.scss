@@ -1,0 +1,79 @@
+
+
+/* SUMMARY:
+// fonts
+// border
+// color 
+// z-index 
+// transition
+// bg url
+*/
+
+
+
+// color
+$primary-1: #ff7700;
+$primary-2: #303258;
+$primary-3: #ffd0a7; //worktime
+$primary-4: #ffedde; //bg
+$primary-text-1: $primary-1;
+$primary-text-2: #ff9130;
+$primary-text-validate: #f80000;
+$primary-border-1: #ffdab5;
+
+// button
+$primary-btn-1: $primary-1;
+$primary-btn-text-1: #fff;
+$primary-btn-2: $primary-2;
+$primary-btn-text-2: #fff;
+$primary-btn-outline-1: $primary-1;
+$primary-btn-outline-text-1: $primary-1;
+
+$status-bg: $primary-3;
+$status-text: $primary-text-1;
+$menu-btn-border-1: #ffdab5; // btn menu line
+$menu-btn-text-1: $primary-1; // btn menu text
+
+
+// form
+$img-check-over-22: url(@/assets/default/images/form/btn_check-over_22.svg);
+$img-check-over-19: url(@/assets/default/images/form/btn_check-over_19.svg);
+$img-check-over-16: url(@/assets/default/images/form/btn_check-over_16.svg);
+$img-check-over-14: url(@/assets/default/images/form/btn_check-over_14.svg);
+$img-check-over-15: url(@/assets/default/images/form/btn_check-over_15.svg);
+$img-radio-over-22: url(@/assets/default/images/form/btn_radio-over_22.svg);
+
+// button
+$img-plus-11: url(@/assets/default/images/icon/icon_plus_11.svg);
+$img-arrow-12-wh: url(@/assets/default/images/icon/btn_arrow_12_wh.svg);
+
+// order
+$img-best-30: url(@/assets/default/images/icon/icon_best_30.svg);
+$img-pointer-16: url(@/assets/default/images/icon/icon_pointer_16.svg);
+$img-basket-empty-50: url(@/assets/common/images/none/icon_basket_empty_50.svg);
+$img-info-booking-16: url(@/assets/common/images/icon/icon_info_16_or.svg);
+
+// map
+$img-copy: url(@/assets/default/images/icon/btn_copy.svg);
+
+:root {
+    --primary-1: #{$primary-1};
+    --primary-2: #{$primary-2};
+    --primary-3: #{$primary-3};
+    --primary-4: #{$primary-4};
+    --primary-text-1: #{$primary-text-1};
+    --primary-text-validate: #{$primary-text-validate};
+
+	--primary-btn-1: #{$primary-btn-1};
+	--primary-btn-text-1: #{$primary-btn-text-1};
+	--primary-btn-2: #{$primary-btn-2};
+	--primary-btn-text-2: #{$primary-btn-text-2};
+	--primary-btn-outline-1: #{$primary-btn-outline-1};
+	--primary-btn-outline-text-1: #{$primary-btn-outline-text-1};
+
+	--menu-btn-border-1: #{$menu-btn-border-1};
+	--menu-btn-text-1: #{$menu-btn-text-1};
+	--status-bg: #{$status-bg};
+    --status-text: #{$status-text};
+  }
+  

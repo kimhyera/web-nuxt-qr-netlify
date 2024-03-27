@@ -1,0 +1,72 @@
+@charset "UTF-8";
+
+/* SUMMARY:
+// fonts
+// border
+// color 
+// z-index 
+// transition
+// bg url
+*/
+
+// fonts
+$font-family-base: SpoqaHanSansNeo, 'Spoqa Han Sans Neo', sans-serif;
+$font-size-base: 15; // 수정
+$line-height-base: 25;
+$line-height-2: 1.67;
+$letter-spacing-base: -0.03em; //포토샵 -30
+
+// border
+$border-color-1: #aaa;
+$border-color-2: #ccc;
+$border-color-3: #e9e9e9;
+$border-radius: 0.25rem;
+
+
+
+// z-index
+$zindex-dropdown: 1000;
+$zindex-sticky: 1020;
+$zindex-fixed: 1030;
+$zindex-modal-backdrop: 1000;
+$zindex-modal: 1050;
+$zindex-popover: 1060;
+$zindex-tooltip: 1070;
+$zindex-toast: 1080;
+
+
+// transition
+$transition-base: all 0.2s ease-in;
+
+
+// z-index
+$zindex-dropdown: 1000;
+$zindex-sticky: 1020;
+$zindex-fixed: 1030;
+$zindex-modal-backdrop: 1000;
+$zindex-modal: 1050;
+$zindex-popover: 1060;
+$zindex-tooltip: 1070;
+$zindex-toast: 1080;
+
+
+//// form
+$img-check-over-22: url(@/assets/default/images/form/btn_check-over_22.svg);
+$img-check-over-19: url(@/assets/default/images/form/btn_check-over_19.svg);
+$img-check-over-16: url(@/assets/default/images/form/btn_check-over_16.svg);
+$img-check-over-14: url(@/assets/default/images/form/btn_check-over_14.svg);
+$img-check-over-15: url(@/assets/default/images/form/btn_check-over_15.svg);
+$img-radio-over-22: url(@/assets/default/images/form/btn_radio-over_22.svg);
+
+// button
+$img-plus-11: url(@/assets/default/images/icon/icon_plus_11.svg);
+$img-arrow-12-wh: url(@/assets/default/images/icon/btn_arrow_12_wh.svg);
+
+// order
+$img-best-30: url(@/assets/default/images/icon/icon_best_30.svg);
+$img-pointer-16: url(@/assets/default/images/icon/icon_pointer_16.svg);
+$img-basket-empty-50: url(@/assets/default/images/none/icon_basket_empty_50.svg);
+$img-info-booking-16: url(@/assets/default/images/icon/icon_info_16_or.svg);
+
+//// map
+$img-copy: url(@/assets/default/images/icon/btn_copy.svg);

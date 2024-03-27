@@ -1,0 +1,15 @@
+.detail-page {
+  position: relative;
+
+  .btn-history-back {
+    position: absolute;
+    top: rem(18);
+    left: rem(17);
+    background-image: url(@/assets/default/images/icon/btn_popup_close_15.svg);
+    background-size: 17px auto;
+    background-repeat: no-repeat;
+    width: 17px;
+    height: 17px;
+    z-index: 10;
+  }
+}

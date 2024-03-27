@@ -1,0 +1,83 @@
+// nav
+.navbar {
+  position: relative;
+  background-color: #fff;
+
+  &.fixed {
+    position: fixed;
+    top: rem(52);
+    width: 100%;
+    max-width: 720px;
+    z-index: $zindex-fixed;
+  }
+}
+
+.nav {
+  display: flex;
+  @include scrollbar-x;
+  overflow-y: inherit;
+  flex-wrap: nowrap;
+
+  &:after {
+    content: '';
+
+    border-bottom: 1px solid #f1f1f1;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+
+
+
+  li {
+    text-align: center;
+
+    &:first-child {
+      padding-left: rem(5);
+    }
+
+    &:last-child {
+      padding-right: rem(5);
+    }
+
+    a {
+      position: relative;
+      display: inline-block;
+      text-align: center;
+      height: rem(42);
+      padding-top: rem(9);
+      padding-bottom: rem(11);
+      padding-left: rem(12);
+      padding-right: rem(12);
+      font-size: rem(17);
+      color: #666;
+      z-index: 2;
+      -webkit-tap-highlight-color: transparent !important;
+
+      &:after {
+        content: '';
+        position: absolute;
+        left: 50%;
+        right: 50%;
+        bottom: 0;
+        background-color: var(--t1069-primary-1);
+
+        height: rem(3);
+        border-radius: rem(3);
+
+
+      }
+
+      &.active , &.router-link-active{
+        color: var(--t1069-primary-1);
+        font-weight: bold;
+
+        &:after {
+          left: rem(12);
+          right: rem(12);
+        }
+      }
+    }
+  }
+}

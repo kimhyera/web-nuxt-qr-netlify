@@ -1,0 +1,29 @@
+.btn-link-address {
+  margin-bottom: rem(14);
+  height: rem(45);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  font-size: rem(14);
+  padding-left: rem(21);
+
+  background: $img-pointer-16 0 center no-repeat;
+  border-bottom: 2px solid var(--primary-1);
+
+  .text {
+    flex: 1 0 0;
+    max-width: 100%;
+    color: #888;
+
+    &.on {
+      color: #444;
+    }
+  }
+
+  .icon_more_10 {
+    width: rem(10);
+    height: rem(10);
+    background: url(@/assets/default/images/icon/btn_more_10_aaa.svg) 0 center no-repeat;
+    margin-left: auto;
+  }
+}

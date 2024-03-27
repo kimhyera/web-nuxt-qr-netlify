@@ -1,0 +1,21 @@
+
+.business-info {
+	dl {
+		display: flex;
+		align-items: center;
+		margin-top: rem(8);
+		font-size: rem(14);
+
+		&:first-child {
+			margin-top: 0;
+		}
+
+		dt {
+			color: #999;
+			font-weight: 300;
+			margin-right: rem(15);
+			flex: 0 0 auto;
+			width: rem(94);
+		}
+	}
+}

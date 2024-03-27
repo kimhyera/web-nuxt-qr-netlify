@@ -1,0 +1,44 @@
+.notice-bullet-box {
+  background-color: #f4f5f9;
+  border: 1px solid #eceef2;
+  border-radius: rem(12);
+  padding: rem(18) rem(20);
+  font-size: rem(13);
+
+  dl {
+    margin-top: rem(15);
+
+    &:first-child {
+      margin-top: 0;
+    }
+
+    dt {
+      font-weight: bold;
+      margin-bottom: rem(10);
+      font-size: rem(14);
+    }
+
+    dd {
+      color: #878c8f;
+      position: relative;
+      padding-left: rem(8);
+      line-height: 1.5;
+      margin-top: rem(5);
+
+      &:first-child {
+        margin-top: 0;
+      }
+
+      &:before {
+        content: "";
+        width: rem(2);
+        height: rem(2);
+        border-radius: rem(2);
+        background-color: #878c8f;
+        position: absolute;
+        top: rem(9);
+        left: 0;
+      }
+    }
+  }
+}

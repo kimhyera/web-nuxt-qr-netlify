@@ -1,0 +1,74 @@
+//주소설정
+.modal-address {
+    @extend %modal-full;
+
+    .modal-address-header {
+        height: rem(52);
+        line-height: rem(52);
+        position: relative;
+
+        .modal-address-title {
+            font-size: rem(16);
+            color: #222;
+            font-weight: bold;
+            letter-spacing: -0.51px;
+            text-align: center;
+            padding-left: rem(30);
+            padding-right: rem(30);
+
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            display: block;
+        }
+
+        .btn-history-back {
+            position: absolute;
+            top: 50%;
+            left: rem(17);
+            transform: translateY(-50%);
+
+            background-image: url(@/assets/default/images/icon/btn_back_17.svg);
+            background-size: 17px auto;
+            background-repeat: no-repeat;
+            width: 17px;
+            height: 17px;
+        }
+    }
+
+    .modal-address-body {
+        padding: rem(14) rem(17) rem(0);
+
+        .address-info {
+            margin-bottom: rem(10);
+
+            li {
+                &:first-child {
+                    margin-top: 0;
+                }
+
+                &.jibun {
+                    font-size: rem(17);
+                    color: #444;
+                    font-weight: 500;
+                }
+
+                margin-top: rem(2);
+
+                font-size: rem(13);
+                color: #666;
+                line-height: 1.6;
+
+                em {
+                    color: #888;
+                    margin-right: rem(3);
+                }
+            }
+        }
+
+        .btn-bottom-wrap {
+            margin-top: rem(20);
+        }
+    }
+}
+

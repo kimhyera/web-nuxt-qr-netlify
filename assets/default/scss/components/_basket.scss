@@ -1,0 +1,247 @@
+// 텝
+
+
+.tab-swich {
+  position: relative;
+  border: 1px solid $border-color-3;
+  border-radius: rem(10);
+  height: rem(44);
+  display: flex;
+
+  &:before {
+    content: "";
+    display: inline-block;
+
+    position: absolute;
+
+    top: 2px;
+    left: 1px;
+    width: 1px;
+    height: calc(100% - 4px);
+    border-radius: rem(8);
+    background-color: var(--primary-4);
+    transition: left 0.3s ease;
+    width: calc(50% - 2px);
+  }
+
+  &.tab-move-0 {
+    &:before {
+      left: 2px;
+    }
+  }
+
+  &.tab-move-1 {
+    &:before {
+      left: 50%;
+    }
+  }
+
+  >li {
+    flex-basis: 0;
+    flex-grow: 1;
+    max-width: 100%;
+    min-width: 0;
+
+    button,
+    a {
+      height: rem(38);
+      line-height: rem(38);
+      border-radius: rem(8);
+      width: 100%;
+      color: #aaa;
+      font-size: rem(15);
+      font-weight: 500;
+      transition: 0.2s;
+      display: block;
+      text-align: center;
+      position: relative;
+      letter-spacing: -0.03em;
+
+      .text {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0;
+        width: 100%;
+        text-align: center;
+        margin-top: rem(2);
+
+        color: #8a97a4;
+      }
+
+      &.on {
+        .text {
+          color: var(--primary-1);
+        }
+      }
+    }
+  }
+}
+
+// 장바구니
+
+.tab-wrap {
+  padding: rem(8) rem(17) 0;
+}
+
+.basket-wrap {
+  padding-bottom: rem(25);
+  @include form-line;
+
+  .all-check-row {
+    padding: rem(17) rem(17) rem(15);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .btn-remove-all {
+    color: #888;
+    font-weight: 500;
+    font-size: rem(14);
+    letter-spacing: -0.42px;
+  }
+
+  .btn-add-menu-wrap {
+    padding: 0 rem(17);
+  }
+}
+
+.basket-list {
+  >li {
+    border-top: 1px solid $border-color-3;
+    padding: rem(25) rem(17) rem(25);
+
+    .inner {
+      position: relative;
+
+      .btn-remove-goods {
+        position: absolute;
+        top: rem(3);
+        right: 0;
+        width: rem(13);
+        height: rem(13);
+
+        background: url(@/assets/common/images/icon/btn_delete_13.svg) no-repeat 0 0;
+      }
+    }
+
+    .title-row {
+      padding-right: rem(30);
+      margin-bottom: rem(8);
+    }
+
+    .option-add-list {
+      padding-left: rem(26);
+      margin-bottom: rem(20);
+
+      li {
+        padding-left: rem(8);
+        position: relative;
+        font-size: rem(13);
+        color: #878c8f;
+
+        &:not(:first-child) {
+          margin-top: rem(5);
+        }
+
+        &:before {
+          content: "";
+          width: rem(2);
+          height: rem(2);
+          border-radius: rem(2);
+          background-color: #878c8f;
+          position: absolute;
+          top: rem(9);
+          left: 0;
+        }
+      }
+    }
+
+    .price-row {
+      padding-left: rem(26);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .price {
+        font-size: rem(16);
+        color: #444;
+
+        em {
+          font-weight: bold;
+        }
+      }
+    }
+
+    .form-check-wrap {
+      .form-check-sm.soldout {
+        &+label {
+          color: #aaa !important;
+        }
+      }
+
+      label {
+        color: #444;
+        font-weight: bold;
+        display: block;
+        line-height: $line-height-2;
+
+        &:before {
+          top: rem(3);
+          transform: none;
+        }
+
+        .badge {
+          display: inline-block;
+          border-radius: rem(8);
+          background-color: #666;
+          text-align: center;
+          height: rem(22);
+          color: #fff;
+          font-weight: 300;
+          line-height: rem(22);
+          font-size: rem(12);
+          padding: 0 rem(5);
+          min-width: rem(36);
+          margin-left: rem(5);
+        }
+      }
+    }
+  }
+}
+
+.btn-group-order-login {
+  position: relative;
+}
+
+
+// 상품 없음 
+
+.basket-none {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: rem(-30);
+
+  .icon-none-basket {
+    display: block;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    width: rem(50);
+    height: rem(50);
+    background-image: $img-basket-empty-50;
+    background-size: rem(50);
+  }
+
+  .text {
+    margin-top: rem(18);
+    color: #222;
+    font-weight: bold;
+    line-height: 1;
+    font-size: rem(16);
+    text-align: center;
+  }
+}

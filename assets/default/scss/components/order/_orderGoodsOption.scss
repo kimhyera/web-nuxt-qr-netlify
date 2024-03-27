@@ -1,0 +1,71 @@
+.option-add-wrap {
+  .option-add {
+    border-top: 1px solid $border-color-3;
+    padding: rem(30) rem(17) rem(25);
+
+    .title-row {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      margin-bottom: rem(18);
+      line-height: 1.1;
+
+      .title {
+        font-size: rem(16);
+        font-weight: bold;
+        color: #444;
+      }
+
+      .validate {
+        color: var(--primary-text-validate);
+        font-size: rem(13);
+      }
+    }
+
+    .option-list {
+      li {
+        margin-top: rem(20);
+
+        &:first-child {
+          margin-top: 0;
+        }
+      }
+    }
+  }
+
+  .form-check-wrap {
+    label {
+      display: flex;
+      justify-content: space-between;
+
+      &:before {
+        top: rem(1);
+        transform: none;
+      }
+
+      .name {
+        color: #666;
+
+        .badge-soldout {
+          font-size: rem(12);
+          color: #fff;
+          background-color: #222;
+          height: rem(22);
+          line-height: rem(22);
+          border-radius: rem(8);
+          width: rem(36);
+          margin-left: rem(6);
+          display: inline-block;
+          text-align: center;
+          opacity: 1;
+        }
+      }
+
+      .price {
+        color: #444;
+        flex: 0 0 auto;
+        margin-left: rem(20);
+      }
+    }
+  }
+}

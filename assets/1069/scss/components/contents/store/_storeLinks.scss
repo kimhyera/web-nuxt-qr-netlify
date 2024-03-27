@@ -1,0 +1,44 @@
+
+.link-row {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 rem(20);
+
+	a {
+		text-align: center;
+		display: block;
+	}
+
+	i {
+		display: block;
+		margin: 0 auto rem(4);
+		background-repeat: no-repeat;
+		background-position: center;
+		border: 1px solid $border-color-3;
+		border-radius: rem(58);
+		width: rem(58);
+		height: rem(58);
+
+		&.icon-call {
+			background-image: url(@/assets/default/images/icon/btn_call_18.svg);
+		}
+
+		&.icon-map {
+			background-image: url(@/assets/default/images/icon/btn_map_18.svg);
+		}
+
+		&.icon-star {
+			background-image: url(@/assets/default/images/icon/btn_star_18.svg);
+		}
+	}
+
+	.text {
+		font-size: rem(13);
+		font-weight: bold;
+
+		span {
+			font-weight: 400;
+		}
+	}
+}

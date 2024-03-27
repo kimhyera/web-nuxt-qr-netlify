@@ -1,0 +1,60 @@
+// 상단 오더 타입 정보
+.order-dashboard {
+  padding: rem(18) rem(17) rem(25);
+> *:nth-last-child(1) {
+  margin-bottom: 0 !important;
+}
+
+
+
+
+}
+
+
+
+// 테이블
+.table-info {
+  margin-bottom: rem(8);
+  position: relative;
+
+  .btn-shoot-qr {
+      position: absolute;
+      top: 0;
+      right: 0;
+      border: 1px solid #aaa;
+      border-radius: rem(8);
+      padding-left: rem(7);
+      text-align: left;
+      font-size: rem(12);
+      color: #888;
+      width: rem(76);
+      line-height: rem(20);
+      height: rem(22);
+
+
+
+      
+  }
+
+  .table-No {
+      width: rem(110);
+      height: rem(80);
+      border-radius: rem(12);
+      border: 1px solid #ddd;
+      text-align: center;
+      margin: 0 auto;
+      padding-top: rem(13);
+
+      dt {
+          font-size: rem(13);
+          color: #888;
+      }
+
+      dd {
+          color: var(--primary-text-1);
+          font-size: rem(30);
+          font-weight: bold;
+          line-height: 1;
+      }
+  }
+}

@@ -1,0 +1,36 @@
+.error-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: rem(-50);
+  width: 100%;
+  text-align: center;
+
+  i {
+    display: block;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    width: rem(60);
+    height: rem(62);
+    background-size: rem(60) auto;
+    background-image: url(@/assets/default/images/icon/icon_error_60.svg);
+  }
+
+  h2 {
+    margin-top: rem(24);
+    color: #222;
+    font-weight: bold;
+    line-height: 1;
+    font-size: rem(16);
+  }
+  .des {
+    margin-top: rem(15);
+    font-size: rem(16);
+    color: #222;
+    font-weight: bold;
+    line-height: 1.69;
+    letter-spacing: -0.48px;
+  }
+}

@@ -1,0 +1,82 @@
+
+
+.memo-event-slider {
+	background-color: #f4f5f9;
+	border: 1px solid $border-color-3;
+	border-radius: rem(12);
+	padding: 0 rem(15);
+	margin-bottom: rem(18);
+
+
+	.item-overflow {
+		overflow: hidden;
+		display: flex;
+		align-items: center;
+	}
+
+	
+	.btn-store-about {
+		cursor: pointer;
+		align-items: center;
+		margin: 0 auto;
+		height: rem(46);
+		line-height: rem(46);
+		padding:0  0 0  rem(22);
+		display: flex;
+		height: 100%;
+
+	
+		font-size: rem(14);
+		color: #666;
+		display: flex;
+		justify-content: space-between;
+		background: url(@/assets/default/images/icon/icon_bell_16.svg) rem(0) center no-repeat;
+		background-color: #f4f5f9;
+	  
+	
+		.text {
+		  @include ellipsis;
+		  flex: 1 0 0;
+		  max-width: 100%;
+		  margin-right: rem(10);
+		}
+	  
+		i {
+		  margin-left: auto;
+		  width: rem(10);
+		  height: rem(10);
+		  background: url(@/assets/default/images/icon/btn_more_10_aaa.svg) 0 center no-repeat;
+		}
+	  }
+	  
+
+
+	.icon-notice {
+		width: rem(16);
+		height: rem(16);
+		background: url(@/assets/default/images/icon/icon_bell_16.svg) no-repeat 0 0;
+		margin-right: rem(7);
+		flex: 0 0 auto;
+	}
+
+	.icon-event {
+		width: rem(16);
+		height: rem(16);
+		background: url(@/assets/default/images/icon/icon_gift_16.svg) no-repeat 0 0;
+		margin-right: rem(7);
+		flex: 0 0 auto;
+
+	}
+
+	.btn-link {
+		padding-right: rem(16);
+
+		@include ellipsis;
+		font-size: rem(14);
+		color: #666;
+
+		height: rem(46);
+		line-height: rem(46);
+		background: url(@/assets/default/images/icon/btn_more_10_888.svg) no-repeat right center;
+	}
+}

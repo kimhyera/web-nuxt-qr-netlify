@@ -1,0 +1,52 @@
+.modal-business-time {
+    .modal-body {
+        padding: 0 rem(22) rem(26);
+    }
+
+    .time-info {
+        &::after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+
+        dl {
+            // display: flex;
+            // align-items: center;
+            z-index: 1;
+            position: relative;
+            float: left;
+            width: 100%;
+            margin-top: rem(8);
+            font-size: rem(15);
+
+            &::after {
+                content: '';
+                display: block;
+                clear: both;
+            }
+
+            &:first-child {
+                margin-top: 0;
+            }
+
+            dt {
+                position: absolute;
+                top: 0;
+                left: 0;
+                display: inline-block;
+                color: #888;
+                margin-right: rem(15);
+                flex: 0 0 auto;
+                width: rem(65);
+            }
+
+            dd {
+                display: inline-block;
+                padding-left: rem(80);
+                width: 100%;
+                font-weight: 500;
+            }
+        }
+    }
+}

@@ -1,0 +1,79 @@
+// 배달
+.delivery-info {
+  border: 1px solid #ddd;
+  border-radius: rem(12);
+  display: flex;
+  padding: rem(16) 0;
+  margin-bottom: rem(8);
+
+  dl {
+    flex: 0 0 33.333%;
+    max-width: 33.3333%;
+    position: relative;
+    text-align: center;
+    padding: 0 rem(5);
+
+    &:first-child {
+      &:before {
+        display: none;
+      }
+    }
+
+    // &:nth-child(2){
+    //   padding-left: rem(22);
+    //   padding-right: rem(22);
+    // }
+
+    // &:last-child{
+    //   padding-left: rem(18);
+    // }
+
+    &:before {
+      content: '';
+      border-left: 1px solid #ddd;
+      height: rem(40);
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+    }
+
+    dt,
+    dt > button {
+      font-size: rem(13);
+      color: #888;
+    }
+
+    dt {
+      margin-bottom: rem(4);
+      height: rem(19);
+
+      button {
+        display: flex;
+        align-items: center;
+        margin: 0 auto;
+
+        i {
+          width: rem(17);
+          height: rem(17);
+          margin-left: rem(3);
+
+          background: url(@/assets/default/images/icon/btn_tooltip_16.svg) 0 0 no-repeat;
+        }
+      }
+    }
+
+    dd {
+      color: #222;
+      font-size: rem(14);
+      font-weight: bold;
+
+      letter-spacing: -0.08em;
+
+      @include size(sm) {
+        letter-spacing: -0.05em;
+      }
+    }
+
+  }
+}

@@ -1,0 +1,55 @@
+// 매장알림
+.modal-memo {
+    .modal-header {
+        height: rem(62);
+    }
+
+    .modal-body {
+        padding: 0 rem(16) rem(26) rem(22);
+
+        .shadow-bottom {
+            position: absolute;
+            bottom: rem(10);
+            left: 0;
+            width: 100%;
+            border-radius: rem(18);
+            overflow: hidden;
+
+            height: rem(60);
+            -webkit-filter: blur(4px);
+            filter: blur(4px);
+            background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.9) 39%, #fff);
+        }
+
+        .body-inner {
+            position: relative;
+            overflow: hidden;
+            margin-top: rem(8);
+
+            .memo-img {
+                border-radius: rem(12);
+                overflow: hidden;
+                margin-bottom: rem(16);
+            }
+
+            .memo-text {
+                line-height: $line-height-2;
+            }
+
+            &.on {
+                + .shadow-bottom {
+                    display: none;
+                }
+            }
+        }
+
+        .scrollbar-y {
+            max-height: rem(376);
+            min-height: rem(40);
+
+            .scroll-inner {
+                margin-right: rem(6);
+            }
+        }
+    }
+}

@@ -1,0 +1,468 @@
+// Dependency : _variables.scss
+// SUMMARY:
+// unit
+// gradient
+// letterSpacing
+// reset-text
+// scrollbar
+// placeholder
+// ellipsis
+// sizecalc
+// img resize
+// fotm-line
+
+//Bootstrap functions
+@import './mixins_lib';
+
+
+
+// unit
+
+@function em($val, $font-size-base: 16) {
+	@return calc($val/$font-size-base) * 1em;
+  }
+  
+  @function rem($val, $font-size-base: 16) {
+	@return calc($val/$font-size-base) * 1rem;
+  }
+  
+  @function vw($val, $font-size-base: 1920) {
+	@return calc($val/($font-size-base/100)) * 1vw;
+  }
+
+// gradient
+@function gradient($deg, $start, $end) {
+	@return linear-gradient($deg, $start 0%, $end 100%);
+  }
+
+// letterSpacing
+  @function letterSpacing($val) {
+	@return calc($val/1000)*1em;
+  }
+
+
+
+@mixin gradient($direction, $list) {
+    background: -webkit-linear-gradient($direction, $list);
+    background: -moz-linear-gradient($direction, $list);
+    background: -o-linear-gradient($direction, $list);
+    background: linear-gradient($direction, $list);
+}
+
+
+// reset-text
+@mixin reset-text() {
+    font-family: $font-family-base;
+    font-style: normal;
+    font-weight: $font-weight-base;
+    line-height: $line-height-base;
+    text-align: left;
+    text-align: start;
+    text-decoration: none;
+    text-shadow: none;
+    text-transform: none;
+    letter-spacing: normal;
+    word-break: normal;
+    word-spacing: normal;
+    white-space: normal;
+    line-break: auto;
+}
+
+// scrollbar
+@mixin scrollbar-x($thumb: transparent, $scrollH: 3px) {
+
+
+    -webkit-overflow-scrolling: touch;
+    overflow: hidden;
+    overflow-x: auto;
+    white-space: nowrap;
+
+    &::-webkit-scrollbar {
+        width: $scrollH;
+        height: $scrollH;
+        background-color: transparent;
+        //display: none;
+    }
+
+    &::-webkit-scrollbar-track {
+        border-radius: 4px;
+        background-color: transparent;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        border-radius: 4px;
+        background-color: $thumb;
+    }
+}
+
+
+@mixin scrollbar-y($thumb: #ccc, $scrollH: 3px) {
+
+    overflow-y: auto;
+
+
+    &::-webkit-scrollbar {
+        width: $scrollH;
+        height: $scrollH;
+        background-color: transparent;
+    }
+
+    &::-webkit-scrollbar-track {
+        border-radius: 4px;
+        background-color: transparent;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        border-radius: 4px;
+        background-color: $thumb;
+    }
+}
+
+// placeholder
+@mixin placeholder($color) {
+    &::-webkit-input-placeholder {
+        color: $color;
+        @content;
+    }
+
+    &::-moz-placeholder {
+        color: $color;
+        @content;
+    }
+
+    &:-ms-input-placeholder {
+        color: $color;
+        @content;
+    }
+
+    &::-ms-input-placeholder {
+        color: $color;
+        @content;
+    }
+
+    &::placeholder {
+        color: $color;
+        @content;
+    }
+}
+
+// ellipsis
+// ex) line 1줄	@include ellipsis ,line 2줄 @include ellipsis(40,2)
+@mixin ellipsis($height: null, $line: 1) {
+    @if ($line==1) {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        display: block;
+    }
+
+    @else {
+        max-height: #{$height}px;
+        $line-height: unquote(calc($height / $line) + px);
+        line-height: $line-height;
+        display: -webkit-box;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: $line;
+    }
+}
+
+
+// sizecalc
+
+$lock-min: 360px !default;
+$lock-max: 720px !default;
+
+@function num($value) {
+    $result : calc($value / ($value * 0 + 1px));
+    @return $result;
+  }
+
+@function sizecalc($min, $max) {
+
+    $rangeS: calc(num($max) - num($min));
+    $rangeW: calc(num($lock-max) - num($lock-min));
+
+    @return calc($min + $rangeS * (100vw - $lock-min) / $rangeW);
+
+
+}
+
+
+@mixin font-size($min, $max, $lock-min: $lock-min, $lock-max: $lock-max) {
+
+    & {
+        font-size: $min;
+    }
+
+    @if $max {
+
+
+        @media screen and (min-width: $lock-max) {
+            font-size: $max;
+
+        }
+
+        // @media screen and (min-width:$lock-min) and (max-width: $lock-max){
+        @media screen and (max-width: $lock-max) {
+
+            font-size: sizecalc($min, $max);
+
+        }
+
+
+    }
+
+}
+
+
+@mixin height($min, $max, $lock-min: $lock-min, $lock-max: $lock-max) {
+
+    & {
+        height: $min;
+    }
+
+    @if $max {
+
+
+        @media screen and (min-width: $lock-max) {
+            height: $max;
+
+        }
+
+        @media screen and (max-width: $lock-max) {
+
+            height: sizecalc($min, $max);
+
+        }
+
+
+    }
+
+}
+
+
+
+// img resize
+@mixin img-resize($x: 100, $y: 100, $type: contain) {
+    display: block;
+    position: relative;
+    overflow: hidden;
+
+    &::after {
+        content: '';
+        display: block;
+        $padding: unquote(calc($y / $x) * 100 + '%');
+        padding-top: $padding;
+    }
+
+    @if ($type==cover) {
+        >img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: auto;
+            height: auto;
+            min-width: 1000%;
+            min-height: 1000%;
+            max-width: none;
+            max-height: none;
+            transform: translate(-50%, -50%) scale(0.1);
+        }
+    }
+
+    @else if ($type==contain) {
+        >img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: auto;
+            height: auto;
+            min-width: 0;
+            min-height: 0;
+            max-width: 100%;
+            max-height: 100%;
+            transform: translate(-50%, -50%);
+        }
+    }
+
+    @else if ($type==none) {
+        >img {
+            position: relative;
+            top: auto;
+            left: auto;
+            transform: none;
+            min-width: 100%;
+            min-height: 100%;
+        }
+    }
+}
+
+
+@mixin maxwrap {
+    max-width: 720px;
+    margin: 0 auto;
+
+}
+
+
+@mixin wrapper {
+
+    padding-right: rem(17);
+    padding-left: rem(17);
+
+
+}
+
+
+// ratio
+@mixin ratio-area($x: 100, $y: 100) {
+    display: block;
+    position: relative;
+    overflow: hidden;
+
+    &::before {
+        content: '';
+        display: block;
+        $padding: unquote(calc($y / $x) * 100 + '%');
+        padding-top: $padding;
+    }
+
+
+}
+
+
+
+
+
+
+
+@mixin grid-offset($offset) {
+    margin-bottom: -$offset;
+
+    &:empty {
+        margin-bottom: 0;
+    }
+
+    >* {
+        margin-bottom: $offset;
+    }
+}
+
+
+
+
+@mixin grid-gutter($gutter) {
+
+    margin-left: -$gutter;
+    margin-right: -$gutter;
+
+
+    >* {
+        padding-right: $gutter;
+        padding-left: $gutter;
+    }
+}
+
+
+
+// fotm-line
+@mixin form-line {
+    border-bottom: rem(6) solid #f4f5f9;
+    position: relative;
+
+    &::after {
+        content: '';
+        border-bottom: 1px solid #eceef2;
+        display: block;
+        position: absolute;
+
+        bottom: 0;
+        left: 0;
+        width: 100%;
+    }
+
+}
+
+
+
+
+
+
+$media: screen;
+$feature: max-width;
+
+$s481: 481px;
+$s376: 376px;
+$s361: 361px;
+$s321: 321px;
+$s281: 281px;
+
+@mixin size($value) {
+
+  @if $value==xl {
+
+    @media #{$media} and ($feature: $s481) {
+      @content; 
+    }
+  }
+
+
+  @else if $value==lg {
+
+    @media #{$media} and ($feature: $s376) {
+      @content; 
+    }
+  }
+
+  @else if $value==md {
+
+    @media #{$media} and ($feature: $s361) {
+      @content;
+    }
+  }
+
+  @else if $value==sm {
+
+    @media #{$media} and ($feature: $s321) {
+      @content;
+    }
+  }
+
+  @else if $value==xs {
+
+    @media #{$media} and ($feature: $s281) {
+      @content;
+    }
+  }
+}
+
+
+
+
+@mixin bullet ($color:#878c8f, $pl:8){
+		display: block;
+		position: relative;
+		padding-left: rem($pl);
+		color: $color;
+
+		margin-bottom: rem(10);
+
+		&:first-of-type {
+			margin-top: rem(-5);
+		}
+
+		&:before {
+			content: "";
+			width: rem(2);
+			height: rem(2);
+			border-radius: rem(2);
+			background-color:$color;
+			position: absolute;
+			top: rem(8);
+			left: 0;
+		}
+
+
+}

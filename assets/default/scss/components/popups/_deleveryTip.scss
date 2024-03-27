@@ -1,0 +1,273 @@
+%modal-full {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  max-width: 720px;
+  height: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  outline: 0;
+  background-color: #fff;
+
+  z-index: $zindex-modal;
+}
+
+//배달팁
+.modal-delivery-tip {
+  @extend %modal-full;
+
+  .scrollbar-y {
+    height: calc(100vh - 3.25rem - 5.3125rem);
+  }
+
+
+
+
+  .shadow-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    border-radius: rem(18);
+    overflow: hidden;
+
+    height: rem(70);
+    -webkit-filter: blur(4px);
+    filter: blur(4px);
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.9) 39%, #fff);
+  }
+
+  .scroll-inner{
+
+    padding: rem(14) rem(17) rem(25);
+
+  }
+
+  .text-head {
+    margin-bottom: rem(14);
+  }
+
+  .delivery-tip-notice {
+    font-size: rem(13);
+    color: #888;
+    margin-bottom: rem(20);
+    p{
+      position: relative;
+      padding-left: rem(10);
+      color: #888;
+      margin-top:rem(7);
+      line-height: 1.38;
+      &:first-of-type{
+        margin-top: 0;
+      }
+
+      &:before {
+        content: "";
+        width: rem(3);
+        height: rem(3);
+        border-radius: rem(3);
+        background: #b8b8b8;
+        display: inline-block;
+        position: absolute;
+        top: rem(8);
+        left: 0;
+        transform: translateY(-50%);
+      }
+
+    }
+  }
+
+  .delivery-tip-min-amt {
+    background-color: #f4f5f9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: rem(8);
+    padding: rem(12) rem(20);
+    margin-bottom: rem(20);
+
+    dt {
+      font-size: rem(14);
+    }
+
+    dd {
+      color: #444;
+      font-size: rem(15);
+      font-weight: bold;
+    }
+  }
+
+
+  .notice-text {
+    display: flex;
+    align-items: center;
+    margin: rem(15) 0;
+    font-size: rem(14);
+    color: #666;
+
+    .i-check {
+      width: rem(14);
+      height: rem(14);
+      background: $img-check-over-14 no-repeat 0 0;
+      margin-right: rem(5);
+    }
+  }
+
+
+  .title {
+    font-size: rem(15);
+    font-weight: bold;
+    color: #444;
+    margin-bottom: rem(10);
+    line-height: 1.1;
+  }
+
+
+  .default-tip{
+
+    border: 1px solid #d6d6d6;
+    border-radius: rem(12);
+    padding: rem(20) rem(20);
+    .fixed-tip,.order-price-tip{
+
+      margin-left: rem(2);
+    }
+
+    .order-price-tip{
+      padding-bottom: rem(18);
+
+      &+.fixed-tip{
+
+        border-top: 1px solid #d6d6d6;
+      }
+
+    }
+
+    .fixed-tip{
+
+      padding-top: rem(17);
+      .des {
+        color: #444;
+        font-size: rem(13);
+        margin-bottom: rem(10);
+        line-height: 1.4;
+      }
+    }
+  }
+
+  .block-tip,  .area-tip{
+    .title{
+
+      margin-left: rem(2);
+    }
+    .delivery-tip-info{
+      margin-left: rem(4);
+    }
+  }
+
+
+
+
+  .delivery-tip-info dl  {
+    font-size: rem(14);
+    display: flex;
+    align-items: center;
+
+    justify-content: space-between;
+    margin-top: rem(10);
+    line-height: 1.4;
+
+    &:first-child {
+      margin-top: 0;
+    }
+
+    dt {
+      position: relative;
+      // padding-left: rem(22);
+      flex: 1 0 0;
+      max-width: 100%;
+      color: #888;
+      font-size: rem(14);
+      line-height: 1.5;
+      display: flex;
+      align-items: center;
+    }
+
+    dd {
+      flex: 0 0 auto;
+      margin-left: rem(30);
+      font-size: rem(14);
+      color: #666;
+      position: relative;
+      top: rem(-1);
+    }
+
+    &.on {
+      dt {
+        padding-left: rem(22);
+        &:before {
+          content: '';
+          position: absolute;
+          left: 0;
+          top: 50%;
+          width: rem(14);
+          height: rem(14);
+          margin-top: rem(-6);
+          background: $img-check-over-14 no-repeat 0 0;
+          margin-right: rem(8);
+        }
+
+        font-weight: bold;
+        color: #444;
+      }
+
+      dd {
+        font-weight: bold;
+        color: #444;
+      }
+    }
+  }
+
+
+}
+
+.block-tip,  .area-tip{
+	.title{
+		
+	  margin-left: rem(2);
+	}
+	.delivery-tip-info{
+		margin-left: rem(4);
+	}
+}
+
+.block-tip {
+	padding: rem(20) 0 rem(18);
+}
+
+
+.area-tip,.distance-tip {
+	border-top: 1px solid #ddd;
+	padding: rem(18) 0 ;
+
+	&:last-of-type{
+		padding: rem(18) 0 0;
+
+	}
+}
+.distance-tip {
+
+	.notice{
+		color:#999;
+		font-size: rem(13);
+		margin-bottom: rem(10);
+	}
+
+	dl{
+		margin-bottom: rem(10);
+	}
+
+
+}

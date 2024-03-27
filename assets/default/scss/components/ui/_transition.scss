@@ -1,0 +1,94 @@
+
+
+/* common transition class */
+
+.page-enter-active,
+.page-leave-active {
+  transition: opacity 0.2s ease;
+}
+
+.page-enter-from,
+.page-leave-to {
+  opacity: 0;
+}
+
+
+//name="fade"
+.fade-enter-active ,
+.fade-leave-active {
+	transition: opacity .2s ;
+}
+.fade-enter-from,
+.fade-leave-to{
+	opacity: 0;
+}
+
+//name="slide-left-fade"
+.slide-left-fade-enter-active ,
+.slide-left-fade-leave-active {
+	transition: all .2s ease;
+}
+
+
+.slide-left-fade-enter-from,
+.slide-left-fade-leave-to {
+	transform: translateX(10px);
+	opacity: 0;
+}
+
+
+
+
+//name="slide-top-fade"
+.slide-top-fade-enter-active ,
+.slide-top-fade-leave-active {
+	transition: all .15s ease;
+}
+
+
+.slide-top-fade-enter-from,
+.slide-top-fade-leave-to {
+	transform: translateY(6px);
+	opacity: 0;
+}
+
+//name="slide-up"
+.slide-up-enter-active ,
+.slide-up-leave-active {
+	transition: all .4s ease-out;
+}
+
+
+.slide-up-enter-from,
+.slide-up-leave-to {
+	transition: all .6s ease-in;
+	transform: translateY(100%);
+}
+
+
+
+
+
+//name="bounce"
+
+	.bounce-enter-active ,
+.bounce-leave-active {
+	animation: bounce-in .5s;
+}
+
+.bounce-enter-from,
+.bounce-leave-to {
+	animation: bounce-in .5s reverse;
+}
+
+@keyframes bounce-in {
+	0% {
+		transform: scale(0.9);
+	}
+	50% {
+		transform: scale(1.05);
+	}
+	100% {
+		transform: scale(1);
+	}
+}

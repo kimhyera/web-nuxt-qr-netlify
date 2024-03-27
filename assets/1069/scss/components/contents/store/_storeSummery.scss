@@ -1,0 +1,42 @@
+
+.name-row {
+	margin-bottom: rem(8);
+	position: relative;
+
+	.store-name {
+		font-size: rem(19);
+		color: #222;
+		font-weight: bold;
+		letter-spacing: -0.57px;
+		line-height: 1.58;
+		margin-right: rem(29);
+		@include ellipsis(56, 2);
+
+		margin-right: rem(78);
+	}
+
+	.store-logo {
+		width: rem(48);
+		height: rem(48);
+		border-radius: rem(48);
+		overflow: hidden;
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
+}
+
+
+
+.visits-info {
+	border: 1px solid #ccc;
+	padding: 0 rem(8);
+	border-radius: 6px;
+	margin-bottom: rem(9);
+	color: #888;
+	text-align: center;
+	font-size: rem(13);
+	display: inline-block;
+	height: rem(25);
+	line-height: rem(23);
+}

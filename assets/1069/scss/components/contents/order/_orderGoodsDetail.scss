@@ -1,0 +1,56 @@
+.info-wrap {
+  padding: rem(25) rem(17) rem(28);
+
+  .name {
+      display: block;
+      font-size: rem(19);
+      font-weight: 500;
+      color: #222;
+      margin-bottom: rem(5);
+      line-height: 1.1;
+  }
+
+  .desc {
+      display: block;
+      font-size: rem(14);
+      color: #878c8f;
+      margin-bottom: rem(9);
+      line-height: 1.7;
+  }
+
+  .price-row {
+      display: flex;
+      align-items: center;
+
+      .discount-rate {
+          color: var(--t1069-primary-1);
+          font-weight: bold;
+          font-size: rem(17);
+          margin-right: rem(4);
+
+      }
+
+      .price {
+          color: #444;
+          font-size: rem(17);
+          margin-right: rem(7);
+          font-weight: bold;
+
+          em {
+              font-weight: bold;
+
+          }
+      }
+
+      .discount {
+          font-size: rem(14);
+          color: #aaa;
+          text-decoration: line-through;
+          margin-top: rem(-2);
+
+      }
+
+
+  }
+
+}
