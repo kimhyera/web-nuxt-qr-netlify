@@ -4,38 +4,38 @@
     {
       "name": "vite:vue",
       "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { createElementVNode as _createElementVNode, createTextVNode as _createTextVNode, normalizeClass as _normalizeClass, openBlock as _openBlock, createElementBlock as _createElementBlock, createCommentVNode as _createCommentVNode, resolveComponent as _resolveComponent, withCtx as _withCtx, createVNode as _createVNode, unref as _unref, normalizeStyle as _normalizeStyle, createStaticVNode as _createStaticVNode, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\"\n\nconst _withScopeId = n => (_pushScopeId(\"data-v-c85106f6\"),n=n(),_popScopeId(),n)\nconst _hoisted_1 = { class: \"modal-header header-page\" }\nconst _hoisted_2 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"i\", { class: \"handlebar\" }, null, -1))\nconst _hoisted_3 = { class: \"scrollbar-y\" }\nconst _hoisted_4 = { class: \"store-contentss\" }\nconst _hoisted_5 = { class: \"store-summery\" }\nconst _hoisted_6 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"div\", { class: \"status-row\" }, [\n  /*#__PURE__*/_createElementVNode(\"span\", { class: \"status open\" }, \"영업중\"),\n  /*#__PURE__*/_createElementVNode(\"span\", { class: \"takeout\" }, \"포장가능\")\n], -1))\nconst _hoisted_7 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"h2\", { class: \"store-name\" }, \"동대문엽기떡볶이 - 신도림점\", -1))\nconst _hoisted_8 = { class: \"store-worktime\" }\nconst _hoisted_9 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"i\", { class: \"i-arrow\" }, null, -1))\nconst _hoisted_10 = {\n  key: 0,\n  class: \"time-list\"\n}\nconst _hoisted_11 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"ul\", null, [\n  /*#__PURE__*/_createElementVNode(\"li\", null, \" 월-금 09:00 ~ 19:00 \"),\n  /*#__PURE__*/_createElementVNode(\"li\", null, \" 토 09:00 ~ 19:00 \"),\n  /*#__PURE__*/_createElementVNode(\"li\", null, \" 일 휴무 \")\n], -1))\nconst _hoisted_12 = [\n  _hoisted_11\n]\nconst _hoisted_13 = { class: \"store-links\" }\nconst _hoisted_14 = { class: \"link-row\" }\nconst _hoisted_15 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"li\", null, [\n  /*#__PURE__*/_createElementVNode(\"a\", { href: \"`tel:0000000000\" }, [\n    /*#__PURE__*/_createElementVNode(\"i\", { class: \"icon-call\" }),\n    /*#__PURE__*/_createElementVNode(\"span\", { class: \"text\" }, \" 전화걸기 \")\n  ])\n], -1))\nconst _hoisted_16 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"i\", { class: \"icon-map\" }, null, -1))\nconst _hoisted_17 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"span\", { class: \"text\" }, \" 지도보기 \", -1))\nconst _hoisted_18 = { class: \"store-memo\" }\nconst _hoisted_19 = { class: \"store-slider\" }\nconst _hoisted_20 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"div\", { class: \"img-ratio-store img-wrap\" }, [\n  /*#__PURE__*/_createElementVNode(\"img\", {\n    src: \"https://mannaplanetstorage.blob.core.windows.net/mannashop-img-test/banner//20230125165327AZ0480.png\",\n    alt: \"매장이미지\"\n  })\n], -1))\nconst _hoisted_21 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"div\", { class: \"img-ratio-store img-wrap\" }, [\n  /*#__PURE__*/_createElementVNode(\"img\", {\n    src: \"https://mannaplanetstorage.blob.core.windows.net/mannashop-img-test/banner//20230125165327AZ0480.png\",\n    alt: \"매장이미지\"\n  })\n], -1))\nconst _hoisted_22 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"div\", { class: \"slide-count\" }, \"1 / 2\", -1))\nconst _hoisted_23 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"i\", { class: \"icon-more\" }, null, -1))\nconst _hoisted_24 = [\n  _hoisted_23\n]\nconst _hoisted_25 = /*#__PURE__*/_createStaticVNode(\"<span class=\\\"separator\\\" data-v-c85106f6></span><section class=\\\"store-section\\\" data-v-c85106f6><h2 class=\\\"section-title\\\" data-v-c85106f6>사업장 정보</h2><div class=\\\"business-info\\\" data-v-c85106f6><dl data-v-c85106f6><dt data-v-c85106f6>상호명</dt><dd data-v-c85106f6>동대문엽기떡볶이 - 신도림점</dd></dl><dl data-v-c85106f6><dt data-v-c85106f6>대표자</dt><dd data-v-c85106f6>김대표</dd></dl><dl data-v-c85106f6><dt data-v-c85106f6>사업자등록번호</dt><dd data-v-c85106f6>123-00-00000</dd></dl><dl data-v-c85106f6><dt data-v-c85106f6>주소</dt><dd data-v-c85106f6>서울 영등포구 대림동 688-27 1층</dd></dl></div></section><section class=\\\"store-section\\\" data-v-c85106f6><h2 class=\\\"section-title\\\" data-v-c85106f6>원산지 정보</h2><div class=\\\"orgin-info\\\" data-v-c85106f6> 닭고기 - 국내산 / 쇠고기 - 국내산 한우, 호주산 / 명태연육 - 미국산 </div></section>\", 3)\nconst _hoisted_28 = { class: \"footer-info\" }\nconst _hoisted_29 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"h1\", { class: \"btn-toggle-addr\" }, \" (주)만나플래닛 \", -1))\nconst _hoisted_30 = { class: \"terms-links\" }\nconst _hoisted_31 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"div\", { class: \"footer-notice\" }, \" ㈜만나플래닛은 상품거래에 대한 통신판매 중개자이며, 통신판매의 당사자가 아닙니다. 따라서, ㈜만나플래닛은 상품거래정보 및 거래에 대한 책임을 지지 않습니다. \", -1))\n\nimport { ref } from 'vue';\r\nimport { Swiper, SwiperSlide } from 'swiper/vue';\r\nimport SwiperCore, { Autoplay } from 'swiper';\r\nimport 'swiper/css';\r\n\r\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'modal-store-info',\n  emits: ['close'],\n  setup(__props, { emit: __emit }) {\n\r\nconst common = commonStore();\r\n\r\nconst isToggleWorkTime = ref(true)\r\nconst isToggleMemo = ref(false)\r\n\r\n\r\n\r\nconst emit = __emit;\r\n\r\nSwiperCore.use([Autoplay]);\r\n\r\n// reactivity data\r\nconst modalTranslateY = ref<any>(null);\r\nlet startY = 0;\r\n\r\n\r\n// methods\r\n\r\nconst handleTouchStart = (event: TouchEvent) => {\r\n\tstartY = event.touches[0].clientY;\r\n\r\n};\r\n\r\nconst handleTouchMove = (event: TouchEvent) => {\r\n\tconst deltaY = event.touches[0].clientY - startY;\r\n\tmodalTranslateY.value = Math.min(1000, Math.max(0, deltaY));\r\n};\r\n\r\nconst handleTouchEnd = () => {\r\n\t// 터치 종료 후 \r\n\tconst winH = window.innerHeight * 0.8;\r\n\tif (winH < modalTranslateY.value) {\r\n\t\temit('close');\r\n\t} else {\r\n\t\tmodalTranslateY.value = 0;\r\n\t}\r\n\r\n};\r\n\r\n\r\n\r\n\nreturn (_ctx: any,_cache: any) => {\n  const _component_router_link = _resolveComponent(\"router-link\")!\n\n  return (_openBlock(), _createElementBlock(\"div\", {\n    class: \"modal-storeinfo\",\n    style: _normalizeStyle({ transform: `translateY(${modalTranslateY.value}px)` })\n  }, [\n    _createElementVNode(\"div\", {\n      class: \"modal-handlebar\",\n      onTouchstart: handleTouchStart,\n      onTouchmove: handleTouchMove,\n      onTouchend: handleTouchEnd\n    }, [\n      _createElementVNode(\"div\", _hoisted_1, [\n        _createElementVNode(\"button\", {\n          class: \"btn-close\",\n          onClick: _cache[0] || (_cache[0] = ($event: any) => (emit('close')))\n        })\n      ]),\n      _hoisted_2\n    ], 32),\n    _createElementVNode(\"div\", _hoisted_3, [\n      _createElementVNode(\"main\", _hoisted_4, [\n        _createElementVNode(\"section\", _hoisted_5, [\n          _hoisted_6,\n          _hoisted_7,\n          _createElementVNode(\"div\", _hoisted_8, [\n            _createElementVNode(\"div\", {\n              class: _normalizeClass([\"time-head\", {on: isToggleWorkTime.value }]),\n              onClick: _cache[1] || (_cache[1] = ($event: any) => (isToggleWorkTime.value = !isToggleWorkTime.value))\n            }, [\n              _createTextVNode(\" 수 09:00 ~19:00 \"),\n              _hoisted_9\n            ], 2),\n            (isToggleWorkTime.value)\n              ? (_openBlock(), _createElementBlock(\"div\", _hoisted_10, _hoisted_12))\n              : _createCommentVNode(\"\", true)\n          ]),\n          _createElementVNode(\"div\", _hoisted_13, [\n            _createElementVNode(\"ul\", _hoisted_14, [\n              _hoisted_15,\n              _createElementVNode(\"li\", null, [\n                _createVNode(_component_router_link, { to: \"/pb/map\" }, {\n                  default: _withCtx(() => [\n                    _hoisted_16,\n                    _hoisted_17\n                  ]),\n                  _: 1\n                })\n              ])\n            ])\n          ])\n        ]),\n        _createElementVNode(\"section\", _hoisted_18, [\n          _createElementVNode(\"div\", _hoisted_19, [\n            _createVNode(_unref(Swiper), {\n              class: \"slider-item\",\n              speed: 400,\n              pagination: { clickable: false }\n            }, {\n              default: _withCtx(() => [\n                _createVNode(_unref(SwiperSlide), null, {\n                  default: _withCtx(() => [\n                    _hoisted_20\n                  ]),\n                  _: 1\n                }),\n                _createVNode(_unref(SwiperSlide), null, {\n                  default: _withCtx(() => [\n                    _hoisted_21\n                  ]),\n                  _: 1\n                })\n              ]),\n              _: 1\n            }),\n            _hoisted_22\n          ]),\n          _createElementVNode(\"div\", {\n            class: _normalizeClass([\"about-text\", {on: isToggleMemo.value }])\n          }, \" 매장 소개 문구 다섯 줄 이상 대기업 쉐프 출신 요리사가 요리하는 건강하고 맛있는 중국 음식점 입니다. 최고의 맛과 서비스를 제공하기 위해 끊임없이 연구하고 노력하겠습니다. 매장 소개 문구 다섯 줄 이상 대기업 쉐프 출신 요리사가 요리하는 건강하고 맛있는 중국 음식점 입니다. 최고의 맛과 서비스를 제공하기 위해 끊임없이 연구하고 노력하겠습니다. 매장 소개 문구 다섯 줄 이상 대기업 쉐프 출신 요리사가 요리하는 건강하고 맛있는 중국 음식점 입니다. 최고의 맛과 서비스를 제공하기 위해 끊임없이 연구하고 노력하겠습니다. \", 2),\n          _createElementVNode(\"button\", {\n            type: \"button\",\n            class: \"btn-more\",\n            onClick: _cache[2] || (_cache[2] = ($event: any) => (isToggleMemo.value = !isToggleMemo.value))\n          }, _hoisted_24)\n        ]),\n        _hoisted_25\n      ]),\n      _createElementVNode(\"footer\", null, [\n        _createElementVNode(\"div\", _hoisted_28, [\n          _hoisted_29,\n          _createElementVNode(\"div\", _hoisted_30, [\n            _createVNode(_component_router_link, { to: \"/pb/terms/conditionsOfUse\" }, {\n              default: _withCtx(() => [\n                _createTextVNode(\"이용 약관\")\n              ]),\n              _: 1\n            }),\n            _createVNode(_component_router_link, { to: \"/pb/terms/privacyNotice\" }, {\n              default: _withCtx(() => [\n                _createTextVNode(\"개인정보 보호방침\")\n              ]),\n              _: 1\n            }),\n            _createVNode(_component_router_link, { to: \"/pb/terms/informationClause\" }, {\n              default: _withCtx(() => [\n                _createTextVNode(\"개인정보 제3자 동의\")\n              ]),\n              _: 1\n            }),\n            _createElementVNode(\"div\", null, [\n              _createVNode(_component_router_link, { to: \"/pb/terms/locationAgreement\" }, {\n                default: _withCtx(() => [\n                  _createTextVNode(\"위치기반 서비스 이용 약관\")\n                ]),\n                _: 1\n              }),\n              _createVNode(_component_router_link, { to: \"/pb/terms/adolescentClause\" }, {\n                default: _withCtx(() => [\n                  _createTextVNode(\"청소년 보호정책\")\n                ]),\n                _: 1\n              })\n            ])\n          ]),\n          _hoisted_31\n        ])\n      ])\n    ])\n  ], 4))\n}\n}\n\n})",
-      "start": 1711507720425,
-      "end": 1711507720425
+      "start": 1711508330089,
+      "end": 1711508330089
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1711507720425,
-      "end": 1711507720425,
+      "start": 1711508330089,
+      "end": 1711508330089,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1711507720425,
-      "end": 1711507720425,
+      "start": 1711508330089,
+      "end": 1711508330089,
       "order": "pre"
     },
     {
       "name": "nuxt:client-fallback-auto-id",
-      "start": 1711507720425,
-      "end": 1711507720425,
+      "start": 1711508330089,
+      "end": 1711508330089,
       "order": "pre"
     },
     {
       "name": "vite:css",
-      "start": 1711507720425,
-      "end": 1711507720425,
+      "start": 1711508330089,
+      "end": 1711508330089,
       "order": "normal"
     },
     {
       "name": "vite:esbuild",
       "result": "import { defineComponent as _defineComponent } from \"vue\";\nimport { createElementVNode as _createElementVNode, createTextVNode as _createTextVNode, normalizeClass as _normalizeClass, openBlock as _openBlock, createElementBlock as _createElementBlock, createCommentVNode as _createCommentVNode, resolveComponent as _resolveComponent, withCtx as _withCtx, createVNode as _createVNode, unref as _unref, normalizeStyle as _normalizeStyle, createStaticVNode as _createStaticVNode, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\";\nconst _withScopeId = (n) => (_pushScopeId(\"data-v-c85106f6\"), n = n(), _popScopeId(), n);\nconst _hoisted_1 = { class: \"modal-header header-page\" };\nconst _hoisted_2 = /* @__PURE__ */ _withScopeId(() => /* @__PURE__ */ _createElementVNode(\"i\", { class: \"handlebar\" }, null, -1));\nconst _hoisted_3 = { class: \"scrollbar-y\" };\nconst _hoisted_4 = { class: \"store-contentss\" };\nconst _hoisted_5 = { class: \"store-summery\" };\nconst _hoisted_6 = /* @__PURE__ */ _withScopeId(() => /* @__PURE__ */ _createElementVNode(\"div\", { class: \"status-row\" }, [\n  /* @__PURE__ */ _createElementVNode(\"span\", { class: \"status open\" }, \"영업중\"),\n  /* @__PURE__ */ _createElementVNode(\"span\", { class: \"takeout\" }, \"포장가능\")\n], -1));\nconst _hoisted_7 = /* @__PURE__ */ _withScopeId(() => /* @__PURE__ */ _createElementVNode(\"h2\", { class: \"store-name\" }, \"동대문엽기떡볶이 - 신도림점\", -1));\nconst _hoisted_8 = { class: \"store-worktime\" };\nconst _hoisted_9 = /* @__PURE__ */ _withScopeId(() => /* @__PURE__ */ _createElementVNode(\"i\", { class: \"i-arrow\" }, null, -1));\nconst _hoisted_10 = {\n  key: 0,\n  class: \"time-list\"\n};\nconst _hoisted_11 = /* @__PURE__ */ _withScopeId(() => /* @__PURE__ */ _createElementVNode(\"ul\", null, [\n  /* @__PURE__ */ _createElementVNode(\"li\", null, \" 월-금 09:00 ~ 19:00 \"),\n  /* @__PURE__ */ _createElementVNode(\"li\", null, \" 토 09:00 ~ 19:00 \"),\n  /* @__PURE__ */ _createElementVNode(\"li\", null, \" 일 휴무 \")\n], -1));\nconst _hoisted_12 = [\n  _hoisted_11\n];\nconst _hoisted_13 = { class: \"store-links\" };\nconst _hoisted_14 = { class: \"link-row\" };\nconst _hoisted_15 = /* @__PURE__ */ _withScopeId(() => /* @__PURE__ */ _createElementVNode(\"li\", null, [\n  /* @__PURE__ */ _createElementVNode(\"a\", { href: \"`tel:0000000000\" }, [\n    /* @__PURE__ */ _createElementVNode(\"i\", { class: \"icon-call\" }),\n    /* @__PURE__ */ _createElementVNode(\"span\", { class: \"text\" }, \" 전화걸기 \")\n  ])\n], -1));\nconst _hoisted_16 = /* @__PURE__ */ _withScopeId(() => /* @__PURE__ */ _createElementVNode(\"i\", { class: \"icon-map\" }, null, -1));\nconst _hoisted_17 = /* @__PURE__ */ _withScopeId(() => /* @__PURE__ */ _createElementVNode(\"span\", { class: \"text\" }, \" 지도보기 \", -1));\nconst _hoisted_18 = { class: \"store-memo\" };\nconst _hoisted_19 = { class: \"store-slider\" };\nconst _hoisted_20 = /* @__PURE__ */ _withScopeId(() => /* @__PURE__ */ _createElementVNode(\"div\", { class: \"img-ratio-store img-wrap\" }, [\n  /* @__PURE__ */ _createElementVNode(\"img\", {\n    src: \"https://mannaplanetstorage.blob.core.windows.net/mannashop-img-test/banner//20230125165327AZ0480.png\",\n    alt: \"매장이미지\"\n  })\n], -1));\nconst _hoisted_21 = /* @__PURE__ */ _withScopeId(() => /* @__PURE__ */ _createElementVNode(\"div\", { class: \"img-ratio-store img-wrap\" }, [\n  /* @__PURE__ */ _createElementVNode(\"img\", {\n    src: \"https://mannaplanetstorage.blob.core.windows.net/mannashop-img-test/banner//20230125165327AZ0480.png\",\n    alt: \"매장이미지\"\n  })\n], -1));\nconst _hoisted_22 = /* @__PURE__ */ _withScopeId(() => /* @__PURE__ */ _createElementVNode(\"div\", { class: \"slide-count\" }, \"1 / 2\", -1));\nconst _hoisted_23 = /* @__PURE__ */ _withScopeId(() => /* @__PURE__ */ _createElementVNode(\"i\", { class: \"icon-more\" }, null, -1));\nconst _hoisted_24 = [\n  _hoisted_23\n];\nconst _hoisted_25 = /* @__PURE__ */ _createStaticVNode('<span class=\"separator\" data-v-c85106f6></span><section class=\"store-section\" data-v-c85106f6><h2 class=\"section-title\" data-v-c85106f6>사업장 정보</h2><div class=\"business-info\" data-v-c85106f6><dl data-v-c85106f6><dt data-v-c85106f6>상호명</dt><dd data-v-c85106f6>동대문엽기떡볶이 - 신도림점</dd></dl><dl data-v-c85106f6><dt data-v-c85106f6>대표자</dt><dd data-v-c85106f6>김대표</dd></dl><dl data-v-c85106f6><dt data-v-c85106f6>사업자등록번호</dt><dd data-v-c85106f6>123-00-00000</dd></dl><dl data-v-c85106f6><dt data-v-c85106f6>주소</dt><dd data-v-c85106f6>서울 영등포구 대림동 688-27 1층</dd></dl></div></section><section class=\"store-section\" data-v-c85106f6><h2 class=\"section-title\" data-v-c85106f6>원산지 정보</h2><div class=\"orgin-info\" data-v-c85106f6> 닭고기 - 국내산 / 쇠고기 - 국내산 한우, 호주산 / 명태연육 - 미국산 </div></section>', 3);\nconst _hoisted_28 = { class: \"footer-info\" };\nconst _hoisted_29 = /* @__PURE__ */ _withScopeId(() => /* @__PURE__ */ _createElementVNode(\"h1\", { class: \"btn-toggle-addr\" }, \" (주)만나플래닛 \", -1));\nconst _hoisted_30 = { class: \"terms-links\" };\nconst _hoisted_31 = /* @__PURE__ */ _withScopeId(() => /* @__PURE__ */ _createElementVNode(\"div\", { class: \"footer-notice\" }, \" ㈜만나플래닛은 상품거래에 대한 통신판매 중개자이며, 통신판매의 당사자가 아닙니다. 따라서, ㈜만나플래닛은 상품거래정보 및 거래에 대한 책임을 지지 않습니다. \", -1));\nimport { ref } from \"vue\";\nimport { Swiper, SwiperSlide } from \"swiper/vue\";\nimport SwiperCore, { Autoplay } from \"swiper\";\nimport \"swiper/css\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"modal-store-info\",\n  emits: [\"close\"],\n  setup(__props, { emit: __emit }) {\n    const common = commonStore();\n    const isToggleWorkTime = ref(true);\n    const isToggleMemo = ref(false);\n    const emit = __emit;\n    SwiperCore.use([Autoplay]);\n    const modalTranslateY = ref(null);\n    let startY = 0;\n    const handleTouchStart = (event) => {\n      startY = event.touches[0].clientY;\n    };\n    const handleTouchMove = (event) => {\n      const deltaY = event.touches[0].clientY - startY;\n      modalTranslateY.value = Math.min(1e3, Math.max(0, deltaY));\n    };\n    const handleTouchEnd = () => {\n      const winH = window.innerHeight * 0.8;\n      if (winH < modalTranslateY.value) {\n        emit(\"close\");\n      } else {\n        modalTranslateY.value = 0;\n      }\n    };\n    return (_ctx, _cache) => {\n      const _component_router_link = _resolveComponent(\"router-link\");\n      return _openBlock(), _createElementBlock(\"div\", {\n        class: \"modal-storeinfo\",\n        style: _normalizeStyle({ transform: `translateY(${modalTranslateY.value}px)` })\n      }, [\n        _createElementVNode(\"div\", {\n          class: \"modal-handlebar\",\n          onTouchstart: handleTouchStart,\n          onTouchmove: handleTouchMove,\n          onTouchend: handleTouchEnd\n        }, [\n          _createElementVNode(\"div\", _hoisted_1, [\n            _createElementVNode(\"button\", {\n              class: \"btn-close\",\n              onClick: _cache[0] || (_cache[0] = ($event) => emit(\"close\"))\n            })\n          ]),\n          _hoisted_2\n        ], 32),\n        _createElementVNode(\"div\", _hoisted_3, [\n          _createElementVNode(\"main\", _hoisted_4, [\n            _createElementVNode(\"section\", _hoisted_5, [\n              _hoisted_6,\n              _hoisted_7,\n              _createElementVNode(\"div\", _hoisted_8, [\n                _createElementVNode(\"div\", {\n                  class: _normalizeClass([\"time-head\", { on: isToggleWorkTime.value }]),\n                  onClick: _cache[1] || (_cache[1] = ($event) => isToggleWorkTime.value = !isToggleWorkTime.value)\n                }, [\n                  _createTextVNode(\" 수 09:00 ~19:00 \"),\n                  _hoisted_9\n                ], 2),\n                isToggleWorkTime.value ? (_openBlock(), _createElementBlock(\"div\", _hoisted_10, _hoisted_12)) : _createCommentVNode(\"\", true)\n              ]),\n              _createElementVNode(\"div\", _hoisted_13, [\n                _createElementVNode(\"ul\", _hoisted_14, [\n                  _hoisted_15,\n                  _createElementVNode(\"li\", null, [\n                    _createVNode(_component_router_link, { to: \"/pb/map\" }, {\n                      default: _withCtx(() => [\n                        _hoisted_16,\n                        _hoisted_17\n                      ]),\n                      _: 1\n                    })\n                  ])\n                ])\n              ])\n            ]),\n            _createElementVNode(\"section\", _hoisted_18, [\n              _createElementVNode(\"div\", _hoisted_19, [\n                _createVNode(_unref(Swiper), {\n                  class: \"slider-item\",\n                  speed: 400,\n                  pagination: { clickable: false }\n                }, {\n                  default: _withCtx(() => [\n                    _createVNode(_unref(SwiperSlide), null, {\n                      default: _withCtx(() => [\n                        _hoisted_20\n                      ]),\n                      _: 1\n                    }),\n                    _createVNode(_unref(SwiperSlide), null, {\n                      default: _withCtx(() => [\n                        _hoisted_21\n                      ]),\n                      _: 1\n                    })\n                  ]),\n                  _: 1\n                }),\n                _hoisted_22\n              ]),\n              _createElementVNode(\"div\", {\n                class: _normalizeClass([\"about-text\", { on: isToggleMemo.value }])\n              }, \" 매장 소개 문구 다섯 줄 이상 대기업 쉐프 출신 요리사가 요리하는 건강하고 맛있는 중국 음식점 입니다. 최고의 맛과 서비스를 제공하기 위해 끊임없이 연구하고 노력하겠습니다. 매장 소개 문구 다섯 줄 이상 대기업 쉐프 출신 요리사가 요리하는 건강하고 맛있는 중국 음식점 입니다. 최고의 맛과 서비스를 제공하기 위해 끊임없이 연구하고 노력하겠습니다. 매장 소개 문구 다섯 줄 이상 대기업 쉐프 출신 요리사가 요리하는 건강하고 맛있는 중국 음식점 입니다. 최고의 맛과 서비스를 제공하기 위해 끊임없이 연구하고 노력하겠습니다. \", 2),\n              _createElementVNode(\"button\", {\n                type: \"button\",\n                class: \"btn-more\",\n                onClick: _cache[2] || (_cache[2] = ($event) => isToggleMemo.value = !isToggleMemo.value)\n              }, _hoisted_24)\n            ]),\n            _hoisted_25\n          ]),\n          _createElementVNode(\"footer\", null, [\n            _createElementVNode(\"div\", _hoisted_28, [\n              _hoisted_29,\n              _createElementVNode(\"div\", _hoisted_30, [\n                _createVNode(_component_router_link, { to: \"/pb/terms/conditionsOfUse\" }, {\n                  default: _withCtx(() => [\n                    _createTextVNode(\"이용 약관\")\n                  ]),\n                  _: 1\n                }),\n                _createVNode(_component_router_link, { to: \"/pb/terms/privacyNotice\" }, {\n                  default: _withCtx(() => [\n                    _createTextVNode(\"개인정보 보호방침\")\n                  ]),\n                  _: 1\n                }),\n                _createVNode(_component_router_link, { to: \"/pb/terms/informationClause\" }, {\n                  default: _withCtx(() => [\n                    _createTextVNode(\"개인정보 제3자 동의\")\n                  ]),\n                  _: 1\n                }),\n                _createElementVNode(\"div\", null, [\n                  _createVNode(_component_router_link, { to: \"/pb/terms/locationAgreement\" }, {\n                    default: _withCtx(() => [\n                      _createTextVNode(\"위치기반 서비스 이용 약관\")\n                    ]),\n                    _: 1\n                  }),\n                  _createVNode(_component_router_link, { to: \"/pb/terms/adolescentClause\" }, {\n                    default: _withCtx(() => [\n                      _createTextVNode(\"청소년 보호정책\")\n                    ]),\n                    _: 1\n                  })\n                ])\n              ]),\n              _hoisted_31\n            ])\n          ])\n        ])\n      ], 4);\n    };\n  }\n});\n",
-      "start": 1711507720425,
-      "end": 1711507728738,
+      "start": 1711508330089,
+      "end": 1711508340197,
       "order": "normal",
       "sourcemaps": {
         "version": 3,
@@ -51,123 +51,123 @@
     },
     {
       "name": "vite:json",
-      "start": 1711507728738,
-      "end": 1711507728738,
+      "start": 1711508340197,
+      "end": 1711508340197,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1711507728738,
-      "end": 1711507728738,
+      "start": 1711508340197,
+      "end": 1711508340197,
       "order": "normal"
     },
     {
       "name": "vite:vue",
-      "start": 1711507728738,
-      "end": 1711507728738,
+      "start": 1711508340197,
+      "end": 1711508340198,
       "order": "normal"
     },
     {
       "name": "vite:vue-jsx",
-      "start": 1711507728738,
-      "end": 1711507728738,
+      "start": 1711508340198,
+      "end": 1711508340198,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1711507728738,
-      "end": 1711507728739,
+      "start": 1711508340198,
+      "end": 1711508340198,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1711507728739,
-      "end": 1711507728739,
+      "start": 1711508340198,
+      "end": 1711508340198,
       "order": "normal"
     },
     {
       "name": "nuxt:chunk-error",
-      "start": 1711507728739,
-      "end": 1711507728739,
+      "start": 1711508340198,
+      "end": 1711508340198,
       "order": "normal"
     },
     {
       "name": "nuxt:components:imports",
-      "start": 1711507728739,
-      "end": 1711507728739,
+      "start": 1711508340198,
+      "end": 1711508340198,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1711507728739,
-      "end": 1711507728739,
+      "start": 1711508340198,
+      "end": 1711508340198,
       "order": "normal"
     },
     {
       "name": "ssr-styles",
-      "start": 1711507728739,
-      "end": 1711507728739,
+      "start": 1711508340198,
+      "end": 1711508340198,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1711507728739,
-      "end": 1711507728739,
+      "start": 1711508340198,
+      "end": 1711508340198,
       "order": "normal"
     },
     {
       "name": "vite:css-post",
-      "start": 1711507728739,
-      "end": 1711507728739,
+      "start": 1711508340198,
+      "end": 1711508340198,
       "order": "normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1711507728739,
-      "end": 1711507728739,
+      "start": 1711508340198,
+      "end": 1711508340198,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1711507728739,
-      "end": 1711507728739,
+      "start": 1711508340198,
+      "end": 1711508340198,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1711507728739,
-      "end": 1711507728739,
+      "start": 1711508340198,
+      "end": 1711508340198,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1711507728739,
-      "end": 1711507728739,
+      "start": 1711508340198,
+      "end": 1711508340198,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1711507728739,
-      "end": 1711507728739,
+      "start": 1711508340198,
+      "end": 1711508340198,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1711507728739,
-      "end": 1711507728739,
+      "start": 1711508340198,
+      "end": 1711508340198,
       "order": "normal"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1711507728739,
-      "end": 1711507728739,
+      "start": 1711508340198,
+      "end": 1711508340198,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
       "result": "import { commonStore } from 'D:/localserver/web-nuxt-sdk/web-nuxt-qr-netlify/stores/common.ts';\nimport { defineComponent as _defineComponent } from \"vue\";\nimport { createElementVNode as _createElementVNode, createTextVNode as _createTextVNode, normalizeClass as _normalizeClass, openBlock as _openBlock, createElementBlock as _createElementBlock, createCommentVNode as _createCommentVNode, resolveComponent as _resolveComponent, withCtx as _withCtx, createVNode as _createVNode, unref as _unref, normalizeStyle as _normalizeStyle, createStaticVNode as _createStaticVNode, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\";\nconst _withScopeId = (n) => (_pushScopeId(\"data-v-c85106f6\"), n = n(), _popScopeId(), n);\nconst _hoisted_1 = { class: \"modal-header header-page\" };\nconst _hoisted_2 = /* @__PURE__ */ _withScopeId(() => /* @__PURE__ */ _createElementVNode(\"i\", { class: \"handlebar\" }, null, -1));\nconst _hoisted_3 = { class: \"scrollbar-y\" };\nconst _hoisted_4 = { class: \"store-contentss\" };\nconst _hoisted_5 = { class: \"store-summery\" };\nconst _hoisted_6 = /* @__PURE__ */ _withScopeId(() => /* @__PURE__ */ _createElementVNode(\"div\", { class: \"status-row\" }, [\n  /* @__PURE__ */ _createElementVNode(\"span\", { class: \"status open\" }, \"영업중\"),\n  /* @__PURE__ */ _createElementVNode(\"span\", { class: \"takeout\" }, \"포장가능\")\n], -1));\nconst _hoisted_7 = /* @__PURE__ */ _withScopeId(() => /* @__PURE__ */ _createElementVNode(\"h2\", { class: \"store-name\" }, \"동대문엽기떡볶이 - 신도림점\", -1));\nconst _hoisted_8 = { class: \"store-worktime\" };\nconst _hoisted_9 = /* @__PURE__ */ _withScopeId(() => /* @__PURE__ */ _createElementVNode(\"i\", { class: \"i-arrow\" }, null, -1));\nconst _hoisted_10 = {\n  key: 0,\n  class: \"time-list\"\n};\nconst _hoisted_11 = /* @__PURE__ */ _withScopeId(() => /* @__PURE__ */ _createElementVNode(\"ul\", null, [\n  /* @__PURE__ */ _createElementVNode(\"li\", null, \" 월-금 09:00 ~ 19:00 \"),\n  /* @__PURE__ */ _createElementVNode(\"li\", null, \" 토 09:00 ~ 19:00 \"),\n  /* @__PURE__ */ _createElementVNode(\"li\", null, \" 일 휴무 \")\n], -1));\nconst _hoisted_12 = [\n  _hoisted_11\n];\nconst _hoisted_13 = { class: \"store-links\" };\nconst _hoisted_14 = { class: \"link-row\" };\nconst _hoisted_15 = /* @__PURE__ */ _withScopeId(() => /* @__PURE__ */ _createElementVNode(\"li\", null, [\n  /* @__PURE__ */ _createElementVNode(\"a\", { href: \"`tel:0000000000\" }, [\n    /* @__PURE__ */ _createElementVNode(\"i\", { class: \"icon-call\" }),\n    /* @__PURE__ */ _createElementVNode(\"span\", { class: \"text\" }, \" 전화걸기 \")\n  ])\n], -1));\nconst _hoisted_16 = /* @__PURE__ */ _withScopeId(() => /* @__PURE__ */ _createElementVNode(\"i\", { class: \"icon-map\" }, null, -1));\nconst _hoisted_17 = /* @__PURE__ */ _withScopeId(() => /* @__PURE__ */ _createElementVNode(\"span\", { class: \"text\" }, \" 지도보기 \", -1));\nconst _hoisted_18 = { class: \"store-memo\" };\nconst _hoisted_19 = { class: \"store-slider\" };\nconst _hoisted_20 = /* @__PURE__ */ _withScopeId(() => /* @__PURE__ */ _createElementVNode(\"div\", { class: \"img-ratio-store img-wrap\" }, [\n  /* @__PURE__ */ _createElementVNode(\"img\", {\n    src: \"https://mannaplanetstorage.blob.core.windows.net/mannashop-img-test/banner//20230125165327AZ0480.png\",\n    alt: \"매장이미지\"\n  })\n], -1));\nconst _hoisted_21 = /* @__PURE__ */ _withScopeId(() => /* @__PURE__ */ _createElementVNode(\"div\", { class: \"img-ratio-store img-wrap\" }, [\n  /* @__PURE__ */ _createElementVNode(\"img\", {\n    src: \"https://mannaplanetstorage.blob.core.windows.net/mannashop-img-test/banner//20230125165327AZ0480.png\",\n    alt: \"매장이미지\"\n  })\n], -1));\nconst _hoisted_22 = /* @__PURE__ */ _withScopeId(() => /* @__PURE__ */ _createElementVNode(\"div\", { class: \"slide-count\" }, \"1 / 2\", -1));\nconst _hoisted_23 = /* @__PURE__ */ _withScopeId(() => /* @__PURE__ */ _createElementVNode(\"i\", { class: \"icon-more\" }, null, -1));\nconst _hoisted_24 = [\n  _hoisted_23\n];\nconst _hoisted_25 = /* @__PURE__ */ _createStaticVNode('<span class=\"separator\" data-v-c85106f6></span><section class=\"store-section\" data-v-c85106f6><h2 class=\"section-title\" data-v-c85106f6>사업장 정보</h2><div class=\"business-info\" data-v-c85106f6><dl data-v-c85106f6><dt data-v-c85106f6>상호명</dt><dd data-v-c85106f6>동대문엽기떡볶이 - 신도림점</dd></dl><dl data-v-c85106f6><dt data-v-c85106f6>대표자</dt><dd data-v-c85106f6>김대표</dd></dl><dl data-v-c85106f6><dt data-v-c85106f6>사업자등록번호</dt><dd data-v-c85106f6>123-00-00000</dd></dl><dl data-v-c85106f6><dt data-v-c85106f6>주소</dt><dd data-v-c85106f6>서울 영등포구 대림동 688-27 1층</dd></dl></div></section><section class=\"store-section\" data-v-c85106f6><h2 class=\"section-title\" data-v-c85106f6>원산지 정보</h2><div class=\"orgin-info\" data-v-c85106f6> 닭고기 - 국내산 / 쇠고기 - 국내산 한우, 호주산 / 명태연육 - 미국산 </div></section>', 3);\nconst _hoisted_28 = { class: \"footer-info\" };\nconst _hoisted_29 = /* @__PURE__ */ _withScopeId(() => /* @__PURE__ */ _createElementVNode(\"h1\", { class: \"btn-toggle-addr\" }, \" (주)만나플래닛 \", -1));\nconst _hoisted_30 = { class: \"terms-links\" };\nconst _hoisted_31 = /* @__PURE__ */ _withScopeId(() => /* @__PURE__ */ _createElementVNode(\"div\", { class: \"footer-notice\" }, \" ㈜만나플래닛은 상품거래에 대한 통신판매 중개자이며, 통신판매의 당사자가 아닙니다. 따라서, ㈜만나플래닛은 상품거래정보 및 거래에 대한 책임을 지지 않습니다. \", -1));\nimport { ref } from \"vue\";\nimport { Swiper, SwiperSlide } from \"swiper/vue\";\nimport SwiperCore, { Autoplay } from \"swiper\";\nimport \"swiper/css\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"modal-store-info\",\n  emits: [\"close\"],\n  setup(__props, { emit: __emit }) {\n    const common = commonStore();\n    const isToggleWorkTime = ref(true);\n    const isToggleMemo = ref(false);\n    const emit = __emit;\n    SwiperCore.use([Autoplay]);\n    const modalTranslateY = ref(null);\n    let startY = 0;\n    const handleTouchStart = (event) => {\n      startY = event.touches[0].clientY;\n    };\n    const handleTouchMove = (event) => {\n      const deltaY = event.touches[0].clientY - startY;\n      modalTranslateY.value = Math.min(1e3, Math.max(0, deltaY));\n    };\n    const handleTouchEnd = () => {\n      const winH = window.innerHeight * 0.8;\n      if (winH < modalTranslateY.value) {\n        emit(\"close\");\n      } else {\n        modalTranslateY.value = 0;\n      }\n    };\n    return (_ctx, _cache) => {\n      const _component_router_link = _resolveComponent(\"router-link\");\n      return _openBlock(), _createElementBlock(\"div\", {\n        class: \"modal-storeinfo\",\n        style: _normalizeStyle({ transform: `translateY(${modalTranslateY.value}px)` })\n      }, [\n        _createElementVNode(\"div\", {\n          class: \"modal-handlebar\",\n          onTouchstart: handleTouchStart,\n          onTouchmove: handleTouchMove,\n          onTouchend: handleTouchEnd\n        }, [\n          _createElementVNode(\"div\", _hoisted_1, [\n            _createElementVNode(\"button\", {\n              class: \"btn-close\",\n              onClick: _cache[0] || (_cache[0] = ($event) => emit(\"close\"))\n            })\n          ]),\n          _hoisted_2\n        ], 32),\n        _createElementVNode(\"div\", _hoisted_3, [\n          _createElementVNode(\"main\", _hoisted_4, [\n            _createElementVNode(\"section\", _hoisted_5, [\n              _hoisted_6,\n              _hoisted_7,\n              _createElementVNode(\"div\", _hoisted_8, [\n                _createElementVNode(\"div\", {\n                  class: _normalizeClass([\"time-head\", { on: isToggleWorkTime.value }]),\n                  onClick: _cache[1] || (_cache[1] = ($event) => isToggleWorkTime.value = !isToggleWorkTime.value)\n                }, [\n                  _createTextVNode(\" 수 09:00 ~19:00 \"),\n                  _hoisted_9\n                ], 2),\n                isToggleWorkTime.value ? (_openBlock(), _createElementBlock(\"div\", _hoisted_10, _hoisted_12)) : _createCommentVNode(\"\", true)\n              ]),\n              _createElementVNode(\"div\", _hoisted_13, [\n                _createElementVNode(\"ul\", _hoisted_14, [\n                  _hoisted_15,\n                  _createElementVNode(\"li\", null, [\n                    _createVNode(_component_router_link, { to: \"/pb/map\" }, {\n                      default: _withCtx(() => [\n                        _hoisted_16,\n                        _hoisted_17\n                      ]),\n                      _: 1\n                    })\n                  ])\n                ])\n              ])\n            ]),\n            _createElementVNode(\"section\", _hoisted_18, [\n              _createElementVNode(\"div\", _hoisted_19, [\n                _createVNode(_unref(Swiper), {\n                  class: \"slider-item\",\n                  speed: 400,\n                  pagination: { clickable: false }\n                }, {\n                  default: _withCtx(() => [\n                    _createVNode(_unref(SwiperSlide), null, {\n                      default: _withCtx(() => [\n                        _hoisted_20\n                      ]),\n                      _: 1\n                    }),\n                    _createVNode(_unref(SwiperSlide), null, {\n                      default: _withCtx(() => [\n                        _hoisted_21\n                      ]),\n                      _: 1\n                    })\n                  ]),\n                  _: 1\n                }),\n                _hoisted_22\n              ]),\n              _createElementVNode(\"div\", {\n                class: _normalizeClass([\"about-text\", { on: isToggleMemo.value }])\n              }, \" 매장 소개 문구 다섯 줄 이상 대기업 쉐프 출신 요리사가 요리하는 건강하고 맛있는 중국 음식점 입니다. 최고의 맛과 서비스를 제공하기 위해 끊임없이 연구하고 노력하겠습니다. 매장 소개 문구 다섯 줄 이상 대기업 쉐프 출신 요리사가 요리하는 건강하고 맛있는 중국 음식점 입니다. 최고의 맛과 서비스를 제공하기 위해 끊임없이 연구하고 노력하겠습니다. 매장 소개 문구 다섯 줄 이상 대기업 쉐프 출신 요리사가 요리하는 건강하고 맛있는 중국 음식점 입니다. 최고의 맛과 서비스를 제공하기 위해 끊임없이 연구하고 노력하겠습니다. \", 2),\n              _createElementVNode(\"button\", {\n                type: \"button\",\n                class: \"btn-more\",\n                onClick: _cache[2] || (_cache[2] = ($event) => isToggleMemo.value = !isToggleMemo.value)\n              }, _hoisted_24)\n            ]),\n            _hoisted_25\n          ]),\n          _createElementVNode(\"footer\", null, [\n            _createElementVNode(\"div\", _hoisted_28, [\n              _hoisted_29,\n              _createElementVNode(\"div\", _hoisted_30, [\n                _createVNode(_component_router_link, { to: \"/pb/terms/conditionsOfUse\" }, {\n                  default: _withCtx(() => [\n                    _createTextVNode(\"이용 약관\")\n                  ]),\n                  _: 1\n                }),\n                _createVNode(_component_router_link, { to: \"/pb/terms/privacyNotice\" }, {\n                  default: _withCtx(() => [\n                    _createTextVNode(\"개인정보 보호방침\")\n                  ]),\n                  _: 1\n                }),\n                _createVNode(_component_router_link, { to: \"/pb/terms/informationClause\" }, {\n                  default: _withCtx(() => [\n                    _createTextVNode(\"개인정보 제3자 동의\")\n                  ]),\n                  _: 1\n                }),\n                _createElementVNode(\"div\", null, [\n                  _createVNode(_component_router_link, { to: \"/pb/terms/locationAgreement\" }, {\n                    default: _withCtx(() => [\n                      _createTextVNode(\"위치기반 서비스 이용 약관\")\n                    ]),\n                    _: 1\n                  }),\n                  _createVNode(_component_router_link, { to: \"/pb/terms/adolescentClause\" }, {\n                    default: _withCtx(() => [\n                      _createTextVNode(\"청소년 보호정책\")\n                    ]),\n                    _: 1\n                  })\n                ])\n              ]),\n              _hoisted_31\n            ])\n          ])\n        ])\n      ], 4);\n    };\n  }\n});\n",
-      "start": 1711507728739,
-      "end": 1711507728752,
+      "start": 1711508340198,
+      "end": 1711508340212,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -180,15 +180,15 @@
     },
     {
       "name": "unctx:transform",
-      "start": 1711507728752,
-      "end": 1711507728752,
+      "start": 1711508340212,
+      "end": 1711508340212,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
       "result": "\nconst __nuxt_page_meta = null\nexport default __nuxt_page_meta\n",
-      "start": 1711507728754,
-      "end": 1711507728757,
+      "start": 1711508340212,
+      "end": 1711508340215,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -201,38 +201,38 @@
     },
     {
       "name": "nuxt:runtime-paths-dep",
-      "start": 1711507728757,
-      "end": 1711507728757,
+      "start": 1711508340215,
+      "end": 1711508340215,
       "order": "post"
     },
     {
       "name": "nuxt:route-injection-plugin",
-      "start": 1711507728757,
-      "end": 1711507728757,
+      "start": 1711508340215,
+      "end": 1711508340215,
       "order": "post"
     },
     {
       "name": "nuxt:components-loader",
-      "start": 1711507728757,
-      "end": 1711507728757,
+      "start": 1711508340215,
+      "end": 1711508340215,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-composables:transform",
-      "start": 1711507728757,
-      "end": 1711507728757,
+      "start": 1711508340215,
+      "end": 1711508340215,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1711507728757,
-      "end": 1711507728757,
+      "start": 1711508340215,
+      "end": 1711508340215,
       "order": "normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1711507728757,
-      "end": 1711507728757,
+      "start": 1711508340215,
+      "end": 1711508340215,
       "order": "normal"
     }
   ]

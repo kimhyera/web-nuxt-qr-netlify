@@ -4,8 +4,8 @@
     {
       "name": "vite:vue",
       "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { ssrRenderComponent as _ssrRenderComponent } from \"vue/server-renderer\"\n\nimport { ref } from 'vue';\r\nimport { Swiper, SwiperSlide } from 'swiper/vue';\r\nimport SwiperCore, { Autoplay } from 'swiper';\r\nimport 'swiper/css';\r\nimport modalStoreInfo from '../popup/modal-store-info.vue';\r\nimport modalMemo from '../popup/modal-notice.vue';\r\n\r\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'history-paylater',\n  __ssrInlineRender: true,\n  setup(__props) {\n\r\nSwiperCore.use([Autoplay]);\r\n\r\n\r\nconst isBusinessTime = ref(false);\r\nconst isStoreInfo = ref(false);\r\nconst isMemo = ref(false);\r\n\r\n\r\n;\r\n\r\nconst showStoreInfo = () => {\r\n\tisStoreInfo.value = true;\r\n\tconst app = document.querySelector('#__nuxt');\r\n\tapp?.classList.add('modal-open-fixed');\r\n};\r\n\r\n\r\nconst closeStoreInfo = () => {\r\n\tisStoreInfo.value = false;\r\n\tconst app = document.querySelector('#__nuxt');\r\n\tapp?.classList.remove('modal-open-fixed');\r\n};\r\n\r\n\r\nconst closeMemo = () => {\r\n\tisMemo.value = false;\r\n};\r\n\r\n\r\n\r\n\nreturn (_ctx: any,_push: any,_parent: any,_attrs: any) => {\n  _push(`<!--[--><div class=\"layout1\" data-v-0d476499><header class=\"header-main\" data-v-0d476499><div class=\"header-row\" data-v-0d476499><h1 class=\"store-name\" data-v-0d476499> 스토어 이름 <i class=\"i-store-info\" data-v-0d476499></i></h1></div></header><main class=\"order-page\" data-v-0d476499><section class=\"order-dashboard\" data-v-0d476499><div class=\"table-info\" data-v-0d476499><dl class=\"table-No\" data-v-0d476499><dt data-v-0d476499>테이블 번호</dt><dd data-v-0d476499>2</dd></dl></div></section><section class=\"order-history fixed\" data-v-0d476499><h2 class=\"section-title\" data-v-0d476499>주문내역</h2><div class=\"history-wrap scrollbar-y\" data-v-0d476499><div class=\"history-order\" data-v-0d476499><div class=\"h-head\" data-v-0d476499><h3 class=\"title\" data-v-0d476499> 주문 1 </h3><span class=\"date\" data-v-0d476499>2023.11.11</span></div><ul class=\"order-list\" data-v-0d476499><li data-v-0d476499><div class=\"info-row\" data-v-0d476499><p class=\"name\" data-v-0d476499>[ 1인찌개SET ] 1개</p><p class=\"price\" data-v-0d476499><b data-v-0d476499>32,900</b>원</p></div><ul class=\"option-add-list\" data-v-0d476499><li data-v-0d476499>기본 : (+15,900원)</li></ul><ul class=\"option-add-list\" data-v-0d476499></ul><ul class=\"option-add-list\" data-v-0d476499><li data-v-0d476499>추가선택 : 3종반찬 빼고로 변경 (+5,000원)</li><li data-v-0d476499>추가선택 : 두부사리(4ea) 추가 (+1,000원)</li><li data-v-0d476499>추가선택 : 두툼전지100g 추가 (+3,000원)</li><li data-v-0d476499>추가선택 : 보들 \\\\&#39;\\\\&#39;계란말이\\\\&#39;\\\\&#39; (+0원)</li><li data-v-0d476499>추가선택 : 직화 \\\\&#39;\\\\&#39;제육볶음\\\\&#39;\\\\&#39; 추가 (+8,000원)</li></ul></li><li data-v-0d476499><div class=\"info-row\" data-v-0d476499><p class=\"name\" data-v-0d476499>도시락광천김 1개</p><p class=\"price\" data-v-0d476499><b data-v-0d476499>1,000</b>원</p></div><ul class=\"option-add-list\" data-v-0d476499><li data-v-0d476499>기본 : (+1,000원)</li></ul><ul class=\"option-add-list\" data-v-0d476499><li data-v-0d476499>옵션1 : 2봉 (+0원)</li></ul></li><li data-v-0d476499><div class=\"info-row\" data-v-0d476499><p class=\"name\" data-v-0d476499>대접밥 3개</p><p class=\"price\" data-v-0d476499><b data-v-0d476499>3,000</b>원</p></div><ul class=\"option-add-list\" data-v-0d476499><li data-v-0d476499>기본 : (+1,000원)</li></ul><ul class=\"option-add-list\" data-v-0d476499></ul></li></ul></div><div class=\"history-order\" data-v-0d476499><div class=\"h-head\" data-v-0d476499><h3 class=\"title\" data-v-0d476499> 주문 2 </h3><span class=\"date\" data-v-0d476499>2023.11.11</span></div><ul class=\"order-list\" data-v-0d476499><li data-v-0d476499><div class=\"info-row\" data-v-0d476499><p class=\"name\" data-v-0d476499>[ 1인찌개SET ] 1개</p><p class=\"price\" data-v-0d476499><b data-v-0d476499>32,900</b>원</p></div><ul class=\"option-add-list\" data-v-0d476499><li data-v-0d476499>기본 : (+15,900원)</li></ul><ul class=\"option-add-list\" data-v-0d476499></ul><ul class=\"option-add-list\" data-v-0d476499><li data-v-0d476499>추가선택 : 3종반찬 빼고로 변경 (+5,000원)</li><li data-v-0d476499>추가선택 : 두부사리(4ea) 추가 (+1,000원)</li><li data-v-0d476499>추가선택 : 두툼전지100g 추가 (+3,000원)</li><li data-v-0d476499>추가선택 : 보들 \\\\&#39;\\\\&#39;계란말이\\\\&#39;\\\\&#39; (+0원)</li><li data-v-0d476499>추가선택 : 직화 \\\\&#39;\\\\&#39;제육볶음\\\\&#39;\\\\&#39; 추가 (+8,000원)</li></ul></li><li data-v-0d476499><div class=\"info-row\" data-v-0d476499><p class=\"name\" data-v-0d476499>도시락광천김 1개</p><p class=\"price\" data-v-0d476499><b data-v-0d476499>1,000</b>원</p></div><ul class=\"option-add-list\" data-v-0d476499><li data-v-0d476499>기본 : (+1,000원)</li></ul><ul class=\"option-add-list\" data-v-0d476499><li data-v-0d476499>옵션1 : 2봉 (+0원)</li></ul></li><li data-v-0d476499><div class=\"info-row\" data-v-0d476499><p class=\"name\" data-v-0d476499>대접밥 3개</p><p class=\"price\" data-v-0d476499><b data-v-0d476499>3,000</b>원</p></div><ul class=\"option-add-list\" data-v-0d476499><li data-v-0d476499>기본 : (+1,000원)</li></ul><ul class=\"option-add-list\" data-v-0d476499></ul></li></ul></div></div><ul class=\"btn-bottom-wrap\" data-v-0d476499><li data-v-0d476499><button class=\"btn-primary-1\" data-v-0d476499>추가주문</button></li><li data-v-0d476499><button class=\"btn-primary-2\" data-v-0d476499>결제하기</button>&gt;</li></ul></section></main></div>`)\n  if (isStoreInfo.value) {\n    _push(_ssrRenderComponent(modalStoreInfo, { onClose: closeStoreInfo }, null, _parent))\n  } else {\n    _push(`<!---->`)\n  }\n  if (isMemo.value) {\n    _push(_ssrRenderComponent(modalMemo, { onClose: closeMemo }, null, _parent))\n  } else {\n    _push(`<!---->`)\n  }\n  _push(`<!--]-->`)\n}\n}\n\n})",
-      "start": 1711507750719,
-      "end": 1711507750719,
+      "start": 1711508359270,
+      "end": 1711508359270,
       "sourcemaps": {
         "version": 3,
         "sources": [
@@ -20,45 +20,45 @@
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1711507750719,
-      "end": 1711507750719,
+      "start": 1711508359271,
+      "end": 1711508359271,
       "order": "pre"
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1711507750719,
-      "end": 1711507750719,
+      "start": 1711508359271,
+      "end": 1711508359271,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1711507750720,
-      "end": 1711507750720,
+      "start": 1711508359271,
+      "end": 1711508359271,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1711507750720,
-      "end": 1711507750720,
+      "start": 1711508359271,
+      "end": 1711508359271,
       "order": "pre"
     },
     {
       "name": "nuxt:client-fallback-auto-id",
-      "start": 1711507750720,
-      "end": 1711507750720,
+      "start": 1711508359273,
+      "end": 1711508359273,
       "order": "pre"
     },
     {
       "name": "vite:css",
-      "start": 1711507750720,
-      "end": 1711507750720,
+      "start": 1711508359273,
+      "end": 1711508359273,
       "order": "normal"
     },
     {
       "name": "vite:esbuild",
       "result": "import { defineComponent as _defineComponent } from \"vue\";\nimport { ssrRenderComponent as _ssrRenderComponent } from \"vue/server-renderer\";\nimport { ref } from \"vue\";\nimport SwiperCore, { Autoplay } from \"swiper\";\nimport \"swiper/css\";\nimport modalStoreInfo from \"../popup/modal-store-info.vue\";\nimport modalMemo from \"../popup/modal-notice.vue\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"history-paylater\",\n  __ssrInlineRender: true,\n  setup(__props) {\n    SwiperCore.use([Autoplay]);\n    const isBusinessTime = ref(false);\n    const isStoreInfo = ref(false);\n    const isMemo = ref(false);\n    ;\n    const showStoreInfo = () => {\n      isStoreInfo.value = true;\n      const app = document.querySelector(\"#__nuxt\");\n      app?.classList.add(\"modal-open-fixed\");\n    };\n    const closeStoreInfo = () => {\n      isStoreInfo.value = false;\n      const app = document.querySelector(\"#__nuxt\");\n      app?.classList.remove(\"modal-open-fixed\");\n    };\n    const closeMemo = () => {\n      isMemo.value = false;\n    };\n    return (_ctx, _push, _parent, _attrs) => {\n      _push(`<!--[--><div class=\"layout1\" data-v-0d476499><header class=\"header-main\" data-v-0d476499><div class=\"header-row\" data-v-0d476499><h1 class=\"store-name\" data-v-0d476499> 스토어 이름 <i class=\"i-store-info\" data-v-0d476499></i></h1></div></header><main class=\"order-page\" data-v-0d476499><section class=\"order-dashboard\" data-v-0d476499><div class=\"table-info\" data-v-0d476499><dl class=\"table-No\" data-v-0d476499><dt data-v-0d476499>테이블 번호</dt><dd data-v-0d476499>2</dd></dl></div></section><section class=\"order-history fixed\" data-v-0d476499><h2 class=\"section-title\" data-v-0d476499>주문내역</h2><div class=\"history-wrap scrollbar-y\" data-v-0d476499><div class=\"history-order\" data-v-0d476499><div class=\"h-head\" data-v-0d476499><h3 class=\"title\" data-v-0d476499> 주문 1 </h3><span class=\"date\" data-v-0d476499>2023.11.11</span></div><ul class=\"order-list\" data-v-0d476499><li data-v-0d476499><div class=\"info-row\" data-v-0d476499><p class=\"name\" data-v-0d476499>[ 1인찌개SET ] 1개</p><p class=\"price\" data-v-0d476499><b data-v-0d476499>32,900</b>원</p></div><ul class=\"option-add-list\" data-v-0d476499><li data-v-0d476499>기본 : (+15,900원)</li></ul><ul class=\"option-add-list\" data-v-0d476499></ul><ul class=\"option-add-list\" data-v-0d476499><li data-v-0d476499>추가선택 : 3종반찬 빼고로 변경 (+5,000원)</li><li data-v-0d476499>추가선택 : 두부사리(4ea) 추가 (+1,000원)</li><li data-v-0d476499>추가선택 : 두툼전지100g 추가 (+3,000원)</li><li data-v-0d476499>추가선택 : 보들 \\\\&#39;\\\\&#39;계란말이\\\\&#39;\\\\&#39; (+0원)</li><li data-v-0d476499>추가선택 : 직화 \\\\&#39;\\\\&#39;제육볶음\\\\&#39;\\\\&#39; 추가 (+8,000원)</li></ul></li><li data-v-0d476499><div class=\"info-row\" data-v-0d476499><p class=\"name\" data-v-0d476499>도시락광천김 1개</p><p class=\"price\" data-v-0d476499><b data-v-0d476499>1,000</b>원</p></div><ul class=\"option-add-list\" data-v-0d476499><li data-v-0d476499>기본 : (+1,000원)</li></ul><ul class=\"option-add-list\" data-v-0d476499><li data-v-0d476499>옵션1 : 2봉 (+0원)</li></ul></li><li data-v-0d476499><div class=\"info-row\" data-v-0d476499><p class=\"name\" data-v-0d476499>대접밥 3개</p><p class=\"price\" data-v-0d476499><b data-v-0d476499>3,000</b>원</p></div><ul class=\"option-add-list\" data-v-0d476499><li data-v-0d476499>기본 : (+1,000원)</li></ul><ul class=\"option-add-list\" data-v-0d476499></ul></li></ul></div><div class=\"history-order\" data-v-0d476499><div class=\"h-head\" data-v-0d476499><h3 class=\"title\" data-v-0d476499> 주문 2 </h3><span class=\"date\" data-v-0d476499>2023.11.11</span></div><ul class=\"order-list\" data-v-0d476499><li data-v-0d476499><div class=\"info-row\" data-v-0d476499><p class=\"name\" data-v-0d476499>[ 1인찌개SET ] 1개</p><p class=\"price\" data-v-0d476499><b data-v-0d476499>32,900</b>원</p></div><ul class=\"option-add-list\" data-v-0d476499><li data-v-0d476499>기본 : (+15,900원)</li></ul><ul class=\"option-add-list\" data-v-0d476499></ul><ul class=\"option-add-list\" data-v-0d476499><li data-v-0d476499>추가선택 : 3종반찬 빼고로 변경 (+5,000원)</li><li data-v-0d476499>추가선택 : 두부사리(4ea) 추가 (+1,000원)</li><li data-v-0d476499>추가선택 : 두툼전지100g 추가 (+3,000원)</li><li data-v-0d476499>추가선택 : 보들 \\\\&#39;\\\\&#39;계란말이\\\\&#39;\\\\&#39; (+0원)</li><li data-v-0d476499>추가선택 : 직화 \\\\&#39;\\\\&#39;제육볶음\\\\&#39;\\\\&#39; 추가 (+8,000원)</li></ul></li><li data-v-0d476499><div class=\"info-row\" data-v-0d476499><p class=\"name\" data-v-0d476499>도시락광천김 1개</p><p class=\"price\" data-v-0d476499><b data-v-0d476499>1,000</b>원</p></div><ul class=\"option-add-list\" data-v-0d476499><li data-v-0d476499>기본 : (+1,000원)</li></ul><ul class=\"option-add-list\" data-v-0d476499><li data-v-0d476499>옵션1 : 2봉 (+0원)</li></ul></li><li data-v-0d476499><div class=\"info-row\" data-v-0d476499><p class=\"name\" data-v-0d476499>대접밥 3개</p><p class=\"price\" data-v-0d476499><b data-v-0d476499>3,000</b>원</p></div><ul class=\"option-add-list\" data-v-0d476499><li data-v-0d476499>기본 : (+1,000원)</li></ul><ul class=\"option-add-list\" data-v-0d476499></ul></li></ul></div></div><ul class=\"btn-bottom-wrap\" data-v-0d476499><li data-v-0d476499><button class=\"btn-primary-1\" data-v-0d476499>추가주문</button></li><li data-v-0d476499><button class=\"btn-primary-2\" data-v-0d476499>결제하기</button>&gt;</li></ul></section></main></div>`);\n      if (isStoreInfo.value) {\n        _push(_ssrRenderComponent(modalStoreInfo, { onClose: closeStoreInfo }, null, _parent));\n      } else {\n        _push(`<!---->`);\n      }\n      if (isMemo.value) {\n        _push(_ssrRenderComponent(modalMemo, { onClose: closeMemo }, null, _parent));\n      } else {\n        _push(`<!---->`);\n      }\n      _push(`<!--]-->`);\n    };\n  }\n});\n",
-      "start": 1711507750720,
-      "end": 1711507750959,
+      "start": 1711508359273,
+      "end": 1711508359469,
       "order": "normal",
       "sourcemaps": {
         "version": 3,
@@ -74,161 +74,161 @@
     },
     {
       "name": "vite:json",
-      "start": 1711507750959,
-      "end": 1711507750959,
+      "start": 1711508359470,
+      "end": 1711508359470,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1711507750959,
-      "end": 1711507750959,
+      "start": 1711508359470,
+      "end": 1711508359470,
       "order": "normal"
     },
     {
       "name": "vite:vue",
-      "start": 1711507750959,
-      "end": 1711507750959,
+      "start": 1711508359470,
+      "end": 1711508359470,
       "order": "normal"
     },
     {
       "name": "vite:vue-jsx",
-      "start": 1711507750959,
-      "end": 1711507750959,
+      "start": 1711508359470,
+      "end": 1711508359470,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1711507750959,
-      "end": 1711507750959,
+      "start": 1711508359470,
+      "end": 1711508359470,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1711507750959,
-      "end": 1711507750959,
+      "start": 1711508359470,
+      "end": 1711508359470,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1711507750959,
-      "end": 1711507750959,
+      "start": 1711508359470,
+      "end": 1711508359470,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1711507750959,
-      "end": 1711507750959,
+      "start": 1711508359470,
+      "end": 1711508359470,
       "order": "normal"
     },
     {
       "name": "nuxt:components:imports",
-      "start": 1711507750959,
-      "end": 1711507750959,
+      "start": 1711508359470,
+      "end": 1711508359470,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1711507750959,
-      "end": 1711507750959,
+      "start": 1711508359470,
+      "end": 1711508359470,
       "order": "normal"
     },
     {
       "name": "ssr-styles",
-      "start": 1711507750960,
-      "end": 1711507750960,
+      "start": 1711508359470,
+      "end": 1711508359470,
       "order": "normal"
     },
     {
       "name": "vite:define",
       "result": "import { defineComponent as _defineComponent } from \"vue\";\nimport { ssrRenderComponent as _ssrRenderComponent } from \"vue/server-renderer\";\nimport { ref } from \"vue\";\nimport SwiperCore, { Autoplay } from \"swiper\";\nimport \"swiper/css\";\nimport modalStoreInfo from \"../popup/modal-store-info.vue\";\nimport modalMemo from \"../popup/modal-notice.vue\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"history-paylater\",\n  __ssrInlineRender: true,\n  setup(__props) {\n    SwiperCore.use([Autoplay]);\n    const isBusinessTime = ref(false);\n    const isStoreInfo = ref(false);\n    const isMemo = ref(false);\n    ;\n    const showStoreInfo = () => {\n      isStoreInfo.value = true;\n      const app = (void 0).querySelector(\"#__nuxt\");\n      app?.classList.add(\"modal-open-fixed\");\n    };\n    const closeStoreInfo = () => {\n      isStoreInfo.value = false;\n      const app = (void 0).querySelector(\"#__nuxt\");\n      app?.classList.remove(\"modal-open-fixed\");\n    };\n    const closeMemo = () => {\n      isMemo.value = false;\n    };\n    return (_ctx, _push, _parent, _attrs) => {\n      _push(`<!--[--><div class=\"layout1\" data-v-0d476499><header class=\"header-main\" data-v-0d476499><div class=\"header-row\" data-v-0d476499><h1 class=\"store-name\" data-v-0d476499> 스토어 이름 <i class=\"i-store-info\" data-v-0d476499></i></h1></div></header><main class=\"order-page\" data-v-0d476499><section class=\"order-dashboard\" data-v-0d476499><div class=\"table-info\" data-v-0d476499><dl class=\"table-No\" data-v-0d476499><dt data-v-0d476499>테이블 번호</dt><dd data-v-0d476499>2</dd></dl></div></section><section class=\"order-history fixed\" data-v-0d476499><h2 class=\"section-title\" data-v-0d476499>주문내역</h2><div class=\"history-wrap scrollbar-y\" data-v-0d476499><div class=\"history-order\" data-v-0d476499><div class=\"h-head\" data-v-0d476499><h3 class=\"title\" data-v-0d476499> 주문 1 </h3><span class=\"date\" data-v-0d476499>2023.11.11</span></div><ul class=\"order-list\" data-v-0d476499><li data-v-0d476499><div class=\"info-row\" data-v-0d476499><p class=\"name\" data-v-0d476499>[ 1인찌개SET ] 1개</p><p class=\"price\" data-v-0d476499><b data-v-0d476499>32,900</b>원</p></div><ul class=\"option-add-list\" data-v-0d476499><li data-v-0d476499>기본 : (+15,900원)</li></ul><ul class=\"option-add-list\" data-v-0d476499></ul><ul class=\"option-add-list\" data-v-0d476499><li data-v-0d476499>추가선택 : 3종반찬 빼고로 변경 (+5,000원)</li><li data-v-0d476499>추가선택 : 두부사리(4ea) 추가 (+1,000원)</li><li data-v-0d476499>추가선택 : 두툼전지100g 추가 (+3,000원)</li><li data-v-0d476499>추가선택 : 보들 \\\\&#39;\\\\&#39;계란말이\\\\&#39;\\\\&#39; (+0원)</li><li data-v-0d476499>추가선택 : 직화 \\\\&#39;\\\\&#39;제육볶음\\\\&#39;\\\\&#39; 추가 (+8,000원)</li></ul></li><li data-v-0d476499><div class=\"info-row\" data-v-0d476499><p class=\"name\" data-v-0d476499>도시락광천김 1개</p><p class=\"price\" data-v-0d476499><b data-v-0d476499>1,000</b>원</p></div><ul class=\"option-add-list\" data-v-0d476499><li data-v-0d476499>기본 : (+1,000원)</li></ul><ul class=\"option-add-list\" data-v-0d476499><li data-v-0d476499>옵션1 : 2봉 (+0원)</li></ul></li><li data-v-0d476499><div class=\"info-row\" data-v-0d476499><p class=\"name\" data-v-0d476499>대접밥 3개</p><p class=\"price\" data-v-0d476499><b data-v-0d476499>3,000</b>원</p></div><ul class=\"option-add-list\" data-v-0d476499><li data-v-0d476499>기본 : (+1,000원)</li></ul><ul class=\"option-add-list\" data-v-0d476499></ul></li></ul></div><div class=\"history-order\" data-v-0d476499><div class=\"h-head\" data-v-0d476499><h3 class=\"title\" data-v-0d476499> 주문 2 </h3><span class=\"date\" data-v-0d476499>2023.11.11</span></div><ul class=\"order-list\" data-v-0d476499><li data-v-0d476499><div class=\"info-row\" data-v-0d476499><p class=\"name\" data-v-0d476499>[ 1인찌개SET ] 1개</p><p class=\"price\" data-v-0d476499><b data-v-0d476499>32,900</b>원</p></div><ul class=\"option-add-list\" data-v-0d476499><li data-v-0d476499>기본 : (+15,900원)</li></ul><ul class=\"option-add-list\" data-v-0d476499></ul><ul class=\"option-add-list\" data-v-0d476499><li data-v-0d476499>추가선택 : 3종반찬 빼고로 변경 (+5,000원)</li><li data-v-0d476499>추가선택 : 두부사리(4ea) 추가 (+1,000원)</li><li data-v-0d476499>추가선택 : 두툼전지100g 추가 (+3,000원)</li><li data-v-0d476499>추가선택 : 보들 \\\\&#39;\\\\&#39;계란말이\\\\&#39;\\\\&#39; (+0원)</li><li data-v-0d476499>추가선택 : 직화 \\\\&#39;\\\\&#39;제육볶음\\\\&#39;\\\\&#39; 추가 (+8,000원)</li></ul></li><li data-v-0d476499><div class=\"info-row\" data-v-0d476499><p class=\"name\" data-v-0d476499>도시락광천김 1개</p><p class=\"price\" data-v-0d476499><b data-v-0d476499>1,000</b>원</p></div><ul class=\"option-add-list\" data-v-0d476499><li data-v-0d476499>기본 : (+1,000원)</li></ul><ul class=\"option-add-list\" data-v-0d476499><li data-v-0d476499>옵션1 : 2봉 (+0원)</li></ul></li><li data-v-0d476499><div class=\"info-row\" data-v-0d476499><p class=\"name\" data-v-0d476499>대접밥 3개</p><p class=\"price\" data-v-0d476499><b data-v-0d476499>3,000</b>원</p></div><ul class=\"option-add-list\" data-v-0d476499><li data-v-0d476499>기본 : (+1,000원)</li></ul><ul class=\"option-add-list\" data-v-0d476499></ul></li></ul></div></div><ul class=\"btn-bottom-wrap\" data-v-0d476499><li data-v-0d476499><button class=\"btn-primary-1\" data-v-0d476499>추가주문</button></li><li data-v-0d476499><button class=\"btn-primary-2\" data-v-0d476499>결제하기</button>&gt;</li></ul></section></main></div>`);\n      if (isStoreInfo.value) {\n        _push(_ssrRenderComponent(modalStoreInfo, { onClose: closeStoreInfo }, null, _parent));\n      } else {\n        _push(`<!---->`);\n      }\n      if (isMemo.value) {\n        _push(_ssrRenderComponent(modalMemo, { onClose: closeMemo }, null, _parent));\n      } else {\n        _push(`<!---->`);\n      }\n      _push(`<!--]-->`);\n    };\n  }\n});\n",
-      "start": 1711507750960,
-      "end": 1711507770627,
+      "start": 1711508359471,
+      "end": 1711508378875,
       "order": "normal",
       "sourcemaps": "{\n  \"version\": 3,\n  \"sources\": [\"D:/localserver/web-nuxt-sdk/web-nuxt-qr-netlify/pages/pb/order/history-paylater.vue?macro=true&vue&type=script&setup=true&lang.ts\"],\n  \"sourcesContent\": [\"import { defineComponent as _defineComponent } from \\\"vue\\\";\\nimport { ssrRenderComponent as _ssrRenderComponent } from \\\"vue/server-renderer\\\";\\nimport { ref } from \\\"vue\\\";\\nimport SwiperCore, { Autoplay } from \\\"swiper\\\";\\nimport \\\"swiper/css\\\";\\nimport modalStoreInfo from \\\"../popup/modal-store-info.vue\\\";\\nimport modalMemo from \\\"../popup/modal-notice.vue\\\";\\nexport default /* @__PURE__ */ _defineComponent({\\n  __name: \\\"history-paylater\\\",\\n  __ssrInlineRender: true,\\n  setup(__props) {\\n    SwiperCore.use([Autoplay]);\\n    const isBusinessTime = ref(false);\\n    const isStoreInfo = ref(false);\\n    const isMemo = ref(false);\\n    ;\\n    const showStoreInfo = () => {\\n      isStoreInfo.value = true;\\n      const app = document.querySelector(\\\"#__nuxt\\\");\\n      app?.classList.add(\\\"modal-open-fixed\\\");\\n    };\\n    const closeStoreInfo = () => {\\n      isStoreInfo.value = false;\\n      const app = document.querySelector(\\\"#__nuxt\\\");\\n      app?.classList.remove(\\\"modal-open-fixed\\\");\\n    };\\n    const closeMemo = () => {\\n      isMemo.value = false;\\n    };\\n    return (_ctx, _push, _parent, _attrs) => {\\n      _push(`<!--[--><div class=\\\"layout1\\\" data-v-0d476499><header class=\\\"header-main\\\" data-v-0d476499><div class=\\\"header-row\\\" data-v-0d476499><h1 class=\\\"store-name\\\" data-v-0d476499> 스토어 이름 <i class=\\\"i-store-info\\\" data-v-0d476499></i></h1></div></header><main class=\\\"order-page\\\" data-v-0d476499><section class=\\\"order-dashboard\\\" data-v-0d476499><div class=\\\"table-info\\\" data-v-0d476499><dl class=\\\"table-No\\\" data-v-0d476499><dt data-v-0d476499>테이블 번호</dt><dd data-v-0d476499>2</dd></dl></div></section><section class=\\\"order-history fixed\\\" data-v-0d476499><h2 class=\\\"section-title\\\" data-v-0d476499>주문내역</h2><div class=\\\"history-wrap scrollbar-y\\\" data-v-0d476499><div class=\\\"history-order\\\" data-v-0d476499><div class=\\\"h-head\\\" data-v-0d476499><h3 class=\\\"title\\\" data-v-0d476499> 주문 1 </h3><span class=\\\"date\\\" data-v-0d476499>2023.11.11</span></div><ul class=\\\"order-list\\\" data-v-0d476499><li data-v-0d476499><div class=\\\"info-row\\\" data-v-0d476499><p class=\\\"name\\\" data-v-0d476499>[ 1인찌개SET ] 1개</p><p class=\\\"price\\\" data-v-0d476499><b data-v-0d476499>32,900</b>원</p></div><ul class=\\\"option-add-list\\\" data-v-0d476499><li data-v-0d476499>기본 : (+15,900원)</li></ul><ul class=\\\"option-add-list\\\" data-v-0d476499></ul><ul class=\\\"option-add-list\\\" data-v-0d476499><li data-v-0d476499>추가선택 : 3종반찬 빼고로 변경 (+5,000원)</li><li data-v-0d476499>추가선택 : 두부사리(4ea) 추가 (+1,000원)</li><li data-v-0d476499>추가선택 : 두툼전지100g 추가 (+3,000원)</li><li data-v-0d476499>추가선택 : 보들 \\\\\\\\&#39;\\\\\\\\&#39;계란말이\\\\\\\\&#39;\\\\\\\\&#39; (+0원)</li><li data-v-0d476499>추가선택 : 직화 \\\\\\\\&#39;\\\\\\\\&#39;제육볶음\\\\\\\\&#39;\\\\\\\\&#39; 추가 (+8,000원)</li></ul></li><li data-v-0d476499><div class=\\\"info-row\\\" data-v-0d476499><p class=\\\"name\\\" data-v-0d476499>도시락광천김 1개</p><p class=\\\"price\\\" data-v-0d476499><b data-v-0d476499>1,000</b>원</p></div><ul class=\\\"option-add-list\\\" data-v-0d476499><li data-v-0d476499>기본 : (+1,000원)</li></ul><ul class=\\\"option-add-list\\\" data-v-0d476499><li data-v-0d476499>옵션1 : 2봉 (+0원)</li></ul></li><li data-v-0d476499><div class=\\\"info-row\\\" data-v-0d476499><p class=\\\"name\\\" data-v-0d476499>대접밥 3개</p><p class=\\\"price\\\" data-v-0d476499><b data-v-0d476499>3,000</b>원</p></div><ul class=\\\"option-add-list\\\" data-v-0d476499><li data-v-0d476499>기본 : (+1,000원)</li></ul><ul class=\\\"option-add-list\\\" data-v-0d476499></ul></li></ul></div><div class=\\\"history-order\\\" data-v-0d476499><div class=\\\"h-head\\\" data-v-0d476499><h3 class=\\\"title\\\" data-v-0d476499> 주문 2 </h3><span class=\\\"date\\\" data-v-0d476499>2023.11.11</span></div><ul class=\\\"order-list\\\" data-v-0d476499><li data-v-0d476499><div class=\\\"info-row\\\" data-v-0d476499><p class=\\\"name\\\" data-v-0d476499>[ 1인찌개SET ] 1개</p><p class=\\\"price\\\" data-v-0d476499><b data-v-0d476499>32,900</b>원</p></div><ul class=\\\"option-add-list\\\" data-v-0d476499><li data-v-0d476499>기본 : (+15,900원)</li></ul><ul class=\\\"option-add-list\\\" data-v-0d476499></ul><ul class=\\\"option-add-list\\\" data-v-0d476499><li data-v-0d476499>추가선택 : 3종반찬 빼고로 변경 (+5,000원)</li><li data-v-0d476499>추가선택 : 두부사리(4ea) 추가 (+1,000원)</li><li data-v-0d476499>추가선택 : 두툼전지100g 추가 (+3,000원)</li><li data-v-0d476499>추가선택 : 보들 \\\\\\\\&#39;\\\\\\\\&#39;계란말이\\\\\\\\&#39;\\\\\\\\&#39; (+0원)</li><li data-v-0d476499>추가선택 : 직화 \\\\\\\\&#39;\\\\\\\\&#39;제육볶음\\\\\\\\&#39;\\\\\\\\&#39; 추가 (+8,000원)</li></ul></li><li data-v-0d476499><div class=\\\"info-row\\\" data-v-0d476499><p class=\\\"name\\\" data-v-0d476499>도시락광천김 1개</p><p class=\\\"price\\\" data-v-0d476499><b data-v-0d476499>1,000</b>원</p></div><ul class=\\\"option-add-list\\\" data-v-0d476499><li data-v-0d476499>기본 : (+1,000원)</li></ul><ul class=\\\"option-add-list\\\" data-v-0d476499><li data-v-0d476499>옵션1 : 2봉 (+0원)</li></ul></li><li data-v-0d476499><div class=\\\"info-row\\\" data-v-0d476499><p class=\\\"name\\\" data-v-0d476499>대접밥 3개</p><p class=\\\"price\\\" data-v-0d476499><b data-v-0d476499>3,000</b>원</p></div><ul class=\\\"option-add-list\\\" data-v-0d476499><li data-v-0d476499>기본 : (+1,000원)</li></ul><ul class=\\\"option-add-list\\\" data-v-0d476499></ul></li></ul></div></div><ul class=\\\"btn-bottom-wrap\\\" data-v-0d476499><li data-v-0d476499><button class=\\\"btn-primary-1\\\" data-v-0d476499>추가주문</button></li><li data-v-0d476499><button class=\\\"btn-primary-2\\\" data-v-0d476499>결제하기</button>&gt;</li></ul></section></main></div>`);\\n      if (isStoreInfo.value) {\\n        _push(_ssrRenderComponent(modalStoreInfo, { onClose: closeStoreInfo }, null, _parent));\\n      } else {\\n        _push(`<!---->`);\\n      }\\n      if (isMemo.value) {\\n        _push(_ssrRenderComponent(modalMemo, { onClose: closeMemo }, null, _parent));\\n      } else {\\n        _push(`<!---->`);\\n      }\\n      _push(`<!--]-->`);\\n    };\\n  }\\n});\\n\"],\n  \"mappings\": \"AAAA,SAAS,mBAAmB,wBAAwB;AACpD,SAAS,sBAAsB,2BAA2B;AAC1D,SAAS,WAAW;AACpB,OAAO,cAAc,gBAAgB;AACrC,OAAO;AACP,OAAO,oBAAoB;AAC3B,OAAO,eAAe;AACtB,eAA+B,iCAAiB;AAAA,EAC9C,QAAQ;AAAA,EACR,mBAAmB;AAAA,EACnB,MAAM,SAAS;AACb,eAAW,IAAI,CAAC,QAAQ,CAAC;AACzB,UAAM,iBAAiB,IAAI,KAAK;AAChC,UAAM,cAAc,IAAI,KAAK;AAC7B,UAAM,SAAS,IAAI,KAAK;AACxB;AACA,UAAM,gBAAgB,MAAM;AAC1B,kBAAY,QAAQ;AACpB,YAAM,MAAM,SAAS,cAAc,SAAS;AAC5C,WAAK,UAAU,IAAI,kBAAkB;AAAA,IACvC;AACA,UAAM,iBAAiB,MAAM;AAC3B,kBAAY,QAAQ;AACpB,YAAM,MAAM,SAAS,cAAc,SAAS;AAC5C,WAAK,UAAU,OAAO,kBAAkB;AAAA,IAC1C;AACA,UAAM,YAAY,MAAM;AACtB,aAAO,QAAQ;AAAA,IACjB;AACA,WAAO,CAAC,MAAM,OAAO,SAAS,WAAW;AACvC,YAAM,u+HAAu+H;AAC7+H,UAAI,YAAY,OAAO;AACrB,cAAM,oBAAoB,gBAAgB,EAAE,SAAS,eAAe,GAAG,MAAM,OAAO,CAAC;AAAA,MACvF,OAAO;AACL,cAAM,SAAS;AAAA,MACjB;AACA,UAAI,OAAO,OAAO;AAChB,cAAM,oBAAoB,WAAW,EAAE,SAAS,UAAU,GAAG,MAAM,OAAO,CAAC;AAAA,MAC7E,OAAO;AACL,cAAM,SAAS;AAAA,MACjB;AACA,YAAM,UAAU;AAAA,IAClB;AAAA,EACF;AACF,CAAC;\",\n  \"names\": []\n}\n"
     },
     {
       "name": "vite:css-post",
-      "start": 1711507770628,
-      "end": 1711507770628,
+      "start": 1711508378876,
+      "end": 1711508378876,
       "order": "normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1711507770628,
-      "end": 1711507770628,
+      "start": 1711508378876,
+      "end": 1711508378876,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1711507770628,
-      "end": 1711507770628,
+      "start": 1711508378876,
+      "end": 1711508378876,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1711507770628,
-      "end": 1711507770628,
+      "start": 1711508378876,
+      "end": 1711508378876,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1711507770628,
-      "end": 1711507770628,
+      "start": 1711508378876,
+      "end": 1711508378876,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1711507770628,
-      "end": 1711507770628,
+      "start": 1711508378876,
+      "end": 1711508378876,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1711507770628,
-      "end": 1711507770628,
+      "start": 1711508378876,
+      "end": 1711508378876,
       "order": "normal"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1711507770628,
-      "end": 1711507770628,
+      "start": 1711508378876,
+      "end": 1711508378876,
       "order": "post"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1711507770628,
-      "end": 1711507770628,
+      "start": 1711508378876,
+      "end": 1711508378876,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
-      "start": 1711507770628,
-      "end": 1711507770635,
+      "start": 1711508378876,
+      "end": 1711508378884,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
-      "start": 1711507770628,
-      "end": 1711507770635,
+      "start": 1711508378876,
+      "end": 1711508378884,
       "order": "post"
     },
     {
       "name": "unctx:transform",
-      "start": 1711507770635,
-      "end": 1711507770636,
+      "start": 1711508378885,
+      "end": 1711508378885,
       "order": "post"
     },
     {
       "name": "unctx:transform",
-      "start": 1711507770635,
-      "end": 1711507770636,
+      "start": 1711508378885,
+      "end": 1711508378885,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
       "result": "\nconst __nuxt_page_meta = null\nexport default __nuxt_page_meta\n",
-      "start": 1711507770636,
-      "end": 1711507770638,
+      "start": 1711508378885,
+      "end": 1711508378887,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -242,8 +242,8 @@
     {
       "name": "nuxt:pages-macros-transform",
       "result": "\nconst __nuxt_page_meta = null\nexport default __nuxt_page_meta\n",
-      "start": 1711507770636,
-      "end": 1711507770639,
+      "start": 1711508378885,
+      "end": 1711508378887,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -256,32 +256,32 @@
     },
     {
       "name": "nuxt:tree-shake-template",
-      "start": 1711507770639,
-      "end": 1711507770639,
+      "start": 1711508378888,
+      "end": 1711508378888,
       "order": "post"
     },
     {
       "name": "nuxt:components-loader",
-      "start": 1711507770639,
-      "end": 1711507770639,
+      "start": 1711508378888,
+      "end": 1711508378888,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-composables:transform",
-      "start": 1711507770639,
-      "end": 1711507770639,
+      "start": 1711508378888,
+      "end": 1711508378888,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1711507770639,
-      "end": 1711507770639,
+      "start": 1711508378888,
+      "end": 1711508378888,
       "order": "normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1711507770639,
-      "end": 1711507770639,
+      "start": 1711508378888,
+      "end": 1711508378888,
       "order": "normal"
     }
   ]

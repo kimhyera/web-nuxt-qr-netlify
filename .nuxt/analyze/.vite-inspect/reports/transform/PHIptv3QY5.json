@@ -4,57 +4,57 @@
     {
       "name": "vite:load-fallback",
       "result": "<script setup>\r\nconst common = commonStore();\r\nconsole.log(\"app.vue - theme - \", common.getTheme());\r\nconst layoutName = common.getTheme().name;\r\n\r\n</script>\r\n\r\n<template>\r\n\t\r\n  <div>\r\n    <NuxtLayout :name=\"layoutName\">\r\n      <NuxtPage />\r\n    </NuxtLayout>\r\n  </div>\r\n</template>\r\n",
-      "start": 1711507719095,
-      "end": 1711507719201,
+      "start": 1711508329748,
+      "end": 1711508329807,
       "sourcemaps": null
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1711507719201,
-      "end": 1711507719201,
+      "start": 1711508329807,
+      "end": 1711508329807,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1711507719201,
-      "end": 1711507719201,
+      "start": 1711508329807,
+      "end": 1711508329807,
       "order": "pre"
     },
     {
       "name": "nuxt:client-fallback-auto-id",
-      "start": 1711507719201,
-      "end": 1711507719201,
+      "start": 1711508329807,
+      "end": 1711508329807,
       "order": "pre"
     },
     {
       "name": "vite:css",
-      "start": 1711507719201,
-      "end": 1711507719201,
+      "start": 1711508329807,
+      "end": 1711508329807,
       "order": "normal"
     },
     {
       "name": "vite:esbuild",
-      "start": 1711507719201,
-      "end": 1711507719201,
+      "start": 1711508329807,
+      "end": 1711508329807,
       "order": "normal"
     },
     {
       "name": "vite:json",
-      "start": 1711507719201,
-      "end": 1711507719201,
+      "start": 1711508329807,
+      "end": 1711508329807,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1711507719201,
-      "end": 1711507719201,
+      "start": 1711508329807,
+      "end": 1711508329807,
       "order": "normal"
     },
     {
       "name": "vite:vue",
       "result": "import { unref as _unref, resolveComponent as _resolveComponent, createVNode as _createVNode, withCtx as _withCtx, openBlock as _openBlock, createElementBlock as _createElementBlock } from \"vue\"\n\n\nconst _sfc_main = {\n  __name: 'app',\n  setup(__props) {\n\r\nconst common = commonStore();\r\nconsole.log(\"app.vue - theme - \", common.getTheme());\r\nconst layoutName = common.getTheme().name;\r\n\r\n\nreturn (_ctx, _cache) => {\n  const _component_NuxtPage = _resolveComponent(\"NuxtPage\")\n  const _component_NuxtLayout = _resolveComponent(\"NuxtLayout\")\n\n  return (_openBlock(), _createElementBlock(\"div\", null, [\n    _createVNode(_component_NuxtLayout, { name: _unref(layoutName) }, {\n      default: _withCtx(() => [\n        _createVNode(_component_NuxtPage)\n      ]),\n      _: 1\n    }, 8, [\"name\"])\n  ]))\n}\n}\n\n}\n\n\n\nexport default _sfc_main",
-      "start": 1711507719201,
-      "end": 1711507719203,
+      "start": 1711508329807,
+      "end": 1711508329809,
       "order": "normal",
       "sourcemaps": {
         "mappings": ""
@@ -62,105 +62,105 @@
     },
     {
       "name": "vite:vue-jsx",
-      "start": 1711507719203,
-      "end": 1711507719203,
+      "start": 1711508329809,
+      "end": 1711508329809,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1711507719203,
-      "end": 1711507719203,
+      "start": 1711508329809,
+      "end": 1711508329809,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1711507719203,
-      "end": 1711507719203,
+      "start": 1711508329809,
+      "end": 1711508329809,
       "order": "normal"
     },
     {
       "name": "nuxt:chunk-error",
-      "start": 1711507719203,
-      "end": 1711507719203,
+      "start": 1711508329809,
+      "end": 1711508329809,
       "order": "normal"
     },
     {
       "name": "nuxt:components:imports",
-      "start": 1711507719203,
-      "end": 1711507719203,
+      "start": 1711508329809,
+      "end": 1711508329809,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1711507719203,
-      "end": 1711507719203,
+      "start": 1711508329809,
+      "end": 1711508329809,
       "order": "normal"
     },
     {
       "name": "ssr-styles",
-      "start": 1711507719203,
-      "end": 1711507719203,
+      "start": 1711508329809,
+      "end": 1711508329809,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1711507719203,
-      "end": 1711507719203,
+      "start": 1711508329809,
+      "end": 1711508329809,
       "order": "normal"
     },
     {
       "name": "vite:css-post",
-      "start": 1711507719203,
-      "end": 1711507719204,
+      "start": 1711508329809,
+      "end": 1711508329809,
       "order": "normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1711507719204,
-      "end": 1711507719204,
+      "start": 1711508329809,
+      "end": 1711508329809,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1711507719204,
-      "end": 1711507719204,
+      "start": 1711508329809,
+      "end": 1711508329809,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1711507719204,
-      "end": 1711507719204,
+      "start": 1711508329809,
+      "end": 1711508329809,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1711507719204,
-      "end": 1711507719204,
+      "start": 1711508329809,
+      "end": 1711508329809,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1711507719204,
-      "end": 1711507719204,
+      "start": 1711508329809,
+      "end": 1711508329809,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1711507719204,
-      "end": 1711507719204,
+      "start": 1711508329809,
+      "end": 1711508329809,
       "order": "normal"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1711507719204,
-      "end": 1711507719204,
+      "start": 1711508329809,
+      "end": 1711508329809,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
       "result": "import { commonStore } from 'D:/localserver/web-nuxt-sdk/web-nuxt-qr-netlify/stores/common.ts';\nimport { unref as _unref, resolveComponent as _resolveComponent, createVNode as _createVNode, withCtx as _withCtx, openBlock as _openBlock, createElementBlock as _createElementBlock } from \"vue\"\n\n\nconst _sfc_main = {\n  __name: 'app',\n  setup(__props) {\n\r\nconst common = commonStore();\r\nconsole.log(\"app.vue - theme - \", common.getTheme());\r\nconst layoutName = common.getTheme().name;\r\n\r\n\nreturn (_ctx, _cache) => {\n  const _component_NuxtPage = _resolveComponent(\"NuxtPage\")\n  const _component_NuxtLayout = _resolveComponent(\"NuxtLayout\")\n\n  return (_openBlock(), _createElementBlock(\"div\", null, [\n    _createVNode(_component_NuxtLayout, { name: _unref(layoutName) }, {\n      default: _withCtx(() => [\n        _createVNode(_component_NuxtPage)\n      ]),\n      _: 1\n    }, 8, [\"name\"])\n  ]))\n}\n}\n\n}\n\n\n\nexport default _sfc_main",
-      "start": 1711507719204,
-      "end": 1711507719204,
+      "start": 1711508329809,
+      "end": 1711508329810,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -173,51 +173,51 @@
     },
     {
       "name": "unctx:transform",
-      "start": 1711507719204,
-      "end": 1711507719204,
+      "start": 1711508329810,
+      "end": 1711508329810,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1711507719204,
-      "end": 1711507719204,
+      "start": 1711508329810,
+      "end": 1711508329810,
       "order": "post"
     },
     {
       "name": "nuxt:runtime-paths-dep",
-      "start": 1711507719204,
-      "end": 1711507719204,
+      "start": 1711508329810,
+      "end": 1711508329810,
       "order": "post"
     },
     {
       "name": "nuxt:route-injection-plugin",
-      "start": 1711507719204,
-      "end": 1711507719204,
+      "start": 1711508329810,
+      "end": 1711508329810,
       "order": "post"
     },
     {
       "name": "nuxt:components-loader",
       "result": "import { default as __nuxt_component_0 } from \"D:/localserver/web-nuxt-sdk/web-nuxt-qr-netlify/node_modules/nuxt/dist/pages/runtime/page\";\nimport { default as __nuxt_component_1 } from \"D:/localserver/web-nuxt-sdk/web-nuxt-qr-netlify/node_modules/nuxt/dist/app/components/nuxt-layout\";\nimport { commonStore } from 'D:/localserver/web-nuxt-sdk/web-nuxt-qr-netlify/stores/common.ts';\nimport { unref as _unref, resolveComponent as _resolveComponent, createVNode as _createVNode, withCtx as _withCtx, openBlock as _openBlock, createElementBlock as _createElementBlock } from \"vue\"\n\n\nconst _sfc_main = {\n  __name: 'app',\n  setup(__props) {\n\r\nconst common = commonStore();\r\nconsole.log(\"app.vue - theme - \", common.getTheme());\r\nconst layoutName = common.getTheme().name;\r\n\r\n\nreturn (_ctx, _cache) => {\n  const _component_NuxtPage = __nuxt_component_0\n  const _component_NuxtLayout = __nuxt_component_1\n\n  return (_openBlock(), _createElementBlock(\"div\", null, [\n    _createVNode(_component_NuxtLayout, { name: _unref(layoutName) }, {\n      default: _withCtx(() => [\n        _createVNode(_component_NuxtPage)\n      ]),\n      _: 1\n    }, 8, [\"name\"])\n  ]))\n}\n}\n\n}\n\n\n\nexport default _sfc_main",
-      "start": 1711507719204,
-      "end": 1711507719205,
+      "start": 1711508329810,
+      "end": 1711508329810,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-composables:transform",
-      "start": 1711507719205,
-      "end": 1711507719205,
+      "start": 1711508329810,
+      "end": 1711508329810,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1711507719205,
-      "end": 1711507719205,
+      "start": 1711508329810,
+      "end": 1711508329810,
       "order": "normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1711507719205,
-      "end": 1711507719205,
+      "start": 1711508329810,
+      "end": 1711508329810,
       "order": "normal"
     }
   ]

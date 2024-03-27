@@ -4,57 +4,57 @@
     {
       "name": "vite:load-fallback",
       "result": "<script setup>\r\nimport { useRoute } from 'vue-router'\r\n\r\nimport Toast from '../popup/toast.vue';\r\n\r\nconst route = useRoute()\r\n\r\nconst groupNo = route.params.groupNo\r\nconst goodsNo = route.params.goodsNo\r\n</script>\r\n<template>\r\n\t<div>\r\n\r\n\t\t<header class=\"fixed-goods-header\"><span class=\"title\">새우버거</span><button class=\"btn-history-back\"\r\n\t\t\t\ttitle=\"이전페이지로 이동\"></button></header>\r\n\t\t<main class=\"detail-page\">\r\n\t\t\t<section class=\"detail-image-wrap img-ratio-detail-top\"><img\r\n\t\t\t\t\tsrc=\"https://mannaplanetstorage.blob.core.windows.net/mannashop-img-test/store_goods/461/S285461/20220825132409AZ1388.jpg\"\r\n\t\t\t\t\talt=\"\"></section>\r\n\t\t\t<section class=\"info-wrap\"><span class=\"name\">새우버거</span><span class=\"desc\">새우살을 가득넣어 더 맛있어진 오리지널 새우버거</span>\r\n\t\t\t\t<div class=\"price-row\"><span class=\"price\">4,500원</span></div>\r\n\t\t\t</section>\r\n\r\n\t\t\t<!-- 옵션 리스트 -->\r\n\t\t\t<section class=\"option-add-wrap\">\r\n\t\t\t\t<div class=\"option-add\">\r\n\t\t\t\t\t<div class=\"title-row\">\r\n\t\t\t\t\t\t<h3 class=\"title\">옵션1</h3>\r\n\t\t\t\t\t\t<span class=\"validate\">필수선택</span>\r\n\t\t\t\t\t</div>\r\n\t\t\t\t\t<ul class=\"option-list\">\r\n\t\t\t\t\t\t<li>\r\n\t\t\t\t\t\t\t<div class=\"form-check-wrap\"><input class=\"form-radio\" id=\"radio00\" type=\"radio\"\r\n\t\t\t\t\t\t\t\t\tvalue=\"15572751\"><label class=\"form-check-label\" for=\"radio00\"><span\r\n\t\t\t\t\t\t\t\t\t\tclass=\"name\">test12</span><span class=\"price\">+100원</span></label></div>\r\n\t\t\t\t\t\t</li>\r\n\t\t\t\t\t\t<li>\r\n\t\t\t\t\t\t\t<div class=\"form-check-wrap\"><input class=\"form-radio\" id=\"radio01\" type=\"radio\"\r\n\t\t\t\t\t\t\t\t\tvalue=\"15544753\"><label class=\"form-check-label\" for=\"radio01\"><span\r\n\t\t\t\t\t\t\t\t\t\tclass=\"name\">test1</span><span class=\"price\">+0원</span></label></div>\r\n\t\t\t\t\t\t</li>\r\n\t\t\t\t\t\t<li>\r\n\t\t\t\t\t\t\t<div class=\"form-check-wrap\"><input class=\"form-radio\" id=\"radio02\" type=\"radio\"\r\n\t\t\t\t\t\t\t\t\tvalue=\"15544754\"><label class=\"form-check-label\" for=\"radio02\"><span\r\n\t\t\t\t\t\t\t\t\t\tclass=\"name\">test2</span><span class=\"price\">+0원</span></label></div>\r\n\t\t\t\t\t\t</li>\r\n\t\t\t\t\t</ul>\r\n\t\t\t\t</div>\r\n\t\t\t\t<div class=\"option-add\">\r\n\t\t\t\t\t<div class=\"title-row\">\r\n\t\t\t\t\t\t<h3 class=\"title\">옵션2</h3>\r\n\t\t\t\t\t</div>\r\n\t\t\t\t\t<ul class=\"option-list\">\r\n\t\t\t\t\t\t<li>\r\n\t\t\t\t\t\t\t<div class=\"form-check-wrap\"><input class=\"form-radio\" id=\"radio10\" type=\"radio\"\r\n\t\t\t\t\t\t\t\t\tvalue=\"15572752\"><label class=\"form-check-label\" for=\"radio10\"><span\r\n\t\t\t\t\t\t\t\t\t\tclass=\"name\">test3</span><span class=\"price\">+200원</span></label></div>\r\n\t\t\t\t\t\t</li>\r\n\t\t\t\t\t\t<li>\r\n\t\t\t\t\t\t\t<div class=\"form-check-wrap\"><input class=\"form-radio\" id=\"radio11\" type=\"radio\"\r\n\t\t\t\t\t\t\t\t\tvalue=\"15544756\"><label class=\"form-check-label\" for=\"radio11\"><span\r\n\t\t\t\t\t\t\t\t\t\tclass=\"name\">test4</span><span class=\"price\">+0원</span></label></div>\r\n\t\t\t\t\t\t</li>\r\n\t\t\t\t\t\t<li>\r\n\t\t\t\t\t\t\t<div class=\"form-check-wrap\"><input class=\"form-radio\" id=\"radio12\" type=\"radio\"\r\n\t\t\t\t\t\t\t\t\tvalue=\"15544763\"><label class=\"form-check-label\" for=\"radio12\"><span\r\n\t\t\t\t\t\t\t\t\t\tclass=\"name\">test11</span><span class=\"price\">+0원</span></label></div>\r\n\t\t\t\t\t\t</li>\r\n\t\t\t\t\t</ul>\r\n\t\t\t\t</div>\r\n\t\t\t</section>\r\n\t\t\t<!-- //옵션 리스트 -->\r\n\r\n\t\t\t<!-- 추가상품  -->\r\n\r\n\t\t\t<section class=\"option-add-wrap\">\r\n\t\t\t\t<div class=\"option-add\">\r\n\t\t\t\t\t<div class=\"title-row\">\r\n\t\t\t\t\t\t<h3 class=\"title\">그룹1</h3><span class=\"validate\"><span>필수 2개 선택</span></span>\r\n\t\t\t\t\t</div>\r\n\t\t\t\t\t<ul class=\"option-list\">\r\n\t\t\t\t\t\t<li>\r\n\t\t\t\t\t\t\t<div class=\"form-check-wrap\"><input class=\"form-check\" id=\"grp00\" type=\"checkbox\"><label\r\n\t\t\t\t\t\t\t\t\tclass=\"form-check-label\" for=\"grp00\"><span class=\"name\">골드팩 </span><span\r\n\t\t\t\t\t\t\t\t\t\tclass=\"price\">+1,800원</span></label></div>\r\n\t\t\t\t\t\t</li>\r\n\t\t\t\t\t\t<li>\r\n\t\t\t\t\t\t\t<div class=\"form-check-wrap\"><input class=\"form-check\" id=\"grp01\" type=\"checkbox\"><label\r\n\t\t\t\t\t\t\t\t\tclass=\"form-check-label\" for=\"grp01\"><span class=\"name\">시저샐러드 </span><span\r\n\t\t\t\t\t\t\t\t\t\tclass=\"price\">+2,500원</span></label></div>\r\n\t\t\t\t\t\t</li>\r\n\t\t\t\t\t\t<li>\r\n\t\t\t\t\t\t\t<div class=\"form-check-wrap\"><input class=\"form-check\" id=\"grp02\" type=\"checkbox\"><label\r\n\t\t\t\t\t\t\t\t\tclass=\"form-check-label\" for=\"grp02\"><span class=\"name\">콜라 </span><span\r\n\t\t\t\t\t\t\t\t\t\tclass=\"price\">+1,300원</span></label></div>\r\n\t\t\t\t\t\t</li>\r\n\t\t\t\t\t</ul>\r\n\t\t\t\t</div>\r\n\t\t\t\t<div class=\"option-add\">\r\n\t\t\t\t\t<div class=\"title-row\">\r\n\t\t\t\t\t\t<h3 class=\"title\">그룹2</h3><span class=\"validate\">3개까지 선택</span>\r\n\t\t\t\t\t<!-- 3개 이상 선택시 input : disabled  추가-->\r\n\t\t\t\t\t</div>\r\n\t\t\t\t\t<ul class=\"option-list\">\r\n\t\t\t\t\t\t<li>\r\n\t\t\t\t\t\t\t<div class=\"form-check-wrap\"><input class=\"form-check\" id=\"grp10\" type=\"checkbox\"><label\r\n\t\t\t\t\t\t\t\t\tclass=\"form-check-label\" for=\"grp10\"><span class=\"name\">골드팩 </span><span\r\n\t\t\t\t\t\t\t\t\t\tclass=\"price\">+1,800원</span></label></div>\r\n\t\t\t\t\t\t</li>\r\n\t\t\t\t\t\t<li>\r\n\t\t\t\t\t\t\t<div class=\"form-check-wrap\"><input class=\"form-check\" id=\"grp11\" type=\"checkbox\"><label\r\n\t\t\t\t\t\t\t\t\tclass=\"form-check-label\" for=\"grp11\"><span class=\"name\">시저샐러드 </span><span\r\n\t\t\t\t\t\t\t\t\t\tclass=\"price\">+2,500원</span></label></div>\r\n\t\t\t\t\t\t</li>\r\n\t\t\t\t\t\t<li>\r\n\t\t\t\t\t\t\t<div class=\"form-check-wrap\"><input class=\"form-check\" id=\"grp12\" type=\"checkbox\"><label\r\n\t\t\t\t\t\t\t\t\tclass=\"form-check-label\" for=\"grp12\"><span class=\"name\">콜라 </span><span\r\n\t\t\t\t\t\t\t\t\t\tclass=\"price\">+1,300원</span></label></div>\r\n\t\t\t\t\t\t</li>\r\n\t\t\t\t\t\t<li>\r\n\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t<div class=\"form-check-wrap\"><input class=\"form-check\" id=\"grp13\" type=\"checkbox\" disabled><label\r\n\t\t\t\t\t\t\t\t\tclass=\"form-check-label\" for=\"grp13\"><span class=\"name\">선데아이스크림 플레인\r\n\t\t\t\t\t\t\t\t\t\t</span><span class=\"price\">+1,800원</span></label></div>\r\n\t\t\t\t\t\t</li>\r\n\t\t\t\t\t\t<li>\r\n\t\t\t\t\t\t\t<div class=\"form-check-wrap\"><input class=\"form-check\" id=\"grp14\" type=\"checkbox\" disabled><label\r\n\t\t\t\t\t\t\t\tclass=\"form-check-label\" for=\"grp14\"><span class=\"name\">클래식 치즈버거 </span><span\r\n\t\t\t\t\t\t\t\t\tclass=\"price\">+4,500원</span></label></div>\r\n\t\t\t\t\t</li>\r\n\t\t\t\t\r\n\t\t\t\t\t<li>\r\n\t\t\t\t\t\t<div class=\"form-check-wrap\"><input class=\"form-check\" id=\"grp18\" type=\"checkbox\" disabled><label\r\n\t\t\t\t\t\t\t\tclass=\"form-check-label\" for=\"grp18\"><span class=\"name\">패밀리팩 </span><span\r\n\t\t\t\t\t\t\t\t\tclass=\"price\">+14,300원</span></label></div>\r\n\t\t\t\t\t</li>\r\n\t\t\t\t\t<!-- 품절상품  -->\r\n\t\t\t\t\t<li>\r\n\t\t\t\t\t\t<div class=\"form-check-wrap\"><input class=\"form-check\" id=\"grp19\" type=\"checkbox\"\r\n\t\t\t\t\t\t\t\tdisabled=\"\"><label class=\"form-check-label\" for=\"grp19\"><span class=\"name\">1인혼닭세트 <span\r\n\t\t\t\t\t\t\t\t\t\tclass=\"badge-soldout\">품절</span></span><span\r\n\t\t\t\t\t\t\t\t\tclass=\"price\">+11,600원</span></label></div>\r\n\t\t\t\t\t</li>\r\n\t\t\t\t</ul>\r\n\t\t\t</div>\r\n\t\t</section>\r\n\r\n\r\n\r\n\t\t<!--// 추가상품  -->\r\n\t\t<span class=\"border-coutom\"></span>\r\n\r\n\r\n\t\t<section class=\"total-wrap\">\r\n\t\t\t<div class=\"count\">\r\n\t\t\t\t<dl>\r\n\t\t\t\t\t<dt>수량</dt>\r\n\t\t\t\t\t<ul class=\"count-btn-wrap\">\r\n\t\t\t\t\t\t<li><button type=\"button\" class=\"btn-minus\" disabled></button></li>\r\n\t\t\t\t\t\t<li class=\"num-count\">1</li>\r\n\t\t\t\t\t\t<li><button type=\"button\" class=\"btn-plus\"></button></li>\r\n\t\t\t\t\t</ul>\r\n\t\t\t\t</dl>\r\n\t\t\t</div>\r\n\t\t\t<div class=\"total\">\r\n\t\t\t\t<dl>\r\n\t\t\t\t\t<dt>주문금액</dt>\r\n\t\t\t\t\t<dd><em class=\"total-price\">4,800원</em></dd>\r\n\t\t\t\t</dl>\r\n\t\t\t</div>\r\n\t\t</section>\r\n\t\t<div class=\"btn-wrap-fixed-wrap\">\r\n\t\t\t<div class=\"btn-wrap-fixed\"><button class=\"btn-cart btn-block-lg\">1개 장바구니 담기</button></div>\r\n\t\t\t<!--btn-wrap fixed 여백 조정 -->\r\n\t\t\t<div class=\"btn-fixed-fake-area\"></div>\r\n\t\t</div>\r\n\t</main>\r\n\r\n\r\n</div>\r\n\r\n\r\n<Toast pos=\"bottom\"> \r\n\t<template #text> 상품이 추가되었습니다.\r\n </template>\r\n\t<template #button> 장바구니로 이동  </template>\r\n</Toast>\r\n\r\n</template>\r\n\r\n\r\n\r\n<style lang=\"scss\" scoped>@import '@/assets/default/scss/contents/order/goodsDetail';</style>\r\n",
-      "start": 1711507720016,
-      "end": 1711507720102,
+      "start": 1711508329623,
+      "end": 1711508329724,
       "sourcemaps": null
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1711507720103,
-      "end": 1711507720103,
+      "start": 1711508329724,
+      "end": 1711508329724,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1711507720103,
-      "end": 1711507720103,
+      "start": 1711508329724,
+      "end": 1711508329724,
       "order": "pre"
     },
     {
       "name": "nuxt:client-fallback-auto-id",
-      "start": 1711507720103,
-      "end": 1711507720103,
+      "start": 1711508329724,
+      "end": 1711508329724,
       "order": "pre"
     },
     {
       "name": "vite:css",
-      "start": 1711507720103,
-      "end": 1711507720103,
+      "start": 1711508329724,
+      "end": 1711508329724,
       "order": "normal"
     },
     {
       "name": "vite:esbuild",
-      "start": 1711507720103,
-      "end": 1711507720103,
+      "start": 1711508329724,
+      "end": 1711508329724,
       "order": "normal"
     },
     {
       "name": "vite:json",
-      "start": 1711507720103,
-      "end": 1711507720103,
+      "start": 1711508329724,
+      "end": 1711508329724,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1711507720103,
-      "end": 1711507720103,
+      "start": 1711508329724,
+      "end": 1711508329724,
       "order": "normal"
     },
     {
       "name": "vite:vue",
       "result": "import { createElementVNode as _createElementVNode, createTextVNode as _createTextVNode, withCtx as _withCtx, createVNode as _createVNode, createStaticVNode as _createStaticVNode, Fragment as _Fragment, openBlock as _openBlock, createElementBlock as _createElementBlock, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\"\n\nconst _withScopeId = n => (_pushScopeId(\"data-v-bf4faf3f\"),n=n(),_popScopeId(),n)\nconst _hoisted_1 = /*#__PURE__*/_createStaticVNode(\"<div data-v-bf4faf3f><header class=\\\"fixed-goods-header\\\" data-v-bf4faf3f><span class=\\\"title\\\" data-v-bf4faf3f>새우버거</span><button class=\\\"btn-history-back\\\" title=\\\"이전페이지로 이동\\\" data-v-bf4faf3f></button></header><main class=\\\"detail-page\\\" data-v-bf4faf3f><section class=\\\"detail-image-wrap img-ratio-detail-top\\\" data-v-bf4faf3f><img src=\\\"https://mannaplanetstorage.blob.core.windows.net/mannashop-img-test/store_goods/461/S285461/20220825132409AZ1388.jpg\\\" alt=\\\"\\\" data-v-bf4faf3f></section><section class=\\\"info-wrap\\\" data-v-bf4faf3f><span class=\\\"name\\\" data-v-bf4faf3f>새우버거</span><span class=\\\"desc\\\" data-v-bf4faf3f>새우살을 가득넣어 더 맛있어진 오리지널 새우버거</span><div class=\\\"price-row\\\" data-v-bf4faf3f><span class=\\\"price\\\" data-v-bf4faf3f>4,500원</span></div></section><section class=\\\"option-add-wrap\\\" data-v-bf4faf3f><div class=\\\"option-add\\\" data-v-bf4faf3f><div class=\\\"title-row\\\" data-v-bf4faf3f><h3 class=\\\"title\\\" data-v-bf4faf3f>옵션1</h3><span class=\\\"validate\\\" data-v-bf4faf3f>필수선택</span></div><ul class=\\\"option-list\\\" data-v-bf4faf3f><li data-v-bf4faf3f><div class=\\\"form-check-wrap\\\" data-v-bf4faf3f><input class=\\\"form-radio\\\" id=\\\"radio00\\\" type=\\\"radio\\\" value=\\\"15572751\\\" data-v-bf4faf3f><label class=\\\"form-check-label\\\" for=\\\"radio00\\\" data-v-bf4faf3f><span class=\\\"name\\\" data-v-bf4faf3f>test12</span><span class=\\\"price\\\" data-v-bf4faf3f>+100원</span></label></div></li><li data-v-bf4faf3f><div class=\\\"form-check-wrap\\\" data-v-bf4faf3f><input class=\\\"form-radio\\\" id=\\\"radio01\\\" type=\\\"radio\\\" value=\\\"15544753\\\" data-v-bf4faf3f><label class=\\\"form-check-label\\\" for=\\\"radio01\\\" data-v-bf4faf3f><span class=\\\"name\\\" data-v-bf4faf3f>test1</span><span class=\\\"price\\\" data-v-bf4faf3f>+0원</span></label></div></li><li data-v-bf4faf3f><div class=\\\"form-check-wrap\\\" data-v-bf4faf3f><input class=\\\"form-radio\\\" id=\\\"radio02\\\" type=\\\"radio\\\" value=\\\"15544754\\\" data-v-bf4faf3f><label class=\\\"form-check-label\\\" for=\\\"radio02\\\" data-v-bf4faf3f><span class=\\\"name\\\" data-v-bf4faf3f>test2</span><span class=\\\"price\\\" data-v-bf4faf3f>+0원</span></label></div></li></ul></div><div class=\\\"option-add\\\" data-v-bf4faf3f><div class=\\\"title-row\\\" data-v-bf4faf3f><h3 class=\\\"title\\\" data-v-bf4faf3f>옵션2</h3></div><ul class=\\\"option-list\\\" data-v-bf4faf3f><li data-v-bf4faf3f><div class=\\\"form-check-wrap\\\" data-v-bf4faf3f><input class=\\\"form-radio\\\" id=\\\"radio10\\\" type=\\\"radio\\\" value=\\\"15572752\\\" data-v-bf4faf3f><label class=\\\"form-check-label\\\" for=\\\"radio10\\\" data-v-bf4faf3f><span class=\\\"name\\\" data-v-bf4faf3f>test3</span><span class=\\\"price\\\" data-v-bf4faf3f>+200원</span></label></div></li><li data-v-bf4faf3f><div class=\\\"form-check-wrap\\\" data-v-bf4faf3f><input class=\\\"form-radio\\\" id=\\\"radio11\\\" type=\\\"radio\\\" value=\\\"15544756\\\" data-v-bf4faf3f><label class=\\\"form-check-label\\\" for=\\\"radio11\\\" data-v-bf4faf3f><span class=\\\"name\\\" data-v-bf4faf3f>test4</span><span class=\\\"price\\\" data-v-bf4faf3f>+0원</span></label></div></li><li data-v-bf4faf3f><div class=\\\"form-check-wrap\\\" data-v-bf4faf3f><input class=\\\"form-radio\\\" id=\\\"radio12\\\" type=\\\"radio\\\" value=\\\"15544763\\\" data-v-bf4faf3f><label class=\\\"form-check-label\\\" for=\\\"radio12\\\" data-v-bf4faf3f><span class=\\\"name\\\" data-v-bf4faf3f>test11</span><span class=\\\"price\\\" data-v-bf4faf3f>+0원</span></label></div></li></ul></div></section><section class=\\\"option-add-wrap\\\" data-v-bf4faf3f><div class=\\\"option-add\\\" data-v-bf4faf3f><div class=\\\"title-row\\\" data-v-bf4faf3f><h3 class=\\\"title\\\" data-v-bf4faf3f>그룹1</h3><span class=\\\"validate\\\" data-v-bf4faf3f><span data-v-bf4faf3f>필수 2개 선택</span></span></div><ul class=\\\"option-list\\\" data-v-bf4faf3f><li data-v-bf4faf3f><div class=\\\"form-check-wrap\\\" data-v-bf4faf3f><input class=\\\"form-check\\\" id=\\\"grp00\\\" type=\\\"checkbox\\\" data-v-bf4faf3f><label class=\\\"form-check-label\\\" for=\\\"grp00\\\" data-v-bf4faf3f><span class=\\\"name\\\" data-v-bf4faf3f>골드팩 </span><span class=\\\"price\\\" data-v-bf4faf3f>+1,800원</span></label></div></li><li data-v-bf4faf3f><div class=\\\"form-check-wrap\\\" data-v-bf4faf3f><input class=\\\"form-check\\\" id=\\\"grp01\\\" type=\\\"checkbox\\\" data-v-bf4faf3f><label class=\\\"form-check-label\\\" for=\\\"grp01\\\" data-v-bf4faf3f><span class=\\\"name\\\" data-v-bf4faf3f>시저샐러드 </span><span class=\\\"price\\\" data-v-bf4faf3f>+2,500원</span></label></div></li><li data-v-bf4faf3f><div class=\\\"form-check-wrap\\\" data-v-bf4faf3f><input class=\\\"form-check\\\" id=\\\"grp02\\\" type=\\\"checkbox\\\" data-v-bf4faf3f><label class=\\\"form-check-label\\\" for=\\\"grp02\\\" data-v-bf4faf3f><span class=\\\"name\\\" data-v-bf4faf3f>콜라 </span><span class=\\\"price\\\" data-v-bf4faf3f>+1,300원</span></label></div></li></ul></div><div class=\\\"option-add\\\" data-v-bf4faf3f><div class=\\\"title-row\\\" data-v-bf4faf3f><h3 class=\\\"title\\\" data-v-bf4faf3f>그룹2</h3><span class=\\\"validate\\\" data-v-bf4faf3f>3개까지 선택</span></div><ul class=\\\"option-list\\\" data-v-bf4faf3f><li data-v-bf4faf3f><div class=\\\"form-check-wrap\\\" data-v-bf4faf3f><input class=\\\"form-check\\\" id=\\\"grp10\\\" type=\\\"checkbox\\\" data-v-bf4faf3f><label class=\\\"form-check-label\\\" for=\\\"grp10\\\" data-v-bf4faf3f><span class=\\\"name\\\" data-v-bf4faf3f>골드팩 </span><span class=\\\"price\\\" data-v-bf4faf3f>+1,800원</span></label></div></li><li data-v-bf4faf3f><div class=\\\"form-check-wrap\\\" data-v-bf4faf3f><input class=\\\"form-check\\\" id=\\\"grp11\\\" type=\\\"checkbox\\\" data-v-bf4faf3f><label class=\\\"form-check-label\\\" for=\\\"grp11\\\" data-v-bf4faf3f><span class=\\\"name\\\" data-v-bf4faf3f>시저샐러드 </span><span class=\\\"price\\\" data-v-bf4faf3f>+2,500원</span></label></div></li><li data-v-bf4faf3f><div class=\\\"form-check-wrap\\\" data-v-bf4faf3f><input class=\\\"form-check\\\" id=\\\"grp12\\\" type=\\\"checkbox\\\" data-v-bf4faf3f><label class=\\\"form-check-label\\\" for=\\\"grp12\\\" data-v-bf4faf3f><span class=\\\"name\\\" data-v-bf4faf3f>콜라 </span><span class=\\\"price\\\" data-v-bf4faf3f>+1,300원</span></label></div></li><li data-v-bf4faf3f><div class=\\\"form-check-wrap\\\" data-v-bf4faf3f><input class=\\\"form-check\\\" id=\\\"grp13\\\" type=\\\"checkbox\\\" disabled data-v-bf4faf3f><label class=\\\"form-check-label\\\" for=\\\"grp13\\\" data-v-bf4faf3f><span class=\\\"name\\\" data-v-bf4faf3f>선데아이스크림 플레인 </span><span class=\\\"price\\\" data-v-bf4faf3f>+1,800원</span></label></div></li><li data-v-bf4faf3f><div class=\\\"form-check-wrap\\\" data-v-bf4faf3f><input class=\\\"form-check\\\" id=\\\"grp14\\\" type=\\\"checkbox\\\" disabled data-v-bf4faf3f><label class=\\\"form-check-label\\\" for=\\\"grp14\\\" data-v-bf4faf3f><span class=\\\"name\\\" data-v-bf4faf3f>클래식 치즈버거 </span><span class=\\\"price\\\" data-v-bf4faf3f>+4,500원</span></label></div></li><li data-v-bf4faf3f><div class=\\\"form-check-wrap\\\" data-v-bf4faf3f><input class=\\\"form-check\\\" id=\\\"grp18\\\" type=\\\"checkbox\\\" disabled data-v-bf4faf3f><label class=\\\"form-check-label\\\" for=\\\"grp18\\\" data-v-bf4faf3f><span class=\\\"name\\\" data-v-bf4faf3f>패밀리팩 </span><span class=\\\"price\\\" data-v-bf4faf3f>+14,300원</span></label></div></li><li data-v-bf4faf3f><div class=\\\"form-check-wrap\\\" data-v-bf4faf3f><input class=\\\"form-check\\\" id=\\\"grp19\\\" type=\\\"checkbox\\\" disabled=\\\"\\\" data-v-bf4faf3f><label class=\\\"form-check-label\\\" for=\\\"grp19\\\" data-v-bf4faf3f><span class=\\\"name\\\" data-v-bf4faf3f>1인혼닭세트 <span class=\\\"badge-soldout\\\" data-v-bf4faf3f>품절</span></span><span class=\\\"price\\\" data-v-bf4faf3f>+11,600원</span></label></div></li></ul></div></section><span class=\\\"border-coutom\\\" data-v-bf4faf3f></span><section class=\\\"total-wrap\\\" data-v-bf4faf3f><div class=\\\"count\\\" data-v-bf4faf3f><dl data-v-bf4faf3f><dt data-v-bf4faf3f>수량</dt><ul class=\\\"count-btn-wrap\\\" data-v-bf4faf3f><li data-v-bf4faf3f><button type=\\\"button\\\" class=\\\"btn-minus\\\" disabled data-v-bf4faf3f></button></li><li class=\\\"num-count\\\" data-v-bf4faf3f>1</li><li data-v-bf4faf3f><button type=\\\"button\\\" class=\\\"btn-plus\\\" data-v-bf4faf3f></button></li></ul></dl></div><div class=\\\"total\\\" data-v-bf4faf3f><dl data-v-bf4faf3f><dt data-v-bf4faf3f>주문금액</dt><dd data-v-bf4faf3f><em class=\\\"total-price\\\" data-v-bf4faf3f>4,800원</em></dd></dl></div></section><div class=\\\"btn-wrap-fixed-wrap\\\" data-v-bf4faf3f><div class=\\\"btn-wrap-fixed\\\" data-v-bf4faf3f><button class=\\\"btn-cart btn-block-lg\\\" data-v-bf4faf3f>1개 장바구니 담기</button></div><div class=\\\"btn-fixed-fake-area\\\" data-v-bf4faf3f></div></div></main></div>\", 1)\n\nimport { useRoute } from 'vue-router'\r\n\r\nimport Toast from '../popup/toast.vue';\r\n\r\n\nconst _sfc_main = {\n  __name: 'detail-add-basket',\n  setup(__props) {\n\r\nconst route = useRoute()\r\n\r\nconst groupNo = route.params.groupNo\r\nconst goodsNo = route.params.goodsNo\r\n\nreturn (_ctx, _cache) => {\n  return (_openBlock(), _createElementBlock(_Fragment, null, [\n    _hoisted_1,\n    _createVNode(Toast, { pos: \"bottom\" }, {\n      text: _withCtx(() => [\n        _createTextVNode(\" 상품이 추가되었습니다. \")\n      ]),\n      button: _withCtx(() => [\n        _createTextVNode(\" 장바구니로 이동 \")\n      ]),\n      _: 1\n    })\n  ], 64))\n}\n}\n\n}\n\n\nimport \"D:/localserver/web-nuxt-sdk/web-nuxt-qr-netlify/pages/pb/order/detail-add-basket.vue?vue&type=style&index=0&scoped=bf4faf3f&lang.scss\"\n\nimport _export_sfc from '\u0000plugin-vue:export-helper'\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['__scopeId',\"data-v-bf4faf3f\"]])",
-      "start": 1711507720103,
-      "end": 1711507720103,
+      "start": 1711508329724,
+      "end": 1711508329725,
       "order": "normal",
       "sourcemaps": {
         "mappings": ""
@@ -62,152 +62,152 @@
     },
     {
       "name": "vite:vue-jsx",
-      "start": 1711507720103,
-      "end": 1711507720103,
+      "start": 1711508329725,
+      "end": 1711508329725,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1711507720103,
-      "end": 1711507720103,
+      "start": 1711508329725,
+      "end": 1711508329725,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1711507720103,
-      "end": 1711507720103,
+      "start": 1711508329725,
+      "end": 1711508329725,
       "order": "normal"
     },
     {
       "name": "nuxt:chunk-error",
-      "start": 1711507720103,
-      "end": 1711507720103,
+      "start": 1711508329725,
+      "end": 1711508329725,
       "order": "normal"
     },
     {
       "name": "nuxt:components:imports",
-      "start": 1711507720103,
-      "end": 1711507720103,
+      "start": 1711508329725,
+      "end": 1711508329725,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1711507720103,
-      "end": 1711507720103,
+      "start": 1711508329725,
+      "end": 1711508329725,
       "order": "normal"
     },
     {
       "name": "ssr-styles",
-      "start": 1711507720103,
-      "end": 1711507720103,
+      "start": 1711508329725,
+      "end": 1711508329725,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1711507720103,
-      "end": 1711507720103,
+      "start": 1711508329725,
+      "end": 1711508329725,
       "order": "normal"
     },
     {
       "name": "vite:css-post",
-      "start": 1711507720103,
-      "end": 1711507720103,
+      "start": 1711508329725,
+      "end": 1711508329725,
       "order": "normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1711507720103,
-      "end": 1711507720103,
+      "start": 1711508329725,
+      "end": 1711508329725,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1711507720103,
-      "end": 1711507720103,
+      "start": 1711508329725,
+      "end": 1711508329725,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1711507720103,
-      "end": 1711507720103,
+      "start": 1711508329725,
+      "end": 1711508329725,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1711507720103,
-      "end": 1711507720103,
+      "start": 1711508329725,
+      "end": 1711508329725,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1711507720103,
-      "end": 1711507720103,
+      "start": 1711508329725,
+      "end": 1711508329725,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1711507720103,
-      "end": 1711507720103,
+      "start": 1711508329725,
+      "end": 1711508329725,
       "order": "normal"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1711507720103,
-      "end": 1711507720103,
+      "start": 1711508329725,
+      "end": 1711508329725,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
-      "start": 1711507720103,
-      "end": 1711507720107,
+      "start": 1711508329725,
+      "end": 1711508329726,
       "order": "post"
     },
     {
       "name": "unctx:transform",
-      "start": 1711507720107,
-      "end": 1711507720107,
+      "start": 1711508329726,
+      "end": 1711508329726,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1711507720107,
-      "end": 1711507720107,
+      "start": 1711508329726,
+      "end": 1711508329726,
       "order": "post"
     },
     {
       "name": "nuxt:runtime-paths-dep",
-      "start": 1711507720107,
-      "end": 1711507720107,
+      "start": 1711508329726,
+      "end": 1711508329726,
       "order": "post"
     },
     {
       "name": "nuxt:route-injection-plugin",
-      "start": 1711507720107,
-      "end": 1711507720107,
+      "start": 1711508329726,
+      "end": 1711508329726,
       "order": "post"
     },
     {
       "name": "nuxt:components-loader",
-      "start": 1711507720107,
-      "end": 1711507720107,
+      "start": 1711508329726,
+      "end": 1711508329727,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-composables:transform",
-      "start": 1711507720107,
-      "end": 1711507720107,
+      "start": 1711508329727,
+      "end": 1711508329727,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1711507720107,
-      "end": 1711507720107,
+      "start": 1711508329727,
+      "end": 1711508329727,
       "order": "normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1711507720107,
-      "end": 1711507720107,
+      "start": 1711508329727,
+      "end": 1711508329727,
       "order": "normal"
     }
   ]

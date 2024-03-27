@@ -4,51 +4,51 @@
     {
       "name": "vite:load-fallback",
       "result": "export function useApi() {\r\n    const runtimeConfig = useRuntimeConfig()\r\n\r\n    async function request(name: string, url: any, params = {}) {\r\n        const headers :any = {\r\n            Authorization: runtimeConfig.public.VITE_AUTH_KEY,\r\n            'Content-Type': 'application/json',\r\n        }\r\n\r\n        const cookieToken = useCookie('token');\r\n\r\n        const body = {\r\n            reqToken: cookieToken.value,\r\n            ...params,\r\n        }\r\n\r\n        const {data, error} = await useAsyncData(name, () =>\r\n            $fetch(url, {\r\n                headers,\r\n                method: 'post',\r\n                body,\r\n            })\r\n        )\r\n\r\n\r\n        if (data.value) {\r\n            return data.value\r\n        } else {\r\n            console.error('API request error:', name, error)\r\n            return null\r\n        }\r\n    }\r\n\r\n    return {\r\n        request,\r\n    }\r\n}\r\n",
-      "start": 1711507772475,
-      "end": 1711507782026,
+      "start": 1711508385262,
+      "end": 1711508395717,
       "sourcemaps": null
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1711507782026,
-      "end": 1711507782026,
+      "start": 1711508395717,
+      "end": 1711508395717,
       "order": "pre"
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1711507782026,
-      "end": 1711507782026,
+      "start": 1711508395717,
+      "end": 1711508395717,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1711507782026,
-      "end": 1711507782026,
+      "start": 1711508395717,
+      "end": 1711508395717,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1711507782026,
-      "end": 1711507782026,
+      "start": 1711508395717,
+      "end": 1711508395717,
       "order": "pre"
     },
     {
       "name": "nuxt:client-fallback-auto-id",
-      "start": 1711507782026,
-      "end": 1711507782026,
+      "start": 1711508395717,
+      "end": 1711508395717,
       "order": "pre"
     },
     {
       "name": "vite:css",
-      "start": 1711507782026,
-      "end": 1711507782026,
+      "start": 1711508395717,
+      "end": 1711508395717,
       "order": "normal"
     },
     {
       "name": "vite:esbuild",
       "result": "export function useApi() {\n  const runtimeConfig = useRuntimeConfig();\n  async function request(name, url, params = {}) {\n    const headers = {\n      Authorization: runtimeConfig.public.VITE_AUTH_KEY,\n      \"Content-Type\": \"application/json\"\n    };\n    const cookieToken = useCookie(\"token\");\n    const body = {\n      reqToken: cookieToken.value,\n      ...params\n    };\n    const { data, error } = await useAsyncData(\n      name,\n      () => $fetch(url, {\n        headers,\n        method: \"post\",\n        body\n      })\n    );\n    if (data.value) {\n      return data.value;\n    } else {\n      console.error(\"API request error:\", name, error);\n      return null;\n    }\n  }\n  return {\n    request\n  };\n}\n",
-      "start": 1711507782026,
-      "end": 1711507786983,
+      "start": 1711508395717,
+      "end": 1711508398467,
       "order": "normal",
       "sourcemaps": {
         "version": 3,
@@ -64,123 +64,123 @@
     },
     {
       "name": "vite:json",
-      "start": 1711507786983,
-      "end": 1711507786983,
+      "start": 1711508398467,
+      "end": 1711508398467,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1711507786983,
-      "end": 1711507786983,
+      "start": 1711508398467,
+      "end": 1711508398467,
       "order": "normal"
     },
     {
       "name": "vite:vue",
-      "start": 1711507786983,
-      "end": 1711507786983,
+      "start": 1711508398467,
+      "end": 1711508398467,
       "order": "normal"
     },
     {
       "name": "vite:vue-jsx",
-      "start": 1711507786983,
-      "end": 1711507786983,
+      "start": 1711508398467,
+      "end": 1711508398467,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1711507786983,
-      "end": 1711507786983,
+      "start": 1711508398467,
+      "end": 1711508398467,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1711507786983,
-      "end": 1711507786983,
+      "start": 1711508398467,
+      "end": 1711508398467,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1711507786983,
-      "end": 1711507786984,
+      "start": 1711508398467,
+      "end": 1711508398467,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1711507786983,
-      "end": 1711507786984,
+      "start": 1711508398467,
+      "end": 1711508398467,
       "order": "normal"
     },
     {
       "name": "nuxt:components:imports",
-      "start": 1711507786984,
-      "end": 1711507786984,
+      "start": 1711508398467,
+      "end": 1711508398467,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1711507786984,
-      "end": 1711507786984,
+      "start": 1711508398467,
+      "end": 1711508398467,
       "order": "normal"
     },
     {
       "name": "ssr-styles",
-      "start": 1711507786984,
-      "end": 1711507786984,
+      "start": 1711508398467,
+      "end": 1711508398467,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1711507786986,
-      "end": 1711507786986,
+      "start": 1711508398467,
+      "end": 1711508398467,
       "order": "normal"
     },
     {
       "name": "vite:css-post",
-      "start": 1711507786987,
-      "end": 1711507786987,
+      "start": 1711508398467,
+      "end": 1711508398467,
       "order": "normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1711507786987,
-      "end": 1711507786987,
+      "start": 1711508398467,
+      "end": 1711508398467,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1711507786987,
-      "end": 1711507786987,
+      "start": 1711508398467,
+      "end": 1711508398467,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1711507786987,
-      "end": 1711507786987,
+      "start": 1711508398467,
+      "end": 1711508398467,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1711507786987,
-      "end": 1711507786987,
+      "start": 1711508398468,
+      "end": 1711508398468,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1711507786987,
-      "end": 1711507786987,
+      "start": 1711508398468,
+      "end": 1711508398468,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1711507786987,
-      "end": 1711507786987,
+      "start": 1711508398468,
+      "end": 1711508398468,
       "order": "normal"
     },
     {
       "name": "nuxt:composable-keys",
       "result": "export function useApi() {\n  const runtimeConfig = useRuntimeConfig();\n  async function request(name, url, params = {}) {\n    const headers = {\n      Authorization: runtimeConfig.public.VITE_AUTH_KEY,\n      \"Content-Type\": \"application/json\"\n    };\n    const cookieToken = useCookie(\"token\");\n    const body = {\n      reqToken: cookieToken.value,\n      ...params\n    };\n    const { data, error } = await useAsyncData(\n      name,\n      () => $fetch(url, {\n        headers,\n        method: \"post\",\n        body\n      })\n    , '$UqgiltlUfE');\n    if (data.value) {\n      return data.value;\n    } else {\n      console.error(\"API request error:\", name, error);\n      return null;\n    }\n  }\n  return {\n    request\n  };\n}\n",
-      "start": 1711507786988,
-      "end": 1711507786989,
+      "start": 1711508398468,
+      "end": 1711508398469,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -194,8 +194,8 @@
     {
       "name": "nuxt:composable-keys",
       "result": "export function useApi() {\n  const runtimeConfig = useRuntimeConfig();\n  async function request(name, url, params = {}) {\n    const headers = {\n      Authorization: runtimeConfig.public.VITE_AUTH_KEY,\n      \"Content-Type\": \"application/json\"\n    };\n    const cookieToken = useCookie(\"token\");\n    const body = {\n      reqToken: cookieToken.value,\n      ...params\n    };\n    const { data, error } = await useAsyncData(\n      name,\n      () => $fetch(url, {\n        headers,\n        method: \"post\",\n        body\n      })\n    , '$UqgiltlUfE');\n    if (data.value) {\n      return data.value;\n    } else {\n      console.error(\"API request error:\", name, error);\n      return null;\n    }\n  }\n  return {\n    request\n  };\n}\n",
-      "start": 1711507786988,
-      "end": 1711507786989,
+      "start": 1711508398468,
+      "end": 1711508398469,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -209,8 +209,8 @@
     {
       "name": "nuxt:imports-transform",
       "result": "import { useRuntimeConfig } from '#app/nuxt';\nimport { useCookie } from '#app/composables/cookie';\nimport { useAsyncData } from '#app/composables/asyncData';\nexport function useApi() {\n  const runtimeConfig = useRuntimeConfig();\n  async function request(name, url, params = {}) {\n    const headers = {\n      Authorization: runtimeConfig.public.VITE_AUTH_KEY,\n      \"Content-Type\": \"application/json\"\n    };\n    const cookieToken = useCookie(\"token\");\n    const body = {\n      reqToken: cookieToken.value,\n      ...params\n    };\n    const { data, error } = await useAsyncData(\n      name,\n      () => $fetch(url, {\n        headers,\n        method: \"post\",\n        body\n      })\n    , '$UqgiltlUfE');\n    if (data.value) {\n      return data.value;\n    } else {\n      console.error(\"API request error:\", name, error);\n      return null;\n    }\n  }\n  return {\n    request\n  };\n}\n",
-      "start": 1711507786990,
-      "end": 1711507786990,
+      "start": 1711508398469,
+      "end": 1711508398469,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -224,8 +224,8 @@
     {
       "name": "nuxt:imports-transform",
       "result": "import { useRuntimeConfig } from '#app/nuxt';\nimport { useCookie } from '#app/composables/cookie';\nimport { useAsyncData } from '#app/composables/asyncData';\nexport function useApi() {\n  const runtimeConfig = useRuntimeConfig();\n  async function request(name, url, params = {}) {\n    const headers = {\n      Authorization: runtimeConfig.public.VITE_AUTH_KEY,\n      \"Content-Type\": \"application/json\"\n    };\n    const cookieToken = useCookie(\"token\");\n    const body = {\n      reqToken: cookieToken.value,\n      ...params\n    };\n    const { data, error } = await useAsyncData(\n      name,\n      () => $fetch(url, {\n        headers,\n        method: \"post\",\n        body\n      })\n    , '$UqgiltlUfE');\n    if (data.value) {\n      return data.value;\n    } else {\n      console.error(\"API request error:\", name, error);\n      return null;\n    }\n  }\n  return {\n    request\n  };\n}\n",
-      "start": 1711507786990,
-      "end": 1711507786990,
+      "start": 1711508398469,
+      "end": 1711508398469,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -238,56 +238,56 @@
     },
     {
       "name": "unctx:transform",
-      "start": 1711507786990,
-      "end": 1711507786990,
+      "start": 1711508398469,
+      "end": 1711508398469,
       "order": "post"
     },
     {
       "name": "unctx:transform",
-      "start": 1711507786990,
-      "end": 1711507786990,
+      "start": 1711508398469,
+      "end": 1711508398469,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1711507786990,
-      "end": 1711507786990,
+      "start": 1711508398469,
+      "end": 1711508398469,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1711507786990,
-      "end": 1711507786990,
+      "start": 1711508398469,
+      "end": 1711508398469,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-template",
-      "start": 1711507786990,
-      "end": 1711507786990,
+      "start": 1711508398469,
+      "end": 1711508398469,
       "order": "post"
     },
     {
       "name": "nuxt:components-loader",
-      "start": 1711507786990,
-      "end": 1711507786990,
+      "start": 1711508398469,
+      "end": 1711508398469,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-composables:transform",
-      "start": 1711507786990,
-      "end": 1711507786990,
+      "start": 1711508398469,
+      "end": 1711508398469,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1711507786990,
-      "end": 1711507786990,
+      "start": 1711508398469,
+      "end": 1711508398469,
       "order": "normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1711507786991,
-      "end": 1711507786991,
+      "start": 1711508398469,
+      "end": 1711508398469,
       "order": "normal"
     }
   ]

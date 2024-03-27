@@ -4,69 +4,69 @@
     {
       "name": "vite:load-fallback",
       "result": "<script setup lang=\"ts\">\r\n</script>\r\n\r\n<template>\r\n\t<div class=\"layout1\">\r\n\r\n\t\t<header class=\"header-common fixed\">\r\n\t\t\t<div class=\"header-row\"><button title=\"이전페이지로 이동\" class=\"btn-history-back\"></button>\r\n\t\t\t\t<h1 class=\"header-title\">장바구니</h1>\r\n\r\n\t\t\t</div>\r\n\t\t</header>\r\n\t\t<div class=\"header-fixed-fake-area\"></div>\r\n\t\t<main class=\"basket-page\">\r\n\t\t\t<section class=\"tab-wrap\">\r\n\t\t\t\t<ul class=\"tab-order\">\r\n\t\t\t\t\t<li><button>배달</button></li>\r\n\t\t\t\t\t<li><a aria-current=\"page\" href=\"/basket-togo\"\r\n\t\t\t\t\t\t\tclass=\"router-link-active router-link-exact-active on\">포장</a></li>\r\n\t\t\t\t</ul>\r\n\t\t\t</section>\r\n\t\t\t<section class=\"basket-wrap\">\r\n\t\t\t\t<div class=\"all-check-row\">\r\n\t\t\t\t\t<div class=\"form-check-wrap\"><input class=\"form-check-sm\" id=\"checkAll\" type=\"checkbox\"><label\r\n\t\t\t\t\t\t\tclass=\"form-check-label\" for=\"checkAll\"> 전체선택 </label></div><button\r\n\t\t\t\t\t\tclass=\"btn-remove-all\">선택삭제</button>\r\n\t\t\t\t</div>\r\n\t\t\t\t<ul class=\"basket-list\">\r\n\t\t\t\t\t<li>\r\n\t\t\t\t\t\t<div class=\"inner\">\r\n\t\t\t\t\t\t\t<div class=\"title-row\">\r\n\t\t\t\t\t\t\t\t<div class=\"form-check-wrap\"><input class=\"form-check-sm\" id=\"grp01_1234\"\r\n\t\t\t\t\t\t\t\t\t\ttype=\"checkbox\"><label class=\"form-check-label\" for=\"grp01_1234\"> 블루베리 쿠키 치즈 케이크\r\n\t\t\t\t\t\t\t\t\t</label></div><button class=\"btn-remove-goods\" title=\"상품비우기\"></button>\r\n\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t<ul class=\"option-add-list\">\r\n\t\t\t\t\t\t\t\t<li>사이즈 : Tall 355ml(+0원)</li>\r\n\t\t\t\t\t\t\t\t<li> 토핑추가선택 : 카라멜 드리즐(+1,500원), 초콜릿 드리즐(+2,000), 에스프레소 크림(+2,000)\r\n\t\t\t\t\t\t\t\t</li>\r\n\t\t\t\t\t\t\t\t<li>추가선택 : 휘핑크림(+2,000원)</li>\r\n\t\t\t\t\t\t\t</ul>\r\n\t\t\t\t\t\t\t<div class=\"price-row\"><span class=\"price\"><em>12,000</em>원 </span>\r\n\t\t\t\t\t\t\t\t<ul class=\"count-btn-wrap\">\r\n\t\t\t\t\t\t\t\t\t<li><button type=\"button\" class=\"btn-minus\" disabled=\"\"></button></li>\r\n\t\t\t\t\t\t\t\t\t<li class=\"num-count\">1</li>\r\n\t\t\t\t\t\t\t\t\t<li><button type=\"button\" class=\"btn-plus\"></button></li>\r\n\t\t\t\t\t\t\t\t</ul>\r\n\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t</li>\r\n\t\t\t\t\t<li>\r\n\t\t\t\t\t\t<div class=\"inner\">\r\n\t\t\t\t\t\t\t<div class=\"title-row\">\r\n\t\t\t\t\t\t\t\t<div class=\"form-check-wrap\"><input class=\"form-check-sm\" id=\"grp02_1235\"\r\n\t\t\t\t\t\t\t\t\t\ttype=\"checkbox\"><label class=\"form-check-label\" for=\"grp02_1235\"> 아이스 디카페인 카페라떼\r\n\t\t\t\t\t\t\t\t\t</label></div><button class=\"btn-remove-goods\" title=\"상품비우기\"></button>\r\n\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t<ul class=\"option-add-list\">\r\n\t\t\t\t\t\t\t\t<li>사이즈 : Tall 355ml(+0원)</li>\r\n\t\t\t\t\t\t\t</ul>\r\n\t\t\t\t\t\t\t<div class=\"price-row\"><span class=\"price\"><em>12,000</em>원 </span>\r\n\t\t\t\t\t\t\t\t<ul class=\"count-btn-wrap\">\r\n\t\t\t\t\t\t\t\t\t<li><button type=\"button\" class=\"btn-minus\"></button></li>\r\n\t\t\t\t\t\t\t\t\t<li class=\"num-count\">2</li>\r\n\t\t\t\t\t\t\t\t\t<li><button type=\"button\" class=\"btn-plus\"></button></li>\r\n\t\t\t\t\t\t\t\t</ul>\r\n\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t</li>\r\n\t\t\t\t</ul>\r\n\t\t\t\t<div class=\"btn-add-menu-wrap\"><button type=\"button\" class=\"btn-add-menu\" @click=\"$router.push('/pb/order/table')\"><i class=\"icon-add\"></i>메뉴추가\r\n\t\t\t\t\t</button></div>\r\n\t\t\t</section>\r\n\t\t\t<section class=\"total-wrap\">\r\n\t\t\t\t<div class=\"desc\">\r\n\t\t\t\t\t<dl>\r\n\t\t\t\t\t\t<dt>총 주문금액</dt>\r\n\t\t\t\t\t\t<dd>24,000원</dd>\r\n\t\t\t\t\t</dl>\r\n\r\n\t\t\t\t</div>\r\n\t\t\t\t<div class=\"total\">\r\n\t\t\t\t\t<dl>\r\n\t\t\t\t\t\t<dt>결제 예상 금액</dt>\r\n\t\t\t\t\t\t<dd><em class=\"total-price\">25,500원</em><span class=\"min-price\">최소주문금액:10,000원</span></dd>\r\n\t\t\t\t\t</dl>\r\n\t\t\t\t</div>\r\n\t\t\t</section>\r\n\t\t\t<!--<div class=\"btn-wrap-fixed basket\">\r\n\t\t\t\t<p class=\"btn-text\"> 할인쿠폰 및 이벤트 적용은 주문 페이지에서 확인가능 합니다. </p><button class=\"btn-primary-1 btn-block-lg\">\r\n\t\t\t\t\t주문하기 </button>\r\n\t\t\t</div>-->\r\n\r\n\t\t\t<div class=\"btn-wrap-fixed\"><button class=\"btn-closed btn-block-lg\">영업이 종료되었습니다</button></div>\r\n\r\n\t\t</main>\r\n\t</div>\r\n</template>\r\n\r\n<style lang=\"scss\" scoped>\r\n@import \"@/assets/default/scss/style\"; // 공통 \r\n@import \"@/assets/default/scss/components/header\";\r\n@import \"@/assets/default/scss/components/navtab\";\r\n@import \"@/assets/default/scss/components/basket\";\r\n@import \"@/assets/default/scss/components/order/orderTotal\";\r\n</style>",
-      "start": 1711507749249,
-      "end": 1711507749467,
+      "start": 1711508358022,
+      "end": 1711508358154,
       "sourcemaps": null
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1711507749467,
-      "end": 1711507749467,
+      "start": 1711508358154,
+      "end": 1711508358154,
       "order": "pre"
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1711507749467,
-      "end": 1711507749467,
+      "start": 1711508358154,
+      "end": 1711508358154,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1711507749467,
-      "end": 1711507749467,
+      "start": 1711508358154,
+      "end": 1711508358154,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1711507749467,
-      "end": 1711507749467,
+      "start": 1711508358154,
+      "end": 1711508358154,
       "order": "pre"
     },
     {
       "name": "nuxt:client-fallback-auto-id",
-      "start": 1711507749467,
-      "end": 1711507749467,
+      "start": 1711508358154,
+      "end": 1711508358154,
       "order": "pre"
     },
     {
       "name": "vite:css",
-      "start": 1711507749467,
-      "end": 1711507749467,
+      "start": 1711508358154,
+      "end": 1711508358154,
       "order": "normal"
     },
     {
       "name": "vite:esbuild",
-      "start": 1711507749467,
-      "end": 1711507749467,
+      "start": 1711508358154,
+      "end": 1711508358154,
       "order": "normal"
     },
     {
       "name": "vite:json",
-      "start": 1711507749467,
-      "end": 1711507749467,
+      "start": 1711508358154,
+      "end": 1711508358154,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1711507749467,
-      "end": 1711507749467,
+      "start": 1711508358154,
+      "end": 1711508358154,
       "order": "normal"
     },
     {
       "name": "vite:vue",
       "result": "const _sfc_main = {}\nimport { mergeProps as _mergeProps } from \"vue\"\nimport { ssrRenderAttrs as _ssrRenderAttrs } from \"vue/server-renderer\"\n\nfunction _sfc_ssrRender(_ctx, _push, _parent, _attrs) {\n  _push(`<div${_ssrRenderAttrs(_mergeProps({ class: \"layout1\" }, _attrs))} data-v-bea9e2d0><header class=\"header-common fixed\" data-v-bea9e2d0><div class=\"header-row\" data-v-bea9e2d0><button title=\"이전페이지로 이동\" class=\"btn-history-back\" data-v-bea9e2d0></button><h1 class=\"header-title\" data-v-bea9e2d0>장바구니</h1></div></header><div class=\"header-fixed-fake-area\" data-v-bea9e2d0></div><main class=\"basket-page\" data-v-bea9e2d0><section class=\"tab-wrap\" data-v-bea9e2d0><ul class=\"tab-order\" data-v-bea9e2d0><li data-v-bea9e2d0><button data-v-bea9e2d0>배달</button></li><li data-v-bea9e2d0><a aria-current=\"page\" href=\"/basket-togo\" class=\"router-link-active router-link-exact-active on\" data-v-bea9e2d0>포장</a></li></ul></section><section class=\"basket-wrap\" data-v-bea9e2d0><div class=\"all-check-row\" data-v-bea9e2d0><div class=\"form-check-wrap\" data-v-bea9e2d0><input class=\"form-check-sm\" id=\"checkAll\" type=\"checkbox\" data-v-bea9e2d0><label class=\"form-check-label\" for=\"checkAll\" data-v-bea9e2d0> 전체선택 </label></div><button class=\"btn-remove-all\" data-v-bea9e2d0>선택삭제</button></div><ul class=\"basket-list\" data-v-bea9e2d0><li data-v-bea9e2d0><div class=\"inner\" data-v-bea9e2d0><div class=\"title-row\" data-v-bea9e2d0><div class=\"form-check-wrap\" data-v-bea9e2d0><input class=\"form-check-sm\" id=\"grp01_1234\" type=\"checkbox\" data-v-bea9e2d0><label class=\"form-check-label\" for=\"grp01_1234\" data-v-bea9e2d0> 블루베리 쿠키 치즈 케이크 </label></div><button class=\"btn-remove-goods\" title=\"상품비우기\" data-v-bea9e2d0></button></div><ul class=\"option-add-list\" data-v-bea9e2d0><li data-v-bea9e2d0>사이즈 : Tall 355ml(+0원)</li><li data-v-bea9e2d0> 토핑추가선택 : 카라멜 드리즐(+1,500원), 초콜릿 드리즐(+2,000), 에스프레소 크림(+2,000) </li><li data-v-bea9e2d0>추가선택 : 휘핑크림(+2,000원)</li></ul><div class=\"price-row\" data-v-bea9e2d0><span class=\"price\" data-v-bea9e2d0><em data-v-bea9e2d0>12,000</em>원 </span><ul class=\"count-btn-wrap\" data-v-bea9e2d0><li data-v-bea9e2d0><button type=\"button\" class=\"btn-minus\" disabled=\"\" data-v-bea9e2d0></button></li><li class=\"num-count\" data-v-bea9e2d0>1</li><li data-v-bea9e2d0><button type=\"button\" class=\"btn-plus\" data-v-bea9e2d0></button></li></ul></div></div></li><li data-v-bea9e2d0><div class=\"inner\" data-v-bea9e2d0><div class=\"title-row\" data-v-bea9e2d0><div class=\"form-check-wrap\" data-v-bea9e2d0><input class=\"form-check-sm\" id=\"grp02_1235\" type=\"checkbox\" data-v-bea9e2d0><label class=\"form-check-label\" for=\"grp02_1235\" data-v-bea9e2d0> 아이스 디카페인 카페라떼 </label></div><button class=\"btn-remove-goods\" title=\"상품비우기\" data-v-bea9e2d0></button></div><ul class=\"option-add-list\" data-v-bea9e2d0><li data-v-bea9e2d0>사이즈 : Tall 355ml(+0원)</li></ul><div class=\"price-row\" data-v-bea9e2d0><span class=\"price\" data-v-bea9e2d0><em data-v-bea9e2d0>12,000</em>원 </span><ul class=\"count-btn-wrap\" data-v-bea9e2d0><li data-v-bea9e2d0><button type=\"button\" class=\"btn-minus\" data-v-bea9e2d0></button></li><li class=\"num-count\" data-v-bea9e2d0>2</li><li data-v-bea9e2d0><button type=\"button\" class=\"btn-plus\" data-v-bea9e2d0></button></li></ul></div></div></li></ul><div class=\"btn-add-menu-wrap\" data-v-bea9e2d0><button type=\"button\" class=\"btn-add-menu\" data-v-bea9e2d0><i class=\"icon-add\" data-v-bea9e2d0></i>메뉴추가 </button></div></section><section class=\"total-wrap\" data-v-bea9e2d0><div class=\"desc\" data-v-bea9e2d0><dl data-v-bea9e2d0><dt data-v-bea9e2d0>총 주문금액</dt><dd data-v-bea9e2d0>24,000원</dd></dl></div><div class=\"total\" data-v-bea9e2d0><dl data-v-bea9e2d0><dt data-v-bea9e2d0>결제 예상 금액</dt><dd data-v-bea9e2d0><em class=\"total-price\" data-v-bea9e2d0>25,500원</em><span class=\"min-price\" data-v-bea9e2d0>최소주문금액:10,000원</span></dd></dl></div></section><div class=\"btn-wrap-fixed\" data-v-bea9e2d0><button class=\"btn-closed btn-block-lg\" data-v-bea9e2d0>영업이 종료되었습니다</button></div></main></div>`)\n}\n\nimport \"D:/localserver/web-nuxt-sdk/web-nuxt-qr-netlify/pages/pb/order/basket-closed.vue?vue&type=style&index=0&scoped=bea9e2d0&lang.scss\"\n\nimport { useSSRContext as __vite_useSSRContext } from 'vue'\nconst _sfc_setup = _sfc_main.setup\n_sfc_main.setup = (props, ctx) => {\n  const ssrContext = __vite_useSSRContext()\n  ;(ssrContext.modules || (ssrContext.modules = new Set())).add(\"pages/pb/order/basket-closed.vue\")\n  return _sfc_setup ? _sfc_setup(props, ctx) : undefined\n}\nimport _export_sfc from '\u0000plugin-vue:export-helper'\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['ssrRender',_sfc_ssrRender],['__scopeId',\"data-v-bea9e2d0\"]])",
-      "start": 1711507749467,
-      "end": 1711507749480,
+      "start": 1711508358154,
+      "end": 1711508358165,
       "order": "normal",
       "sourcemaps": {
         "version": 3,
@@ -82,141 +82,141 @@
     },
     {
       "name": "vite:vue-jsx",
-      "start": 1711507749480,
-      "end": 1711507749480,
+      "start": 1711508358165,
+      "end": 1711508358165,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1711507749480,
-      "end": 1711507749480,
+      "start": 1711508358165,
+      "end": 1711508358165,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1711507749480,
-      "end": 1711507749480,
+      "start": 1711508358165,
+      "end": 1711508358165,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1711507749480,
-      "end": 1711507749480,
+      "start": 1711508358165,
+      "end": 1711508358165,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1711507749480,
-      "end": 1711507749480,
+      "start": 1711508358165,
+      "end": 1711508358165,
       "order": "normal"
     },
     {
       "name": "nuxt:components:imports",
-      "start": 1711507749480,
-      "end": 1711507749480,
+      "start": 1711508358165,
+      "end": 1711508358165,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1711507749480,
-      "end": 1711507749480,
+      "start": 1711508358165,
+      "end": 1711508358165,
       "order": "normal"
     },
     {
       "name": "ssr-styles",
-      "start": 1711507749480,
-      "end": 1711507749481,
+      "start": 1711508358165,
+      "end": 1711508358165,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1711507749481,
-      "end": 1711507749481,
+      "start": 1711508358165,
+      "end": 1711508358165,
       "order": "normal"
     },
     {
       "name": "vite:css-post",
-      "start": 1711507749481,
-      "end": 1711507749481,
+      "start": 1711508358165,
+      "end": 1711508358165,
       "order": "normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1711507749481,
-      "end": 1711507749481,
+      "start": 1711508358165,
+      "end": 1711508358165,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1711507749481,
-      "end": 1711507749481,
+      "start": 1711508358165,
+      "end": 1711508358165,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1711507749481,
-      "end": 1711507749481,
+      "start": 1711508358165,
+      "end": 1711508358165,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1711507749481,
-      "end": 1711507749481,
+      "start": 1711508358165,
+      "end": 1711508358165,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1711507749481,
-      "end": 1711507749481,
+      "start": 1711508358165,
+      "end": 1711508358165,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1711507749481,
-      "end": 1711507749481,
+      "start": 1711508358165,
+      "end": 1711508358165,
       "order": "normal"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1711507749481,
-      "end": 1711507749481,
+      "start": 1711508358165,
+      "end": 1711508358165,
       "order": "post"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1711507749481,
-      "end": 1711507749481,
+      "start": 1711508358165,
+      "end": 1711508358165,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
-      "start": 1711507749481,
-      "end": 1711507749481,
+      "start": 1711508358165,
+      "end": 1711508358166,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
-      "start": 1711507749481,
-      "end": 1711507749481,
+      "start": 1711508358165,
+      "end": 1711508358166,
       "order": "post"
     },
     {
       "name": "unctx:transform",
-      "start": 1711507749481,
-      "end": 1711507749481,
+      "start": 1711508358166,
+      "end": 1711508358166,
       "order": "post"
     },
     {
       "name": "unctx:transform",
-      "start": 1711507749481,
-      "end": 1711507749481,
+      "start": 1711508358166,
+      "end": 1711508358166,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
       "result": "\nconst __nuxt_page_meta = null\nexport default __nuxt_page_meta\n",
-      "start": 1711507749481,
-      "end": 1711507749482,
+      "start": 1711508358166,
+      "end": 1711508358166,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -230,8 +230,8 @@
     {
       "name": "nuxt:pages-macros-transform",
       "result": "\nconst __nuxt_page_meta = null\nexport default __nuxt_page_meta\n",
-      "start": 1711507749481,
-      "end": 1711507749482,
+      "start": 1711508358166,
+      "end": 1711508358166,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -244,32 +244,32 @@
     },
     {
       "name": "nuxt:tree-shake-template",
-      "start": 1711507749482,
-      "end": 1711507749482,
+      "start": 1711508358166,
+      "end": 1711508358166,
       "order": "post"
     },
     {
       "name": "nuxt:components-loader",
-      "start": 1711507749482,
-      "end": 1711507749482,
+      "start": 1711508358166,
+      "end": 1711508358166,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-composables:transform",
-      "start": 1711507749482,
-      "end": 1711507749482,
+      "start": 1711508358166,
+      "end": 1711508358166,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1711507749482,
-      "end": 1711507749482,
+      "start": 1711508358166,
+      "end": 1711508358166,
       "order": "normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1711507749482,
-      "end": 1711507749482,
+      "start": 1711508358166,
+      "end": 1711508358166,
       "order": "normal"
     }
   ]

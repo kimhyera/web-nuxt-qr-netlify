@@ -1,1 +1,0 @@
-import{_ as o}from"./_plugin-vue_export-helper.DlAUqK2U.js";import{c as r,_ as s,a as t,o as c}from"./entry.C8waQgNr.js";const a={},n={class:"pickorder-wrap"},_=t("p",null,"pickorder layout",-1);function d(e,l){return c(),r("div",n,[_,s(e.$slots,"default")])}const f=o(a,[["render",d]]);export{f as default};
