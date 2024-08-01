@@ -1,6 +1,5 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  devtools: { enabled: true },
   alias: {
     assets: '/<rootDir>/assets',
   },
@@ -8,7 +7,7 @@ export default defineNuxtConfig({
 
   // 서버 사이드 렌더링을 사용하도록 설정
 
-  modules: ['@nuxt/devtools', '@pinia/nuxt', '@pinia-plugin-persistedstate/nuxt'],
+  modules: ['@pinia/nuxt', '@pinia-plugin-persistedstate/nuxt'],
   runtimeConfig: {
     apikey: 'useApi-key-154898-+7298(*@%',
     public: {
