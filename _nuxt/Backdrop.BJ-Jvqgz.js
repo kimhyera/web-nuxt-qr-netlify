@@ -1,0 +1,1 @@
+import{_ as c}from"./_plugin-vue_export-helper.DlAUqK2U.js";import{c as o,o as e}from"./entry.DmfhiHLI.js";const r={},t={class:"modal-backdrop"};function a(s,_){return e(),o("div",t)}const p=c(r,[["render",a],["__scopeId","data-v-409c1349"]]);export{p as default};
