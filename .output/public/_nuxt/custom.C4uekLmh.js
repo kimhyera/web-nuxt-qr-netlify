@@ -1,1 +1,0 @@
-import{_ as e}from"./_plugin-vue_export-helper.DlAUqK2U.js";import{c as s,_ as t,a as c,o as a}from"./entry.DjqlAaWc.js";const r={},n={class:"custom"},_=c("p",null,"Custom layout",-1);function l(o,d){return a(),s("div",n,[_,t(o.$slots,"default")])}const f=e(r,[["render",l]]);export{f as default};
