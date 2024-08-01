@@ -1,1 +1,0 @@
-import{_ as o}from"./_plugin-vue_export-helper.DlAUqK2U.js";import{c as t,_ as a,a as s,o as r}from"./entry.4ADjUMDD.js";const c={},l=s("p",null,"Some default layout content shared across all pages",-1);function n(e,_){return r(),t("div",null,[l,a(e.$slots,"default")])}const u=o(c,[["render",n]]);export{u as default};
