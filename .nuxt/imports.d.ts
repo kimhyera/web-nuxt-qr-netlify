@@ -28,7 +28,6 @@ export { injectHead, useHead, useSeoMeta, useHeadSafe, useServerHead, useServerS
 export { useApi } from '../composables/useApi';
 export { usePopup } from '../composables/usePopup';
 export { commonStore } from '../stores/common';
-export { useNuxtDevTools } from '../node_modules/@nuxt/devtools/dist/runtime/use-nuxt-devtools';
 export { defineStore, acceptHMRUpdate, usePinia, storeToRefs } from '../node_modules/@pinia/nuxt/dist/runtime/composables';
 export { persistedState } from '../node_modules/@pinia-plugin-persistedstate/nuxt/dist/runtime/storages';
 export { definePageMeta } from '../node_modules/nuxt/dist/pages/runtime/composables';
