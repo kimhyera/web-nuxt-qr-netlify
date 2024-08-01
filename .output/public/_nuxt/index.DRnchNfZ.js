@@ -1,0 +1,1 @@
+import{_ as e}from"./_plugin-vue_export-helper.DlAUqK2U.js";import{c as o,o as t,a as s}from"./entry.DmfhiHLI.js";const c={},n={class:"Main"},_=s("h1",null,"Hello Nuxt3",-1),a=[_];function r(i,d){return t(),o("div",n,a)}const m=e(c,[["render",r]]);export{m as default};
