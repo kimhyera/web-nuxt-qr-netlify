@@ -1,0 +1,1 @@
+import{_ as e}from"./_plugin-vue_export-helper.DlAUqK2U.js";import{c as o,o as r}from"./entry.4ADjUMDD.js";const t={};function c(n,a){return r(),o("div",null,"주문내역 - 팝업 (후불형) ")}const p=e(t,[["render",c]]);export{p as default};
