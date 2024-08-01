@@ -11,26 +11,19 @@
     "@vue/compiler-core": "3.4.20",
     "@vue/compiler-dom": "3.4.20",
     "@vue/compiler-ssr": "3.4.20",
-    "@vue/devtools-api": "6.6.1",
     "@vue/reactivity": "3.4.20",
     "@vue/runtime-core": "3.4.20",
     "@vue/runtime-dom": "3.4.20",
     "@vue/server-renderer": "3.4.20",
     "@vue/shared": "3.4.20",
     "devalue": "4.3.2",
-    "dom7": "4.0.6",
     "entities": "4.5.0",
     "estree-walker": "2.0.2",
     "hookable": "5.5.3",
-    "pinia-plugin-persistedstate": "3.2.1",
     "source-map-js": "1.0.2",
-    "ssr-window": "4.0.2",
-    "swiper": "8.4.7",
     "ufo": "1.4.0",
     "unhead": "1.8.10",
     "vue": "3.4.20",
-    "vue-bundle-renderer": "2.0.0",
-    "vue-devtools-stub": "0.1.0",
-    "vue-router": "4.3.0"
+    "vue-bundle-renderer": "2.0.0"
   }
 }
